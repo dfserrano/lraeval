@@ -1,0 +1,1396 @@
+swagger: '2.0'
+
+info:
+  version: 1.0.9-abcd
+  title: Elsevier
+  description: "
+    This site, https://dev.elsevier.com, is for developers looking to get programmatic access to:
+
+    - journals and books published by Elsevier on ScienceDirect full-text platform;
+
+    - citation data and abstracts from virtually all relevant scholarly journals, as indexed by Scopus, Elsevier's citation database.
+    "
+
+host: localhost
+basePath: /lraeval/api/elsevier
+schemes:
+  - http
+produces:
+  - application/json
+externalDocs:
+  description: Documentation of the original data source
+  url: https://dev.elsevier.com/interactive.html
+
+paths:
+  /search/affiliation.json:
+    get:
+      summary: Affiliation Search API
+      description: Affiliation search exposes interfaces associated with Scopus-based affiliation profiles.
+      tags:
+        - Search
+      parameters:
+        - name: query
+          in: query
+          description: "Affiliation search query string. The search fields are: AFFIL (Name of the organization)"
+          required: true
+          type: string
+          default: affil(University of Alberta)
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Affiliation'
+
+  /search/author.json:
+    get:
+      summary: Author Search API
+      description: Author search exposes interfaces associated with Scopus-based author profiles.
+      tags:
+        - Search
+
+      parameters:
+        - name: query
+          in: query
+          description: "Search query string. The list of search fields are: AUTHFIRST (Author first initial), AUTHLAST (Author last name), and AFFIL (Name of the organization)s"
+          required: true
+          type: string
+          default: authlast(Einstein) and authfirst(Albert) and affil(Princeton)
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Author'
+
+  /search/scidir.json:
+    get:
+      description: ScienceDirect search exposes interfaces associated with ScienceDirect search API. This represents a search against the ScienceDirect cluster, which contains serial/nonserial full-text articles.
+      summary: ScienceDirect Search API
+      tags:
+        - Search
+
+      parameters:
+        - name: query
+          in: query
+          description: "ScienceDirect search query string.  The list of search fields are: AUTHORS (Names of the authors of the document), and TITLE (Article or chapter title)"
+          required: true
+          type: string
+          default: gene
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/ScienceDirect'
+
+  /search/scopus.json:
+    get:
+      description: Scopus search exposes interfaces associated with Scopus search API. This represents a search against the SCOPUS cluster, which contains SCOPUS abstracts.
+      summary: Scopus Search API
+      tags:
+        - Search
+
+      parameters:
+        - name: query
+          in: query
+          description: "Scopus search query string.  The list of search fields are: ISSN, and TITLE (Article title)"
+          required: true
+          type: string
+          default: all(gene)
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Scopus'
+
+  /abstract/doi.json:
+    get:
+      description: Abstract retrieval via DOI exposes interfaces associated with Scopus Abstract API.
+      summary: Abstract Retrieval API
+      tags:
+        - Abstract Retrieval
+
+      parameters:
+        - name: doi
+          in: query
+          description: DOI value
+          required: true
+          type: string
+          default: 10.1016/S0014-5793(01)03313-0
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Abstract'
+
+  /abstract/eid.json:
+    get:
+      description: Abstract retrieval via EID exposes interfaces associated with Scopus Abstract API.
+      summary: Abstract Retrieval API
+      tags:
+        - Abstract Retrieval
+
+      parameters:
+        - name: eid
+          in: query
+          description: eid value
+          required: true
+          type: string
+          default: 2-s2.0-0037070197
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Abstract'
+
+  /abstract/pii.json:
+    get:
+      description: Abstract retrieval via PII exposes interfaces associated with Scopus Abstract API.
+      summary: Abstract Retrieval API
+      tags:
+        - Abstract Retrieval
+
+      parameters:
+        - name: pii
+          in: query
+          description: pii value
+          required: true
+          type: string
+          default: b3a71de2bde04544495881ed9d2f9c5b
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Abstract'
+
+  /abstract/pubmed_id.json:
+    get:
+      description: Abstract retrieval via Medline/Pubmed ID exposes interfaces associated with Scopus Abstract API.
+      summary: Abstract Retrieval API
+      tags:
+        - Abstract Retrieval
+
+      parameters:
+        - name: pubmed_id
+          in: query
+          description: pubmed_id value
+          required: true
+          type: string
+          default: '11852050'
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Abstract'
+
+  /abstract/scopus_id.json:
+    get:
+      description: Abstract retrieval via Scopus ID exposes interfaces associated with Scopus Abstract API.
+      summary: Abstract Retrieval API
+      tags:
+        - Abstract Retrieval
+
+      parameters:
+        - name: scopus_id
+          in: query
+          description: scopus_id value
+          required: true
+          type: string
+          default: 0037070197
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Abstract'
+
+  /abstract/citations.json:
+    get:
+      description: Abstract Citation API allows to retrieve citations given one of the document identifiers (DOI, PII, scopus_id or pubmed_id).
+      summary: Citations Overview
+      tags:
+        - Abstract Retrieval
+
+      parameters:
+        - name: doi
+          in: query
+          description: DOI document identifier.
+          required: false
+          type: string
+          default: 5793(01)03313-0
+
+        - name: pii
+          in: query
+          description: PII document identifier.
+          required: false
+          type: string
+          default: S0014579301033130
+
+        - name: scopus_id
+          in: query
+          description: Scopus ID document identifier.
+          required: false
+          type: string
+          default: "0037070197"
+
+        - name: pubmed_id
+          in: query
+          description: MEDLINE/pubmed_id document identifier.
+          required: false
+          type: string
+          default: "11852050"
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/AbstractCitations'
+
+
+  /article/doi.json:
+    get:
+      description: Article retrieval via DOI exposes interfaces associated with Article Retrieval API.
+      summary: Article Retrieval API
+      tags:
+        - Article Retrieval
+
+      parameters:
+        - name: doi
+          in: query
+          description: DOI value
+          required: true
+          type: string
+          default: 10.1016/S0014-5793(01)03313-0
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Article'
+
+  /article/eid.json:
+    get:
+      description: Article retrieval via EID exposes interfaces associated with Article Retrieval API.
+      summary: Article Retrieval API
+      tags:
+        - Article Retrieval
+
+      parameters:
+        - name: eid
+          in: query
+          description: EID value
+          required: true
+          type: string
+          default: 2-s2.0-0037070197
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Article'
+
+  /article/pii.json:
+    get:
+      description: Article retrieval via PII exposes interfaces associated with Article Retrieval API.
+      summary: Article Retrieval API
+      tags:
+        - Article Retrieval
+
+      parameters:
+        - name: pii
+          in: query
+          description: PII value
+          required: true
+          type: string
+          default: S0014579301033130
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Article'
+
+  /article/pubmed_id.json:
+    get:
+      description: Article retrieval via Medline/Pubmed ID exposes interfaces associated with Article Retrieval API.
+      summary: Article Retrieval API
+      tags:
+        - Article Retrieval
+
+      parameters:
+        - name: pubmed_id
+          in: query
+          description: pubmed_id value
+          required: true
+          type: string
+          default: '11852050'
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Article'
+
+
+definitions:
+
+  Article:
+    properties:
+      full-text-retrieval-response:
+        type: object
+        properties:
+          coredata:
+            type: object
+            properties:
+              url:
+                type: string
+              identifier:
+                type: string
+              eid:
+                type: string
+              doi:
+                type: string
+              pii:
+                type: string
+              title:
+                type: string
+              publicationName:
+                type: string
+              aggregationType:
+                type: string
+              issn:
+                type: string
+              volume:
+                type: string
+              issueIdentifier:
+                type: string
+              startingPage:
+                type: string
+              endingPage:
+                type: string
+              pageRange:
+                type: string
+              number:
+                type: string
+              format:
+                type: string
+              coverDate:
+                type: string
+              coverDisplayDate:
+                type: string
+              copyright:
+                type: string
+              publisher:
+                type: string
+              creator:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    _fa:
+                      type: string
+                    $:
+                      type: string
+              description:
+                type: string
+              openaccess:
+                type: string
+              openaccessArticle:
+                type: boolean
+              openaccessType:
+                type: string
+              openArchiveArticle:
+                type: string
+              openaccessSponsorName:
+                type: string
+              openaccessSponsorType:
+                type: string
+              openaccessUserLicense:
+                type: string
+              subject:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    _fa:
+                      type: string
+                    $:
+                      type: string
+              link:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    rel:
+                      type: string
+                    href:
+                      type: string
+                    _fa:
+                      type: string
+          objects:
+            type: array
+            items:
+              type: object
+              properties:
+                _fa:
+                  type: string
+                ref:
+                  type: string
+                category:
+                  type: string
+                type:
+                  type: string
+                multimediatype:
+                  type: string
+                mimetype:
+                  type: string
+                width:
+                  type: string
+                height:
+                  type: string
+                size:
+                  type: string
+                $:
+                  type: string
+          scopus-id:
+            type: string
+          scopus-eid:
+            type: string
+          pubmed-id:
+            type: string
+          link:
+            type: object
+            properties:
+              rel:
+                type: string
+              href:
+                type: string
+          originalText:
+            type: string
+
+  AbstractCitations:
+    properties:
+      abstract-citations-response:
+        type: object
+        properties:
+          h-index:
+            type: string
+          identifier-legend:
+            type: object
+            properties:
+              identifier:
+                type: array
+                items:
+                  properties:
+                    _fa:
+                      type: string
+                    identifier:
+                      type: string
+                    doi:
+                      type: string
+                    pii:
+                      type: string
+                    scopus_id:
+                      type: string
+          citeInfoMatrix:
+            type: object
+            properties:
+              citeInfoMatrixXML:
+                type: object
+                properties:
+                  citationMatrix:
+                    type: object
+                    properties:
+                      citeInfo:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            _fa:
+                              type: string
+                            identifier:
+                              type: string
+                            url:
+                              type: string
+                            title:
+                              type: string
+                            author:
+                              type: array
+                              items:
+                                type: object
+                                properties:
+                                  initials:
+                                    type: string
+                                  index-name:
+                                    type: string
+                                  surname:
+                                    type: string
+                                  authid:
+                                    type: string
+                                  author-url:
+                                    type: string
+                            citationType:
+                              type: object
+                              properties:
+                                code:
+                                  type: string
+                                $:
+                                  type: string
+                            sort-year:
+                              type: integer
+                            publicationName:
+                              type: string
+                            volume:
+                              type: string
+                            issueIdentifier:
+                              type: string
+                            startPage:
+                              type: string
+                            endingPage:
+                              type: string
+                            issn:
+                              type: string
+                            pcc:
+                              type: integer
+                            cc:
+                              type: array
+                              items:
+                                type: object
+                                properties:
+                                  $:
+                                    type: integer
+                            lcc:
+                              type: integer
+                            rangeCount:
+                              type: integer
+                            rowTotal:
+                              type: integer
+
+  Affiliation:
+    properties:
+      search-results:
+        type: object
+        properties:
+          totalResults:
+            type: string
+          startIndex:
+            type: string
+          itemsPerPage:
+            type: string
+          Query:
+            type: object
+            properties:
+              role:
+                type: string
+              searchTerms:
+                type: string
+              startPage:
+                type: string
+      link:
+        type: array
+        items:
+          $ref: '#/definitions/Link'
+      entry:
+        type: array
+        items:
+          type: object
+          properties:
+            _fa:
+              type: boolean
+            link:
+              type: array
+              items:
+                $ref: '#/definitions/Link'
+            url:
+              type: string
+            identifier:
+              type: string
+            eid:
+              type: string
+            affiliation-name:
+              type: string
+            name-variant:
+              type: object
+              properties:
+                _fa:
+                  type: boolean
+                $:
+                  type: string
+            document-count:
+              type: string
+            city:
+              type: string
+            country:
+              type: string
+            parent-affiliation-id:
+              type: string
+
+  Author:
+    properties:
+      search-results:
+        type: object
+        properties:
+          totalResults:
+            type: string
+          startIndex:
+            type: string
+          itemsPerPage:
+            type: string
+          Query:
+            type: object
+            properties:
+              role:
+                type: string
+              searchTerms:
+                type: string
+              startPage:
+                type: string
+      link:
+        type: array
+        items:
+          $ref: '#/definitions/Link'
+      entry:
+        type: array
+        items:
+          type: object
+          properties:
+            _fa:
+              type: boolean
+            link:
+              type: array
+              items:
+                $ref: '#/definitions/Link'
+            url:
+              type: string
+            identifier:
+              type: string
+            eid:
+              type: string
+            preferred-name:
+              type: object
+              properties:
+                surname:
+                  type: string
+                given-name:
+                  type: string
+                initials:
+                  type: string
+            name-variant:
+              type: array
+              items:
+                type: object
+                properties:
+                  _fa:
+                    type: string
+                  surname:
+                    type: string
+                  given-name:
+                    type: string
+                  initials:
+                    type: string
+            document-count:
+              type: integer
+            subject-area:
+              type: array
+              items:
+                type: object
+                properties:
+                  abbrev:
+                    type: string
+                  frequency:
+                    type: integer
+                  $:
+                    type: string
+            affiliation-current:
+              type: object
+              properties:
+                affiliation-url:
+                  type: string
+                affiliation_id:
+                  type: string
+                affiliation-name:
+                  type: string
+                affiliation-city:
+                  type: string
+                affiliation-country:
+                  type: string
+
+  ScienceDirect:
+    properties:
+      search-results:
+        type: object
+        properties:
+          totalResults:
+            type: string
+          startIndex:
+            type: string
+          itemsPerPage:
+            type: string
+          Query:
+            type: object
+            properties:
+              role:
+                type: string
+              searchTerms:
+                type: string
+              startPage:
+                type: string
+      link:
+        type: array
+        items:
+          $ref: '#/definitions/Link'
+      entry:
+        type: array
+        items:
+          type: object
+          properties:
+            _fa:
+              type: boolean
+            link:
+              type: array
+              items:
+                $ref: '#/definitions/Link'
+            identifier:
+              type: string
+            eid:
+              type: string
+            url:
+              type: string
+            title:
+              type: string
+            creator:
+              type: string
+            publicationName:
+              type: string
+            issueName:
+              type: string
+            issn:
+              type: string
+            volume:
+              type: string
+            issueIdentifier:
+              type: string
+            coverDate:
+              type: array
+              items:
+                type: object
+                properties:
+                  _fa:
+                    type: string
+                  $:
+                    type: string
+            coverDisplayDate:
+              type: string
+            startingPage:
+              type: string
+            endingPage:
+              type: string
+            doi:
+              type: string
+            openaccess:
+              type: string
+            openaccessArticle:
+              type: boolean
+            openArchiveArticle:
+              type: boolean
+            openaccessUserLicense:
+              type: string
+            pubType:
+              type: string
+            pii:
+              type: string
+            authors:
+              type: array
+              items:
+                type: object
+                properties:
+                  _fa:
+                    type: string
+                  given-name:
+                    type: string
+                  surname:
+                    type: string
+            teaser:
+              type: string
+
+  Scopus:
+    properties:
+      search-results:
+        type: object
+        properties:
+          totalResults:
+            type: string
+          startIndex:
+            type: string
+          itemsPerPage:
+            type: string
+          Query:
+            type: object
+            properties:
+              role:
+                type: string
+              searchTerms:
+                type: string
+              startPage:
+                type: string
+      link:
+        type: array
+        items:
+          $ref: '#/definitions/Link'
+      entry:
+        type: array
+        items:
+          type: object
+          properties:
+            _fa:
+              type: boolean
+            link:
+              type: array
+              items:
+                $ref: '#/definitions/Link'
+            url:
+              type: string
+            identifier:
+              type: string
+            eid:
+              type: string
+            title:
+              type: string
+            creator:
+              type: string
+            issn:
+              type: string
+            eIssn:
+              type: string
+            volume:
+              type: string
+            issueIdentifier:
+              type: string
+            pageRange:
+              type: string
+            coverDate:
+              type: string
+            coverDisplayDate:
+              type: string
+            doi:
+              type: string
+            citedby-count:
+              type: integer
+            affiliation:
+              type: array
+              items:
+                type: object
+                properties:
+                  _fa:
+                    type: string
+                  affilname:
+                    type: string
+                  affiliation-city:
+                    type: string
+                  affiliation-country:
+                    type: string
+            aggregationType:
+              type: string
+            subtype:
+              type: string
+            subtypeDescription:
+              type: string
+            source-id:
+              type: string
+
+  Abstract:
+    properties:
+      abstracts-retrieval-response:
+        type: object
+        properties:
+          coredata:
+            $ref: '#/definitions/CoreData'
+          affiliation:
+            type: array
+            items:
+              type: object
+              properties:
+                href:
+                  type: string
+                id:
+                  type: string
+                affilname:
+                  type: string
+                affiliation-city:
+                  type: string
+                affiliation-country:
+                  type: string
+          authors:
+            type: object
+            properties:
+              author:
+                type: array
+                items:
+                  $ref: '#/definitions/AuthorItem'
+          language:
+            type: object
+            properties:
+              lang:
+                type: string
+          authkeywords:
+            type: object
+            properties:
+              author-keyword:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    _fa:
+                      type: string
+                    $:
+                      type: string
+          idxterms:
+            type: string
+          subject-areas:
+            type: object
+            properties:
+              subject-area:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    _fa:
+                      type: string
+                    abbrev:
+                      type: string
+                    code:
+                      type: string
+                    $:
+                      type: string
+          item:
+            type: object
+            properties:
+              process-info:
+                type: object
+                properties:
+                  date-delivered:
+                    type: object
+                    properties:
+                      day:
+                        type: string
+                      month:
+                        type: string
+                      timestamp:
+                        type: string
+                        format: date-time
+                      year:
+                        type: string
+                  date-sort:
+                    type: object
+                    properties:
+                      day:
+                        type: string
+                      month:
+                        type: string
+                      timestamp:
+                        type: string
+                        format: date-time
+                      year:
+                        type: string
+                  status:
+                    type: object
+                    properties:
+                      stage:
+                        type: string
+                      state:
+                        type: string
+                      type:
+                        type: string
+              bibrecord:
+                type: object
+                properties:
+                  item-info:
+                    type: object
+                    properties:
+                      copyright:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            type:
+                              type: string
+                            $:
+                              type: string
+                      itemidlist:
+                        type: object
+                        properties:
+                          pii:
+                            type: string
+                          doi:
+                            type: string
+                          itemid:
+                            type: array
+                            items:
+                              type: object
+                              properties:
+                                idtype:
+                                  type: string
+                                $:
+                                  type: string
+                      history:
+                        type: object
+                        properties:
+                          date-created:
+                            type: object
+                            properties:
+                              day:
+                                type: string
+                              month:
+                                type: string
+                              year:
+                                type: string
+                      dbcollection:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            $:
+                              type: string
+                  head:
+                    type: object
+                    properties:
+                      citation-info:
+                        type: object
+                        properties:
+                          citation-type:
+                            type: object
+                            properties:
+                              code:
+                                type: string
+                          citation-language:
+                            type: object
+                            properties:
+                              language:
+                                type: string
+                              lang:
+                                type: string
+                          abstract-language:
+                            type: object
+                            properties:
+                              language:
+                                type: string
+                              lang:
+                                type: string
+                          author-keywords:
+                            type: object
+                            properties:
+                              author-keyword:
+                                type: array
+                                items:
+                                  type: object
+                                  properties:
+                                    $:
+                                      type: string
+                      citation-title:
+                        type: string
+                      author-group:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            author:
+                              $ref: '#/definitions/Author'
+                            affiliation:
+                              type: object
+                              properties:
+                                afid:
+                                  type: string
+                                country:
+                                  type: string
+                                dptid:
+                                  type: string
+                                organization:
+                                  type: array
+                                  items:
+                                    type: object
+                                    properties:
+                                      $:
+                                        type: string
+                                address-part:
+                                  type: string
+                                city-group:
+                                  type: string
+                      correspondence:
+                        type: object
+                        properties:
+                          person:
+                            type: object
+                            properties:
+                              initials:
+                                type: string
+                              indexed-name:
+                                type: string
+                              surname:
+                                type: string
+                          affiliation:
+                            type: object
+                            properties:
+                              country:
+                                type: string
+                              organization:
+                                type: array
+                                items:
+                                  type: object
+                                  properties:
+                                    $:
+                                      type: string
+                              address-part:
+                                type: string
+                              city-group:
+                                type: string
+                          e-address:
+                            type: object
+                            properties:
+                              type:
+                                type: string
+                              $:
+                                type: string
+                      abstracts:
+                        type: string
+                      source:
+                        type: object
+                        properties:
+                          country:
+                            type: string
+                          srcid:
+                            type: string
+                          type:
+                            type: string
+                          sourcetitle:
+                            type: string
+                          sourcetitle-abbrev:
+                            type: string
+                          issn:
+                            type: object
+                            properties:
+                              type:
+                                type: string
+                              $:
+                                type: string
+                          codencode:
+                            type: string
+                          volisspag:
+                            type: object
+                            properties:
+                              voliss:
+                                type: object
+                                properties:
+                                  issue:
+                                    type: string
+                                  volume:
+                                    type: string
+                              pagerange:
+                                type: object
+                                properties:
+                                  first:
+                                    type: string
+                                  last:
+                                    type: string
+                          publicationyear:
+                            type: object
+                            properties:
+                              first:
+                                type: integer
+                          publicationdate:
+                            type: object
+                            properties:
+                              year:
+                                type: integer
+                              month:
+                                type: integer
+                              day:
+                                type: integer
+                              date-text:
+                                type: object
+                                properties:
+                                  xfab-added:
+                                    type: string
+                                  $:
+                                    type: string
+                  tail:
+                    type: object
+                    properties:
+                      bibliography:
+                        type: object
+                        properties:
+                          refcount:
+                            type: integer
+                          reference:
+                            type: array
+                            items:
+                              type: object
+                              properties:
+                                id:
+                                  type: integer
+                                ref-info:
+                                  type: object
+                                  properties:
+                                    refd-itemidlist:
+                                      type: object
+                                      properties:
+                                        itemid:
+                                          type: object
+                                          properties:
+                                            idtype:
+                                              type: string
+                                            $:
+                                              type: string
+                                    ref-authors:
+                                      type: object
+                                      properties:
+                                        author:
+                                          type: array
+                                          items:
+                                            type: object
+                                            properties:
+                                              seq:
+                                                type: string
+                                              initials:
+                                                type: string
+                                              indexed-name:
+                                                type: string
+                                              surname:
+                                                type: string
+                                    ref-sourcetitle:
+                                      type: string
+                                    ref-publicationyear:
+                                      type: object
+                                      properties:
+                                        first:
+                                          type: string
+                                    ref-volisspag:
+                                      type: object
+                                      properties:
+                                        voliss:
+                                          type: object
+                                          properties:
+                                            volume:
+                                              type: string
+                                        pagerange:
+                                          type: object
+                                          properties:
+                                            first:
+                                              type: string
+                                            last:
+                                              type: string
+
+
+  AuthorItem:
+    properties:
+      _fa:
+        type: string
+      auid:
+        type: string
+      seq:
+        type: string
+      initials:
+        type: string
+      indexed-name:
+        type: string
+      surname:
+        type: string
+      preferred-name:
+        type: object
+        properties:
+          initials:
+            type: string
+          indexed-name:
+            type: string
+          surname:
+            type: string
+          given-name:
+            type: string
+      author-url:
+        type: string
+      e-address:
+        type: object
+        properties:
+          type:
+            type: string
+          $:
+            type: string
+            format: email
+      affiliation:
+        type: object
+        properties:
+          href:
+            type: string
+          id:
+            type: string
+
+  CoreData:
+    properties:
+      url:
+        type: string
+      identifier:
+        type: string
+      eid:
+        type: string
+      pubmed-id:
+        type: string
+      pii:
+        type: string
+      doi:
+        type: string
+      title:
+        type: string
+      aggregationType:
+        type: string
+      srctype:
+        type: string
+      citedby-count:
+        type: string
+      publicationName:
+        type: string
+      source-id:
+        type: string
+      issn:
+        type: string
+      volume:
+        type: string
+      issueIdentifier:
+        type: string
+      startingPage:
+        type: string
+      endingPage:
+        type: string
+      pageRange:
+        type: string
+      coverDate:
+        type: string
+      creator:
+        type: object
+        properties:
+          author:
+            type: array
+            items:
+              $ref: '#/definitions/Author'
+      description:
+        type: string
+      intid:
+        type: string
+      link:
+        type: string
+
+
+  Link:
+    properties:
+      _fa:
+        type: boolean
+      href:
+        type: string
+      ref:
+        type: string
+      type:
+        type: string

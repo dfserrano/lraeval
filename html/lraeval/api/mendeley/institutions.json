@@ -1,0 +1,17 @@
+[
+  {
+    "id": "354eff87-07e7-5c9f-881b-a1fa3f5f4fa4",
+    "name": "City University",
+    "city": "Dhaka",
+    "state": "Dhaka District",
+    "country": "BD",
+    "urls": [
+      "cityuniversity.edu.bd"
+    ],
+    "alt_names": [
+      {
+        "name": "CU"
+      }
+    ]
+  }
+]

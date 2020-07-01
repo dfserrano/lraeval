@@ -1,0 +1,511 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: CrossRef
+  description: "
+    The Crossref REST API is one of a variety of tools and APIs that allow anybody to search and reuse our members' metadata in sophisticated ways."
+
+host: localhost
+basePath: /lraeval/api/crossref
+schemes:
+  - http
+produces:
+  - application/json
+externalDocs:
+  description: Documentation of the original data source
+  url: https://developers.ands.org.au/services/getgrants/
+
+paths:
+  /works.json:
+    get:
+      summary: Retrieve works
+      description: Returns a list of all works (journal articles, conference proceedings, books, components, etc)
+      tags:
+        - Works
+      parameters:
+        # Title
+        - name: query.title
+          in: query
+          description: Query title and subtitle
+          required: false
+          type: string
+
+        # Publication Title
+        - name: query.container-title
+          in: query
+          description: Query container-title aka. publication name
+          required: false
+          type: string
+
+        # Author name
+        - name: query.author
+          in: query
+          description: Query author first and given names
+          required: false
+          type: string
+
+        # Editor name
+        - name: query.editor
+          in: query
+          description: Query editor first and given names
+          required: false
+          type: string
+
+        # Funder id
+        - name: funder
+          in: query
+          description: Metadata which include the {funder_id} in FundRef data
+          required: false
+          type: string
+
+        # Orcid id
+        - name: orcid
+          in: query
+          description: Metadata where <orcid> element's value = {orcid}
+          required: false
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/WorksResponse'
+
+  /works/work.json:
+    get:
+      summary: Retrieve work
+      description: Returns metadata for the specified CrossRef DOI.
+      tags:
+        - Works
+      parameters:
+        # DOI
+        - name: doi
+          in: query
+          description: DOI identifier
+          required: true
+          type: string
+          default: 10.1037/0003-066X.59.1.29
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/WorkResponse'
+
+  /funders/funders.json:
+    get:
+      summary: Retrieve funder
+      description: Returns metadata for specified funder and its suborganizations.
+      tags:
+        - Funders
+      parameters:
+        # Funder id
+        - name: id
+          in: query
+          description: Funder identifier
+          required: true
+          type: string
+          default: 10.13039/100000001
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/FundersResponse'
+
+  /funders/works.json:
+    get:
+      summary: Retrieve works of funder
+      description: Returns list of works associated with the specified funder_id.
+      tags:
+        - Funders
+      parameters:
+        # Funder id
+        - name: id
+          in: query
+          description: Funder identifier
+          required: true
+          type: string
+          default: 10.13039/100000001
+
+        # Publication Title
+        - name: filter.container-title
+          in: query
+          description: Metadata for records with a publication title exactly with an exact match
+          required: false
+          type: string
+
+        # Orcid id
+        - name: orcid
+          in: query
+          description: Metadata where <orcid> element's value = {orcid}
+          required: false
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/WorksResponse'
+
+  /journals/{issn}:
+    get:
+      summary: Retrieve journal
+      description: Returns information about a journal with the given ISSN.
+      tags:
+        - Journals
+      parameters:
+        # ISSN
+        - name: issn
+          in: path
+          description: ISSN
+          required: true
+          type: string
+          default: 2090-80911
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/JournalResponse'
+
+  /journals/{issn}/works.json:
+    get:
+      summary: Retrieve works of a journal
+      description: Returns a list of works in the given journal
+      tags:
+        - Journals
+      parameters:
+        # ISSN
+        - name: issn
+          in: path
+          description: ISSN
+          required: true
+          type: string
+          default: 2090-8091
+
+        # Publication Title
+        - name: query.container-title
+          in: query
+          description: Metadata for records with a publication title exactly with an exact match
+          required: false
+          type: string
+
+        # Orcid id
+        - name: orcid
+          in: query
+          description: Metadata where <orcid> element's value = {orcid}
+          required: false
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/WorksResponse'
+
+definitions:
+  JournalResponse:
+    properties:
+      status:
+        type: string
+      message-type:
+        type: string
+      message-version:
+        type: string
+      message:
+        type: object
+        properties:
+          title:
+            type: string
+          publisher:
+            type: string
+          ISSN:
+            type: array
+            items:
+              type: string
+          flags:
+            type: string
+          coverage:
+            type: string
+          breakdowns:
+            type: string
+          counts:
+            type: string
+          last-status-check-time:
+            type: string
+
+  FundersResponse:
+    properties:
+      status:
+        type: string
+      message-type:
+        type: string
+      message-version:
+        type: string
+      message:
+        type: object
+        properties:
+          hierarchy-names:
+            type: object
+            properties:
+              more:
+                type: string
+              id:
+                type: string
+          replaced-by:
+            type: array
+            items:
+              type: string
+          work-count:
+            type: integer
+          name:
+            type: string
+          descendants:
+            type: array
+            items:
+              type: string
+          descendant-work-count:
+            type: integer
+          id:
+            type: string
+          tokens:
+            type: array
+            items:
+              type: string
+          replaces:
+            type: array
+            items:
+              type: string
+          uri:
+            type: string
+          hierarchy:
+            type: object
+            properties:
+              id:
+                type: object
+                properties:
+                  id:
+                    type: object
+                    properties:
+                      more:
+                        type: boolean
+          alt-names:
+            type: array
+            items:
+              type: string
+          location:
+            type: string
+
+  WorkResponse:
+    properties:
+      status:
+        type: string
+      message-type:
+        type: string
+      message-version:
+        type: string
+      message:
+        $ref: '#/definitions/Article'
+
+  WorksResponse:
+    properties:
+      status:
+        type: string
+      message-type:
+        type: string
+      message-version:
+        type: string
+      message:
+        type: object
+        properties:
+          facets:
+            type: object
+          items-per-page:
+            type: integer
+          query:
+            type: object
+            properties:
+              start-index:
+                type: integer
+              search-terms:
+                type: string
+          total-results:
+            type: integer
+          items:
+            type: array
+            items:
+              $ref: '#/definitions/Article'
+
+  Article:
+    properties:
+      indexed:
+        $ref: '#/definitions/Date'
+      reference-count:
+        type: integer
+      publisher:
+        description: Name of work's publisher
+        type: string
+      funder:
+        type: array
+        items:
+          $ref: '#/definitions/Funder'
+      content-domain:
+        description: Information on domains that support Crossmark for this work
+        type: object
+        properties:
+          domain:
+            type: array
+            items:
+              type: string
+          crossmark-restriction:
+            type: boolean
+      short-container-title:
+        description: Abbreviated titles of the containing work
+        type: array
+        items:
+          type: string
+      cited-count:
+        type: integer
+      DOI:
+        description: DOI of the work
+        type: string
+      type:
+        description: Enumeration, one of the type ids from https://api.crossref.org/v1/types
+        type: string
+      created:
+        description: Date on which the DOI was first registered
+        $ref: '#/definitions/Date'
+      update-policy:
+        description: Link to an update policy covering Crossmark updates for this work
+        type: string
+      source:
+        description: Currently always Crossref
+        type: string
+      title:
+        description: Work titles, including translated titles
+        type: array
+        items:
+          type: string
+      prefix:
+        description: DOI prefix identifier of the form http://id.crossref.org/prefix/DOI_PREFIX
+        type: string
+      volume:
+        description: Volume number of an article's journal
+        type: string
+      author:
+        type: array
+        items:
+          type: object
+          properties:
+            given:
+              type: string
+            family:
+              type: string
+            affiliation:
+              type: array
+              items:
+                type: string
+      member:
+        description: Member identifier of the form http://id.crossref.org/member/MEMBER_ID
+        type: string
+      published-online:
+        description: Date on which the work was published online
+        $ref: '#/definitions/Date'
+      container-title:
+        description: Full titles of the containing work (usually a book or journal)
+        type: array
+        items:
+          type: string
+      original-title:
+        description: Work titles in the work's original publication language
+        type: array
+        items:
+          type: string
+      deposited:
+        description: Date on which the work metadata was most recently updated
+        $ref: '#/definitions/Date'
+      score:
+        type: integer
+      subtitle:
+        description: Work subtitles, including original language and translated
+        type: array
+        items:
+          type: string
+      short-title:
+        description: Short or abbreviated work titles
+        type: array
+        items:
+          type: string
+      issued:
+        description: Eariest of published-print and published-online
+        $ref: '#/definitions/Date'
+      URL:
+        type: string
+      ISSN:
+        type: array
+        items:
+          type: string
+      citing-count:
+        type: integer
+
+
+  Funder:
+    properties:
+      DOI:
+        description: Optional Open Funder Registry DOI uniquely identifing the funding body
+        type: string
+      name:
+        description: Funding body primary name
+        type: string
+      doi-asserted-by:
+        description: Either crossref or publisher
+        type: string
+      award:
+        description: Award number(s) for awards given by the funding body
+        type: array
+        items:
+          type: string
+
+  indexed:
+    type: object
+    properties:
+      date-parts:
+        $ref: '#/definitions/Date'
+      date-time:
+        type: string
+        format:
+          date-time
+      timestamp:
+        type: integer
+        format: int64
+
+  Date:
+    properties:
+      date-parts:
+        description: Contains an ordered array of year, month, day of month. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates
+        type: array
+        items:
+          type: integer
+      date-time:
+        description: ISO 8601 date time
+        type: string
+        format:
+          date-time
+      timestamp:
+        description: Seconds since UNIX epoch
+        type: integer
+        format: int64

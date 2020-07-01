@@ -1,0 +1,66 @@
+{
+   "Count": "56",
+   "RetMax": "20",
+   "RetStart": "0",
+   "QueryKey": "1",
+   "WebEnv": "NCID_1_21625487_130.14.18.34_9001_1487797512_2032205810_0MetA0_S_MegaStore_F_1",
+   "IdList": [
+      "20113659",
+      "20074456",
+      "20046412",
+      "20021457",
+      "20008883",
+      "20008181",
+      "19912318",
+      "19897276",
+      "19895589",
+      "19894390",
+      "19852204",
+      "19839969",
+      "19811112",
+      "19757309",
+      "19749079",
+      "19739647",
+      "19706339",
+      "19665766",
+      "19648384",
+      "19647860"
+   ],
+   "TranslationSet": [
+      {
+         "From": "asthma[mesh]",
+         "To": "\"asthma\"[MeSH Terms]"
+      },
+      {
+         "From": "leukotrienes[mesh]",
+         "To": "\"leukotrienes\"[MeSH Terms]"
+      }
+   ],
+   "TranslationStack": {
+      "TermSet": [
+         {
+            "Term": "\"asthma\"[MeSH Terms]",
+            "Field": "MeSH Terms",
+            "Count": "114591",
+            "Explode": "Y"
+         },
+         {
+            "Term": "\"leukotrienes\"[MeSH Terms]",
+            "Field": "MeSH Terms",
+            "Count": "13805",
+            "Explode": "Y"
+         },
+         {
+            "Term": "2009[pdat]",
+            "Field": "pdat",
+            "Count": "875578",
+            "Explode": "N"
+         }
+      ],
+      "OP": [
+         "AND",
+         "AND"
+      ]
+   },
+   "QueryTranslation": "\"asthma\"[MeSH Terms] AND \"leukotrienes\"[MeSH Terms] AND 2009[pdat]"
+}

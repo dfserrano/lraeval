@@ -1,0 +1,476 @@
+{
+  "link": {
+    "@href": "http://arxiv.org/api/query?search_query%3Dau%3Adel_maestro%20ANDNOT%20ti%3Acheckerboard%26id_list%3D%26start%3D0%26max_results%3D10",
+    "@rel": "self"
+  },
+  "title": "ArXiv Query: search_query=au:del_maestro ANDNOT ti:checkerboard&id_list=&start=0&max_results=10",
+  "id": "http://arxiv.org/api/on84FLIQlm5NEFf4O0iyzLflw/k",
+  "updated": "2017-02-22T00:00:00-05:00",
+  "totalResults": "32",
+  "startIndex": "0",
+  "itemsPerPage": "10",
+  "entry": [
+    {
+      "id": "http://arxiv.org/abs/1201.4869v1",
+      "updated": "2012-01-23T21:15:02Z",
+      "published": "2012-01-23T21:15:02Z",
+      "title": "A Luttinger Liquid Core Inside Helium-4 Filled Nanopores",
+      "summary": "As helium-4 is cooled below 2.17 K it undergoes a phase transition to a\nfundamentally new state of matter known as a superfluid which supports flow\nwithout viscosity. This type of dissipationless transport can be observed by\nforcing helium to travel through a narrow constriction that the normal liquid\ncould not penetrate. Recent experiments have highlighted the feasibility of\nfabricating smooth pores with nanometer radii, that approach the truly one\ndimensional limit where it is believed that a system of bosons (like helium-4)\nmay have startlingly different behavior than in three dimensions. The one\ndimensional system is predicted to have a linear hydrodynamic description known\nas Luttinger liquid theory, where no type of long range order can be sustained.\nIn the limit where the pore radius is small, Luttinger liquid theory would\npredict that helium inside the channel behaves as a sort of quasi-supersolid\nwith all correlations decaying as power-law functions of distance at zero\ntemperature. We have performed large scale quantum Monte Carlo simulations of\nhelium-4 inside nanopores of varying radii at low temperature with realistic\nhelium-helium and helium-pore interactions. The results indicate that helium\ninside the nanopore forms concentric cylindrical shells surrounding a core that\ncan be described via Luttinger liquid theory and provides insights into the\nexciting possibility of the experimental detection of this intriguing low\ndimensional state of matter.",
+      "author": {
+        "name": "Adrian Del Maestro"
+      },
+      "doi": "10.1142/S021797921244002X",
+      "link": [
+        {
+          "@title": "doi",
+          "@href": "http://dx.doi.org/10.1142/S021797921244002X",
+          "@rel": "related"
+        },
+        {
+          "@href": "http://arxiv.org/abs/1201.4869v1",
+          "@rel": "alternate"
+        },
+        {
+          "@title": "pdf",
+          "@href": "http://arxiv.org/pdf/1201.4869v1",
+          "@rel": "related"
+        }
+      ],
+      "comment": "26 pages, 10 figures",
+      "journal_ref": "Int. J. Mod. Phys. B, 26, 1244002 (2012)",
+      "primary_category": {
+        "@term": "cond-mat.mes-hall",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      "category": [
+        {
+          "@term": "cond-mat.mes-hall",
+          "@scheme": "http://arxiv.org/schemas/atom"
+        },
+        {
+          "@term": "cond-mat.other",
+          "@scheme": "http://arxiv.org/schemas/atom"
+        }
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/cond-mat/0412498v1",
+      "updated": "2004-12-19T16:18:24Z",
+      "published": "2004-12-19T16:18:24Z",
+      "title": "Thermal melting of density waves on the square lattice",
+      "summary": "We present the theory of the effect of thermal fluctuations on commensurate\n\"p x p\" density wave ordering on the square lattice (p &gt;= 3, integer). For the\ncase in which this order is lost by a second order transition, we argue that\nthe adjacent state is generically an incommensurate striped state, with\ncommensurate p-periodic long range order along one direction, and\nincommensurate quasi-long-range order along the orthogonal direction. We also\npresent the routes by which the fully disordered high temperature state can be\nreached. For p=4, and at special commensurate densities, the \"4 x 4\"\ncommensurate state can melt directly into the disordered state via a self-dual\ncritical point with non-universal exponents.",
+      "author": [
+        {
+          "name": "Adrian Del Maestro"
+        },
+        {
+          "name": "Subir Sachdev"
+        }
+      ],
+      "doi": "10.1103/PhysRevB.71.184511",
+      "link": [
+        {
+          "@title": "doi",
+          "@href": "http://dx.doi.org/10.1103/PhysRevB.71.184511",
+          "@rel": "related"
+        },
+        {
+          "@href": "http://arxiv.org/abs/cond-mat/0412498v1",
+          "@rel": "alternate"
+        },
+        {
+          "@title": "pdf",
+          "@href": "http://arxiv.org/pdf/cond-mat/0412498v1",
+          "@rel": "related"
+        }
+      ],
+      "comment": "12 pages, 5 figures",
+      "journal_ref": "Physical Review B 71, 184511 (2005)",
+      "primary_category": {
+        "@term": "cond-mat.str-el",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      "category": [
+        {
+          "@term": "cond-mat.str-el",
+          "@scheme": "http://arxiv.org/schemas/atom"
+        },
+        {
+          "@term": "cond-mat.stat-mech",
+          "@scheme": "http://arxiv.org/schemas/atom"
+        }
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1005.5383v1",
+      "updated": "2010-05-28T20:00:05Z",
+      "published": "2010-05-28T20:00:05Z",
+      "title": "Interacting bosons in one dimension and Luttinger liquid theory",
+      "summary": "Harmonically trapped ultra-cold atoms and helium-4 in nanopores provide new\nexperimental realizations of bosons in one dimension, motivating the search for\na more complete theoretical understanding of their low energy properties. Worm\nalgorithm path integral quantum Monte Carlo results for interacting bosons\nrestricted to the one dimensional continuum are compared to the finite\ntemperature and system size predictions of Luttinger liquid theory. For large\nsystem sizes at low temperature, excellent agreement is obtained after\nincluding the leading irrelevant interactions in the Hamiltonian which are\ndetermined explicitly.",
+      "author": [
+        {
+          "name": "Adrian Del Maestro"
+        },
+        {
+          "name": "Ian Affleck"
+        }
+      ],
+      "doi": "10.1103/PhysRevB.82.060515",
+      "link": [
+        {
+          "@title": "doi",
+          "@href": "http://dx.doi.org/10.1103/PhysRevB.82.060515",
+          "@rel": "related"
+        },
+        {
+          "@href": "http://arxiv.org/abs/1005.5383v1",
+          "@rel": "alternate"
+        },
+        {
+          "@title": "pdf",
+          "@href": "http://arxiv.org/pdf/1005.5383v1",
+          "@rel": "related"
+        }
+      ],
+      "comment": "4 pages, 3 figures",
+      "journal_ref": "Physical Review B 82, 060515(R) (2010)",
+      "primary_category": {
+        "@term": "cond-mat.stat-mech",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      "category": {
+        "@term": "cond-mat.stat-mech",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      }
+    },
+    {
+      "id": "http://arxiv.org/abs/1312.6177v1",
+      "updated": "2013-12-20T23:48:25Z",
+      "published": "2013-12-20T23:48:25Z",
+      "title": "Quantum Monte Carlo measurement of the chemical potential of helium-4",
+      "summary": "A path integral Monte Carlo method based on the worm algorithm has been\ndeveloped to compute the chemical potential of interacting bosonic quantum\nfluids. By applying it to finite-sized systems of helium-4 atoms, we have\nconfirmed that the chemical potential scales inversely with the number of\nparticles to lowest order. The introduction of a simple scaling form allows for\nthe extrapolation of the chemical potential to the thermodynamic limit, where\nwe observe excellent agreement with known experimental results for helium-4 at\nsaturated vapor pressure. We speculate on future applications of the proposed\ntechnique, including its use in studies of confined quantum fluids.",
+      "author": [
+        {
+          "name": "C. M. Herdman"
+        },
+        {
+          "name": "A. Rommal"
+        },
+        {
+          "name": "A. Del Maestro"
+        }
+      ],
+      "doi": "10.1103/PhysRevB.89.224502",
+      "link": [
+        {
+          "@title": "doi",
+          "@href": "http://dx.doi.org/10.1103/PhysRevB.89.224502",
+          "@rel": "related"
+        },
+        {
+          "@href": "http://arxiv.org/abs/1312.6177v1",
+          "@rel": "alternate"
+        },
+        {
+          "@title": "pdf",
+          "@href": "http://arxiv.org/pdf/1312.6177v1",
+          "@rel": "related"
+        }
+      ],
+      "comment": "7 pages, 4 figures",
+      "journal_ref": "Phys. Rev. B 89, 224502 (2014)",
+      "primary_category": {
+        "@term": "cond-mat.stat-mech",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      "category": [
+        {
+          "@term": "cond-mat.stat-mech",
+          "@scheme": "http://arxiv.org/schemas/atom"
+        },
+        {
+          "@term": "cond-mat.other",
+          "@scheme": "http://arxiv.org/schemas/atom"
+        }
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1303.6954v2",
+      "updated": "2013-09-03T01:06:36Z",
+      "published": "2013-03-27T20:00:04Z",
+      "title": "Local Superfluidity at the Nanoscale",
+      "summary": "We have performed quantum Monte Carlo simulations measuring the finite size\nand temperature superfluid response of helium-4 to the linear and rotational\nmotion of the walls of a nanopore. Within the two-fluid model, the portion of\nthe normal liquid dragged along with the boundaries is dependent on the type of\nmotion and the resulting anisotropic superfluid density saturates far below\nunity at T=0.5 K. The origin of the saturation is uncovered by computing the\nspatial distribution of superfluidity, with only the core of the nanopore\nexhibiting any evidence of phase coherence. The superfluid core displays\nscaling behavior consistent with Luttinger liquid theory, thereby providing an\nexperimental test for the emergence of a one dimensional quantum liquid.",
+      "author": [
+        {
+          "name": "B. Kulchytskyy"
+        },
+        {
+          "name": "G. Gervais"
+        },
+        {
+          "name": "A. Del Maestro"
+        }
+      ],
+      "doi": "10.1103/PhysRevB.88.064512",
+      "link": [
+        {
+          "@title": "doi",
+          "@href": "http://dx.doi.org/10.1103/PhysRevB.88.064512",
+          "@rel": "related"
+        },
+        {
+          "@href": "http://arxiv.org/abs/1303.6954v2",
+          "@rel": "alternate"
+        },
+        {
+          "@title": "pdf",
+          "@href": "http://arxiv.org/pdf/1303.6954v2",
+          "@rel": "related"
+        }
+      ],
+      "comment": "Added a figure and extended discussion",
+      "journal_ref": "Physical Review B 88, 064512 (2013)",
+      "primary_category": {
+        "@term": "cond-mat.mes-hall",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      "category": [
+        {
+          "@term": "cond-mat.mes-hall",
+          "@scheme": "http://arxiv.org/schemas/atom"
+        },
+        {
+          "@term": "cond-mat.stat-mech",
+          "@scheme": "http://arxiv.org/schemas/atom"
+        }
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1412.6529v2",
+      "updated": "2015-02-25T23:04:37Z",
+      "published": "2014-12-19T21:00:08Z",
+      "title": "Particle partition entanglement of bosonic Luttinger liquids",
+      "summary": "We consider the R\\'{e}nyi entanglement entropy of bosonic Luttinger liquids\nunder a particle bipartition and demonstrate that the leading order finite-size\nscaling is logarithmic in the system size with a prefactor equal to the inverse\nLuttinger parameter. While higher order corrections involve a microscopic\nlength scale, the leading order scaling depends only on this sole dimensionless\nparameter which characterizes the low energy quantum hydrodynamics. This result\ncontrasts the leading entanglement entropy scaling under a spatial bipartition,\nfor which the coefficient is universal and independent of the Luttinger\nparameter. Using quantum Monte Carlo calculations, we explicitly confirm the\nscaling predictions of Luttinger liquid theory for the Lieb-Liniger model of\n$\\delta$-function interacting bosons in the one dimensional spatial continuum.",
+      "author": [
+        {
+          "name": "C. M. Herdman"
+        },
+        {
+          "name": "A. Del Maestro"
+        }
+      ],
+      "doi": "10.1103/PhysRevB.91.184507",
+      "link": [
+        {
+          "@title": "doi",
+          "@href": "http://dx.doi.org/10.1103/PhysRevB.91.184507",
+          "@rel": "related"
+        },
+        {
+          "@href": "http://arxiv.org/abs/1412.6529v2",
+          "@rel": "alternate"
+        },
+        {
+          "@title": "pdf",
+          "@href": "http://arxiv.org/pdf/1412.6529v2",
+          "@rel": "related"
+        }
+      ],
+      "comment": "10 pages, 8 figures; updated figure 5, added references, revised\n  text, reformatted",
+      "journal_ref": "Phys. Rev. B 91, 184507 (2015)",
+      "primary_category": {
+        "@term": "cond-mat.quant-gas",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      "category": [
+        {
+          "@term": "cond-mat.quant-gas",
+          "@scheme": "http://arxiv.org/schemas/atom"
+        },
+        {
+          "@term": "quant-ph",
+          "@scheme": "http://arxiv.org/schemas/atom"
+        }
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/1611.03838v1",
+      "updated": "2016-11-11T20:14:33Z",
+      "published": "2016-11-11T20:14:33Z",
+      "title": "Absence of superfluidity in a quasi one-dimensional parahydrogen fluid\n  adsorbed inside carbon nanotubes",
+      "summary": "A recent claim of superfluid behaviour of parahydrogen adsorbed inside\narmchair carbon nanotubes [M. Rossi and F. Ancilotto, Phys. Rev. B 94, 100502\n(2016)] is disproven by means of first principle computer simulations.\nConclusive numerical evidence shows that the low temperature equilibrium\nthermodynamic phase of parahydrogen adsorbed inside a (10,10) armchair nanotube\nfeatures a crystalline shell adsorbed on the inner surface of the tube, and a\nwell separated quasi one-dimensional central column showing no evidence of\npossible fluid or superfluid behaviour. Rather, the system is quasi-crystalline\nand non-superfluid; its physical character is qualitatively identical to that\nobserved in similar confined settings extensively studied in the past. The\nincorrect prediction of superfluidity stems from the erroneous use of an\neffective one-dimensional interaction potential that does not describe\nparahydrogen at the center of the nanotube.",
+      "author": [
+        {
+          "name": "Adrian Del Maestro"
+        },
+        {
+          "name": "Massimo Boninsegni"
+        }
+      ],
+      "comment": "six pages, four figures in color",
+      "link": [
+        {
+          "@href": "http://arxiv.org/abs/1611.03838v1",
+          "@rel": "alternate"
+        },
+        {
+          "@title": "pdf",
+          "@href": "http://arxiv.org/pdf/1611.03838v1",
+          "@rel": "related"
+        }
+      ],
+      "primary_category": {
+        "@term": "cond-mat.mes-hall",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      "category": [
+        {
+          "@term": "cond-mat.mes-hall",
+          "@scheme": "http://arxiv.org/schemas/atom"
+        },
+        {
+          "@term": "cond-mat.other",
+          "@scheme": "http://arxiv.org/schemas/atom"
+        }
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/cond-mat/0607501v2",
+      "updated": "2006-11-06T19:33:40Z",
+      "published": "2006-07-19T20:12:54Z",
+      "title": "A striped supersolid phase and the search for deconfined quantum\n  criticality in hard-core bosons on the triangular lattice",
+      "summary": "Using large-scale quantum Monte Carlo simulations we study bosons hopping on\na triangular lattice with nearest (V) and next-nearest (V') neighbor repulsive\ninteractions. In the limit where V=0 but V' is large, we find an example of an\nunusual period-three striped supersolid state that is stable at 1/2-filling. We\ndiscuss the relationship of this state to others on the rich ground-state phase\ndiagram, which include a previously-discovered nearest-neighbor supersolid, a\nuniform superfluid, as well as several Mott insulating phases. We study several\nsuperfluid- and supersolid-to-Mott phase transitions, including one proposed by\na recent phenomenological dual vortex field theory as a candidate for an exotic\ndeconfined quantum critical point. We find no examples of unconventional\nquantum criticality among any of the interesting phase transitions in the\nmodel.",
+      "author": [
+        {
+          "name": "R. G. Melko"
+        },
+        {
+          "name": "A. Del Maestro"
+        },
+        {
+          "name": "A. A. Burkov"
+        }
+      ],
+      "doi": "10.1103/PhysRevB.74.214517",
+      "link": [
+        {
+          "@title": "doi",
+          "@href": "http://dx.doi.org/10.1103/PhysRevB.74.214517",
+          "@rel": "related"
+        },
+        {
+          "@href": "http://arxiv.org/abs/cond-mat/0607501v2",
+          "@rel": "alternate"
+        },
+        {
+          "@title": "pdf",
+          "@href": "http://arxiv.org/pdf/cond-mat/0607501v2",
+          "@rel": "related"
+        }
+      ],
+      "comment": "10 pages, 11 figures: new data for superfluid density anisotropy",
+      "journal_ref": "Phys. Rev. B 74, 214517 (2006)",
+      "primary_category": {
+        "@term": "cond-mat.str-el",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      "category": {
+        "@term": "cond-mat.str-el",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      }
+    },
+    {
+      "id": "http://arxiv.org/abs/cond-mat/0702661v2",
+      "updated": "2007-06-25T21:09:59Z",
+      "published": "2007-02-27T21:02:02Z",
+      "title": "Low temperature specific heat and possible gap to magnetic excitations\n  in the Heisenberg pyrochlore antiferromagnet Gd2Sn207",
+      "summary": "The Gd2Sn2O7 pyrochlore Heisenberg antiferromagnet displays a phase\ntransition to a four sublattice Neel ordered state at a temperature near 1 K.\nDespite the seemingly conventional nature of the ordered state, the specific\nheat has been found to be described in the temperature range 350-800 mK by an\nanomalous T-squared power law. A similar temperature dependence has also been\nreported for Gd2Ti2O7, another pyrochlore Heisenberg material. Such anomalous\nT-squared behavior in Cv has been argued to be correlated to an unusual\nenergy-dependence of the density of states which also seemingly manifests\nitself in low-temperature spin fluctuations found in muon spin relaxation\nexperiments. In this paper, we report calculations of Cv that consider spin\nwave like excitations out of the Neel order observed in Gd2Sn2O7 and argue that\nthe parametric T-squared behavior does not reflect the true low-energy\nexcitations of Gd2Sn2O7. Rather, we find that the low-energy excitations of\nthis material are antiferromagnetic magnons gapped by single-ion and dipolar\nanisotropy effects, and that the lowest temperature of 350 mK considered in\nprevious specific heat measurements accidentally happens to coincide with a\ncrossover temperature below which magnons become thermally activated and Cv\ntakes an exponential form. We argue that further specific heat measurements\nthat extend down to at least 100 mK are required in order to ascribe an\nunconventional description of magnetic excitations out of the ground state of\nGd2Sn2O7 or to invalidate the standard picture of gapped excitations proposed\nherein.",
+      "author": [
+        {
+          "name": "Adrian Del Maestro"
+        },
+        {
+          "name": "Michel J. P. Gingras"
+        }
+      ],
+      "doi": "10.1103/PhysRevB.76.064418",
+      "link": [
+        {
+          "@title": "doi",
+          "@href": "http://dx.doi.org/10.1103/PhysRevB.76.064418",
+          "@rel": "related"
+        },
+        {
+          "@href": "http://arxiv.org/abs/cond-mat/0702661v2",
+          "@rel": "alternate"
+        },
+        {
+          "@title": "pdf",
+          "@href": "http://arxiv.org/pdf/cond-mat/0702661v2",
+          "@rel": "related"
+        }
+      ],
+      "comment": "12 pages, 13 figures; shortened introduction and added 1 figure",
+      "journal_ref": "Phys. Rev. B 76, 064418 (2007)",
+      "primary_category": {
+        "@term": "cond-mat.mtrl-sci",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      "category": [
+        {
+          "@term": "cond-mat.mtrl-sci",
+          "@scheme": "http://arxiv.org/schemas/atom"
+        },
+        {
+          "@term": "cond-mat.stat-mech",
+          "@scheme": "http://arxiv.org/schemas/atom"
+        }
+      ]
+    },
+    {
+      "id": "http://arxiv.org/abs/0807.2873v1",
+      "updated": "2008-07-17T20:37:17Z",
+      "published": "2008-07-17T20:37:17Z",
+      "title": "Theory of the pairbreaking superconductor-metal transition in nanowires",
+      "summary": "We present a detailed description of a zero temperature phase transition\nbetween superconducting and diffusive metallic states in very thin wires due to\na Cooper pair breaking mechanism. The dissipative critical theory contains\ncurrent reducing fluctuations in the guise of both quantum and thermally\nactivated phase slips. A full cross-over phase diagram is computed via an\nexpansion in the inverse number of complex components of the superconducting\norder parameter (one in the physical case). The fluctuation corrections to the\ndirect current electrical and thermal conductivities are determined, and we\nfind that the electrical conductivity has a non-monotonic temperature\ndependence in the metallic phase which may be consistent with recent\nexperimental results on ultra-narrow wires. In the quantum critical regime, the\nratio of the thermal to electrical conductivity displays a linear temperature\ndependence and thus the Wiedemann-Franz law is obeyed, with a new universal\nexperimentally verifiable Lorenz number.",
+      "author": [
+        {
+          "name": "Adrian Del Maestro"
+        },
+        {
+          "name": "Bernd Rosenow"
+        },
+        {
+          "name": "Subir Sachdev"
+        }
+      ],
+      "doi": "10.1016/j.aop.2008.08.003",
+      "link": [
+        {
+          "@title": "doi",
+          "@href": "http://dx.doi.org/10.1016/j.aop.2008.08.003",
+          "@rel": "related"
+        },
+        {
+          "@href": "http://arxiv.org/abs/0807.2873v1",
+          "@rel": "alternate"
+        },
+        {
+          "@title": "pdf",
+          "@href": "http://arxiv.org/pdf/0807.2873v1",
+          "@rel": "related"
+        }
+      ],
+      "comment": "91 pages, 18 figures, single column format",
+      "journal_ref": "Annals of Physics 324, 523 (2009).",
+      "primary_category": {
+        "@term": "cond-mat.supr-con",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      "category": {
+        "@term": "cond-mat.supr-con",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      }
+    }
+  ]
+}

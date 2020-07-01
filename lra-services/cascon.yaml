@@ -1,0 +1,179 @@
+swagger: '2.0'
+
+info:
+  version: 1.0.0
+  title: CASCON
+  description: CASCON contains data about interactions, represented by papers, workshop, exhibits, demos, and keynotes, as part of the Conference of the Centre for Advanced Studies on Collaborative Research, at IBM Canada.
+
+host: localhost
+basePath: /api/cascon
+schemes:
+  - http
+produces:
+  - application/json
+
+x-prefixes:
+  - prefix: rdf
+    url: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  - prefix: dc
+    url: http://purl.org/dc/terms/
+  - prefix: cascon
+    url: http://www.ibm.com/ibm/cas/cascon/
+  - prefix: vivo
+    url: http://vivoweb.org/ontology/core#
+  - prefix: bibo
+    url: http://purl.org/ontology/bibo/
+  - prefix: foaf
+    url: http://xmlns.com/foaf/0.1/
+
+paths:
+  /paper/{paperId}:
+    get:
+      summary: Get paper by CASCON ID
+      description: Method will retrieve a paper based on given CASCON ID.
+      tags:
+        - Papers
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a vivo:ConferencePaper ; dc:title ?title ; dc:identifier ?id ; bibo:presentedAt ?conference ; dc:date ?date ; dc:creator ?author .
+        ?conference a bibo:Conference ; dc:title ?confTitle .
+        ?author a foaf:Person ; dc:identifier ?authorId ; foaf:name ?authorName
+
+      parameters:
+        # CASCON id
+        - name: paperId
+          in: path
+          description: CASCON ID of the paper that needs to be fetched
+          required: true
+          type: integer
+          format: int64
+          x-graphVar: ?id
+
+      x-responseMap:
+        - var: ?id
+          path: result/id
+        - var: ?title
+          path: result/title
+        - var: ?date
+          path: result/date
+        - var: ?confTitle
+          path: result/conference
+        - var: ?confTitle
+          path: result/conference
+        - var: ?authorName
+          path: result/authors/name
+        - var: ?authorId
+          path: result/authors/id
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/PaperResponse'
+
+  /paper/search:
+    get:
+      summary: Search through all papers
+      description: Operations for retrieving papers.
+      tags:
+        - Papers
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a vivo:ConferencePaper ; dc:title ?title ; dc:identifier ?id ; bibo:presentedAt ?conference ; dc:date ?date ; dc:creator ?author .
+        ?conference a bibo:Conference ; dc:title ?confTitle .
+        ?author a foaf:Person ; dc:identifier ?authorId ; foaf:name ?authorName
+
+      parameters:
+        # Keyword
+        - name: keyword
+          in: query
+          description: The search query. Matches terms in the title of the paper.
+          required: true
+          type: string
+          x-graphVar: ?title
+
+      x-responseMap:
+        - var: ?id
+          path: results/id
+        - var: ?title
+          path: results/title
+        - var: ?date
+          path: results/date
+        - var: ?confTitle
+          path: results/conference
+        - var: ?confTitle
+          path: results/conference
+        - var: ?authorName
+          path: results/authors/name
+        - var: ?authorId
+          path: results/authors/id
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/PaperSearchResponse'
+
+
+definitions:
+  PaperResponse:
+    properties:
+      time:
+        description: Execution time
+        type: integer
+      result:
+        properties:
+          id:
+            description: The paper ID
+            type: integer
+          title:
+            description: Paper title
+            type: string
+          date:
+            description: Paper publication date
+            type: string
+            format: date
+          conference:
+            description: Conference name
+            type: string
+          authors:
+            type: array
+            items:
+              $ref: '#/definitions/Author'
+
+  Author:
+    properties:
+      id:
+        description: Author ID
+        type: integer
+      name:
+        description: Author name
+        type: string
+
+  PaperSearchResponse:
+    properties:
+      time:
+        description: Execution time
+        type: integer
+      results:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              description: The paper ID
+              type: integer
+            title:
+              description: Paper title
+              type: string
+            date:
+              description: Paper publication date
+              type: string
+              format: date
+            conference:
+              description: Conference name
+              type: string
+            authors:
+              type: array
+              items:
+                $ref: '#/definitions/Author'

@@ -1,0 +1,100 @@
+{
+  "title": "Climate change will hit genetic diversity",
+  "doi": "10.1038/news.2011.490",
+  "tq": [
+    "Researchers find that when climate change threatens the existence of species, it threatens genetic diversity, too",
+    "Climate change and genetic diversity (NatureNews)",
+    "#Climate change will hit genetic diversity as well as biodiversity #conservation #sayyesaus",
+    "Climate change will hit genetic diversity: Probable loss of 'cryptic' variation a challenge for conservationists."
+  ],
+  "altmetric_jid": "4f6fa50a3cf058f610003160",
+  "issns": [
+    "0028-0836",
+    "1476-4687"
+  ],
+  "journal": "Nature",
+  "cohorts": {
+    "pub": 138,
+    "doc": 2,
+    "sci": 20,
+    "com": 7
+  },
+  "context": {
+    "all": {
+      "count": 7215053,
+      "mean": 6.3549072871512,
+      "rank": 30941,
+      "pct": 99,
+      "higher_than": 7184159
+    },
+    "journal": {
+      "count": 44638,
+      "mean": 69.15914062325,
+      "rank": 4610,
+      "pct": 89,
+      "higher_than": 40028
+    },
+    "similar_age_3m": {
+      "count": 72654,
+      "mean": 5.6163210603829,
+      "rank": 198,
+      "pct": 99,
+      "higher_than": 72456
+    },
+    "similar_age_journal_3m": {
+      "count": 869,
+      "mean": 50.052186635945,
+      "rank": 48,
+      "pct": 94,
+      "higher_than": 821
+    }
+  },
+  "type": "news",
+  "altmetric_id": 241939,
+  "schema": "1.5.4",
+  "is_oa": false,
+  "cited_by_fbwalls_count": 5,
+  "cited_by_feeds_count": 3,
+  "cited_by_msm_count": 1,
+  "cited_by_posts_count": 192,
+  "cited_by_rdts_count": 1,
+  "cited_by_tweeters_count": 172,
+  "cited_by_accounts_count": 182,
+  "last_updated": 1334237127,
+  "score": 174.222,
+  "history": {
+    "1y": 0,
+    "6m": 0,
+    "3m": 0,
+    "1m": 0,
+    "1w": 0,
+    "6d": 0,
+    "5d": 0,
+    "4d": 0,
+    "3d": 0,
+    "2d": 0,
+    "1d": 0,
+    "at": 174.222
+  },
+  "url": "http://dx.doi.org/10.1038/news.2011.490",
+  "added_on": 1313946657,
+  "published_on": 1313884800,
+  "subjects": [
+    "science"
+  ],
+  "scopus_subjects": [
+    "General"
+  ],
+  "readers": {
+    "citeulike": "0",
+    "mendeley": "3",
+    "connotea": "0"
+  },
+  "readers_count": 3,
+  "images": {
+    "small": "https://altmetric-badges.a.ssl.fastly.net/?size=64&score=175&types=mbrttttf",
+    "medium": "https://altmetric-badges.a.ssl.fastly.net/?size=100&score=175&types=mbrttttf",
+    "large": "https://altmetric-badges.a.ssl.fastly.net/?size=180&score=175&types=mbrttttf"
+  },
+  "details_url": "http://www.altmetric.com/details.php?citation_id=241939"
+}

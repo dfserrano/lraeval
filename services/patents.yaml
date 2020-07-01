@@ -1,0 +1,106 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: PatentsView
+  description: "
+    This will search for patents matching the query string (q) and returning the data fields listed in the field string (f) sorted by the fields in the sort string (s) using options provided in the option string (o).
+
+    The HTTP GET request method is the preferred access mechanism; however when the query parameters exceed a reasonable size (around 2,000 characters), then the POST method can be used. When using the POST method, the query parameters should be embedded within a JSON string within the request body."
+
+host: localhost
+basePath: /lraeval/api/patents
+schemes:
+  - http
+produces:
+  - application/json
+externalDocs:
+  description: Documentation of the original data source
+  url: http://www.patentsview.org/api/doc.html
+
+paths:
+  /query.json:
+    get:
+      summary: Search Patents
+      description: Search for patents matching the query string (q).
+
+      tags:
+        - Search
+
+      parameters:
+        # Query
+        - name: q
+          in: query
+          description: "JSON formatted object containing the query parameters.  The field list includes patent_number, patent_date, patent_title, inventor_first_name, inventor_last_name, assignee_first_name, assignee_last_name, and assignee_organization"
+          required: true
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Response'
+
+
+definitions:
+  Patent:
+    properties:
+      patent_number:
+        description: US Patent number, as assigned by USPTO
+        type: string
+      patent_date:
+        description: Date patent was granted
+        type: string
+        format: date
+      patent_title:
+        description: Title of the patent
+        type: string
+      patent_abstract:
+        description: Abstract of the patent
+        type: string
+      inventors:
+        type: array
+        items:
+          properties:
+            inventor_first_name:
+              description: First name of inventor
+              type: string
+            inventor_last_name:
+              description: Last name of inventor
+              type: string
+            inventor_id:
+              description: Unique database inventor ID by disambiguation algorithm
+              type: string
+            inventor_country:
+              description: Inventor's country as listed on the selected patent
+              type: string
+      assignees:
+        type: array
+        items:
+          properties:
+            assignee_first_name:
+              description: First name, if assignee is individual
+              type: string
+            assignee_last_name:
+              description: Last name, if assignee is individual
+              type: string
+            assignee_id:
+              description: Unique database assignee ID assigned by disambiguation algorithm
+              type: string
+            assignee_country:
+              description: Assignee's country as listed on the patent
+              type: string
+            assignee_organization:
+              description: Organization name, if assignee is organization
+              type: string
+
+  Response:
+    properties:
+      patents:
+        type: array
+        items:
+          $ref: '#/definitions/Patent'
+      count:
+        type: integer
+      total_patent_count:
+        type: integer

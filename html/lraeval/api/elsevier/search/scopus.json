@@ -1,0 +1,1391 @@
+{
+  "search-results": {
+    "totalResults": "5553054",
+    "startIndex": "0",
+    "itemsPerPage": "25",
+    "Query": {
+      "role": "request",
+      "searchTerms": "all(gene)",
+      "startPage": "0"
+    },
+    "link": [
+      {
+        "_fa": "true",
+        "ref": "self",
+        "href": "https://api.elsevier.com/content/search/scopus?start=0&count=25&query=all%28gene%29&apiKey=b3a71de2bde04544495881ed9d2f9c5b",
+        "type": "application/json"
+      },
+      {
+        "_fa": "true",
+        "ref": "first",
+        "href": "https://api.elsevier.com/content/search/scopus?start=0&count=25&query=all%28gene%29&apiKey=b3a71de2bde04544495881ed9d2f9c5b",
+        "type": "application/json"
+      },
+      {
+        "_fa": "true",
+        "ref": "next",
+        "href": "https://api.elsevier.com/content/search/scopus?start=25&count=25&query=all%28gene%29&apiKey=b3a71de2bde04544495881ed9d2f9c5b",
+        "type": "application/json"
+      },
+      {
+        "_fa": "true",
+        "ref": "last",
+        "href": "https://api.elsevier.com/content/search/scopus?start=4975&count=25&query=all%28gene%29&apiKey=b3a71de2bde04544495881ed9d2f9c5b",
+        "type": "application/json"
+      }
+    ],
+    "entry": [
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/84952777090"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/84952777090?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84952777090&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=84952777090&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/84952777090",
+        "identifier": "SCOPUS_ID:84952777090",
+        "eid": "2-s2.0-84952777090",
+        "title": "Gaba accumulation and oxidative damage responses to salt, osmotic and H<inf>2</inf>O<inf>2</inf> treatments in two lentil (Lens culinaris medik) accessions",
+        "creator": "Al-Quraan N.",
+        "publicationName": "Plant Biosystems",
+        "issn": "11263504",
+        "eIssn": "17245575",
+        "volume": "151",
+        "issueIdentifier": "1",
+        "pageRange": "148-157",
+        "coverDate": "2017-12-23",
+        "coverDisplayDate": "23 December 2017",
+        "doi": "10.1080/11263504.2015.1115440",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Jordan University of Science and Technology",
+            "affiliation-city": "Irbid",
+            "affiliation-country": "Jordan"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "68722"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/84950117024"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/84950117024?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84950117024&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=84950117024&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/84950117024",
+        "identifier": "SCOPUS_ID:84950117024",
+        "eid": "2-s2.0-84950117024",
+        "title": "Indirect organogenesis from leaf explants of Hemidesmus indicus (L.) R. Br.: An important medicinal plant",
+        "creator": "Pathak A.",
+        "publicationName": "Plant Biosystems",
+        "issn": "11263504",
+        "eIssn": "17245575",
+        "volume": "151",
+        "issueIdentifier": "1",
+        "pageRange": "1-5",
+        "coverDate": "2017-12-09",
+        "coverDisplayDate": "9 December 2017",
+        "doi": "10.1080/11263504.2015.1108938",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "The Maharaja Sayajirao University of Baroda",
+            "affiliation-city": "Vadodara",
+            "affiliation-country": "India"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "68722"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85008198149"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85008198149?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85008198149&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85008198149&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85008198149",
+        "identifier": "SCOPUS_ID:85008198149",
+        "eid": "2-s2.0-85008198149",
+        "title": "Selection of reference genes from Shiraia bambusicola for RT-qPCR analysis under different culturing conditions",
+        "creator": "Zhang C.",
+        "publicationName": "AMB Express",
+        "eIssn": "21910855",
+        "volume": "7",
+        "issueIdentifier": "1",
+        "pageRange": null,
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1186/s13568-016-0314-9",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Capital Normal University",
+            "affiliation-city": "Beijing",
+            "affiliation-country": "China"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "article-number": "14",
+        "source-id": "21100198481"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85009863222"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85009863222?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85009863222&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85009863222&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85009863222",
+        "identifier": "SCOPUS_ID:85009863222",
+        "eid": "2-s2.0-85009863222",
+        "title": "Characterization of LhSorP5CS, a gene catalyzing proline synthesis in Oriental hybrid lily Sorbonne: molecular modelling and expression analysis",
+        "creator": "Wang L.",
+        "publicationName": "Botanical Studies",
+        "issn": "1817406X",
+        "volume": "58",
+        "issueIdentifier": "1",
+        "pageRange": null,
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1186/s40529-017-0163-0",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Chinese Academy of Sciences",
+            "affiliation-city": "Beijing",
+            "affiliation-country": "China"
+          },
+          {
+            "_fa": "true",
+            "affilname": "Chinese Academy of Sciences",
+            "affiliation-city": "Beijing",
+            "affiliation-country": "China"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "article-number": "10",
+        "source-id": "4700151601"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85009168201"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85009168201?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85009168201&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85009168201&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85009168201",
+        "identifier": "SCOPUS_ID:85009168201",
+        "eid": "2-s2.0-85009168201",
+        "title": "Glutamic acid promotes monacolin K production and monacolin K biosynthetic gene cluster expression in Monascus",
+        "creator": "Zhang C.",
+        "publicationName": "AMB Express",
+        "eIssn": "21910855",
+        "volume": "7",
+        "issueIdentifier": "1",
+        "pageRange": null,
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1186/s13568-016-0311-z",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Beijing Technology &amp; Business University",
+            "affiliation-city": "Beijing",
+            "affiliation-country": "China"
+          },
+          {
+            "_fa": "true",
+            "affilname": "Beijing Technology &amp; Business University",
+            "affiliation-city": "Beijing",
+            "affiliation-country": "China"
+          },
+          {
+            "_fa": "true",
+            "affilname": "Beijing Technology &amp; Business University",
+            "affiliation-city": "Beijing",
+            "affiliation-country": "China"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "article-number": "22",
+        "source-id": "21100198481"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85011884621"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85011884621?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85011884621&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85011884621&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85011884621",
+        "identifier": "SCOPUS_ID:85011884621",
+        "eid": "2-s2.0-85011884621",
+        "title": "Increasing cocoa butter-like lipid production of Saccharomyces cerevisiae by expression of selected cocoa genes",
+        "creator": "Wei Y.",
+        "publicationName": "AMB Express",
+        "eIssn": "21910855",
+        "volume": "7",
+        "issueIdentifier": "1",
+        "pageRange": null,
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1186/s13568-017-0333-1",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Chalmers University of Technology",
+            "affiliation-city": "Göteborg",
+            "affiliation-country": "Sweden"
+          },
+          {
+            "_fa": "true",
+            "affilname": "Chalmers University of Technology",
+            "affiliation-city": "Göteborg",
+            "affiliation-country": "Sweden"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "article-number": "34",
+        "source-id": "21100198481"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85008939327"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85008939327?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85008939327&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85008939327&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85008939327",
+        "identifier": "SCOPUS_ID:85008939327",
+        "eid": "2-s2.0-85008939327",
+        "title": "Chilling susceptibility in mungbean varieties is associated with their differentially expressed genes",
+        "creator": "Chen L.",
+        "publicationName": "Botanical Studies",
+        "issn": "1817406X",
+        "volume": "58",
+        "issueIdentifier": "1",
+        "pageRange": null,
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1186/s40529-017-0161-2",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Chinese Culture University Taiwan",
+            "affiliation-city": "Taipei",
+            "affiliation-country": "Taiwan"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "article-number": "7",
+        "source-id": "4700151601"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85010685490"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85010685490?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85010685490&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85010685490&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "full-text",
+            "href": "https://api.elsevier.com/content/article/eid/1-s2.0-S0034528817300735"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85010685490",
+        "identifier": "SCOPUS_ID:85010685490",
+        "eid": "2-s2.0-85010685490",
+        "title": "Identification of genetic variation in NOD-like receptor 2 gene and influence of polymorphism on gene structure and function in buffalo (Bubalus bubalis)",
+        "creator": "Dhiman A.",
+        "publicationName": "Research in Veterinary Science",
+        "issn": "00345288",
+        "eIssn": "15322661",
+        "volume": "115",
+        "pageRange": "43-50",
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1016/j.rvsc.2017.01.017",
+        "pii": "S0034528817300735",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "National Bureau of Animal Genetic Resources India",
+            "affiliation-city": "Karnal",
+            "affiliation-country": "India"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "18851"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85012273153"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85012273153?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85012273153&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85012273153&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85012273153",
+        "identifier": "SCOPUS_ID:85012273153",
+        "eid": "2-s2.0-85012273153",
+        "title": "Lineage matters: DNA, race, and gene talk in Judaism and Messianic Judaism",
+        "creator": "Imhoff S.",
+        "publicationName": "Religion and American Culture",
+        "issn": "10521151",
+        "volume": "27",
+        "issueIdentifier": "1",
+        "pageRange": "95-127",
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "Winter 2017",
+        "doi": "10.1525/rac.2017.27.1.95",
+        "citedby-count": "0",
+        "aggregationType": "Journal",
+        "subtype": "re",
+        "subtypeDescription": "Review",
+        "source-id": "5600155553"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85008502088"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85008502088?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85008502088&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85008502088&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85008502088",
+        "identifier": "SCOPUS_ID:85008502088",
+        "eid": "2-s2.0-85008502088",
+        "title": "Design and construction of fusion genes hspX and tb10.4 from mycobacterium tuberculosis in a cloning vector",
+        "creator": "Yaghoubi A.",
+        "publicationName": "Koomesh",
+        "issn": "16087046",
+        "volume": "19",
+        "issueIdentifier": "1",
+        "pageRange": "183-190",
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "Winter 2017",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Mashhad University of Medical Sciences",
+            "affiliation-city": "Mashad",
+            "affiliation-country": "Iran"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "19600166219"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85008428549"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85008428549?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85008428549&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85008428549&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85008428549",
+        "identifier": "SCOPUS_ID:85008428549",
+        "eid": "2-s2.0-85008428549",
+        "title": "Effects of 12 weeks resistant training on MTNR1B gene expression in the pancreas and glucose and insulin levels in type 2 diabetic rats",
+        "creator": "Soori R.",
+        "publicationName": "Koomesh",
+        "issn": "16087046",
+        "volume": "19",
+        "issueIdentifier": "1",
+        "pageRange": "46-55",
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "Winter 2017",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "University of Tehran",
+            "affiliation-city": "Tehran",
+            "affiliation-country": "Iran"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "19600166219"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85010430681"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85010430681?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85010430681&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85010430681&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "full-text",
+            "href": "https://api.elsevier.com/content/article/eid/1-s2.0-S003452881730036X"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85010430681",
+        "identifier": "SCOPUS_ID:85010430681",
+        "eid": "2-s2.0-85010430681",
+        "title": "Comparative pathogenicity and immunogenicity of triple and double gene-deletion pseudorabies virus vaccine candidates",
+        "creator": "Dong J.",
+        "publicationName": "Research in Veterinary Science",
+        "issn": "00345288",
+        "eIssn": "15322661",
+        "volume": "115",
+        "pageRange": "17-23",
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1016/j.rvsc.2017.01.011",
+        "pii": "S003452881730036X",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Nanjing Agricultural University",
+            "affiliation-city": "Nanjing",
+            "affiliation-country": "China"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "18851"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85011661517"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85011661517?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85011661517&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85011661517&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85011661517",
+        "identifier": "SCOPUS_ID:85011661517",
+        "eid": "2-s2.0-85011661517",
+        "title": "The association between brain-derived neurotrophic factor gene polymorphism and migraine: a meta-analysis",
+        "creator": "Cai X.",
+        "publicationName": "Journal of Headache and Pain",
+        "issn": "11292369",
+        "eIssn": "11292377",
+        "volume": "18",
+        "issueIdentifier": "1",
+        "pageRange": null,
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1186/s10194-017-0725-2",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Sun Yat-Sen University",
+            "affiliation-city": "Guangzhou",
+            "affiliation-country": "China"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "re",
+        "subtypeDescription": "Review",
+        "article-number": "13",
+        "source-id": "16714"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85008186366"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85008186366?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85008186366&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85008186366&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85008186366",
+        "identifier": "SCOPUS_ID:85008186366",
+        "eid": "2-s2.0-85008186366",
+        "title": "Transformation of the endochitinase gene Chi67-1 in Clonostachys rosea 67-1 increases its biocontrol activity against Sclerotinia sclerotiorum",
+        "creator": "Sun Z.",
+        "publicationName": "AMB Express",
+        "eIssn": "21910855",
+        "volume": "7",
+        "issueIdentifier": "1",
+        "pageRange": null,
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1186/s13568-016-0313-x",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Chinese Academy of Agricultural Sciences",
+            "affiliation-city": "Beijing",
+            "affiliation-country": "China"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "article-number": "1",
+        "source-id": "21100198481"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85008625165"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85008625165?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85008625165&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85008625165&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85008625165",
+        "identifier": "SCOPUS_ID:85008625165",
+        "eid": "2-s2.0-85008625165",
+        "title": "Alkane biosynthesis by Aspergillus carbonarius ITEM 5010 through heterologous expression of Synechococcus elongatus acyl-ACP/CoA reductase and aldehyde deformylating oxygenase genes",
+        "creator": "Sinha M.",
+        "publicationName": "AMB Express",
+        "eIssn": "21910855",
+        "volume": "7",
+        "issueIdentifier": "1",
+        "pageRange": null,
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1186/s13568-016-0321-x",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Washington State University Tri-Cities",
+            "affiliation-city": "Richland",
+            "affiliation-country": "United States"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "article-number": "18",
+        "source-id": "21100198481"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85008452866"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85008452866?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85008452866&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85008452866&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85008452866",
+        "identifier": "SCOPUS_ID:85008452866",
+        "eid": "2-s2.0-85008452866",
+        "title": "Effect of Beberine on the survivin gene expression in peripheral blood mononuclear cell of chronic lymphocytic leukemia patients in vitro",
+        "creator": "Jaafarinejad H.",
+        "publicationName": "Koomesh",
+        "issn": "16087046",
+        "volume": "19",
+        "issueIdentifier": "1",
+        "pageRange": "227-232",
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "Winter 2017",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Semnan University of Medical Sciences",
+            "affiliation-city": "Semnan",
+            "affiliation-country": "Iran"
+          },
+          {
+            "_fa": "true",
+            "affilname": "Semnan University of Medical Sciences",
+            "affiliation-city": "Semnan",
+            "affiliation-country": "Iran"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "19600166219"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85012236962"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85012236962?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85012236962&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85012236962&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "full-text",
+            "href": "https://api.elsevier.com/content/article/eid/1-s2.0-S0034528816303885"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85012236962",
+        "identifier": "SCOPUS_ID:85012236962",
+        "eid": "2-s2.0-85012236962",
+        "title": "Diagnosis of resistance alleles in codon 167 of the beta-tubulin (Cya-tbb-1) gene from third-stage larvae of horse cyathostomins",
+        "creator": "Ishii J.",
+        "publicationName": "Research in Veterinary Science",
+        "issn": "00345288",
+        "eIssn": "15322661",
+        "volume": "115",
+        "pageRange": "92-95",
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1016/j.rvsc.2017.01.019",
+        "pii": "S0034528816303885",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Universidade Federal do Parana",
+            "affiliation-city": "Curitiba",
+            "affiliation-country": "Brazil"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "18851"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85010042322"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85010042322?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85010042322&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85010042322&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85010042322",
+        "identifier": "SCOPUS_ID:85010042322",
+        "eid": "2-s2.0-85010042322",
+        "title": "Ability of Rf5 and Rf6 to Restore Fertility of Chinsurah Boro II-type Cytoplasmic Male Sterile Oryza Sativa (ssp. Japonica) Lines",
+        "creator": "Zhang H.",
+        "publicationName": "Rice",
+        "issn": "19398425",
+        "eIssn": "19398433",
+        "volume": "10",
+        "issueIdentifier": "1",
+        "pageRange": null,
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1186/s12284-017-0142-9",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Yangzhou University",
+            "affiliation-city": "Yangzhou",
+            "affiliation-country": "China"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "article-number": "2",
+        "source-id": "19500157075"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85011982951"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85011982951?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85011982951&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85011982951&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85011982951",
+        "identifier": "SCOPUS_ID:85011982951",
+        "eid": "2-s2.0-85011982951",
+        "title": "Evolutionary analysis of the SUB1 locus across the Oryza genomes",
+        "creator": "dos Santos R.",
+        "publicationName": "Rice",
+        "issn": "19398425",
+        "eIssn": "19398433",
+        "volume": "10",
+        "issueIdentifier": "1",
+        "pageRange": null,
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1186/s12284-016-0140-3",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Universidade Federal de Pelotas",
+            "affiliation-city": "Pelotas",
+            "affiliation-country": "Brazil"
+          },
+          {
+            "_fa": "true",
+            "affilname": "Universidade Federal de Pelotas",
+            "affiliation-city": "Pelotas",
+            "affiliation-country": "Brazil"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "article-number": "4",
+        "source-id": "19500157075"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85010683452"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85010683452?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85010683452&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85010683452&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85010683452",
+        "identifier": "SCOPUS_ID:85010683452",
+        "eid": "2-s2.0-85010683452",
+        "title": "Polymorphic malware detection using sequence classification methods and ensembles: BioSTAR 2016 Recommended Submission - EURASIP Journal on Information Security",
+        "creator": "Drew J.",
+        "publicationName": "Eurasip Journal on Information Security",
+        "issn": "16874161",
+        "eIssn": "1687417X",
+        "volume": "2017",
+        "issueIdentifier": "1",
+        "pageRange": null,
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1186/s13635-017-0055-6",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Southern Methodist University",
+            "affiliation-city": "Dallas",
+            "affiliation-country": "United States"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "article-number": "2",
+        "source-id": "8700153310"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85010297312"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85010297312?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85010297312&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85010297312&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "full-text",
+            "href": "https://api.elsevier.com/content/article/eid/1-s2.0-S0034528816302387"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85010297312",
+        "identifier": "SCOPUS_ID:85010297312",
+        "eid": "2-s2.0-85010297312",
+        "title": "Identification of Arcanobacterium hippocoleae by MALDI-TOF MS analysis and by various genotypical properties",
+        "creator": "Wickhorst J.",
+        "publicationName": "Research in Veterinary Science",
+        "issn": "00345288",
+        "eIssn": "15322661",
+        "volume": "115",
+        "pageRange": "10-12",
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1016/j.rvsc.2017.01.006",
+        "pii": "S0034528816302387",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Justus Liebig University Giessen",
+            "affiliation-city": "Giessen",
+            "affiliation-country": "Germany"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "18851"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85010898426"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85010898426?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85010898426&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85010898426&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85010898426",
+        "identifier": "SCOPUS_ID:85010898426",
+        "eid": "2-s2.0-85010898426",
+        "title": "pELMO, an optimised in-house cloning vector",
+        "creator": "Ramos A.",
+        "publicationName": "AMB Express",
+        "eIssn": "21910855",
+        "volume": "7",
+        "issueIdentifier": "1",
+        "pageRange": null,
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1186/s13568-017-0324-2",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Fundacion Instituto de Inmunologia de Colombia",
+            "affiliation-city": "Bogota",
+            "affiliation-country": "Colombia"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "article-number": "26",
+        "source-id": "21100198481"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85007107670"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85007107670?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85007107670&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85007107670&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85007107670",
+        "identifier": "SCOPUS_ID:85007107670",
+        "eid": "2-s2.0-85007107670",
+        "title": "Ataxia oculomotor apraxia type 1 in the siblings of a family: A novel mutation",
+        "creator": "Karimzadeh P.",
+        "publicationName": "Iranian Journal of Child Neurology",
+        "issn": "17354668",
+        "eIssn": "20080700",
+        "volume": "11",
+        "issueIdentifier": "1",
+        "pageRange": "78-81",
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "Winter 2017",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Shahid Beheshti University of Medical Sciences",
+            "affiliation-city": "Tehran",
+            "affiliation-country": "Iran"
+          },
+          {
+            "_fa": "true",
+            "affilname": "Shahid Beheshti University of Medical Sciences",
+            "affiliation-city": "Tehran",
+            "affiliation-country": "Iran"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "19700174989"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85011964913"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85011964913?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85011964913&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85011964913&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85011964913",
+        "identifier": "SCOPUS_ID:85011964913",
+        "eid": "2-s2.0-85011964913",
+        "title": "Frequent mild head injury promotes trigeminal sensitivity concomitant with microglial proliferation, astrocytosis, and increased neuropeptide levels in the trigeminal pain system",
+        "creator": "Tyburski A.",
+        "publicationName": "Journal of Headache and Pain",
+        "issn": "11292369",
+        "eIssn": "11292377",
+        "volume": "18",
+        "issueIdentifier": "1",
+        "pageRange": null,
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1186/s10194-017-0726-1",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Thomas Jefferson University",
+            "affiliation-city": "Philadelphia",
+            "affiliation-country": "United States"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "article-number": "16",
+        "source-id": "16714"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "ref": "self",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85009918089"
+          },
+          {
+            "_fa": "true",
+            "ref": "author-affiliation",
+            "href": "https://api.elsevier.com/content/abstract/scopus_id/85009918089?field=author,affiliation"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus",
+            "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85009918089&origin=inward"
+          },
+          {
+            "_fa": "true",
+            "ref": "scopus-citedby",
+            "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85009918089&origin=inward"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/abstract/scopus_id/85009918089",
+        "identifier": "SCOPUS_ID:85009918089",
+        "eid": "2-s2.0-85009918089",
+        "title": "Priming increases the anti-tumor effect and therapeutic window of <sup>177</sup>Lu-octreotate in nude mice bearing human small intestine neuroendocrine tumor GOT1",
+        "creator": "Dalmo J.",
+        "publicationName": "EJNMMI Research",
+        "eIssn": "2191219X",
+        "volume": "7",
+        "issueIdentifier": "1",
+        "pageRange": null,
+        "coverDate": "2017-12-01",
+        "coverDisplayDate": "1 December 2017",
+        "doi": "10.1186/s13550-016-0247-y",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "_fa": "true",
+            "affilname": "Sahlgrenska Academy",
+            "affiliation-city": "Gothenburg",
+            "affiliation-country": "Sweden"
+          }
+        ],
+        "aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "article-number": "6",
+        "source-id": "21100235610"
+      }
+    ]
+  }
+}

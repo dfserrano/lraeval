@@ -1,0 +1,216 @@
+{
+  "status": "OK",
+  "totalHits": 6420,
+  "data": [
+    {
+      "title": "Phares: Revue Philosophique Étudiante de l’Université Laval",
+      "identifiers": [
+        "oai:doaj.org/journal:fd85e5a63456408ca8e18fc277aca356",
+        "issn:1496-8533",
+        "url:https://doaj.org/toc/1496-8533"
+      ],
+      "subjects": [
+        "history of philosophy",
+        "culture",
+        "Philosophy. Psychology. Religion",
+        "B",
+        "Philosophy (General)",
+        "B1-5802"
+      ],
+      "publisher": "Université Laval"
+    },
+    {
+      "title": "ISRN Analytical Chemistry",
+      "identifiers": [
+        "oai:doaj.org/journal:fe69a3c85f1e419190c0761bcdbc1943",
+        "issn:2090-7311",
+        "issn:2090-732X",
+        "url:https://doaj.org/toc/2090-732X"
+      ],
+      "subjects": [
+        "analytical chemistry",
+        "Analytical chemistry",
+        "QD71-142",
+        "Chemistry",
+        "QD1-999",
+        "Science",
+        "Q"
+      ],
+      "language": "English",
+      "rights": "CC BY",
+      "publisher": "Hindawi Publishing Corporation"
+    },
+    {
+      "title": "Soil Forming Factors and Processes from the Temperate Zone",
+      "identifiers": [
+        "oai:doaj.org/journal:fe905e6c5cc74dc592f764a90263b4c3",
+        "issn:1582-4616",
+        "issn:2285-5696",
+        "url:https://doaj.org/toc/2285-5696"
+      ],
+      "subjects": [
+        "soil science",
+        "agronomy",
+        "Agriculture (General)",
+        "S1-972",
+        "Agriculture",
+        "S"
+      ],
+      "language": "English",
+      "rights": "CC BY-NC-ND",
+      "publisher": "OJS"
+    },
+    {
+      "title": "Informatica Economica Journal",
+      "identifiers": [
+        "oai:doaj.org/journal:f674bc1643e04f628fb921c747af3752",
+        "issn:1453-1305",
+        "issn:1842-8088",
+        "url:https://doaj.org/toc/1842-8088"
+      ],
+      "subjects": [
+        "economic informatics",
+        "information society",
+        "information systems",
+        "IT",
+        "Computer engineering. Computer hardware",
+        "TK7885-7895",
+        "Electronics",
+        "TK7800-8360",
+        "Electrical engineering. Electronics. Nuclear engineering",
+        "TK1-9971",
+        "Technology",
+        "T",
+        "Bibliography. Library science. Information resources",
+        "Z"
+      ],
+      "language": "Romanian",
+      "publisher": "Inforec Association"
+    },
+    {
+      "title": "Acta Médica Colombiana",
+      "identifiers": [
+        "oai:doaj.org/journal:f63c4c836b2140d4811c76890d8b265d",
+        "issn:0120-2448",
+        "url:https://doaj.org/toc/0120-2448"
+      ],
+      "subjects": [
+        "internal medicine",
+        "medicine",
+        "health sciences",
+        "Medicine",
+        "R",
+        "Internal medicine",
+        "RC31-1245"
+      ],
+      "publisher": "Scielo Colombia"
+    },
+    {
+      "title": "Journal of the Ceramic Society of Japan",
+      "identifiers": [
+        "oai:doaj.org/journal:f6ca0123798c49248fee0e9cf9f1fa12",
+        "issn:0914-5400",
+        "issn:1348-6535",
+        "url:https://doaj.org/toc/1348-6535"
+      ],
+      "subjects": [
+        "mechanical engineering",
+        "ceramics",
+        "Technology",
+        "T",
+        "Electrical engineering. Electronics. Nuclear engineering",
+        "TK1-9971",
+        "Materials of engineering and construction. Mechanics of materials",
+        "TA401-492"
+      ],
+      "publisher": "J-Stage"
+    },
+    {
+      "title": "International Journal of Innovative Research in Computer and Communication Engineering",
+      "identifiers": [
+        "oai:doaj.org/journal:f766b07675524755a18640469d3475c0",
+        "issn:2320-9798",
+        "issn:2320-9801",
+        "url:https://doaj.org/toc/2320-9801"
+      ],
+      "subjects": [
+        "information technology",
+        "computer networks",
+        "Electronic computers. Computer science",
+        "QA75.5-76.95",
+        "Instruments and machines",
+        "QA71-90",
+        "Mathematics",
+        "QA1-939",
+        "Science",
+        "Q"
+      ],
+      "language": "English",
+      "rights": "CC BY",
+      "publisher": "S&S Publications"
+    },
+    {
+      "title": "Journal of Personalized Medicine",
+      "identifiers": [
+        "oai:doaj.org/journal:f78158a4a4e545e484218e612fdf6a6f",
+        "issn:2075-4426",
+        "url:https://doaj.org/toc/2075-4426"
+      ],
+      "subjects": [
+        "individualized medicine",
+        "personalized medicine",
+        "Medicine (General)",
+        "R5-920",
+        "Medicine",
+        "R"
+      ],
+      "language": "English",
+      "rights": "CC BY",
+      "publisher": "MDPI AG"
+    },
+    {
+      "title": "Cuaderno de Educación y Desarrollo",
+      "identifiers": [
+        "oai:doaj.org/journal:f85603d862874c5cbc2ff64b43b9c999",
+        "issn:1989-4155",
+        "url:https://doaj.org/toc/1989-4155"
+      ],
+      "subjects": [
+        "new technologies",
+        "education",
+        "management",
+        "society",
+        "educational policies",
+        "educational systems",
+        "pedagogy",
+        "sociology",
+        "Special aspects of education",
+        "LC8-6691",
+        "Education",
+        "L"
+      ],
+      "language": "Spanish",
+      "publisher": "EUMED.NET"
+    },
+    {
+      "title": "Journal of the Mexican Chemical Society",
+      "identifiers": [
+        "oai:doaj.org/journal:fa4b6947389b47d8abfd3ddd7d22977e",
+        "issn:1870-249X",
+        "issn:1665-9686",
+        "url:https://doaj.org/toc/1665-9686"
+      ],
+      "subjects": [
+        "medicinal chemistry",
+        "biochemistry",
+        "inorganic chemistry",
+        "Chemistry",
+        "QD1-999",
+        "Science",
+        "Q"
+      ],
+      "language": "English",
+      "publisher": "Redalyc"
+    }
+  ]
+}

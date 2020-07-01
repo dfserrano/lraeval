@@ -1,0 +1,489 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: AltMetric
+
+host: localhost
+basePath: /lraeval/api/altmetric
+schemes:
+  - http
+produces:
+  - application/json
+
+x-prefixes:
+  - prefix: rdf
+    url: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  - prefix: dc
+    url: http://purl.org/dc/terms/
+  - prefix: c4o
+    url: http://purl.org/spar/c4o/
+  - prefix: altmetric
+    url: http://www.altmetric.com/terms/
+  - prefix: arxiv
+    url: https://arxiv.org/terms/
+  - prefix: pubmed
+    url: http://eutils.ncbi.nlm.nih.gov/entrez/terms/
+  - prefix: vivo
+    url: http://vivoweb.org/ontology/core#
+  - prefix: bibo
+    url: http://purl.org/ontology/bibo/
+  - prefix: foaf
+    url: http://xmlns.com/foaf/0.1/
+  - prefix: geo
+    url: http://aims.fao.org/aos/geopolitical.owl#
+
+paths:
+  /doi.json:
+    get:
+      summary: Fetching details by DOI
+      description: Fetches the article corresponding to the given DOI.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          bibo:uri ?paperUri ;
+          altmetric:id ?paperId ;
+          vivo:hasPublicationVenue ?venue ;
+          bibo:doi ?doi ;
+          arxiv:id ?arxivId ;
+          pubmed:id ?pmid ;
+          altmetric:readersCount ?readersCount ;
+          altmetric:citedByFacebookCount ?fbCitationCount ;
+          altmetric:citedByTwitterCount ?twCitationCount .
+        ?venue a bibo:Collection ;
+          dc:title ?venueTitle ;
+          bibo:isbn ?isbn ;
+          bibo:issn ?issn .
+
+      tags:
+        - Search
+
+      parameters:
+        # DOI
+        - name: doi
+          in: query
+          description: The DOI should not be urlencoded.
+          required: true
+          type: string
+          default: 10.1038/news.2011.490
+          x-graphVar: ?doi
+
+      x-responseMap:
+        - var: ?paperTitle
+          path: title
+        - var: ?paperUri
+          path: url
+        - var: ?paperId
+          path: altmetric_id
+        - var: ?doi
+          path: doi
+        - var: ?arxivId
+          path: arxiv_id
+        - var: ?pmid
+          path: pmid
+        - var: ?readersCount
+          path: readers_count
+        - var: ?fbCitationCount
+          path: cited_by_fbwalls_count
+        - var: ?twCitationCount
+          path: cited_by_tweeters_count
+        - var: ?isbn
+          path: isbns
+        - var: ?issn
+          path: issns
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Response'
+
+  /pmid.json:
+    get:
+      summary: Fetching details by PubMed ID
+      description: Fetches the article corresponding to the given PubMed ID (pmid).
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          bibo:uri ?paperUri ;
+          altmetric:id ?paperId ;
+          vivo:hasPublicationVenue ?venue ;
+          bibo:doi ?doi ;
+          arxiv:id ?arxivId ;
+          pubmed:id ?pmid ;
+          altmetric:readersCount ?readersCount ;
+          altmetric:citedByFacebookCount ?fbCitationCount ;
+          altmetric:citedByTwitterCount ?twCitationCount .
+        ?venue a bibo:Collection ;
+          dc:title ?venueTitle ;
+          bibo:isbn ?isbn ;
+          bibo:issn ?issn .
+
+      tags:
+        - Search
+
+      parameters:
+        # Pubmed ID
+        - name: pmid
+          in: query
+          description: Any valid PMID.
+          required: true
+          type: string
+          default: 21148220
+          x-graphVar: ?pmid
+
+      x-responseMap:
+        - var: ?paperTitle
+          path: title
+        - var: ?paperUri
+          path: url
+        - var: ?paperId
+          path: altmetric_id
+        - var: ?doi
+          path: doi
+        - var: ?arxivId
+          path: arxiv_id
+        - var: ?pmid
+          path: pmid
+        - var: ?readersCount
+          path: readers_count
+        - var: ?fbCitationCount
+          path: cited_by_fbwalls_count
+        - var: ?twCitationCount
+          path: cited_by_tweeters_count
+        - var: ?isbn
+          path: isbns
+        - var: ?issn
+          path: issns
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Response'
+
+  /arxiv.json:
+    get:
+      summary: Fetching details by arXiv ID
+      description: Fetches the article corresponding to the given arXiv ID.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          bibo:uri ?paperUri ;
+          altmetric:id ?paperId ;
+          vivo:hasPublicationVenue ?venue ;
+          bibo:doi ?doi ;
+          arxiv:id ?arxivId ;
+          pubmed:id ?pmid ;
+          altmetric:readersCount ?readersCount ;
+          altmetric:citedByFacebookCount ?fbCitationCount ;
+          altmetric:citedByTwitterCount ?twCitationCount .
+        ?venue a bibo:Collection ;
+          dc:title ?venueTitle ;
+          bibo:isbn ?isbn ;
+          bibo:issn ?issn .
+
+      tags:
+        - Search
+
+      parameters:
+        # Arxiv ID
+        - name: arxiv
+          in: query
+          description: Any valid arXiv ID.
+          required: true
+          type: string
+          default: 1108.2455
+          x-graphVar: ?arxivId
+
+      x-responseMap:
+        - var: ?paperTitle
+          path: title
+        - var: ?paperUri
+          path: url
+        - var: ?paperId
+          path: altmetric_id
+        - var: ?doi
+          path: doi
+        - var: ?arxivId
+          path: arxiv_id
+        - var: ?pmid
+          path: pmid
+        - var: ?readersCount
+          path: readers_count
+        - var: ?fbCitationCount
+          path: cited_by_fbwalls_count
+        - var: ?twCitationCount
+          path: cited_by_tweeters_count
+        - var: ?isbn
+          path: isbns
+        - var: ?issn
+          path: issns
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Response'
+
+  /isbn.json:
+    get:
+      summary: Fetching details by ISBN
+      description: Fetches the book and nested chapters ( when available ) corresponding to the given ISBN-13 or ISBN-10 identifier.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          bibo:uri ?paperUri ;
+          altmetric:id ?paperId ;
+          vivo:hasPublicationVenue ?venue ;
+          bibo:doi ?doi ;
+          arxiv:id ?arxivId ;
+          pubmed:id ?pmid ;
+          altmetric:readersCount ?readersCount ;
+          altmetric:citedByFacebookCount ?fbCitationCount ;
+          altmetric:citedByTwitterCount ?twCitationCount .
+        ?venue a bibo:Collection ;
+          dc:title ?venueTitle ;
+          bibo:isbn ?isbn ;
+          bibo:issn ?issn .
+
+      tags:
+        - Search
+
+      parameters:
+        # DOI
+        - name: isbn
+          in: query
+          description: The ISBN can be either ISBN-10 or ISBN-13 and does not need to be normalized.
+          required: true
+          type: string
+          default: 10.1007/978-3-319-25559-0
+          x-graphVar: ?isbn
+
+      x-responseMap:
+        - var: ?paperTitle
+          path: title
+        - var: ?paperUri
+          path: url
+        - var: ?paperId
+          path: altmetric_id
+        - var: ?doi
+          path: doi
+        - var: ?arxivId
+          path: arxiv_id
+        - var: ?pmid
+          path: pmid
+        - var: ?readersCount
+          path: readers_count
+        - var: ?fbCitationCount
+          path: cited_by_fbwalls_count
+        - var: ?twCitationCount
+          path: cited_by_tweeters_count
+        - var: ?isbn
+          path: isbns
+        - var: ?issn
+          path: issns
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Response'
+
+
+definitions:
+  Response:
+    properties:
+      title:
+        type: string
+      doi:
+        type: string
+      pmid:
+        type: string
+      pmc:
+        type: string
+      arxiv_id:
+        type: string
+      tq:
+        type: array
+        items:
+          type: string
+      ads_id:
+        type: string
+      altmetric_jid:
+        type: string
+      issns:
+        type: array
+        items:
+          type: string
+      journal:
+        type: string
+      uri:
+        type: string
+      isbns:
+        type: array
+        items:
+          type: string
+      cohorts:
+        type: object
+        properties:
+          pub:
+            type: integer
+          doc:
+            type: integer
+          sci:
+            type: integer
+          com:
+            type: integer
+      authors_or_editors:
+        type: array
+        items:
+          type: string
+      context:
+        type: object
+        properties:
+          all:
+            $ref: '#/definitions/Count'
+          journal:
+            $ref: '#/definitions/Count'
+          similar_age_3m:
+            $ref: '#/definitions/Count'
+          similar_age_journal_3m:
+            $ref: '#/definitions/Count'
+      type:
+        type: string
+      altmetric_id:
+        type: integer
+      schema:
+        type: string
+      is_oa:
+        type: boolean
+      cited_by_delicious_count:
+        type: integer
+      cited_by_fbwalls_count:
+        type: integer
+      cited_by_feeds_count:
+        type: integer
+      cited_by_forum_count:
+        type: integer
+      cited_by_gplus_count:
+        type: integer
+      cited_by_linkedin_count:
+        type: integer
+      cited_by_msm_count:
+        type: integer
+      cited_by_posts_count:
+        type: integer
+      cited_by_peer_review_sites_count:
+        type: integer
+      cited_by_pinners_count:
+        type: integer
+      cited_by_policies_count:
+        type: integer
+      cited_by_qs_count:
+        type: integer
+      cited_by_rdts_count:
+        type: integer
+      cited_by_rh_count:
+        type: integer
+      cited_by_tweeters_count:
+        type: integer
+      cited_by_videos_count:
+        type: integer
+      cited_by_weibo_count:
+        type: integer
+      cited_by_wikipedia_count:
+        type: integer
+      cited_by_accounts_count:
+        type: integer
+      last_updated:
+        type: integer
+        format: int64
+      score:
+        type: number
+      history:
+        type: object
+        properties:
+          1y:
+            type: integer
+          6m:
+            type: integer
+          3m:
+            type: integer
+          1m:
+            type: integer
+          1w:
+            type: integer
+          6d:
+            type: integer
+          5d:
+            type: integer
+          4d:
+            type: integer
+          3d:
+            type: integer
+          2d:
+            type: integer
+          1d:
+            type: integer
+          at:
+            type: number
+      url:
+        type: string
+      added_on:
+        type: integer
+        format: int64
+      published_on:
+        type: integer
+        format: int64
+      subjects:
+        type: array
+        items:
+          type: string
+      scopus_subjects:
+        type: array
+        items:
+          type: string
+      readers:
+        type: object
+        properties:
+          citeulike:
+            type: string
+          mendeley:
+            type: string
+          connotea:
+            type: string
+      readers_count:
+        type: integer
+      images:
+        type: object
+        properties:
+          small:
+            type: string
+          medium:
+            type: string
+          large:
+            type: string
+      details_url:
+        type: string
+
+  Count:
+    properties:
+      count:
+        type: integer
+      mean:
+        type: number
+      rank:
+        type: integer
+      pct:
+        type: integer
+      higher_than:
+        type: integer

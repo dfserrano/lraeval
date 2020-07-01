@@ -1,0 +1,121 @@
+swagger: '2.0'
+
+info:
+  version: 1.0.0
+  title: CASCON
+  description: CASCON contains data about interactions, represented by papers, workshop, exhibits, demos, and keynotes, as part of the Conference of the Centre for Advanced Studies on Collaborative Research, at IBM Canada.
+
+host: localhost
+basePath: /api/cascon
+schemes:
+  - http
+produces:
+  - application/json
+
+paths:
+  /paper/{paperId}:
+    get:
+      summary: Get paper by CASCON ID
+      description: Method will retrieve a paper based on given CASCON ID.
+      tags:
+        - Papers
+
+      parameters:
+        # CASCON id
+        - name: paperId
+          in: path
+          description: CASCON ID of the paper that needs to be fetched
+          required: true
+          type: integer
+          format: int64
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/PaperResponse'
+
+  /paper/search:
+    get:
+      summary: Search through all papers
+      description: Operations for retrieving papers.
+      tags:
+        - Papers
+
+      parameters:
+        # Keyword
+        - name: keyword
+          in: query
+          description: The search query. Matches terms in the title of the paper.
+          required: true
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/PaperSearchResponse'
+
+
+definitions:
+  PaperResponse:
+    properties:
+      time:
+        description: Execution time
+        type: integer
+      result:
+        properties:
+          id:
+            description: The paper ID
+            type: integer
+          title:
+            description: Paper title
+            type: string
+          date:
+            description: Paper publication date
+            type: string
+            format: date
+          conference:
+            description: Conference name
+            type: string
+          authors:
+            type: array
+            items:
+              $ref: '#/definitions/Author'
+
+  Author:
+    properties:
+      id:
+        description: Author ID
+        type: integer
+      name:
+        description: Author name
+        type: string
+
+  PaperSearchResponse:
+    properties:
+      time:
+        description: Execution time
+        type: integer
+      results:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              description: The paper ID
+              type: integer
+            title:
+              description: Paper title
+              type: string
+            date:
+              description: Paper publication date
+              type: string
+              format: date
+            conference:
+              description: Conference name
+              type: string
+            authors:
+              type: array
+              items:
+                $ref: '#/definitions/Author'

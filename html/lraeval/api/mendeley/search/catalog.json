@@ -1,0 +1,61 @@
+[
+  {
+    "id": "52a7f7b4-3cde-399b-a20e-889dc90e62b8",
+    "title": "In the Marine Environment",
+    "type": "journal",
+    "authors": [
+      {
+        "first_name": "Polar",
+        "last_name": "Bears"
+      }
+    ],
+    "year": 2002,
+    "source": "Arctic",
+    "identifiers": {
+      "issn": "00063185"
+    },
+    "abstract": "..."
+  },
+  {
+    "id": "dd18e5ad-74d0-3bfa-a5da-84640ad82976",
+    "title": "Behavior",
+    "type": "book_section",
+    "authors": [
+      {
+        "first_name": "I",
+        "last_name": "Stirling"
+      }
+    ],
+    "year": 1988,
+    "source": "Polar Bears",
+    "abstract": "..."
+  },
+  {
+    "id": "248883ce-5377-3aa3-aa84-57163c89d3f6",
+    "title": "Polar Bears",
+    "type": "journal",
+    "authors": [
+      {
+        "first_name": "Nicholas J",
+        "last_name": "Lunn"
+      },
+      {
+        "first_name": "Scott",
+        "last_name": "Schliebe"
+      },
+      {
+        "first_name": "Erik W",
+        "last_name": "Born"
+      }
+    ],
+    "year": 2003,
+    "source": "Oryx",
+    "identifiers": {
+      "pmid": "20535730",
+      "issn": "00306053",
+      "doi": "10.1017/S0030605303250663",
+      "isbn": "2831709598"
+    },
+    "abstract": "..."
+  }
+]

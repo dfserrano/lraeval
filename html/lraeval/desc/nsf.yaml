@@ -1,0 +1,159 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: National Science Foundation (NSF)
+  description: The NSF Awards API allows users to build a query based on any of the parameters below.
+
+host: localhost
+basePath: /lraeval/api/nsf
+schemes:
+  - http
+produces:
+  - application/json
+externalDocs:
+  description: Documentation of the original data source
+  url: https://www.research.gov/common/webapi/awardapisearch-v1.htm
+
+paths:
+  /awards.json:
+    get:
+      summary: Search awards
+      description: The NSF Awards API allows users to build a query based on any of the parameters below
+      tags:
+        - Search
+
+      parameters:
+        # Keyword
+        - name: keyword
+          in: query
+          description: Free text search across all the available awards data
+          required: false
+          type: string
+
+        # Id
+        - name: id
+          in: query
+          description: An award unique identifier to retrieve the information (ex. 1336650)
+          required: false
+          type: string
+
+        # Awardee City
+        - name: awardeeCity
+          in: query
+          description: Awardee city name(ex. Arlington)
+          required: false
+          type: string
+
+        # Awardee Country Code
+        - name: awardeeCountryCode
+          in: query
+          description: AU, CA, UK, US, USA, ...
+          required: false
+          type: string
+
+        # Awardee Name
+        - name: awardeeName
+          in: query
+          description: Name of the entity receiving award (ex, "university+of+south+florida")
+          required: false
+          type: string
+
+        # coPDPI
+        - name: coPDPI
+          in: query
+          description: Co-Principal Investigator Name (ex. Christopher)
+          required: false
+          type: string
+
+        # Start date
+        - name: startDate
+          in: query
+          description: Start date for award date to search. Accepted date format is mm/dd/yyyy (ex.12/31/2012)
+          required: false
+          type: string
+
+        # End date
+        - name: endDate
+          in: query
+          description: End date for award date to search. Accepted date format is mm/dd/yyyy (ex.12/31/2012)
+          required: false
+          type: string
+
+        # Estimated total from amount
+        - name: estimatedTotalAmtFrom
+          in: query
+          description: Estimated total from amount. This implies that you are searching for values greater than this amount. Results returned will be for values GREATER than the specified estimated amount (ex. 50000). For a range, you need to specify both the estimatedTotalAmtFrom and estimatedTotalAmtTo parameters
+          required: false
+          type: string
+
+        # Estimated total to amount
+        - name: estimatedTotalAmtTo
+          in: query
+          description: Estimated total to amount. This implies that you are searching for values less than this amount. Results returned will be for values LESS than the specified estimated amount (ex. 500000). For a range, you need to specify both the estimatedTotalAmtFrom and estimatedTotalAmtTo parameters
+          required: false
+          type: string
+
+        # Funds obligated from amount
+        - name: fundsObligatedAmtFrom
+          in: query
+          description: Funds obligated from amount. This implies that you are searching for values greater than this amount. Results returned will be for values GREATER than the specified estimated amount (ex. 50000). For a range, you need to specify both the estimatedTotalAmtFrom and estimatedTotalAmtTo parameters
+          required: false
+          type: string
+
+        # Estimated total to amount
+        - name: fundsObligatedAmtTo
+          in: query
+          description: Funds obligated to amount. This implies that you are searching for values less than this amount. Results returned will be for values LESS than the specified estimated amount (ex. 500000). For a range, you need to specify both the estimatedTotalAmtFrom and estimatedTotalAmtTo parameters
+          required: false
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/Response'
+
+
+definitions:
+  Response:
+    properties:
+      response:
+        type: object
+        properties:
+          award:
+            type: array
+            items:
+              type: object
+              properties:
+                agency:
+                  description: Agency name
+                  type: string
+                awardeeCity:
+                  description: Awardee city name
+                  type: string
+                awardeeName:
+                  description: Name of the entity receiving award
+                  type: string
+                awardeeStateCode:
+                  description: Abbreviation of the awardee state (ex. VA)
+                  type: string
+                fundsObligatedAmt:
+                  description: Funds obligated amount
+                  type: integer
+                id:
+                  description: An award unique identifier to retrieve the information (ex. 1336650). This field is required, if ProjectOutcomes is requested for an award resource
+                  type: integer
+                piFirstName:
+                  type: string
+                piLastName:
+                  type: string
+                publicAccessMandate:
+                  type: string
+                date:
+                  type: string
+                  format: date
+                title:
+                  type: string

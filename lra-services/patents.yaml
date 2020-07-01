@@ -1,0 +1,177 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: PatentsView
+
+host: localhost
+basePath: /lraeval/api/patents
+schemes:
+  - http
+produces:
+  - application/json
+
+x-prefixes:
+  - prefix: rdf
+    url: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  - prefix: dc
+    url: http://purl.org/dc/terms/
+  - prefix: patents
+    url: http://www.patentsview.org/terms/
+  - prefix: vivo
+    url: http://vivoweb.org/ontology/core#
+  - prefix: bibo
+    url: http://purl.org/ontology/bibo/
+  - prefix: foaf
+    url: http://xmlns.com/foaf/0.1/
+
+paths:
+  /query.json:
+    get:
+      summary: Search Patents
+      description: Search for patents matching the query string (q).
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?patent a bibo:Patent ;
+          dc:title ?title ;
+          bibo:abstract ?abstract ;
+          vivo:patentNumber ?patentId ;
+          dc:date ?date ;
+          vivo:assignee ?assigneePerson ;
+          vivo:assignee ?assigneeOrg ;
+          dc:creator ?inventor ;
+          dc:creator ?inventor2 .
+        ?inventor a foaf:Person ;
+          patents:id ?inventorId ;
+          foaf:givenName ?inventorFirstName ;
+          foaf:familyName ?inventorLastName ;
+          foaf:name ?inventorName .
+        ?inventor2 a foaf:Person ;
+          patents:id ?inventor2Id ;
+          foaf:givenName ?inventor2FirstName ;
+          foaf:familyName ?inventor2LastName ;
+          foaf:name ?inventor2Name .
+        ?assigneePerson a foaf:Person ;
+          patents:id ?assigneeId ;
+          foaf:givenName ?assigneeFirstName ;
+          foaf:familyName ?assigneeLastName ;
+          foaf:name ?assigneeName .
+        ?assigneeOrg a foaf:Organization ;
+          patents:id ?assigneeOrgId ;
+          foaf:name ?assigneeOrgName .
+
+      tags:
+        - Search
+
+      parameters:
+        # Query
+        - name: q
+          in: query
+          description: JSON formatted object containing the query parameters.
+          required: true
+          type: string
+          x-graphVar:
+            - ?title
+            - ?date
+            - ?patentId
+            - ?inventorFirstName
+            - ?inventorLastName
+            - ?assigneeFirstName
+            - ?assigneeLastName
+            - ?assigneeOrgName
+          x-urlPattern: "\"and\": [\"patent_number\": \"{?patentId}\", ][\"patent_date\": \"{?date}\", ][\"patent_title\": \"{?title}\", ][\"inventor_first_name\": {?inventorFirstName}, ][\"inventor_last_name\": {?inventorLastName}, ][\"assignee_first_name\": {?assigneeFirstName}, ][\"assignee_last_name\": {?assigneeLastName}, ][\"assignee_organization\": {?assigneeOrgName}]"
+
+      x-responseMap:
+        - var: ?title
+          path: patents/patent_title
+        - var: ?abstract
+          path: patents/patent_abstract
+        - var: ?patentId
+          path: patents/patent_number
+        - var: ?date
+          path: patents/patent_date
+        - var: ?inventorId
+          path: patents/inventors/inventor_id
+        - var: ?inventorFirstName
+          path: patents/inventors/inventor_first_name
+        - var: ?inventorLastName
+          path: patents/inventors/inventor_last_name
+        - var: ?inventorName
+          path: CONCAT(patents/inventors/inventor_first_name, ' ', patents/inventors/inventor_first_name)
+        - var: ?inventor2Id
+          path: patents/inventors/inventor_id*
+        - var: ?inventor2FirstName
+          path: patents/inventors/inventor_first_name*
+        - var: ?inventor2LastName
+          path: patents/inventors/inventor_last_name*
+        - var: ?inventor2Name
+          path: CONCAT(patents/inventors/inventor_first_name*, ' ', patents/inventors/inventor_first_name*)
+        - var: ?assigneeId
+          path: patents/inventors/assignee_id
+        - var: ?assigneeFirstName
+          path: patents/inventors/assignee_first_name
+        - var: ?assigneeLastName
+          path: patents/inventors/assignee_last_name
+        - var: ?assigneeName
+          path: CONCAT(patents/assignees/inventor_first_name, ' ', patents/assignees/inventor_first_name)
+        - var: ?assigneeOrgId
+          path: patents/inventors/assignee_id
+        - var: ?assigneeOrgName
+          path: patents/inventors/assignee_organization
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Response'
+
+
+definitions:
+  Response:
+    properties:
+      patents:
+        type: array
+        items:
+          $ref: '#/definitions/Patent'
+      count:
+        type: integer
+      total_patent_count:
+        type: integer
+
+  Patent:
+    properties:
+      patent_number:
+        type: string
+      patent_date:
+        type: string
+        format: date
+      patent_title:
+        type: string
+      patent_abstract:
+        type: string
+      inventors:
+        type: array
+        items:
+          properties:
+            inventor_first_name:
+              type: string
+            inventor_last_name:
+              type: string
+            inventor_id:
+              type: string
+            inventor_country:
+              type: string
+      assignees:
+        type: array
+        properties:
+          assignee_first_name:
+            type: string
+          assignee_last_name:
+            type: string
+          assignee_id:
+            type: string
+          assignee_country:
+            type: string
+          assignee_organization:
+            type: string

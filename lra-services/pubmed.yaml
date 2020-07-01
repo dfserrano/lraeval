@@ -1,0 +1,468 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: Pubmed
+
+host: localhost
+basePath: /lraeval/api/pubmed
+schemes:
+  - http
+produces:
+  - application/json
+
+x-prefixes:
+  - prefix: rdf
+    url: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  - prefix: dc
+    url: http://purl.org/dc/terms/
+  - prefix: pubmed
+    url: http://eutils.ncbi.nlm.nih.gov/entrez/terms/
+  - prefix: vivo
+    url: http://vivoweb.org/ontology/core#
+  - prefix: bibo
+    url: http://purl.org/ontology/bibo/
+  - prefix: foaf
+    url: http://xmlns.com/foaf/0.1/
+
+paths:
+  /esearch.json:
+    get:
+      summary: Text searches
+      description: Responds to a text query with the list of matching UIDs in a given database (for later use in ESummary, EFetch or ELink), along with the term translations of the query.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          pubmed:id ?paperId ;
+          vivo:hasPublicationVenue ?journal ;
+          dc:creator ?author .
+        ?journal a bibo:Journal ;
+          dc:title ?journalName .
+        ?author a foaf:Person ;
+          foaf:name ?authorName .
+
+      tags:
+        - E-Utilities
+
+      parameters:
+        # Dataase
+        - name: db
+          in: query
+          description: Database to search. Value must be a valid Entrez database name (default = pubmed). Full list at <a href="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/einfo.fcgi">https://eutils.ncbi.nlm.nih.gov/entrez/eutils/einfo.fcgi</a>
+          required: false
+          type: string
+          default: pubmed
+
+        # Term
+        - name: term
+          in: query
+          description: Entrez text query. All special characters must be URL encoded. Spaces may be replaced by '+' signs. For very long queries (more than several hundred characters long), consider using an HTTP POST call. See the PubMed or Entrez help for information about search field descriptions and tags. Search fields and tags are database specific.
+          required: true
+          type: string
+          x-graphVar:
+            - ?paperTitle
+            - ?authorName
+            - ?journalName
+          x-urlPattern: "[{?authorName}[au] AND ][{?journalName}[ta] AND ][{?paperTitle}]"
+
+      x-responseMap:
+        - var: ?paperId
+          path: IdList
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/ESearchResponse'
+
+  /esummary.json:
+    get:
+      summary: Document summary downloads
+      description: Responds to a list of UIDs from a given database with the corresponding document summaries.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          pubmed:id ?paperId ;
+          dc:date ?paperDate ;
+          vivo:hasPublicationVenue ?journal ;
+          dc:creator ?author .
+        ?journal a bibo:Journal ;
+          bibo:issn ?issn ;
+          dc:title ?journalName .
+        ?author a foaf:Person ;
+          foaf:name ?authorName .
+
+      tags:
+        - E-Utilities
+      parameters:
+        # Dataase
+        - name: db
+          in: query
+          description: Database to search. Value must be a valid Entrez database name (default = pubmed). Full list at <a href="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/einfo.fcgi">https://eutils.ncbi.nlm.nih.gov/entrez/eutils/einfo.fcgi</a>
+          required: false
+          type: string
+          default: pubmed
+
+        # ID list
+        - name: id
+          in: query
+          description: UID list. Either a single UID or a comma-delimited list of UIDs may be provided. All of the UIDs must be from the database specified by db. There is no set maximum for the number of UIDs that can be passed to ESummary, but if more than about 200 UIDs are to be provided, the request should be made using the HTTP POST method.
+          required: true
+          type: string
+          collectionFormat: csv
+          x-graphVar: ?paperId
+
+      x-responseMap:
+        - var: ?paperTitle
+          path: DocSum/Title
+        - var: ?paperId
+          path: DocSum/Id
+        - var: ?paperDate
+          path: DocSum/PubDate
+        - var: ?issn
+          path: DocSum/ISSN
+        - var: ?journalName
+          path: DocSum/FullJournalName
+        - var: ?authorName
+          path: DocSum/AuthorList
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/ESummaryResponse'
+
+  /efetch.json:
+    get:
+      summary: Data record downloads
+      description: Responds to a list of UIDs in a given database with the corresponding data records in a specified format.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          bibo:abstract ?paperAbstract ;
+          pubmed:id ?paperId ;
+          dc:date ?paperDate ;
+          vivo:hasPublicationVenue ?journal ;
+          dc:creator ?author .
+        ?journal a bibo:Journal ;
+          bibo:issn ?issn ;
+          dc:title ?journalName .
+        ?author a foaf:Person ;
+          foaf:name ?authorName .
+        ?position a vivo:Position ;
+          vivo:relates ?author ;
+          vivo:relates ?organization .
+        ?organization a foaf:Organization ;
+          foaf:name ?organizationName .
+
+      tags:
+        - E-Utilities
+      parameters:
+        # Database
+        - name: db
+          in: query
+          description: Database to search. Value must be a valid Entrez database name (default = pubmed). Full list at <a href="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/einfo.fcgi">https://eutils.ncbi.nlm.nih.gov/entrez/eutils/einfo.fcgi</a>
+          required: false
+          type: string
+          default: pubmed
+
+        # ID list
+        - name: id
+          in: query
+          description: UID list. Either a single UID or a comma-delimited list of UIDs may be provided. All of the UIDs must be from the database specified by db. There is no set maximum for the number of UIDs that can be passed to ESummary, but if more than about 200 UIDs are to be provided, the request should be made using the HTTP POST method.
+          required: true
+          type: string
+          collectionFormat: csv
+          x-graphVar: ?paperId
+
+      x-responseMap:
+        - var: ?paperTitle
+          path: entry/medent/cit/title/name
+        - var: ?paperAbstract
+          path: entry/medent/abstract
+        - var: ?paperId
+          path: entry/pmid
+        - var: ?paperDate
+          path: entry/medent/em_std
+        - var: ?issn
+          path: entry/medent/cit/from_journal/issn
+        - var: ?journalName
+          path: entry/medent/cit/from_journal/name
+        - var: ?authorName
+          path: entry/medent/cit/authors/names_std/name_ml
+        - var: ?organizationName
+          path: entry/medent/cit/authors/names_std/affil_str
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/EFetchResponse'
+
+definitions:
+
+  EFetchResponse:
+    properties:
+      entry:
+        type: array
+        items:
+          $ref: '#/definitions/EntryRecord'
+
+  EntryRecord:
+    properties:
+      pmid:
+        type: integer
+        format: int64
+      medent:
+        type: string
+        format: date
+      cit:
+        $ref: '#/definitions/CitationInfo'
+      abstract:
+        type: string
+      mesh:
+        type: array
+        items:
+          properties:
+            term:
+              type: string
+            qual:
+              type: array
+              items:
+                properties:
+                  mp:
+                    type: string
+                  subh:
+                    type: string
+      substance:
+        type: array
+        items:
+          properties:
+            type:
+              type: string
+            cit:
+              type: string
+            name:
+              type: string
+      pubtype:
+        type: array
+        items:
+          type: string
+      status:
+        type: string
+
+  CitationInfo:
+    properties:
+      title:
+        type: object
+        properties:
+          name:
+            type: string
+      authors:
+        type: object
+        properties:
+          names_std:
+            type: array
+            items:
+              type: object
+              properties:
+                name_ml:
+                  type: string
+                affil_str:
+                  type: string
+      from_journal:
+        type: object
+        properties:
+          title:
+            type: object
+            properties:
+              iso-jta:
+                type: string
+              ml-jta:
+                type: string
+              issn:
+                type: string
+              name:
+                type: string
+      imp:
+        type: object
+        properties:
+          date_std:
+            type: string
+            format: date
+          volume:
+            type: string
+          issue:
+            type: string
+          pages:
+            type: string
+          language:
+            type: string
+          pubstatus:
+            type: string
+          history:
+            type: array
+            items:
+              properties:
+                pubstatus:
+                  type: string
+                date_std:
+                  type: string
+                  format: date-time
+      ids:
+        type: object
+        properties:
+          pubmed:
+            type: integer
+            format: int64
+          pii:
+            type: string
+          doi:
+            type: string
+
+  ESummaryResponse:
+    properties:
+      DocSum:
+        type: array
+        items:
+          $ref: '#/definitions/DocSummary'
+
+  DocSummary:
+    properties:
+      Id:
+        type: integer
+        format: int64
+      PubDate:
+        type: string
+      Source:
+        type: string
+      AuthorList:
+        type: array
+        items:
+          type: string
+      Title:
+        type: string
+      Volume:
+        type: string
+      Issue:
+        type: string
+      Pages:
+        type: string
+      LangList:
+        type: array
+        items:
+          type: string
+      NlmUniqueID:
+        type: string
+      ISSN:
+        type: string
+      PubType:
+        type: string
+      RecordStatus:
+        type: string
+      PubStatus:
+        type: string
+      ArticleIds:
+        type: array
+        items:
+          properties:
+            pubmed:
+              type: string
+            pii:
+              type: string
+            rid:
+              type: string
+            eid:
+              type: string
+      History:
+        type: array
+        items:
+          properties:
+            entrez:
+              type: string
+              format: date-time
+            pubmed:
+              type: string
+              format: date-time
+            medline:
+              type: string
+              format: date-time
+      HasAbstract:
+        type: string
+      PmcRefCount:
+        type: integer
+        format: int64
+      FullJournalName:
+        type: string
+
+  ESearchResponse:
+    properties:
+      Count:
+        type: integer
+        format: int64
+      RetMax:
+        type: integer
+        format: int64
+      RetStart:
+        type: integer
+        format: int64
+      QueryKey:
+        type: string
+      WebEnv:
+        type: string
+      IdList:
+        type: array
+        items:
+          type: string
+      TranslationSet:
+        type: array
+        items:
+          $ref: '#/definitions/TranslationItem'
+      TranslationStack:
+        type: object
+        properties:
+          TermSet:
+            type: array
+            items:
+              $ref: '#/definitions/TermItem'
+          OP:
+            type: array
+            items:
+              type: string
+      QueryTranslation:
+        type: string
+
+  TranslationItem:
+    properties:
+      From:
+        type: string
+      To:
+        type: string
+
+  TermItem:
+    properties:
+      Term:
+        type: string
+      Field:
+        type: string
+      Count:
+        type: string
+      Explode:
+        type: string
+
+  Error:
+    required:
+      - code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string

@@ -1,0 +1,2144 @@
+{
+  "abstracts-retrieval-response": {
+    "coredata": {
+      "url": "https://api.elsevier.com/content/abstract/scopus_id/0037070197",
+      "identifier": "SCOPUS_ID:0037070197",
+      "eid": "2-s2.0-0037070197",
+      "pubmed-id": "11852050",
+      "pii": "S0014579301033130",
+      "doi": "10.1016/S0014-5793(01)03313-0",
+      "title": "The orientation of the antibiotic peptide maculatin 1.1 in DMPG and DMPC lipid bilayers. Support for a pore-forming mechanism",
+      "aggregationType": "Journal",
+      "srctype": "j",
+      "citedby-count": "45",
+      "publicationName": "FEBS Letters",
+      "source-id": "17481",
+      "issn": "00145793",
+      "volume": "512",
+      "issueIdentifier": "1-3",
+      "startingPage": "47",
+      "endingPage": "51",
+      "pageRange": "47-51",
+      "coverDate": "2002-02-13",
+      "creator": {
+        "author": [
+          {
+            "_fa": "true",
+            "auid": "55126316600",
+            "seq": "1",
+            "initials": "C.S.B.",
+            "indexed-name": "Chia C.S.B.",
+            "surname": "Chia",
+            "preferred-name": {
+              "initials": "C.S.B.",
+              "indexed-name": "Chia C.",
+              "surname": "Chia",
+              "given-name": "C. S B"
+            },
+            "author-url": "https://api.elsevier.com/content/author/author_id/55126316600",
+            "affiliation": {
+              "href": "https://api.elsevier.com/content/affiliation/affiliation_id/60031101",
+              "id": "60031101"
+            }
+          }
+        ]
+      },
+      "description": "Maculatin 1.1 is an antimicrobial peptide isolated from the Australian tree frog Litoria genimaculata that adopts an amphipathic, α-helical structure in solution. Its orientation and conformation when incorporated to pre-formed DMPG (1,2-dimyristoyl-sn-glycero-3-phosphoglycerol) and DMPC (1,2-dimyristoyl-sn-glycero-3-phosphocholine) vesicles was determined using polarised Fourier transform infrared-attenuated total reflection infrared and deuterium exchange experiments. For DMPG membranes, our results show insertion of ∼70% of the maculatin 1.1 molecules, with an angle of insertion of approximately 35° to the membrane normal and with a predominant α-helical structure. These results suggest that maculatin 1.1 acts through a pore-forming mechanism to lyse bacterial membranes. A similar degree of insertion in DMPG (65%) and α-helical structure was observed for a biologically inactive, less amphipathic maculatin 1.1 analogue, P15A, although the helix tilt was found to be greater (46°) than for maculatin 1.1. Similar experiments performed using DMPC liposomes showed poor insertion, less than 5%, for both maculatin 1.1 and its analogue. In addition, the shape of the amide I band in these samples is consistent with α-helix, β-structure and disordered structures being present in similar proportion. These results clearly show that maculatin 1.1 inserts preferentially in negatively charged membranes (DMPG) which mimic the negatively charged membrane of Gram-positive bacteria. We attribute the high percentage of insertion of the biologically inactive analogue in DMPG to the fact that its concentration on the membrane surface in our experiments is likely to be much higher than that found in physiological conditions. © 2002 Federation of European Microbiological Societies. Published by Elsevier Science B.V. All rights reserved.",
+      "intid": "0037070197",
+      "link": [
+        {
+          "_fa": "true",
+          "href": "https://api.elsevier.com/content/abstract/scopus_id/0037070197",
+          "rel": "self"
+        },
+        {
+          "_fa": "true",
+          "href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=0037070197&amp;origin=inward",
+          "rel": "scopus"
+        },
+        {
+          "_fa": "true",
+          "href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=0037070197&amp;origin=inward",
+          "rel": "scopus-citedby"
+        }
+      ]
+    },
+    "affiliation": [
+      {
+        "href": "https://api.elsevier.com/content/affiliation/affiliation_id/60031101",
+        "id": "60031101",
+        "affilname": "University of Cambridge",
+        "affiliation-city": "Cambridge",
+        "affiliation-country": "United Kingdom"
+      },
+      {
+        "href": "https://api.elsevier.com/content/affiliation/affiliation_id/60005510",
+        "id": "60005510",
+        "affilname": "Nanyang Technological University",
+        "affiliation-city": "Singapore City",
+        "affiliation-country": "Singapore"
+      },
+      {
+        "href": "https://api.elsevier.com/content/affiliation/affiliation_id/60009512",
+        "id": "60009512",
+        "affilname": "University of Adelaide",
+        "affiliation-city": "Adelaide",
+        "affiliation-country": "Australia"
+      }
+    ],
+    "authors": {
+      "author": [
+        {
+          "_fa": "true",
+          "auid": "55126316600",
+          "seq": "1",
+          "initials": "C.S.B.",
+          "indexed-name": "Chia C.S.B.",
+          "surname": "Chia",
+          "preferred-name": {
+            "initials": "C.S.B.",
+            "indexed-name": "Chia C.",
+            "surname": "Chia",
+            "given-name": "C. S B"
+          },
+          "author-url": "https://api.elsevier.com/content/author/author_id/55126316600",
+          "affiliation": {
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/60031101",
+            "id": "60031101"
+          }
+        },
+        {
+          "_fa": "true",
+          "auid": "7402798449",
+          "seq": "2",
+          "initials": "J.",
+          "indexed-name": "Torres J.",
+          "surname": "Torres",
+          "preferred-name": {
+            "initials": "J.",
+            "indexed-name": "Torres J.",
+            "surname": "Torres",
+            "given-name": "J."
+          },
+          "author-url": "https://api.elsevier.com/content/author/author_id/7402798449",
+          "affiliation": [
+            {
+              "href": "https://api.elsevier.com/content/affiliation/affiliation_id/60031101",
+              "id": "60031101"
+            },
+            {
+              "href": "https://api.elsevier.com/content/affiliation/affiliation_id/60005510",
+              "id": "60005510"
+            }
+          ]
+        },
+        {
+          "_fa": "true",
+          "auid": "7404411451",
+          "seq": "3",
+          "initials": "M.A.",
+          "indexed-name": "Cooper M.A.",
+          "surname": "Cooper",
+          "preferred-name": {
+            "initials": "M.A.",
+            "indexed-name": "Cooper M.",
+            "surname": "Cooper",
+            "given-name": "M. A."
+          },
+          "author-url": "https://api.elsevier.com/content/author/author_id/7404411451",
+          "affiliation": {
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/60031101",
+            "id": "60031101"
+          }
+        },
+        {
+          "_fa": "true",
+          "auid": "7003858738",
+          "seq": "4",
+          "initials": "I.T.",
+          "indexed-name": "Arkin I.T.",
+          "surname": "Arkin",
+          "preferred-name": {
+            "initials": "I.T.",
+            "indexed-name": "Arkin I.",
+            "surname": "Arkin",
+            "given-name": "I. T."
+          },
+          "author-url": "https://api.elsevier.com/content/author/author_id/7003858738",
+          "affiliation": {
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/60031101",
+            "id": "60031101"
+          }
+        },
+        {
+          "_fa": "true",
+          "auid": "7102792890",
+          "seq": "5",
+          "initials": "J.H.",
+          "indexed-name": "Bowie J.H.",
+          "surname": "Bowie",
+          "preferred-name": {
+            "initials": "J.H.",
+            "indexed-name": "Bowie J.",
+            "surname": "Bowie",
+            "given-name": "J. H."
+          },
+          "author-url": "https://api.elsevier.com/content/author/author_id/7102792890",
+          "affiliation": {
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/60009512",
+            "id": "60009512"
+          }
+        }
+      ]
+    },
+    "language": {
+      "lang": "eng"
+    },
+    "authkeywords": {
+      "author-keyword": [
+        {
+          "_fa": "true",
+          "$": "1,2-Dimyristoyl-sn-glycero-3-phosphocholine"
+        },
+        {
+          "_fa": "true",
+          "$": "1,2-Dimyristoyl-sn-glycero-3-phosphoglycerol"
+        },
+        {
+          "_fa": "true",
+          "$": "Attenuated total reflection"
+        },
+        {
+          "_fa": "true",
+          "$": "Fourier transform infrared"
+        },
+        {
+          "_fa": "true",
+          "$": "Litoria genimaculata"
+        },
+        {
+          "_fa": "true",
+          "$": "Maculatin 1.1"
+        },
+        {
+          "_fa": "true",
+          "$": "Peptide antibiotic"
+        },
+        {
+          "_fa": "true",
+          "$": "Phospholipid membrane"
+        }
+      ]
+    },
+    "idxterms": null,
+    "subject-areas": {
+      "subject-area": [
+        {
+          "_fa": "true",
+          "abbrev": "BIOC",
+          "code": "1303",
+          "$": "Biochemistry"
+        },
+        {
+          "_fa": "true",
+          "abbrev": "BIOC",
+          "code": "1304",
+          "$": "Biophysics"
+        },
+        {
+          "_fa": "true",
+          "abbrev": "BIOC",
+          "code": "1312",
+          "$": "Molecular Biology"
+        }
+      ]
+    },
+    "item": {
+      "process-info": {
+        "date-delivered": {
+          "day": "30",
+          "month": "05",
+          "timestamp": "2015-05-30T12:13:49.000049+01:00",
+          "year": "2015"
+        },
+        "date-sort": {
+          "day": "13",
+          "month": "02",
+          "year": "2002"
+        },
+        "status": {
+          "stage": "S300",
+          "state": "update",
+          "type": "core"
+        }
+      },
+      "bibrecord": {
+        "item-info": {
+          "copyright": [
+            {
+              "type": "Elsevier",
+              "$": "Copyright 2008 Elsevier B.V., All rights reserved."
+            },
+            {
+              "type": "Medline Descriptors",
+              "$": "MEDLINE® is the source for the MeSH terms of this document."
+            }
+          ],
+          "itemidlist": {
+            "pii": "S0014579301033130",
+            "doi": "10.1016/S0014-5793(01)03313-0",
+            "itemid": [
+              {
+                "idtype": "PUI",
+                "$": "34164449"
+              },
+              {
+                "idtype": "EMBASE",
+                "$": "2002074089"
+              },
+              {
+                "idtype": "CABS",
+                "$": "2002047749"
+              },
+              {
+                "idtype": "MEDL",
+                "$": "11852050"
+              },
+              {
+                "idtype": "SCP",
+                "$": "0037070197"
+              },
+              {
+                "idtype": "SGR",
+                "$": "0037070197"
+              }
+            ]
+          },
+          "history": {
+            "date-created": {
+              "day": "04",
+              "month": "03",
+              "year": "2002"
+            }
+          },
+          "dbcollection": [
+            {
+              "$": "EMBASE"
+            },
+            {
+              "$": "CABS"
+            },
+            {
+              "$": "MEDL"
+            },
+            {
+              "$": "Scopusbase"
+            }
+          ]
+        },
+        "head": {
+          "citation-info": {
+            "citation-type": {
+              "code": "ar"
+            },
+            "citation-language": {
+              "language": "English",
+              "lang": "eng"
+            },
+            "abstract-language": {
+              "language": "English",
+              "lang": "eng"
+            },
+            "author-keywords": {
+              "author-keyword": [
+                {
+                  "$": "1,2-Dimyristoyl-sn-glycero-3-phosphocholine"
+                },
+                {
+                  "$": "1,2-Dimyristoyl-sn-glycero-3-phosphoglycerol"
+                },
+                {
+                  "$": "Attenuated total reflection"
+                },
+                {
+                  "$": "Fourier transform infrared"
+                },
+                {
+                  "$": "Litoria genimaculata"
+                },
+                {
+                  "$": "Maculatin 1.1"
+                },
+                {
+                  "$": "Peptide antibiotic"
+                },
+                {
+                  "$": "Phospholipid membrane"
+                }
+              ]
+            }
+          },
+          "citation-title": "The orientation of the antibiotic peptide maculatin 1.1 in DMPG and DMPC lipid bilayers. Support for a pore-forming mechanism",
+          "author-group": [
+            {
+              "author": [
+                {
+                  "auid": "55126316600",
+                  "seq": "1",
+                  "initials": "C.S.B.",
+                  "indexed-name": "Chia C.S.B.",
+                  "surname": "Chia",
+                  "preferred-name": {
+                    "initials": "C.S.B.",
+                    "indexed-name": "Chia C.",
+                    "surname": "Chia",
+                    "given-name": "C. S B"
+                  }
+                },
+                {
+                  "auid": "7404411451",
+                  "seq": "3",
+                  "initials": "M.A.",
+                  "indexed-name": "Cooper M.A.",
+                  "surname": "Cooper",
+                  "preferred-name": {
+                    "initials": "M.A.",
+                    "indexed-name": "Cooper M.",
+                    "surname": "Cooper",
+                    "given-name": "M. A."
+                  }
+                }
+              ],
+              "affiliation": {
+                "afid": "60031101",
+                "dptid": "104579196",
+                "organization": [
+                  {
+                    "$": "Department of Chemistry"
+                  },
+                  {
+                    "$": "University of Cambridge"
+                  }
+                ],
+                "address-part": "Lensfield Road",
+                "city-group": "Cambridge CB2 1EW",
+                "country": "United Kingdom"
+              }
+            },
+            {
+              "author": [
+                {
+                  "auid": "7402798449",
+                  "seq": "2",
+                  "initials": "J.",
+                  "indexed-name": "Torres J.",
+                  "surname": "Torres",
+                  "preferred-name": {
+                    "initials": "J.",
+                    "indexed-name": "Torres J.",
+                    "surname": "Torres",
+                    "given-name": "J."
+                  },
+                  "e-address": {
+                    "type": "email",
+                    "$": "jtorresntu.edu.sg"
+                  }
+                },
+                {
+                  "auid": "7003858738",
+                  "seq": "4",
+                  "initials": "I.T.",
+                  "indexed-name": "Arkin I.T.",
+                  "surname": "Arkin",
+                  "preferred-name": {
+                    "initials": "I.T.",
+                    "indexed-name": "Arkin I.",
+                    "surname": "Arkin",
+                    "given-name": "I. T."
+                  }
+                }
+              ],
+              "affiliation": {
+                "afid": "60031101",
+                "dptid": "104579211",
+                "organization": [
+                  {
+                    "$": "Department of Biochemistry"
+                  },
+                  {
+                    "$": "University of Cambridge"
+                  }
+                ],
+                "address-part": "80 Tennis Court Road",
+                "city-group": "Cambridge CB2 1GA",
+                "country": "United Kingdom"
+              }
+            },
+            {
+              "author": {
+                "auid": "7102792890",
+                "seq": "5",
+                "initials": "J.H.",
+                "indexed-name": "Bowie J.H.",
+                "surname": "Bowie",
+                "preferred-name": {
+                  "initials": "J.H.",
+                  "indexed-name": "Bowie J.",
+                  "surname": "Bowie",
+                  "given-name": "J. H."
+                }
+              },
+              "affiliation": {
+                "afid": "60009512",
+                "dptid": "100265992",
+                "organization": [
+                  {
+                    "$": "Department of Chemistry"
+                  },
+                  {
+                    "$": "University of Adelaide"
+                  }
+                ],
+                "address-part": "North Terrace",
+                "city-group": "Adelaide, SA 5005",
+                "country": "Australia"
+              }
+            },
+            {
+              "author": {
+                "auid": "7402798449",
+                "seq": "2",
+                "initials": "J.",
+                "indexed-name": "Torres J.",
+                "surname": "Torres",
+                "preferred-name": {
+                  "initials": "J.",
+                  "indexed-name": "Torres J.",
+                  "surname": "Torres",
+                  "given-name": "J."
+                },
+                "e-address": {
+                  "type": "email",
+                  "$": "jtorresntu.edu.sg"
+                }
+              },
+              "affiliation": {
+                "afid": "60005510",
+                "dptid": "103320706",
+                "organization": [
+                  {
+                    "$": "School of Biological Sciences"
+                  },
+                  {
+                    "$": "Nanyang Technological University"
+                  }
+                ],
+                "address-part": "1 Nanyang Walk",
+                "city-group": "637616 Singapore",
+                "country": "Singapore"
+              }
+            }
+          ],
+          "correspondence": {
+            "person": {
+              "initials": "J.",
+              "indexed-name": "Torres J.",
+              "surname": "Torres"
+            },
+            "affiliation": {
+              "organization": [
+                {
+                  "$": "Department of Chemistry"
+                },
+                {
+                  "$": "University of Cambridge"
+                }
+              ],
+              "address-part": "80 Tennis Court Road",
+              "city-group": "Cambridge CB2 1GA",
+              "country": "United Kingdom"
+            },
+            "e-address": {
+              "type": "email",
+              "$": "jtorresntu.edu.sg"
+            }
+          },
+          "abstracts": "Maculatin 1.1 is an antimicrobial peptide isolated from the Australian tree frog Litoria genimaculata that adopts an amphipathic, α-helical structure in solution. Its orientation and conformation when incorporated to pre-formed DMPG (1,2-dimyristoyl-sn-glycero-3-phosphoglycerol) and DMPC (1,2-dimyristoyl-sn-glycero-3-phosphocholine) vesicles was determined using polarised Fourier transform infrared-attenuated total reflection infrared and deuterium exchange experiments. For DMPG membranes, our results show insertion of ∼70% of the maculatin 1.1 molecules, with an angle of insertion of approximately 35° to the membrane normal and with a predominant α-helical structure. These results suggest that maculatin 1.1 acts through a pore-forming mechanism to lyse bacterial membranes. A similar degree of insertion in DMPG (65%) and α-helical structure was observed for a biologically inactive, less amphipathic maculatin 1.1 analogue, P15A, although the helix tilt was found to be greater (46°) than for maculatin 1.1. Similar experiments performed using DMPC liposomes showed poor insertion, less than 5%, for both maculatin 1.1 and its analogue. In addition, the shape of the amide I band in these samples is consistent with α-helix, β-structure and disordered structures being present in similar proportion. These results clearly show that maculatin 1.1 inserts preferentially in negatively charged membranes (DMPG) which mimic the negatively charged membrane of Gram-positive bacteria. We attribute the high percentage of insertion of the biologically inactive analogue in DMPG to the fact that its concentration on the membrane surface in our experiments is likely to be much higher than that found in physiological conditions. © 2002 Federation of European Microbiological Societies. Published by Elsevier Science B.V. All rights reserved.",
+          "source": {
+            "srcid": "17481",
+            "type": "j",
+            "sourcetitle": "FEBS Letters",
+            "sourcetitle-abbrev": "FEBS Lett.",
+            "issn": {
+              "type": "print",
+              "$": "00145793"
+            },
+            "codencode": "FEBLA",
+            "volisspag": {
+              "voliss": {
+                "issue": "1-3",
+                "volume": "512"
+              },
+              "pagerange": {
+                "first": "47",
+                "last": "51"
+              }
+            },
+            "publicationyear": {
+              "first": "2002"
+            },
+            "publicationdate": {
+              "year": "2002",
+              "month": "02",
+              "day": "13",
+              "date-text": {
+                "xfab-added": "true",
+                "$": "13 February 2002"
+              }
+            }
+          },
+          "enhancement": {
+            "classificationgroup": {
+              "classifications": [
+                {
+                  "type": "ASJC",
+                  "classification": [
+                    {
+                      "$": "1303"
+                    },
+                    {
+                      "$": "1304"
+                    },
+                    {
+                      "$": "1312"
+                    }
+                  ]
+                },
+                {
+                  "type": "SUBJABBR",
+                  "classification": "BIOC"
+                },
+                {
+                  "type": "CABSCLASS",
+                  "classification": "99"
+                },
+                {
+                  "type": "EMCLASS",
+                  "classification": [
+                    {
+                      "$": "37"
+                    },
+                    {
+                      "$": "4.2"
+                    },
+                    {
+                      "$": "4.7.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            "manufacturergroup": {
+              "manufacturers": {
+                "type": "MNF",
+                "manufacturer": {
+                  "country": "aus",
+                  "$": "Chiron"
+                }
+              }
+            },
+            "chemicalgroup": {
+              "chemicals": {
+                "source": "nlm",
+                "chemical": [
+                  {
+                    "chemical-name": "Amphibian Proteins",
+                    "cas-registry-number": "0"
+                  },
+                  {
+                    "chemical-name": "Anti-Bacterial Agents",
+                    "cas-registry-number": "0"
+                  },
+                  {
+                    "chemical-name": "Antimicrobial Cationic Peptides",
+                    "cas-registry-number": "0"
+                  },
+                  {
+                    "chemical-name": "Dimyristoylphosphatidylcholine",
+                    "cas-registry-number": "13699-48-4"
+                  },
+                  {
+                    "chemical-name": "dimyristoylphosphatidylglycerol",
+                    "cas-registry-number": "61361-72-6"
+                  },
+                  {
+                    "chemical-name": "Ion Channels",
+                    "cas-registry-number": "0"
+                  },
+                  {
+                    "chemical-name": "Lipid Bilayers",
+                    "cas-registry-number": "0"
+                  },
+                  {
+                    "chemical-name": "maculatin-1.1 protein, Litoria",
+                    "cas-registry-number": "0"
+                  },
+                  {
+                    "chemical-name": "Phosphatidylglycerols",
+                    "cas-registry-number": "0"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "tail": {
+          "bibliography": {
+            "refcount": "30",
+            "reference": [
+              {
+                "id": "1",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0032717048"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "R.M.",
+                        "indexed-name": "Epand R.M.",
+                        "surname": "Epand"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "H.J.",
+                        "indexed-name": "Vogel H.J.",
+                        "surname": "Vogel"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Biochim. Biophys. Acta",
+                  "ref-publicationyear": {
+                    "first": "1999"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "1422"
+                    },
+                    "pagerange": {
+                      "first": "11",
+                      "last": "28"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "2",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0027328548"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "L.H.",
+                        "indexed-name": "Lazarus L.H.",
+                        "surname": "Lazarus"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "M.",
+                        "indexed-name": "Atilla M.",
+                        "surname": "Atilla"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Prog. Neurobiol.",
+                  "ref-publicationyear": {
+                    "first": "1993"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "41"
+                    },
+                    "pagerange": {
+                      "first": "473",
+                      "last": "507"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "3",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0023100945"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "M.G.",
+                        "indexed-name": "Giovannini M.G.",
+                        "surname": "Giovannini"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "L.",
+                        "indexed-name": "Poulter L.",
+                        "surname": "Poulter"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "B.W.",
+                        "indexed-name": "Gibson B.W.",
+                        "surname": "Gibson"
+                      },
+                      {
+                        "seq": "4",
+                        "initials": "D.H.",
+                        "indexed-name": "Williams D.H.",
+                        "surname": "Williams"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Biochem. J.",
+                  "ref-publicationyear": {
+                    "first": "1987"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "243"
+                    },
+                    "pagerange": {
+                      "first": "113",
+                      "last": "119"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "4",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0025860280"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "R.A.",
+                        "indexed-name": "Cruciani R.A.",
+                        "surname": "Cruciani"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "J.L.",
+                        "indexed-name": "Baker J.L.",
+                        "surname": "Baker"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "M.",
+                        "indexed-name": "Zasloff M.",
+                        "surname": "Zasloff"
+                      },
+                      {
+                        "seq": "4",
+                        "initials": "H.C.",
+                        "indexed-name": "Chen H.C.",
+                        "surname": "Chen"
+                      },
+                      {
+                        "seq": "5",
+                        "initials": "O.R.A.",
+                        "indexed-name": "Colamonici O.R.A.",
+                        "surname": "Colamonici"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Proc. Natl. Acad. Sci. USA",
+                  "ref-publicationyear": {
+                    "first": "1991"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "88"
+                    },
+                    "pagerange": {
+                      "first": "3792",
+                      "last": "3796"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "5",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0023875642"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "D.",
+                        "indexed-name": "Marion D.",
+                        "surname": "Marion"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "M.",
+                        "indexed-name": "Zasloff M.",
+                        "surname": "Zasloff"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "A.",
+                        "indexed-name": "Bax A.",
+                        "surname": "Bax"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "FEBS Lett.",
+                  "ref-publicationyear": {
+                    "first": "1988"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "227"
+                    },
+                    "pagerange": {
+                      "first": "21",
+                      "last": "26"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "6",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0031062621"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "J.",
+                        "indexed-name": "Gesell J.",
+                        "surname": "Gesell"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "M.",
+                        "indexed-name": "Zasloff M.",
+                        "surname": "Zasloff"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "S.J.",
+                        "indexed-name": "Opella S.J.",
+                        "surname": "Opella"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "J. Biomol. NMR",
+                  "ref-publicationyear": {
+                    "first": "1997"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "9"
+                    },
+                    "pagerange": {
+                      "first": "127",
+                      "last": "135"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "7",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0024438756"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "H.",
+                        "indexed-name": "Duclohier H.",
+                        "surname": "Duclohier"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "G.",
+                        "indexed-name": "Molle G.",
+                        "surname": "Molle"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "G.",
+                        "indexed-name": "Spach G.",
+                        "surname": "Spach"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Biophys. J.",
+                  "ref-publicationyear": {
+                    "first": "1989"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "56"
+                    },
+                    "pagerange": {
+                      "first": "1017",
+                      "last": "1021"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "8",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0002560639"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "H.V.",
+                        "indexed-name": "Westerhoff H.V.",
+                        "surname": "Westerhoff"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "D.",
+                        "indexed-name": "Juretic D.",
+                        "surname": "Juretic"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "R.W.",
+                        "indexed-name": "Hendler R.W.",
+                        "surname": "Hendler"
+                      },
+                      {
+                        "seq": "4",
+                        "initials": "M.H.V.",
+                        "indexed-name": "Zasloff M.H.V.",
+                        "surname": "Zasloff"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Proc. Natl. Acad. Sci. USA",
+                  "ref-publicationyear": {
+                    "first": "1989"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "86"
+                    },
+                    "pagerange": {
+                      "first": "6597",
+                      "last": "6601"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "9",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0025372569"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "D.",
+                        "indexed-name": "Wade D.",
+                        "surname": "Wade"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "A.",
+                        "indexed-name": "Boman A.",
+                        "surname": "Boman"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "B.",
+                        "indexed-name": "Wahlin B.",
+                        "surname": "Wahlin"
+                      },
+                      {
+                        "seq": "4",
+                        "initials": "C.M.",
+                        "indexed-name": "Drain C.M.",
+                        "surname": "Drain"
+                      },
+                      {
+                        "seq": "5",
+                        "initials": "D.",
+                        "indexed-name": "Andreu D.",
+                        "surname": "Andreu"
+                      },
+                      {
+                        "seq": "6",
+                        "initials": "H.G.",
+                        "indexed-name": "Boman H.G.",
+                        "surname": "Boman"
+                      },
+                      {
+                        "seq": "7",
+                        "initials": "R.B.D.",
+                        "indexed-name": "Merrifield R.B.D.",
+                        "surname": "Merrifield"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Proc. Natl. Acad. Sci. USA",
+                  "ref-publicationyear": {
+                    "first": "1990"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "87"
+                    },
+                    "pagerange": {
+                      "first": "4761",
+                      "last": "4765"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "10",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0032717886"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": {
+                      "seq": "1",
+                      "initials": "Y.",
+                      "indexed-name": "Shai Y.",
+                      "surname": "Shai"
+                    }
+                  },
+                  "ref-sourcetitle": "Biochim. Biophys. Acta",
+                  "ref-publicationyear": {
+                    "first": "1999"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "1462"
+                    },
+                    "pagerange": {
+                      "first": "55",
+                      "last": "70"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "11",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0026969265"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "Y.",
+                        "indexed-name": "Pouny Y.",
+                        "surname": "Pouny"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "D.",
+                        "indexed-name": "Rapaport D.",
+                        "surname": "Rapaport"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "A.",
+                        "indexed-name": "Mor A.",
+                        "surname": "Mor"
+                      },
+                      {
+                        "seq": "4",
+                        "initials": "P.",
+                        "indexed-name": "Nicolas P.",
+                        "surname": "Nicolas"
+                      },
+                      {
+                        "seq": "5",
+                        "initials": "Y.",
+                        "indexed-name": "Shai Y.",
+                        "surname": "Shai"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Biochemistry",
+                  "ref-publicationyear": {
+                    "first": "1992"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "31"
+                    },
+                    "pagerange": {
+                      "first": "12416",
+                      "last": "12423"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "12",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0026742166"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "B.",
+                        "indexed-name": "Bechinger B.",
+                        "surname": "Bechinger"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "M.",
+                        "indexed-name": "Zasloff M.",
+                        "surname": "Zasloff"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "S.J.",
+                        "indexed-name": "Opella S.J.",
+                        "surname": "Opella"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Biophys. J.",
+                  "ref-publicationyear": {
+                    "first": "1992"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "62"
+                    },
+                    "pagerange": {
+                      "first": "12",
+                      "last": "14"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "13",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0027488740"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "B.",
+                        "indexed-name": "Bechinger B.",
+                        "surname": "Bechinger"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "M.",
+                        "indexed-name": "Zasloff M.",
+                        "surname": "Zasloff"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "S.J.",
+                        "indexed-name": "Opella S.J.",
+                        "surname": "Opella"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Protein Sci.",
+                  "ref-publicationyear": {
+                    "first": "1993"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "2"
+                    },
+                    "pagerange": {
+                      "first": "2077",
+                      "last": "2084"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "14",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0025993413"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "S.",
+                        "indexed-name": "Frey S.",
+                        "surname": "Frey"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "L.K.",
+                        "indexed-name": "Tamm L.K.",
+                        "surname": "Tamm"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Biophys. J.",
+                  "ref-publicationyear": {
+                    "first": "1991"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "60"
+                    },
+                    "pagerange": {
+                      "first": "922",
+                      "last": "930"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "15",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0032038181"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "T.",
+                        "indexed-name": "Rozek T.",
+                        "surname": "Rozek"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "R.J.",
+                        "indexed-name": "Waugh R.J.",
+                        "surname": "Waugh"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "S.T.",
+                        "indexed-name": "Steinborner S.T.",
+                        "surname": "Steinborner"
+                      },
+                      {
+                        "seq": "4",
+                        "initials": "J.H.",
+                        "indexed-name": "Bowie J.H.",
+                        "surname": "Bowie"
+                      },
+                      {
+                        "seq": "5",
+                        "initials": "M.J.",
+                        "indexed-name": "Tyler M.J.",
+                        "surname": "Tyler"
+                      },
+                      {
+                        "seq": "6",
+                        "initials": "J.J.",
+                        "indexed-name": "Wallace J.J.",
+                        "surname": "Wallace"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Pept. Sci.",
+                  "ref-publicationyear": {
+                    "first": "1998"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "4"
+                    },
+                    "pagerange": {
+                      "first": "111",
+                      "last": "115"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "16",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0034109713"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "B.C.S.",
+                        "indexed-name": "Chia B.C.S.",
+                        "surname": "Chia"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "J.A.",
+                        "indexed-name": "Carver J.A.",
+                        "surname": "Carver"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "T.D.",
+                        "indexed-name": "Mulhern T.D.",
+                        "surname": "Mulhern"
+                      },
+                      {
+                        "seq": "4",
+                        "initials": "J.H.",
+                        "indexed-name": "Bowie J.H.",
+                        "surname": "Bowie"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Eur. J. Biochem.",
+                  "ref-publicationyear": {
+                    "first": "2000"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "267"
+                    },
+                    "pagerange": {
+                      "first": "1894",
+                      "last": "1908"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "17",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0004003561"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": {
+                      "seq": "1",
+                      "initials": "T.D.",
+                      "indexed-name": "Brock T.D.",
+                      "surname": "Brock"
+                    }
+                  },
+                  "ref-sourcetitle": "Biology of Microorganisms, 4th edn.",
+                  "ref-publicationyear": {
+                    "first": "1984"
+                  },
+                  "ref-text": "Prentice-Hall, Englewood Cliffs, N.J."
+                }
+              },
+              {
+                "id": "18",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0001160765"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "H.",
+                        "indexed-name": "Lechevalier H.",
+                        "surname": "Lechevalier"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "M.P.",
+                        "indexed-name": "Lechevalier M.P.",
+                        "surname": "Lechevalier"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Microbiol. Lipids",
+                  "ref-publicationyear": {
+                    "first": "1988"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "1"
+                    },
+                    "pagerange": {
+                      "first": "869",
+                      "last": "902"
+                    }
+                  },
+                  "ref-text": "Ratledge, C. and Wilkinson, S.G., Eds, Academic Press, London"
+                }
+              },
+              {
+                "id": "19",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0026078046"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "R.C.",
+                        "indexed-name": "MacDonald R.C.",
+                        "surname": "MacDonald"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "R.I.",
+                        "indexed-name": "MacDonald R.I.",
+                        "surname": "MacDonald"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "B.M.",
+                        "indexed-name": "Menco B.M.",
+                        "surname": "Menco"
+                      },
+                      {
+                        "seq": "4",
+                        "initials": "K.",
+                        "indexed-name": "Takeshita K.",
+                        "surname": "Takeshita"
+                      },
+                      {
+                        "seq": "5",
+                        "initials": "N.K.",
+                        "indexed-name": "Subbarao N.K.",
+                        "surname": "Subbarao"
+                      },
+                      {
+                        "seq": "6",
+                        "initials": "L.",
+                        "indexed-name": "Hu L.",
+                        "surname": "Hu"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Biochim. Biophys. Acta",
+                  "ref-publicationyear": {
+                    "first": "1991"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "1061"
+                    },
+                    "pagerange": {
+                      "first": "297",
+                      "last": "303"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "20",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0000337013"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "J.K.",
+                        "indexed-name": "Kauppinen J.K.",
+                        "surname": "Kauppinen"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "D.J.",
+                        "indexed-name": "Moffat D.J.",
+                        "surname": "Moffat"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "H.M.",
+                        "indexed-name": "Mantsch H.M.",
+                        "surname": "Mantsch"
+                      },
+                      {
+                        "seq": "4",
+                        "initials": "D.G.",
+                        "indexed-name": "Cameron D.G.",
+                        "surname": "Cameron"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Appl. Spectrosc.",
+                  "ref-publicationyear": {
+                    "first": "1981"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "35"
+                    },
+                    "pagerange": {
+                      "first": "271",
+                      "last": "276"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "21",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0029999396"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "I.T.",
+                        "indexed-name": "Arkin I.T.",
+                        "surname": "Arkin"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "W.P.",
+                        "indexed-name": "Russ W.P.",
+                        "surname": "Russ"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "M.",
+                        "indexed-name": "Lebendiker M.",
+                        "surname": "Lebendiker"
+                      },
+                      {
+                        "seq": "4",
+                        "initials": "S.",
+                        "indexed-name": "Schuldiner S.",
+                        "surname": "Schuldiner"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Biochemistry",
+                  "ref-publicationyear": {
+                    "first": "1996"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "35"
+                    },
+                    "pagerange": {
+                      "first": "7233",
+                      "last": "7238"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "22",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0003449930"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": {
+                      "seq": "1",
+                      "initials": "N.",
+                      "indexed-name": "Harrick N.",
+                      "surname": "Harrick"
+                    }
+                  },
+                  "ref-sourcetitle": "Internal Reflection Spectroscopy",
+                  "ref-publicationyear": {
+                    "first": "1967"
+                  },
+                  "ref-text": "Interscience Publishers, New York"
+                }
+              },
+              {
+                "id": "23",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0343092088"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "D.",
+                        "indexed-name": "Marsh D.",
+                        "surname": "Marsh"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "M.",
+                        "indexed-name": "Muller M.",
+                        "surname": "Muller"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "F.J.",
+                        "indexed-name": "Schmitt F.J.",
+                        "surname": "Schmitt"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Biophys. J.",
+                  "ref-publicationyear": {
+                    "first": "2000"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "78"
+                    },
+                    "pagerange": {
+                      "first": "2499",
+                      "last": "2510"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "24",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0001242101"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": {
+                      "seq": "1",
+                      "initials": "M.",
+                      "indexed-name": "Tsuboi M.",
+                      "surname": "Tsuboi"
+                    }
+                  },
+                  "ref-sourcetitle": "J. Polym. Sci.",
+                  "ref-publicationyear": {
+                    "first": "1962"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "59"
+                    },
+                    "pagerange": {
+                      "first": "139",
+                      "last": "153"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "25",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0032734050"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": {
+                      "seq": "1",
+                      "initials": "D.",
+                      "indexed-name": "Marsh D.",
+                      "surname": "Marsh"
+                    }
+                  },
+                  "ref-sourcetitle": "Biophys. J.",
+                  "ref-publicationyear": {
+                    "first": "1999"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "77"
+                    },
+                    "pagerange": {
+                      "first": "2630",
+                      "last": "2637"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "26",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0022691315"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "D.M.",
+                        "indexed-name": "Byler D.M.",
+                        "surname": "Byler"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "H.",
+                        "indexed-name": "Susi H.",
+                        "surname": "Susi"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Biopolymers",
+                  "ref-publicationyear": {
+                    "first": "1986"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "25"
+                    },
+                    "pagerange": {
+                      "first": "469",
+                      "last": "487"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "27",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0030819982"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "I.T.",
+                        "indexed-name": "Arkin I.T.",
+                        "surname": "Arkin"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "K.R.",
+                        "indexed-name": "MacKenzie K.R.",
+                        "surname": "MacKenzie"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "A.T.",
+                        "indexed-name": "Brunger A.T.",
+                        "surname": "Brunger"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "J. Am. Chem. Soc.",
+                  "ref-publicationyear": {
+                    "first": "1997"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "119"
+                    },
+                    "pagerange": {
+                      "first": "8973",
+                      "last": "8980"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "28",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0026101392"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "C.E.",
+                        "indexed-name": "Dempsey C.E.",
+                        "surname": "Dempsey"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "R.",
+                        "indexed-name": "Bazzo R.",
+                        "surname": "Bazzo"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "T.S.",
+                        "indexed-name": "Harvey T.S.",
+                        "surname": "Harvey"
+                      },
+                      {
+                        "seq": "4",
+                        "initials": "I.",
+                        "indexed-name": "Syperek I.",
+                        "surname": "Syperek"
+                      },
+                      {
+                        "seq": "5",
+                        "initials": "G.",
+                        "indexed-name": "Boheim G.",
+                        "surname": "Boheim"
+                      },
+                      {
+                        "seq": "6",
+                        "initials": "I.D.",
+                        "indexed-name": "Campbell I.D.",
+                        "surname": "Campbell"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "FEBS Lett.",
+                  "ref-publicationyear": {
+                    "first": "1991"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "281"
+                    },
+                    "pagerange": {
+                      "first": "240",
+                      "last": "244"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "29",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0026079128"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "C.E.",
+                        "indexed-name": "Dempsey C.E.",
+                        "surname": "Dempsey"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "B.",
+                        "indexed-name": "Sternberg B.",
+                        "surname": "Sternberg"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Biochim. Biophys. Acta",
+                  "ref-publicationyear": {
+                    "first": "1991"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "1061"
+                    },
+                    "pagerange": {
+                      "first": "175",
+                      "last": "184"
+                    }
+                  }
+                }
+              },
+              {
+                "id": "30",
+                "ref-info": {
+                  "refd-itemidlist": {
+                    "itemid": {
+                      "idtype": "SGR",
+                      "$": "0035954729"
+                    }
+                  },
+                  "ref-authors": {
+                    "author": [
+                      {
+                        "seq": "1",
+                        "initials": "S.",
+                        "indexed-name": "Fernandez-Lopez S.",
+                        "surname": "Fernandez-Lopez"
+                      },
+                      {
+                        "seq": "2",
+                        "initials": "H.S.",
+                        "indexed-name": "Kim H.S.",
+                        "surname": "Kim"
+                      },
+                      {
+                        "seq": "3",
+                        "initials": "E.C.",
+                        "indexed-name": "Choi E.C.",
+                        "surname": "Choi"
+                      },
+                      {
+                        "seq": "4",
+                        "initials": "M.",
+                        "indexed-name": "Delgado M.",
+                        "surname": "Delgado"
+                      },
+                      {
+                        "seq": "5",
+                        "initials": "J.R.",
+                        "indexed-name": "Granja J.R.",
+                        "surname": "Granja"
+                      },
+                      {
+                        "seq": "6",
+                        "initials": "A.",
+                        "indexed-name": "Khasanov A.",
+                        "surname": "Khasanov"
+                      },
+                      {
+                        "seq": "7",
+                        "initials": "K.",
+                        "indexed-name": "Kraehenbuehl K.",
+                        "surname": "Kraehenbuehl"
+                      },
+                      {
+                        "seq": "8",
+                        "initials": "G.",
+                        "indexed-name": "Long G.",
+                        "surname": "Long"
+                      },
+                      {
+                        "seq": "9",
+                        "initials": "D.A.",
+                        "indexed-name": "Weinberger D.A.",
+                        "surname": "Weinberger"
+                      },
+                      {
+                        "seq": "10",
+                        "initials": "K.M.",
+                        "indexed-name": "Wilcoxen K.M.",
+                        "surname": "Wilcoxen"
+                      },
+                      {
+                        "seq": "11",
+                        "initials": "M.R.",
+                        "indexed-name": "Ghadiri M.R.",
+                        "surname": "Ghadiri"
+                      }
+                    ]
+                  },
+                  "ref-sourcetitle": "Nature",
+                  "ref-publicationyear": {
+                    "first": "2001"
+                  },
+                  "ref-volisspag": {
+                    "voliss": {
+                      "volume": "412"
+                    },
+                    "pagerange": {
+                      "first": "452",
+                      "last": "455"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

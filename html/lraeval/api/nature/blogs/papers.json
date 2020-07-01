@@ -1,0 +1,17 @@
+[
+  {
+    "paper": {
+      "popularity": 1,
+      "created_at": "2011-05-17T23:27:22Z",
+      "title": "RTPrimerDB: the Real-Time PCR primer and probe database",
+      "updated_at": "2011-05-17T23:27:22Z",
+      "journal": null,
+      "url": "dx.doi.org/10.1093/nar/gkg011",
+      "pmid": null,
+      "id": 10063,
+      "hashed_id": "06583f66822c183c853839a34099c83e",
+      "doi": "10.1093/nar/gkg011",
+      "authors": "F Pattyn"
+    }
+  }
+]

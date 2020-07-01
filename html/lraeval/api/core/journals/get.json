@@ -1,0 +1,27 @@
+{
+  "status": "OK",
+  "data": {
+    "title": "International Journal of Innovative Research in Computer and Communication Engineering",
+    "identifiers": [
+      "oai:doaj.org/journal:f766b07675524755a18640469d3475c0",
+      "issn:2320-9798",
+      "issn:2320-9801",
+      "url:https://doaj.org/toc/2320-9801"
+    ],
+    "subjects": [
+      "information technology",
+      "computer networks",
+      "Electronic computers. Computer science",
+      "QA75.5-76.95",
+      "Instruments and machines",
+      "QA71-90",
+      "Mathematics",
+      "QA1-939",
+      "Science",
+      "Q"
+    ],
+    "language": "English",
+    "rights": "CC BY",
+    "publisher": "S&S Publications"
+  }
+}

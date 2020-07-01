@@ -1,0 +1,75 @@
+{
+  "patents": [
+    {
+      "patent_number": "7159246",
+      "patent_date": "2007-01-09",
+      "patent_title": "Glove with high tactile portion",
+      "patent_abstract": "A protective glove configured to cover the hand of the user is provided. The glove includes a first portion that is configured for tightly fitting on at least a portion of the hand of the user. A second portion is contiguous with the first portion and is also configured for tightly fitting on at least a portion of the hand of the user. The second portion has a higher tactility than the first portion so that the user of the glove may more easily feel through the second portion than through the first portion.",
+      "inventors": [
+        {
+          "inventor_first_name": "Darold Dean",
+          "inventor_last_name": "Tippey",
+          "inventor_id": "6207099-7",
+          "inventor_country": "US"
+        }
+      ],
+      "assignees": [
+        {
+          "assignee_first_name": null,
+          "assignee_last_name": null,
+          "assignee_id": "6bac904f6d6ed5ad752c08a0bb604468",
+          "assignee_country": "US",
+          "assignee_organization": "Kimberly-Clark Worldwide, Inc."
+        }
+      ]
+    },
+    {
+      "patent_number": "7159247",
+      "patent_date": "2007-01-09",
+      "patent_title": "Cap having a flexible headband",
+      "patent_abstract": "A headband mainly used for headwear and constructed by properly weaving 100% nylon combustible yarn. Having no polyurethane, the headband is woven to single ply or two-ply without an additional stitched portion, and exhibits good elasticity as a whole through the napped, felt-like structure of the textile. The circumferential stretch direction of the headband also provides excellent sweat absorption capability. With this construction a wide range of automatic size adjustment is obtained without imposing undue elastic pressure on the wearer such that the cap and headband are comfortable for extended periods of wear.",
+      "inventors": [
+        {
+          "inventor_first_name": "Il Dong",
+          "inventor_last_name": "Kim",
+          "inventor_id": "7159247-1",
+          "inventor_country": "KR"
+        }
+      ],
+      "assignees": [
+        {
+          "assignee_first_name": null,
+          "assignee_last_name": null,
+          "assignee_id": "61835fdd0e68e38f05606b49df265f72",
+          "assignee_country": "KR",
+          "assignee_organization": "Dana Corporation"
+        }
+      ]
+    },
+    {
+      "patent_number": "7159248",
+      "patent_date": "2007-01-09",
+      "patent_title": "Head covering with attached whistle",
+      "patent_abstract": "A head covering with an attached whistle. The generally square head covering has a top edge, a bottom edge, a left side edge, a right side edge, a front surface and a rear surface. A relatively narrow channel is present inside the covering near the top edge. The channel begins at a left opening in the left side edge and ends at a right opening in the right side edge. A long cloth cord extends for a first distance outside the head covering, through the channel and for a second distance outside the head covering. The cord has a first end that is free, a second end that is attached to a whistle, a left knot near the left opening and a right knot near the right opening. The left knot and right knot prevent the cord from slipping out of the channel while a user is in motion.",
+      "inventors": [
+        {
+          "inventor_first_name": "Jean Robert",
+          "inventor_last_name": "Saintlot",
+          "inventor_id": "7159248-1",
+          "inventor_country": "US"
+        }
+      ],
+      "assignees": [
+        {
+          "assignee_first_name": null,
+          "assignee_last_name": null,
+          "assignee_id": null,
+          "assignee_country": null,
+          "assignee_organization": null
+        }
+      ]
+    }
+  ],
+  "count": 25,
+  "total_patent_count": 100000
+}

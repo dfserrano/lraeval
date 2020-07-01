@@ -1,0 +1,108 @@
+{
+  "title": "The Food Crises and Political Instability in North Africa and the Middle\n  East",
+  "arxiv_id": "1108.2455",
+  "tq": [
+    "Food prices riots: research finds price threshold beyond which social unrest is likely",
+    "The Food Crises and Political Instability in N. Africa and the M. East",
+    "Primavera árabe:no fue la democracia, fue la comida.Interesante análisis: relación precios altos e intensidad revueltas",
+    "We identify a specific food price threshold above which protests become likely.",
+    "Brief paper by academics at the New England Complex Systems Institute predicts food riots due to rising prices, soon"
+  ],
+  "ads_id": "2011arXiv1108.2455L",
+  "isbns": [],
+  "altmetric_jid": "4f6fa4dc3cf058f61000193d",
+  "issns": [],
+  "journal": "Africa (Cambridge University Press)",
+  "cohorts": {
+    "sci": 12,
+    "pub": 122,
+    "doc": 1,
+    "com": 3
+  },
+  "abstract": "  Social unrest may reflect a variety of factors such as poverty, unemployment,\nand social injustice. Despite the many possible contributing factors, the\ntiming of violent protests in North Africa and the Middle East in 2011 as well\nas earlier riots in 2008 coincides with large peaks in global food prices. We\nidentify a specific food price threshold above which protests become likely.\nThese observations suggest that protests may reflect not only long-standing\npolitical failings of governments, but also the sudden desperate straits of\nvulnerable populations. If food prices remain high, there is likely to be\npersistent and increasing global social disruption. Underlying the food price\npeaks we also find an ongoing trend of increasing prices. We extrapolate these\ntrends and identify a crossing point to the domain of high impacts, even\nwithout price peaks, in 2012-2013. This implies that avoiding global food\ncrises and associated social unrest requires rapid and concerted action.\n",
+  "context": {
+    "all": {
+      "count": 7228318,
+      "mean": 6.3649889881663,
+      "rank": 18280,
+      "pct": 99,
+      "higher_than": 7210222
+    },
+    "journal": {
+      "count": 212,
+      "mean": 3.1742843601896,
+      "rank": 1,
+      "pct": 99,
+      "higher_than": 211
+    },
+    "similar_age_3m": {
+      "count": 70220,
+      "mean": 5.7396262834845,
+      "rank": 94,
+      "pct": 99,
+      "higher_than": 70126
+    },
+    "similar_age_journal_3m": {
+      "count": 2,
+      "mean": 3.85,
+      "rank": 1,
+      "pct": 50,
+      "higher_than": 1
+    }
+  },
+  "type": "article",
+  "altmetric_id": 222686,
+  "schema": "1.5.4",
+  "is_oa": false,
+  "publisher_subjects": [
+    {
+      "name": "Anthropology",
+      "scheme": "era"
+    }
+  ],
+  "cited_by_fbwalls_count": 16,
+  "cited_by_feeds_count": 12,
+  "cited_by_gplus_count": 19,
+  "cited_by_msm_count": 2,
+  "cited_by_policies_count": 2,
+  "cited_by_posts_count": 207,
+  "cited_by_rdts_count": 9,
+  "cited_by_tweeters_count": 140,
+  "cited_by_videos_count": 1,
+  "cited_by_accounts_count": 201,
+  "last_updated": 1480641093,
+  "score": 258.228,
+  "history": {
+    "1y": 1,
+    "6m": 1,
+    "3m": 1,
+    "1m": 0,
+    "1w": 0,
+    "6d": 0,
+    "5d": 0,
+    "4d": 0,
+    "3d": 0,
+    "2d": 0,
+    "1d": 0,
+    "at": 258.228
+  },
+  "url": "http://export.arxiv.org/api/query?id_list=1108.2455",
+  "added_on": 1313129326,
+  "published_on": 1293840000,
+  "scopus_subjects": [
+    "Social Sciences"
+  ],
+  "readers": {
+    "citeulike": 0,
+    "mendeley": 132,
+    "connotea": 0
+  },
+  "readers_count": 132,
+  "downloads": [],
+  "images": {
+    "small": "https://altmetric-badges.a.ssl.fastly.net/?size=64&score=259&types=mbvrtfdg",
+    "medium": "https://altmetric-badges.a.ssl.fastly.net/?size=100&score=259&types=mbvrtfdg",
+    "large": "https://altmetric-badges.a.ssl.fastly.net/?size=180&score=259&types=mbvrtfdg"
+  },
+  "details_url": "http://www.altmetric.com/details.php?citation_id=222686"
+}

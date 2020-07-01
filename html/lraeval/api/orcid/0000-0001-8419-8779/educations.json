@@ -1,0 +1,111 @@
+{
+   "path": "/0000-0001-8419-8779/educations",
+   "last-modified-date": "2014-07-23T04:58:08.073Z",
+   "education-summary": [
+      {
+         "put-code": "4863",
+         "path": "/0000-0001-8419-8779/education/4863",
+         "visibility": "public",
+         "created-date": "2013-12-07T00:16:46.682Z",
+         "last-modified-date": "2014-07-23T04:58:08.073Z",
+         "source": {
+            "source-orcid": {
+               "uri": "http://orcid.org/0000-0001-8419-8779",
+               "path": "0000-0001-8419-8779",
+               "host": "orcid.org"
+            },
+            "source-name": "Marc L. Greenberg"
+         },
+         "department-name": "Slavic Languages & Literatures",
+         "role-title": "BA",
+         "start-date": {
+            "year": "1979"
+         },
+         "end-date": {
+            "year": "1983"
+         },
+         "organization": {
+            "name": "University of California Los Angeles",
+            "address": {
+               "city": "Los Angeles",
+               "region": "CA",
+               "country": "US"
+            },
+            "disambiguated-organization": {
+               "disambiguated-organization-identifier": "8783",
+               "disambiguation-source": "RINGGOLD"
+            }
+         }
+      },
+      {
+         "put-code": "4864",
+         "path": "/0000-0001-8419-8779/education/4864",
+         "visibility": "public",
+         "created-date": "2013-12-07T00:17:27.728Z",
+         "last-modified-date": "2014-07-23T04:58:08.073Z",
+         "source": {
+            "source-orcid": {
+               "uri": "http://orcid.org/0000-0001-8419-8779",
+               "path": "0000-0001-8419-8779",
+               "host": "orcid.org"
+            },
+            "source-name": "Marc L. Greenberg"
+         },
+         "department-name": "Slavic Languages & Literatures",
+         "role-title": "MA",
+         "start-date": {
+            "year": "1983"
+         },
+         "end-date": {
+            "year": "1984"
+         },
+         "organization": {
+            "name": "University of Chicago",
+            "address": {
+               "city": "Chicago",
+               "region": "IL",
+               "country": "US"
+            },
+            "disambiguated-organization": {
+               "disambiguated-organization-identifier": "2462",
+               "disambiguation-source": "RINGGOLD"
+            }
+         }
+      },
+      {
+         "put-code": "4866",
+         "path": "/0000-0001-8419-8779/education/4866",
+         "visibility": "public",
+         "created-date": "2013-12-07T00:18:21.691Z",
+         "last-modified-date": "2014-07-23T04:58:08.073Z",
+         "source": {
+            "source-orcid": {
+               "uri": "http://orcid.org/0000-0001-8419-8779",
+               "path": "0000-0001-8419-8779",
+               "host": "orcid.org"
+            },
+            "source-name": "Marc L. Greenberg"
+         },
+         "department-name": "Slavic Languages & Literatures",
+         "role-title": "PhD",
+         "start-date": {
+            "year": "1984"
+         },
+         "end-date": {
+            "year": "1990"
+         },
+         "organization": {
+            "name": "University of California Los Angeles",
+            "address": {
+               "city": "Los Angeles",
+               "region": "CA",
+               "country": "US"
+            },
+            "disambiguated-organization": {
+               "disambiguated-organization-identifier": "8783",
+               "disambiguation-source": "RINGGOLD"
+            }
+         }
+      }
+   ]
+}

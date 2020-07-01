@@ -1,0 +1,337 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: AltMetric
+  description: "Altmetric tracks mentions of scholarly works on social media sites, scholarly bookmarking services and in science news outlets. It handles all of the heavy lifting involved in extracting, disambiguating and collating this information so that you can focus on your core product.
+
+
+    The Altmetric API gives you programmatic access the data about articles & datasets collected by Altmetric.
+
+
+    If you're keen to get up and running quickly we also provide embeddable badges."
+
+host: localhost
+basePath: /lraeval/api/altmetric
+schemes:
+  - http
+produces:
+  - application/json
+externalDocs:
+  description: Documentation of the original data source
+  url: https://api.altmetric.com/
+
+paths:
+  /doi.json:
+    get:
+      summary: Fetching details by DOI
+      description: Fetches the article corresponding to the given DOI.
+      tags:
+        - Search
+      parameters:
+        # DOI
+        - name: doi
+          in: query
+          description: Any valid DOI. The DOI should not be urlencoded.
+          required: true
+          type: string
+          default: 10.1038/news.2011.490
+
+      responses:
+        200:
+          description: "The API returns JSON. It returns an object with \"query\" and \"results\" parameters. \"query\" contains information about your request. \"results\" is an array of citation objects, detailed in the model."
+          schema:
+            $ref: '#/definitions/Response'
+
+  /pmid.json:
+    get:
+      summary: Fetching details by PubMed ID
+      description: Fetches the article corresponding to the given PubMed ID (pmid).
+      tags:
+        - Search
+      parameters:
+        # DOI
+        - name: pmid
+          in: query
+          description: Any valid PMID.
+          required: true
+          type: string
+          default: 21148220
+
+      responses:
+        200:
+          description: "The API returns JSON. It returns an object with \"query\" and \"results\" parameters. \"query\" contains information about your request. \"results\" is an array of citation objects, detailed in the model."
+          schema:
+            $ref: '#/definitions/Response'
+
+  /arxiv.json:
+    get:
+      summary: Fetching details by arXiv ID
+      description: Fetches the article corresponding to the given arXiv ID.
+      tags:
+        - Search
+      parameters:
+        # DOI
+        - name: arxiv
+          in: query
+          description: Any valid arXiv ID.
+          required: true
+          type: string
+          default: 1108.2455
+
+      responses:
+        200:
+          description: "The API returns JSON. It returns an object with \"query\" and \"results\" parameters. \"query\" contains information about your request. \"results\" is an array of citation objects, detailed in the model."
+          schema:
+            $ref: '#/definitions/Response'
+
+  /isbn.json:
+    get:
+      summary: Fetching details by ISBN
+      description: Fetches the book and nested chapters corresponding to the given ISBN-13 or ISBN-10 identifier.
+      tags:
+        - Search
+      parameters:
+        # DOI
+        - name: isbn
+          in: query
+          description: Any valid ISBN.  The ISBN can be either ISBN-10 or ISBN-13 and does not need to be normalized.
+          required: true
+          type: string
+          default: 10.1007/978-3-319-25559-0
+
+      responses:
+        200:
+          description: "The API returns JSON. It returns an object with \"query\" and \"results\" parameters. \"query\" contains information about your request. \"results\" is an array of citation objects, detailed in the model."
+          schema:
+            $ref: '#/definitions/Response'
+
+
+definitions:
+  Response:
+    properties:
+      title:
+        description: name of article or book cited
+        type: string
+      doi:
+        description: DOI of article or book cited
+        type: string
+      pmid:
+        type: string
+      pmc:
+        type: string
+      arxiv_id:
+        description: arXiv ID of article cited
+        type: string
+      tq:
+        description: Some descriptive phrases for this article
+        type: array
+        items:
+          type: string
+      ads_id:
+        description: ID of article cited in ADS
+        type: string
+      altmetric_jid:
+        type: string
+      issns:
+        description: An array of ISSN(s) corresponding to the cited article or book.
+        type: array
+        items:
+          type: string
+      journal:
+        description: Journal the cited article comes from
+        type: string
+      uri:
+        description: Link to the cited article
+        type: string
+      isbns:
+        description: An array of ISBN(s) corresponding to the cited article or book.
+        type: array
+        items:
+          type: string
+      cohorts:
+        description: Experimental feature number of people mentioning this article who are members of the public (pub), practitioners (doc), research scientists (sci) or science communicators (com).
+        type: object
+        properties:
+          pub:
+            type: integer
+          doc:
+            type: integer
+          sci:
+            type: integer
+          com:
+            type: integer
+      authors_or_editors:
+        description: A list of names of contributors where we have been unable to distinguish between authors and editors. Some data sources (e.g., Google Books) do not provide sufficient information to differentiate between roles. If either the authors or editors fields are specified, their contents should be preferred
+        type: array
+        items:
+          type: string
+      context:
+        type: object
+        properties:
+          all:
+            $ref: '#/definitions/Count'
+          journal:
+            $ref: '#/definitions/Count'
+          similar_age_3m:
+            $ref: '#/definitions/Count'
+          similar_age_journal_3m:
+            $ref: '#/definitions/Count'
+      type:
+        description: This field shows the research output type
+        type: string
+      altmetric_id:
+        description: Unique ID for this citation. Be careful, ATM there aren't necessarily persistent, just unique
+        type: integer
+      schema:
+        type: string
+      is_oa:
+        type: boolean
+      cited_by_delicious_count:
+        description: Mention count breakdown of Delicious users
+        type: integer
+      cited_by_fbwalls_count:
+        description: Mention count breakdown of Facebook accounts
+        type: integer
+      cited_by_feeds_count:
+        description: Mention count breakdown of number of blogs
+        type: integer
+      cited_by_forum_count:
+        description: Mention count breakdown of Internet forums
+        type: integer
+      cited_by_gplus_count:
+        description: Mention count breakdown of Google+ users
+        type: integer
+      cited_by_linkedin_count:
+        description: Mention count breakdown of LinkedIn users
+        type: integer
+      cited_by_msm_count:
+        description: Mention count breakdown of news outlets
+        type: integer
+      cited_by_posts_count:
+        description: Mention count breakdown of number of posts
+        type: integer
+      cited_by_peer_review_sites_count:
+        description: Mention count breakdown of peer review sites
+        type: integer
+      cited_by_pinners_count:
+        description: Mention count breakdown of Pinterest users
+        type: integer
+      cited_by_policies_count:
+        description: Mention count breakdown of policy sources
+        type: integer
+      cited_by_qs_count:
+        description: Mention count breakdown of questions, answers or comments on StackExchange sites (inc. Biostar)
+        type: integer
+      cited_by_rdts_count:
+        description: Mention count breakdown of Reddit users
+        type: integer
+      cited_by_rh_count:
+        description: Mention count breakdown of research highlights platforms
+        type: integer
+      cited_by_tweeters_count:
+        description: Mention count breakdown of Twitter users
+        type: integer
+      cited_by_videos_count:
+        description: Mention count breakdown of Youtube channels
+        type: integer
+      cited_by_weibo_count:
+        description: Mention count breakdown of Sina Weibo users
+        type: integer
+      cited_by_wikipedia_count:
+        description: Mention count breakdown of pages on Wikipedia
+        type: integer
+      cited_by_accounts_count:
+        type: integer
+      last_updated:
+        type: integer
+        format: int64
+      score:
+        description: Altmetric score for this article. This is a measure of the quality and quantity of attention received. It's calculated taking contextual information about each citing post and its author into account
+        type: number
+      history:
+        description: What would the cited article's Altmetric score be if you only look at posts from the past x, where x is days (1d, 2d, 3d...), a week (1w), in months (1m, 3m), a year (1y) or all time (at)
+        type: object
+        properties:
+          1y:
+            type: integer
+          6m:
+            type: integer
+          3m:
+            type: integer
+          1m:
+            type: integer
+          1w:
+            type: integer
+          6d:
+            type: integer
+          5d:
+            type: integer
+          4d:
+            type: integer
+          3d:
+            type: integer
+          2d:
+            type: integer
+          1d:
+            type: integer
+          at:
+            type: number
+      url:
+        description: Link to the cited article
+        type: string
+      added_on:
+        description: UNIX timestamp. Date article was first tracked by Altmetric.
+        type: integer
+        format: int64
+      published_on:
+        description: UNIX timestamp. Date article was published. Be careful, this may contains bad data, it's difficult to reliably parse heterogenous publication date strings
+        type: integer
+        format: int64
+      subjects:
+        description: If the publishing journal is indexed by Medline then the subject codes for that journal appear here
+        type: array
+        items:
+          type: string
+      scopus_subjects:
+        type: array
+        items:
+          type: string
+      readers:
+        description: Number of readers on Mendeley, Connotea and Citeulike, or -1 if that data is not yet available (there may be a few days delay between a citation's first track date and this field updating)
+        type: object
+        properties:
+          citeulike:
+            type: string
+          mendeley:
+            type: string
+          connotea:
+            type: string
+      readers_count:
+        type: integer
+      images:
+        description: Links to different sizes of a score donut graphic for this citation. The donut has black text and a transparent background
+        type: object
+        properties:
+          small:
+            type: string
+          medium:
+            type: string
+          large:
+            type: string
+      details_url:
+        description: Link to a human readable webpage containing information about this citation
+        type: string
+
+  Count:
+    properties:
+      count:
+        type: integer
+      mean:
+        type: number
+      rank:
+        type: integer
+      pct:
+        type: integer
+      higher_than:
+        type: integer

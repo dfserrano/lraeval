@@ -1,0 +1,108 @@
+{
+   "path": "/0000-0001-8419-8779/employments",
+   "last-modified-date": "2014-07-23T04:58:08.073Z",
+   "employment-summary": [
+      {
+         "put-code": "4869",
+         "path": "/0000-0001-8419-8779/employment/4869",
+         "visibility": "public",
+         "created-date": "2013-12-07T00:19:48.239Z",
+         "last-modified-date": "2014-07-23T04:58:08.073Z",
+         "source": {
+            "source-orcid": {
+               "uri": "http://orcid.org/0000-0001-8419-8779",
+               "path": "0000-0001-8419-8779",
+               "host": "orcid.org"
+            },
+            "source-name": "Marc L. Greenberg"
+         },
+         "department-name": "Slavic Languages & Literatures",
+         "role-title": "Assistant Professor",
+         "start-date": {
+            "year": "1990"
+         },
+         "end-date": {
+            "year": "1995"
+         },
+         "organization": {
+            "name": "University of Kansas",
+            "address": {
+               "city": "Lawrence",
+               "region": "KS",
+               "country": "US"
+            },
+            "disambiguated-organization": {
+               "disambiguated-organization-identifier": "4202",
+               "disambiguation-source": "RINGGOLD"
+            }
+         }
+      },
+      {
+         "put-code": "4873",
+         "path": "/0000-0001-8419-8779/employment/4873",
+         "visibility": "public",
+         "created-date": "2013-12-07T00:21:16.259Z",
+         "last-modified-date": "2014-07-23T04:58:08.073Z",
+         "source": {
+            "source-orcid": {
+               "uri": "http://orcid.org/0000-0001-8419-8779",
+               "path": "0000-0001-8419-8779",
+               "host": "orcid.org"
+            },
+            "source-name": "Marc L. Greenberg"
+         },
+         "department-name": "Slavic Languages & Literatures",
+         "role-title": "Professor",
+         "start-date": {
+            "year": "2000"
+         },
+         "organization": {
+            "name": "University of Kansas",
+            "address": {
+               "city": "Lawrence",
+               "region": "KS",
+               "country": "US"
+            },
+            "disambiguated-organization": {
+               "disambiguated-organization-identifier": "4202",
+               "disambiguation-source": "RINGGOLD"
+            }
+         }
+      },
+      {
+         "put-code": "4871",
+         "path": "/0000-0001-8419-8779/employment/4871",
+         "visibility": "public",
+         "created-date": "2013-12-07T00:20:25.199Z",
+         "last-modified-date": "2014-07-23T04:58:08.073Z",
+         "source": {
+            "source-orcid": {
+               "uri": "http://orcid.org/0000-0001-8419-8779",
+               "path": "0000-0001-8419-8779",
+               "host": "orcid.org"
+            },
+            "source-name": "Marc L. Greenberg"
+         },
+         "department-name": "Slavic Languages & Literatures",
+         "role-title": "Associate Professor",
+         "start-date": {
+            "year": "1995"
+         },
+         "end-date": {
+            "year": "2000"
+         },
+         "organization": {
+            "name": "University of Kansas",
+            "address": {
+               "city": "Lawrence",
+               "region": "KS",
+               "country": "US"
+            },
+            "disambiguated-organization": {
+               "disambiguated-organization-identifier": "4202",
+               "disambiguation-source": "RINGGOLD"
+            }
+         }
+      }
+   ]
+}

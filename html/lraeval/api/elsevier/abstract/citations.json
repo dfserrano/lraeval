@@ -1,0 +1,98 @@
+{
+  "abstract-citations-response": {
+    "h-index": "1",
+    "identifier-legend": {
+      "identifier": [
+        {
+          "_fa": "true",
+          "identifier": "SCOPUS_ID:0037070197",
+          "doi": "10.1016/S0014-5793(01)03313-0",
+          "pii": "S0014579301033130",
+          "scopus_id": "0037070197"
+        }
+      ]
+    },
+    "citeInfoMatrix": {
+      "citeInfoMatrixXML": {
+        "citationMatrix": {
+          "citeInfo": [
+            {
+              "_fa": "true",
+              "identifier": "SCOPUS_ID:0037070197",
+              "url": "https://api.elsevier.com/content/abstract/scopus_id/0037070197",
+              "title": "The orientation of the antibiotic peptide maculatin 1.1 in DMPG and DMPC lipid bilayers. Support for a pore-forming mechanism",
+              "author": [
+                {
+                  "_fa": "true",
+                  "initials": "C.S.B.",
+                  "index-name": "Chia C.S.B.",
+                  "surname": "Chia",
+                  "authid": "55126316600",
+                  "author-url": "https://api.elsevier.com/content/author/author_id/55126316600"
+                },
+                {
+                  "_fa": "true",
+                  "initials": "J.",
+                  "index-name": "Torres J.",
+                  "surname": "Torres",
+                  "authid": "7402798449",
+                  "author-url": "https://api.elsevier.com/content/author/author_id/7402798449"
+                },
+                {
+                  "_fa": "true",
+                  "initials": "M.A.",
+                  "index-name": "Cooper M.A.",
+                  "surname": "Cooper",
+                  "authid": "7404411451",
+                  "author-url": "https://api.elsevier.com/content/author/author_id/7404411451"
+                },
+                {
+                  "_fa": "true",
+                  "initials": "I.T.",
+                  "index-name": "Arkin I.T.",
+                  "surname": "Arkin",
+                  "authid": "7003858738",
+                  "author-url": "https://api.elsevier.com/content/author/author_id/7003858738"
+                },
+                {
+                  "_fa": "true",
+                  "initials": "J.H.",
+                  "index-name": "Bowie J.H.",
+                  "surname": "Bowie",
+                  "authid": "7102792890",
+                  "author-url": "https://api.elsevier.com/content/author/author_id/7102792890"
+                }
+              ],
+              "citationType": {
+                "code": "ar",
+                "$": "Article"
+              },
+              "sort-year": "2002",
+              "publicationName": "FEBS Letters",
+              "volume": "512",
+              "issueIdentifier": "1-3",
+              "startingPage": "47",
+              "endingPage": "51",
+              "issn": "0014-5793",
+              "pcc": "42",
+              "cc": [
+                {
+                  "$": "2"
+                },
+                {
+                  "$": "1"
+                },
+                {
+                  "$": "0"
+                }
+              ],
+              "lcc": "0",
+              "rangeCount": "3",
+              "rowTotal": "45"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

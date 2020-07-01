@@ -1,0 +1,284 @@
+{
+  "search-results": {
+    "totalResults": "5",
+    "startIndex": "0",
+    "itemsPerPage": "5",
+    "Query": {
+      "role": "request",
+      "searchTerms": "authlast(Notkin) and authfirst(David)",
+      "startPage": "0"
+    },
+    "link": [
+      {
+        "_fa": "true",
+        "href": "https://api.elsevier.com/content/search/author?start=0&count=25&query=authlast%28Notkin%29+and+authfirst%28David%29&apiKey=b3a71de2bde04544495881ed9d2f9c5b",
+        "ref": "self",
+        "type": "application/json"
+      },
+      {
+        "_fa": "true",
+        "href": "https://api.elsevier.com/content/search/author?start=0&count=25&query=authlast%28Notkin%29+and+authfirst%28David%29&apiKey=b3a71de2bde04544495881ed9d2f9c5b",
+        "ref": "first",
+        "type": "application/json"
+      }
+    ],
+    "entry": [
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/author/author_id/7004090547",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/author?query=au-id%287004090547%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/author/citedby.uri?partnerID=HzOxMe3b&citedAuthorId=7004090547&origin=inward",
+            "ref": "scopus-citedby"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/authid/detail.uri?partnerID=HzOxMe3b&authorId=7004090547&origin=inward",
+            "ref": "scopus-author"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/author/author_id/7004090547",
+        "identifier": "AUTHOR_ID:7004090547",
+        "eid": "9-s2.0-7004090547",
+        "preferred-name": {
+          "surname": "Notkin",
+          "given-name": "David S.",
+          "initials": "D.S."
+        },
+        "name-variant": [
+          {
+            "_fa": "true",
+            "surname": "Notkin",
+            "given-name": "David",
+            "initials": "D."
+          },
+          {
+            "_fa": "true",
+            "surname": "Notkin",
+            "given-name": "D.",
+            "initials": "D."
+          }
+        ],
+        "document-count": "117",
+        "subject-area": [
+          {
+            "abbrev": "COMP",
+            "frequency": "132",
+            "$": "Computer Science (all)"
+          },
+          {
+            "abbrev": "ENGI",
+            "frequency": "18",
+            "$": "Engineering (all)"
+          },
+          {
+            "abbrev": "MATH",
+            "frequency": "11",
+            "$": "Mathematics (all)"
+          }
+        ],
+        "affiliation-current": {
+          "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60015481",
+          "affiliation-id": "60015481",
+          "affiliation-name": "University of Washington, Seattle",
+          "affiliation-city": "Seattle",
+          "affiliation-country": "United States"
+        }
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/author/author_id/55619352900",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/author?query=au-id%2855619352900%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/author/citedby.uri?partnerID=HzOxMe3b&citedAuthorId=55619352900&origin=inward",
+            "ref": "scopus-citedby"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/authid/detail.uri?partnerID=HzOxMe3b&authorId=55619352900&origin=inward",
+            "ref": "scopus-author"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/author/author_id/55619352900",
+        "identifier": "AUTHOR_ID:55619352900",
+        "eid": "9-s2.0-55619352900",
+        "preferred-name": {
+          "surname": "Notkin",
+          "given-name": "David",
+          "initials": "D."
+        },
+        "document-count": "1",
+        "subject-area": {
+          "abbrev": "COMP",
+          "frequency": "1",
+          "$": "Computer Science (all)"
+        }
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/author/author_id/57190041123",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/author?query=au-id%2857190041123%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/author/citedby.uri?partnerID=HzOxMe3b&citedAuthorId=57190041123&origin=inward",
+            "ref": "scopus-citedby"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/authid/detail.uri?partnerID=HzOxMe3b&authorId=57190041123&origin=inward",
+            "ref": "scopus-author"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/author/author_id/57190041123",
+        "identifier": "AUTHOR_ID:57190041123",
+        "eid": "9-s2.0-57190041123",
+        "preferred-name": {
+          "surname": "Notkin",
+          "given-name": "David",
+          "initials": "D."
+        },
+        "document-count": "1",
+        "subject-area": [
+          {
+            "abbrev": "COMP",
+            "frequency": "2",
+            "$": "Computer Science (all)"
+          },
+          {
+            "abbrev": "SOCI",
+            "frequency": "1",
+            "$": "Social Sciences (all)"
+          }
+        ],
+        "affiliation-current": {
+          "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60027950",
+          "affiliation-id": "60027950",
+          "affiliation-name": "Carnegie Mellon University",
+          "affiliation-city": "Pittsburgh",
+          "affiliation-country": "United States"
+        }
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/author/author_id/57190041124",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/author?query=au-id%2857190041124%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/author/citedby.uri?partnerID=HzOxMe3b&citedAuthorId=57190041124&origin=inward",
+            "ref": "scopus-citedby"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/authid/detail.uri?partnerID=HzOxMe3b&authorId=57190041124&origin=inward",
+            "ref": "scopus-author"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/author/author_id/57190041124",
+        "identifier": "AUTHOR_ID:57190041124",
+        "eid": "9-s2.0-57190041124",
+        "preferred-name": {
+          "surname": "Notkin",
+          "given-name": "David S.",
+          "initials": "D.S."
+        },
+        "document-count": "1",
+        "subject-area": [
+          {
+            "abbrev": "COMP",
+            "frequency": "2",
+            "$": "Computer Science (all)"
+          },
+          {
+            "abbrev": "SOCI",
+            "frequency": "1",
+            "$": "Social Sciences (all)"
+          }
+        ],
+        "affiliation-current": {
+          "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60011460",
+          "affiliation-id": "60011460",
+          "affiliation-name": "Brown University",
+          "affiliation-city": "Providence",
+          "affiliation-country": "United States"
+        }
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/author/author_id/56866775600",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/author?query=au-id%2856866775600%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/author/citedby.uri?partnerID=HzOxMe3b&citedAuthorId=56866775600&origin=inward",
+            "ref": "scopus-citedby"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/authid/detail.uri?partnerID=HzOxMe3b&authorId=56866775600&origin=inward",
+            "ref": "scopus-author"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/author/author_id/56866775600",
+        "identifier": "AUTHOR_ID:56866775600",
+        "eid": "9-s2.0-56866775600",
+        "preferred-name": {
+          "surname": "Notkin",
+          "given-name": "David",
+          "initials": "D."
+        },
+        "document-count": "1",
+        "subject-area": {
+          "abbrev": "COMP",
+          "frequency": "1",
+          "$": "Computer Science (all)"
+        }
+      }
+    ]
+  }
+}

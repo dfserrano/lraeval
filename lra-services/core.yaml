@@ -1,0 +1,584 @@
+swagger: '2.0'
+
+info:
+  version: 1.0.0
+  title: CORE
+
+host: localhost
+basePath: /lraeval/api/core
+schemes:
+  - http
+produces:
+  - application/json
+
+x-prefixes:
+  - prefix: rdf
+    url: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  - prefix: dc
+    url: http://purl.org/dc/terms/
+  - prefix: core
+    url: https://core.ac.uk/terms/
+  - prefix: vivo
+    url: http://vivoweb.org/ontology/core#
+  - prefix: bibo
+    url: http://purl.org/ontology/bibo/
+  - prefix: foaf
+    url: http://xmlns.com/foaf/0.1/
+
+paths:
+  /articles/get.json:
+    get:
+      summary: Get article by CORE ID
+      description: Method will retrieve an article based on given CORE ID.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          dc:description ?paperDescription ;
+          bibo:uri ?paperUrl ;
+          core:id ?paperId ;
+          dc:date ?paperDate ;
+          bibo:doi ?doi ;
+          dc:creator ?author ;
+          bibo:cites ?citedPaper .
+        ?author a foaf:Person ;
+          foaf:name ?authorName .
+        ?citedPaper a bibo:AcademicArticle ;
+          dc:title ?citedPaperTitle ;
+          dc:date ?citedPaperDate ;
+          bibo:doi ?citedPaperDoi ;
+          bibo:citedBy ?paper .
+
+      tags:
+        - Articles
+
+      parameters:
+        # CORE id
+        - name: coreId
+          in: query
+          description: CORE ID of the article that needs to be fetched
+          required: true
+          type: integer
+          format: int64
+          x-graphVar: ?paperId
+
+        # Fulltext
+        - name: fulltext
+          in: query
+          description: Whether to retrieve full text of the article. The default value is false
+          required: false
+          type: boolean
+          default: false
+
+        # Citations
+        - name: citations
+          in: query
+          description: Whether to retrieve citations found in the article. The default value is false
+          required: false
+          type: boolean
+          default: false
+
+        # URLs
+        - name: urls
+          in: query
+          description: Whether to retrieve a list of URLs from which the article can be downloaded. This can include links to PDFs as well as HTML pages. The default value is false
+          required: false
+          type: boolean
+          default: false
+
+      x-responseMap:
+        - var: ?paperTitle
+          path: data/title
+        - var: ?paperDescription
+          path: data/description
+        - var: ?paperUrl
+          path: data/fulltextIdentifier
+        - var: ?paperId
+          path: data/id
+        - var: ?paperDate
+          path: data/datePublished
+        - var: ?doi
+          path: data/doi
+        - var: ?authorName
+          path: data/authors
+        - var: ?citedPaperTitle
+          path: data/citations/title
+        - var: ?citedPaperDate
+          path: data/citations/date
+        - var: ?citedPaperDoi
+          path: data/citations/doi
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/ArticleResponse'
+
+  /articles/search.json:
+    get:
+      summary: Search through all documents
+      description: Operations for retrieving articles.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          dc:description ?paperDescription ;
+          bibo:uri ?paperUrl ;
+          core:id ?paperId ;
+          dc:date ?paperDate ;
+          bibo:doi ?doi ;
+          dc:creator ?author ;
+          dc:creator ?author2 ;
+          bibo:cites ?citedPaper .
+        ?author a foaf:Person ;
+          foaf:name ?authorName .
+        ?author2 a foaf:Person ;
+          foaf:name ?author2Name .
+        ?citedPaper a bibo:AcademicArticle ;
+          dc:title ?citedPaperTitle ;
+          dc:date ?citedPaperDate ;
+          bibo:doi ?citedPaperDoi ;
+          bibo:citedBy ?paper .
+
+      tags:
+        - Articles
+
+      parameters:
+        # Query
+        - name: query
+          in: query
+          description: The search query
+          required: true
+          type: string
+          x-graphVar:
+            - ?paperTitle
+            - ?authorName
+            - ?doi
+          x-urlPattern: "[title:\"{?paperTitle}\" AND ][authorsString:{?authorName} AND ][doi:\"{?doi}\"]"
+
+        # Fulltext
+        - name: fulltext
+          in: query
+          description: Whether to retrieve full text of the article. The default value is false
+          required: false
+          type: boolean
+          default: false
+
+        # Citations
+        - name: citations
+          in: query
+          description: Whether to retrieve citations found in the article. The default value is false
+          required: false
+          type: boolean
+          default: false
+
+        # URLs
+        - name: urls
+          in: query
+          description: Whether to retrieve a list of URLs from which the article can be downloaded. This can include links to PDFs as well as HTML pages. The default value is false
+          required: false
+          type: boolean
+          default: false
+
+      x-responseMap:
+        - var: ?paperTitle
+          path: data/title
+        - var: ?paperDescription
+          path: data/description
+        - var: ?paperUrl
+          path: data/fulltextIdentifier
+        - var: ?paperId
+          path: data/id
+        - var: ?paperDate
+          path: data/datePublished
+        - var: ?doi
+          path: data/doi
+        - var: ?authorName
+          path: data/authors
+        - var: ?author2Name
+          path: data/authors*
+        - var: ?citedPaperTitle
+          path: data/citations/title
+        - var: ?citedPaperDate
+          path: data/citations/date
+        - var: ?citedPaperDoi
+          path: data/citations/doi
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/ArticleSearchResponse'
+
+  /journals/get.json:
+    get:
+      summary: Find journal by ISSN
+      description: Operations for retrieving journals.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?journal a bibo:Journal ;
+          bibo:issn ?issn ;
+          dc:title ?journalTitle ;
+          vivo:publisher ?publisher .
+        ?publisher a foaf:Organization ;
+          foaf:name ?publisherName .
+
+      tags:
+        - Journals
+
+      parameters:
+        # ISSN
+        - name: ISSN identifier of journal that needs to be fetched.
+          in: query
+          description: ISSN identifier of journal that needs to be fetched.
+          required: true
+          type: string
+          x-graphVar: ?issn
+
+      x-responseMap:
+        - var: ?journalTitle
+          path: data/title
+        - var: ?publisherName
+          path: data/publisher
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/JournalResponse'
+
+  /journals/search.json:
+    get:
+      summary: Search through journals
+      description: Operations for retrieving journals.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?journal a bibo:Journal ;
+          dc:title ?journalTitle ;
+          vivo:publisher ?publisher .
+        ?publisher a foaf:Organization ;
+          foaf:name ?publisherName .
+
+      tags:
+        - Journals
+
+      parameters:
+        # Query
+        - name: query
+          in: query
+          description: The search query
+          required: true
+          type: string
+          x-graphVar:
+            - ?journalTitle
+            - ?publisherName
+          x-urlPattern: "[title:\"{?journalTitle}\" AND ][publisher:\"{?publisherName}]\""
+
+      x-responseMap:
+        - var: ?journalTitle
+          path: data/title
+        - var: ?publisherName
+          path: data/publisher
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/JournalSearchResponse'
+
+definitions:
+  ArticleResponse:
+    required:
+      - data
+      - status
+    properties:
+      status:
+        description: Operation status
+        type: string
+        enum:
+          - OK
+          - Not found
+          - Too many queries
+          - Missing parameter
+          - Invalid parameter
+          - Parameter out of bounds
+      data:
+        description: The fetched article
+        $ref: '#/definitions/Article'
+
+  Article:
+    required:
+      - id
+    properties:
+      id:
+        description: Article ID
+        type: integer
+      authors:
+        description: List of article authors
+        type: array
+        items:
+          type: string
+      citations:
+        description: Citations found in the article
+        type: array
+        items:
+          $ref: '#/definitions/Citation'
+      contributors:
+        description: List of article contributors
+        type: array
+        items:
+          type: string
+      datePublished:
+        description: Date article published
+        type: string
+      description:
+        description: The abstract
+        type: string
+      fulltext:
+        description: Article full text
+        type: string
+      identifiers:
+        description: List of document identifiers
+        type: array
+        items:
+          type: string
+      language:
+        description: Language of the article
+        $ref: '#/definitions/Language'
+      publisher:
+        description: Publisher of the article
+        type: string
+      relations:
+        description: URLs of relating articles, etc.
+        type: array
+        items:
+          type: string
+      repositories:
+        description: List of repositories this article belongs to
+        type: array
+        items:
+          $ref: '#/definitions/Repository'
+      subjects:
+        description: Article subjects
+        type: array
+        items:
+          type: string
+      title:
+        description: Article title
+        type: string
+      topics:
+        description: Article topics
+        type: array
+        items:
+          type: string
+      types:
+        description: Types, e.g. conference paper, journal paper, etc.
+        type: array
+        items:
+          type: string
+      year:
+        description: Year the article was published
+        type: integer
+      fulltextUrls:
+        description: URLs of the fulltext version of this article
+        type: array
+        items:
+          type: string
+      fulltextIdentifier:
+        description: The URL to the fulltext
+        type: string
+      doi:
+        description: The DOI of the article
+        type: string
+      oai:
+        description: The OAI of the article
+        type: string
+
+  Citation:
+    properties:
+      raw:
+        description: Citation as raw string
+        type: string
+      authors:
+        description: Authors of the article
+        type: string
+      title:
+        description: Title of the cited article
+        type: string
+      date:
+        description: Date the cited article was published
+        type: string
+      doi:
+        description: Digital Object Identifier
+        type: string
+
+  ArticleJournal:
+    properties:
+      title:
+        description: Title of the journal
+        type: string
+      identifiers:
+        description: List of journal identifiers
+        type: array
+        items:
+          type: string
+
+  Language:
+    properties:
+      code:
+        type: string
+      name:
+        type: string
+
+  Repository:
+    properties:
+      name:
+        description: Repository name
+        type: string
+      uri:
+        description: Repository URI
+        type: string
+      id:
+        description: CORE repository ID
+        type: integer
+      openDoarId:
+        description: ID of the repository in Open DOAR
+        type: integer
+      repositoryLocation:
+        description: Location of the repository
+        $ref: '#/definitions/RepositoryLocation'
+
+  RepositoryLocation:
+    properties:
+      id:
+        description: CORE repository ID
+        type: integer
+      repositoryName:
+        description: Repository name
+        type: string
+      country:
+        description: Country name
+        type: string
+      latitude:
+        type: integer
+      longitude:
+        type: integer
+      countryCode:
+        description: Two letter country code
+        type: string
+
+  ArticleSearchResponse:
+    required:
+      - data
+      - status
+      - totalHits
+    properties:
+      status:
+        description: Operation status
+        type: string
+        enum:
+          - OK
+          - Not found
+          - Too many queries
+          - Missing parameter
+          - Invalid parameter
+          - Parameter out of bounds
+      totalHits:
+        description: Total number of articles matching the search criteria
+        type: integer
+      data:
+        description: Search results
+        type: array
+        items:
+          $ref: '#/definitions/Article'
+
+  SearchRequest:
+    required:
+      - query
+    properties:
+      query:
+        description: Search query
+        type: string
+      page:
+        description: Which page of the search results should be retrieved. Can be any number from 1 to 100, default is 1 (first page)
+        type: integer
+        minimum: 1
+        maximum: 100
+        default: 1
+      pageSize:
+        description: The number of results to return per page. Can be any number from 10 to 100, default is 10
+        type: integer
+        minimum: 10
+        maximum: 100
+        default: 10
+
+  JournalResponse:
+    required:
+      - status
+    properties:
+      status:
+        description: Operation status
+        type: string
+        enum:
+          - OK
+          - NOT_FOUND
+          - TOO_MANY_QUERIES
+          - MISSING_PARAMETER
+          - INVALID_PARAMETER
+      data:
+        description: The fetched journal
+        $ref: '#/definitions/Journal'
+
+  Journal:
+    required:
+      - identifiers
+    properties:
+      title:
+        description: Journal title
+        type: string
+      identifiers:
+        description: List of journal identifiers (e.g. URL, OAI or ISSN). The type is prepended to the identifier string (e.g. 'issn:2296-0597')
+        type: array
+        items:
+          type: string
+      subjects:
+        description: List of journal subjects
+        type: array
+        items:
+          type: string
+      language:
+        description: Language of the journal,
+        type: string
+      rights:
+        description: Copyright license of the journal,
+        type: string
+      publisher:
+        description: Publisher of the journal,
+        type: string
+
+  JournalSearchResponse:
+    required:
+      - status
+      - totalHits
+    properties:
+      status:
+        description: Operation status
+        type: string
+        enum:
+          - OK
+          - NOT_FOUND
+          - TOO_MANY_QUERIES
+          - MISSING_PARAMETER
+          - INVALID_PARAMETER
+      totalHits:
+        description: Total number of journals matching the search criteria
+        type: integer
+      data:
+        description: Search results
+        type: array
+        items:
+          $ref: '#/definitions/Journal'

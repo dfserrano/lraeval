@@ -1,0 +1,43 @@
+{
+   "path": "/0000-0001-8419-8779/personal-details",
+   "last-modified-date": "2016-04-15T21:24:41.763Z",
+   "name": {
+      "visibility": "public",
+      "path": "0000-0001-8419-8779",
+      "created-date": "2016-04-15T21:24:41.760Z",
+      "last-modified-date": "2016-04-15T21:24:41.760Z",
+      "given-names": "Marc",
+      "family-name": "Greenberg",
+      "credit-name": "Marc L. Greenberg"
+   },
+   "other-names": {
+      "path": "/0000-0001-8419-8779/other-names",
+      "last-modified-date": "2015-03-01T20:21:38.943Z",
+      "other-name": [
+         {
+            "put-code": "408737",
+            "visibility": "public",
+            "path": "/0000-0001-8419-8779/other-names/408737",
+            "display-index": "0",
+            "created-date": "2015-03-01T20:21:38.942Z",
+            "last-modified-date": "2015-03-01T20:21:38.942Z",
+            "source": {
+               "source-orcid": {
+                  "uri": "http://orcid.org/0000-0001-8419-8779",
+                  "path": "0000-0001-8419-8779",
+                  "host": "orcid.org"
+               },
+               "source-name": "Marc L. Greenberg"
+            },
+            "content": "Marc Greenberg"
+         }
+      ]
+   },
+   "biography": {
+      "visibility": "public",
+      "path": "/0000-0001-8419-8779/biography",
+      "created-date": "2016-04-15T21:24:41.763Z",
+      "last-modified-date": "2016-04-15T21:24:41.763Z",
+      "content": "Ph.D., UCLA, 1990. Professor of Slavic Languages & Literatures, University of Kansas, 1990-. I am interested in synthesizing techniques and learning from multiple disciplines to find novel ways of understanding and reconstructing language history. In particular, I use the comparative method, supplemented by sociolinguistics, geolinguistics, cognitive linguistics, and I also consider external historical and prehistorical (archæological) data. Most of my work applies to Slavic languages and languages in contact with them (Romance, Germanic, Finno-Ugric)."
+   }
+}

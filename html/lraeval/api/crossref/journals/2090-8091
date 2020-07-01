@@ -1,0 +1,18 @@
+{
+  "status": "ok",
+  "message-type": "journal",
+  "message-version": "1.0.0",
+  "message": {
+    "title": "Pathology Research International",
+    "publisher": "Hindawi Limited",
+    "ISSN": [
+      "2090-8091",
+      "2042-003X"
+    ],
+    "flags": null,
+    "coverage": null,
+    "breakdowns": null,
+    "counts": null,
+    "last-status-check-time": null
+  }
+}

@@ -1,0 +1,249 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: IEEEXplore
+
+host: localhost
+basePath: /lraeval/api/ieee
+schemes:
+  - http
+produces:
+  - application/json
+
+x-prefixes:
+  - prefix: rdf
+    url: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  - prefix: dc
+    url: http://purl.org/dc/terms/
+  - prefix: ieee
+    url: http://ieeexplore.ieee.org/terms/
+  - prefix: vivo
+    url: http://vivoweb.org/ontology/core#
+  - prefix: bibo
+    url: http://purl.org/ontology/bibo/
+  - prefix: foaf
+    url: http://xmlns.com/foaf/0.1/
+
+paths:
+  /ipsSearch.json:
+    get:
+      summary: Search articles
+      description: Gets articles matching the fields and terms.  At least **one** parameter must be specified
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          bibo:abstract ?paperAbstract ;
+          ieee:id ?paperId ;
+          vivo:hasPublicationVenue ?venue ;
+          dc:date ?paperDate ;
+          bibo:doi ?doi ;
+          dc:creator ?author ;
+          dc:creator ?author2 .
+        ?venue a bibo:Collection ;
+          dc:title ?venueTitle ;
+          ieee:id ?venueId .
+        ?author a foaf:Person ;
+          foaf:name ?authorName .
+        ?author2 a foaf:Person ;
+          foaf:name ?author2Name .
+        ?position a vivo:Position ;
+          vivo:relates ?author ;
+          vivo:relates ?organization .
+        ?organization a foaf:Organization ;
+          foaf:name ?organizationName .
+
+      tags:
+        - Search
+
+      parameters:
+        # Author
+        - name: au
+          in: query
+          description: Terms to search for in Author
+          required: false
+          type: string
+          x-graphVar: ?authorName
+
+        # Title
+        - name: ti
+          in: query
+          description: Terms to search for in Document Title
+          required: false
+          type: string
+          x-graphVar: ?paperTitle
+
+        # Abstract
+        - name: ab
+          in: query
+          description: Terms to search for in Abstract
+          required: false
+          type: string
+          x-graphVar: ?paperAbstract
+
+        # DOI
+        - name: doi
+          in: query
+          description: Terms to search for in DOI
+          required: false
+          type: string
+          x-graphVar: ?doi
+
+        # Affiliations
+        - name: cs
+          in: query
+          description: Terms to search for in Affiliations
+          required: false
+          type: string
+          x-graphVar: ?organizationName
+
+        # Publication title
+        - name: jn
+          in: query
+          description: Terms to search for in Publication Title
+          required: false
+          type: string
+          x-graphVar: ?venueTitle
+
+        # ISBN
+        - name: isbn
+          in: query
+          description: Terms to search for in isbn
+          required: false
+          type: string
+
+        # ISSN
+        - name: issn
+          in: query
+          description: Terms to search for in issn
+          required: false
+          type: string
+
+        # Publication year
+        - name: yr
+          in: query
+          description: Terms to search for in Publication Year
+          required: false
+          type: string
+
+      x-responseMap:
+        - var: ?paperTitle
+          path: document/title
+        - var: ?paperAbstract
+          path: document/abstract
+        - var: ?paperId
+          path: document/arnumber
+        - var: ?paperDate
+          path: document/py
+        - var: ?doi
+          path: document/doi
+        - var: ?venueTitle
+          path: document/pubtitle
+        - var: ?venueId
+          path: document/punumber
+        - var: ?authorName
+          path: TOKENIZE(document/authors, '; ')
+        - var: ?author2Name
+          path: TOKENIZE(document/authors*, '; ')
+        - var: ?organizationName
+          path: document/affiliations
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/Response'
+
+securityDefinitions:
+  petstore_auth:
+    type: oauth2
+    authorizationUrl: 'http://petstore.swagger.io/api/oauth/dialog'
+    flow: implicit
+    scopes:
+      'write:pets': modify pets in your account
+      'read:pets': read your pets
+  apikey:
+    type: apiKey
+    name: api_key
+    in: header
+
+
+definitions:
+  Response:
+    properties:
+      totalfound:
+        type: integer
+        format: int64
+      totalsearched:
+        type: integer
+        format: int64
+      document:
+        type: array
+        items:
+          $ref: '#/definitions/Article'
+  Article:
+    properties:
+      rank:
+        type: string
+      title:
+        type: string
+      authors:
+        type: string
+      affiliations:
+        type: string
+      controlledterms:
+        type: array
+        items:
+          type: string
+      thesaurusterms:
+        type: array
+        items:
+          type: string
+      pubtitle:
+        type: string
+      punumber:
+        type: string
+      pubtype:
+        type: string
+      publisher:
+        type: string
+      py:
+        type: string
+      spage:
+        type: string
+      epage:
+        type: string
+      abstract:
+        type: string
+      issn:
+        type: string
+      isbn:
+        type: string
+      htmlFlag:
+        type: string
+      arnumber:
+        type: string
+      doi:
+        type: string
+      publicationId:
+        type: string
+      partnum:
+        type: string
+      mdurl:
+        type: string
+      pdf:
+        type: string
+  Error:
+    required:
+      - code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string

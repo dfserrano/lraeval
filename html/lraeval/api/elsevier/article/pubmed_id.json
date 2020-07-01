@@ -1,0 +1,222 @@
+{
+  "full-text-retrieval-response": {
+    "coredata": {
+      "url": "https://api.elsevier.com/content/article/pii/S0014579301033130",
+      "identifier": "doi:10.1016/S0014-5793(01)03313-0",
+      "eid": "1-s2.0-S0014579301033130",
+      "doi": "10.1016/S0014-5793(01)03313-0",
+      "pii": "S0014-5793(01)03313-0",
+      "title": "The orientation of the antibiotic peptide maculatin 1.1 in DMPG and DMPC lipid bilayers. Support for a pore-forming mechanism ",
+      "publicationName": "FEBS Letters",
+      "aggregationType": "Journal",
+      "issn": "00145793",
+      "volume": "512",
+      "issueIdentifier": "1-3",
+      "startingPage": "47",
+      "endingPage": "51",
+      "pageRange": "47-51",
+      "number": "1-3",
+      "format": "application/json",
+      "coverDate": "2002-02-13",
+      "coverDisplayDate": "13 February 2002",
+      "copyright": "Copyright © 2002 Federation of European Microbiological Societies. Published by Elsevier B.V. All rights reserved.",
+      "publisher": "Federation of European Microbiological Societies. Published by Elsevier B.V.",
+      "creator": [
+        {
+          "_fa": "true",
+          "$": "Chia, C.S.B"
+        },
+        {
+          "_fa": "true",
+          "$": "Torres, J"
+        },
+        {
+          "_fa": "true",
+          "$": "Cooper, M.A"
+        },
+        {
+          "_fa": "true",
+          "$": "Arkin, I.T"
+        },
+        {
+          "_fa": "true",
+          "$": "Bowie, J.H"
+        }
+      ],
+      "description": "AbstractMaculatin 1.1 is an antimicrobial peptide isolated from the Australian tree frog Litoria genimaculata that adopts an amphipathic, α-helical structure in solution. Its orientation and conformation when incorporated to pre-formed DMPG (1,2-dimyristoyl-sn-glycero-3-phosphoglycerol) and DMPC (1,2-dimyristoyl-sn-glycero-3-phosphocholine) vesicles was determined using polarised Fourier transform infrared–attenuated total reflection infrared and deuterium exchange experiments. For DMPG membranes, our results show insertion of ∼70% of the maculatin 1.1 molecules, with an angle of insertion of approximately 35° to the membrane normal and with a predominant α-helical structure. These results suggest that maculatin 1.1 acts through a pore-forming mechanism to lyse bacterial membranes. A similar degree of insertion in DMPG (65%) and α-helical structure was observed for a biologically inactive, less amphipathic maculatin 1.1 analogue, P15A, although the helix tilt was found to be greater (46°) than for maculatin 1.1. Similar experiments performed using DMPC liposomes showed poor insertion, less than 5%, for both maculatin 1.1 and its analogue. In addition, the shape of the amide I band in these samples is consistent with α-helix, β-structure and disordered structures being present in similar proportion. These results clearly show that maculatin 1.1 inserts preferentially in negatively charged membranes (DMPG) which mimic the negatively charged membrane of Gram-positive bacteria. We attribute the high percentage of insertion of the biologically inactive analogue in DMPG to the fact that its concentration on the membrane surface in our experiments is likely to be much higher than that found in physiological conditions.",
+      "openaccess": "1",
+      "openaccessArticle": true,
+      "openaccessType": "Full",
+      "openArchiveArticle": true,
+      "openaccessSponsorName": null,
+      "openaccessSponsorType": "ElsevierBranded",
+      "openaccessUserLicense": "http://www.elsevier.com/open-access/userlicense/1.0/",
+      "subject": [
+        {
+          "_fa": "true",
+          "$": "Peptide antibiotic"
+        },
+        {
+          "_fa": "true",
+          "$": "Attenuated total reflection"
+        },
+        {
+          "_fa": "true",
+          "$": "Fourier transform infrared"
+        },
+        {
+          "_fa": "true",
+          "$": "1,2-Dimyristoyl-sn-glycero-3-phosphocholine"
+        },
+        {
+          "_fa": "true",
+          "$": "1,2-Dimyristoyl-sn-glycero-3-phosphoglycerol"
+        },
+        {
+          "_fa": "true",
+          "$": "Maculatin 1.1"
+        },
+        {
+          "_fa": "true",
+          "$": "Phospholipid membrane"
+        },
+        {
+          "_fa": "true",
+          "$": "Litoria genimaculata"
+        }
+      ],
+      "link": [
+        {
+          "rel": "self",
+          "href": "https://api.elsevier.com/content/article/pii/S0014579301033130",
+          "_fa": "true"
+        },
+        {
+          "rel": "scidir",
+          "href": "http://www.sciencedirect.com/science/article/pii/S0014579301033130",
+          "_fa": "true"
+        }
+      ]
+    },
+    "objects": {
+      "object": [
+        {
+          "_fa": "true",
+          "ref": "si3",
+          "category": "thumbnail",
+          "type": "ALTIMG",
+          "multimediatype": "GIF image file",
+          "mimetype": "image/gif",
+          "width": "168",
+          "height": "37",
+          "size": "839",
+          "$": "https://api.elsevier.com/content/object/eid/1-s2.0-S0014579301033130-si3.gif?httpAccept=%2A%2F%2A"
+        },
+        {
+          "_fa": "true",
+          "ref": "si2",
+          "category": "thumbnail",
+          "type": "ALTIMG",
+          "multimediatype": "GIF image file",
+          "mimetype": "image/gif",
+          "width": "93",
+          "height": "39",
+          "size": "627",
+          "$": "https://api.elsevier.com/content/object/eid/1-s2.0-S0014579301033130-si2.gif?httpAccept=%2A%2F%2A"
+        },
+        {
+          "_fa": "true",
+          "ref": "si1",
+          "category": "thumbnail",
+          "type": "ALTIMG",
+          "multimediatype": "GIF image file",
+          "mimetype": "image/gif",
+          "width": "258",
+          "height": "48",
+          "size": "1674",
+          "$": "https://api.elsevier.com/content/object/eid/1-s2.0-S0014579301033130-si1.gif?httpAccept=%2A%2F%2A"
+        },
+        {
+          "_fa": "true",
+          "ref": "gr1",
+          "category": "thumbnail",
+          "type": "IMAGE-THUMBNAIL",
+          "multimediatype": "GIF image file",
+          "mimetype": "image/gif",
+          "width": "52",
+          "height": "93",
+          "size": "1887",
+          "$": "https://api.elsevier.com/content/object/eid/1-s2.0-S0014579301033130-gr1.sml?httpAccept=%2A%2F%2A"
+        },
+        {
+          "_fa": "true",
+          "ref": "gr1",
+          "category": "standard",
+          "type": "IMAGE-DOWNSAMPLED",
+          "multimediatype": "GIF image file",
+          "mimetype": "image/gif",
+          "width": "175",
+          "height": "314",
+          "size": "8196",
+          "$": "https://api.elsevier.com/content/object/eid/1-s2.0-S0014579301033130-gr1.gif?httpAccept=%2A%2F%2A"
+        },
+        {
+          "_fa": "true",
+          "ref": "gr2",
+          "category": "thumbnail",
+          "type": "IMAGE-THUMBNAIL",
+          "multimediatype": "GIF image file",
+          "mimetype": "image/gif",
+          "width": "50",
+          "height": "92",
+          "size": "1941",
+          "$": "https://api.elsevier.com/content/object/eid/1-s2.0-S0014579301033130-gr2.sml?httpAccept=%2A%2F%2A"
+        },
+        {
+          "_fa": "true",
+          "ref": "gr2",
+          "category": "standard",
+          "type": "IMAGE-DOWNSAMPLED",
+          "multimediatype": "GIF image file",
+          "mimetype": "image/gif",
+          "width": "170",
+          "height": "313",
+          "size": "8076",
+          "$": "https://api.elsevier.com/content/object/eid/1-s2.0-S0014579301033130-gr2.gif?httpAccept=%2A%2F%2A"
+        },
+        {
+          "_fa": "true",
+          "ref": "gr3",
+          "category": "thumbnail",
+          "type": "IMAGE-THUMBNAIL",
+          "multimediatype": "GIF image file",
+          "mimetype": "image/gif",
+          "width": "125",
+          "height": "63",
+          "size": "1672",
+          "$": "https://api.elsevier.com/content/object/eid/1-s2.0-S0014579301033130-gr3.sml?httpAccept=%2A%2F%2A"
+        },
+        {
+          "_fa": "true",
+          "ref": "gr3",
+          "category": "standard",
+          "type": "IMAGE-DOWNSAMPLED",
+          "multimediatype": "JPEG image file",
+          "mimetype": "image/jpeg",
+          "width": "324",
+          "height": "164",
+          "size": "18060",
+          "$": "https://api.elsevier.com/content/object/eid/1-s2.0-S0014579301033130-gr3.jpg?httpAccept=%2A%2F%2A"
+        }
+      ]
+    },
+    "scopus-id": "0037070197",
+    "scopus-eid": "2-s2.0-0037070197",
+    "pubmed-id": "11852050",
+    "link": {
+      "rel": "abstract",
+      "href": "https://api.elsevier.com/content/abstract/scopus_id/0037070197"
+    },
+    "originalText": "serialJL2711022912102916822917212918482918522918573180FEBS LettersFEBSLETTERS2002-01-042002-01-042010-11-13T10:48:151-s2.0-S0014579301033130S0014-5793(01)03313-0S001457930103313010.1016/S0014-5793(01)03313-0S300S300.1FULL-TEXT1-s2.0-S0014579300X1174X2015-05-14T00:22:29.140238-04:00002002021320022002-01-04T00:00:00Zarticleinfo crossmark dco dateupdated tomb dateloaded datesearch indexeddate issuelist volumelist yearnav articletitlenorm authfirstinitialnorm authfirstsurnamenorm cid cids contenttype copyright dateloadedtxt docsubtype doctype doi eid ewtransactionid hubeid issfirst issn issnnorm itemstage itemtransactionid itemweight oauserlicense openaccess openarchive pg pgfirst pglast pii piinorm pubdatestart pubdatetxt pubyr sortorder srctitle srctitlenorm srctype subheadings volfirst volissue webpdf webpdfpagecount figure table body acknowledge affil articletitle auth authfirstini authfull authkeywords authlast dedication footnotes otherkwds primabst ref alllist content oa subj ssids0014-57930014579351251213123Volume 512, Issues 1–310475147512002021313 February 20022002-02-132002converted-articleflaCopyright © 2002 Federation of European Microbiological Societies. Published by Elsevier B.V. All rights reserved.ORIENTATIONANTIBIOTICPEPTIDEMACULATIN11INDMPGDMPCLIPIDBILAYERSSUPPORTFORAPOREFORMINGMECHANISMCHIAC1Introduction2Materials and methods2.1Materials2.2Sample preparation2.3Polarised ATR–FTIR measurements2.4Analysis of ATR–FTIR data3Results3.1DMPG membranes3.2DMPC membranes4DiscussionAcknowledgementsReferencesEPAND19991128RLAZARUS1993473507LGIOVANNINI1987113119MCRUCIANI199137923796RMARION19882126DGESELL1997127135JDUCLOHIER198910171021HWESTERHOFF198965976601HWADE199047614765DSHAI19995570YPOUNY19921241612423YBECHINGER19921214BBECHINGER199320772084BFREY1991922930SROZEK1998111115TCHIA200018941908BMACDONALD1991297303RKAUPPINEN1981271276JARKIN199672337238IMARSH200024992510DTSUBOI1962139153MMARSH199926302637DBYLER1986469487DARKIN199789738980IDEMPSEY1991240244CDEMPSEY1991175184CFERNANDEZLOPEZ2001452455SCHIAX2002X47CHIAX2002X47X51CHIAX2002X47XCCHIAX2002X47X51XCFullhttp://www.elsevier.com/open-access/userlicense/1.0/ElsevierBrandedOA-Window2013-08-22T00:00:46ZitemS0014-5793(01)03313-0S00145793010331301-s2.0-S001457930103313010.1016/S0014-5793(01)03313-02711022010-12-08T14:46:29.151756-05:002002-02-131-s2.0-S0014579301033130-main.pdfhttps://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0014579301033130/MAIN/application/pdf/21fe610d477fbc895144b3947d8b25c7/main.pdfhttps://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0014579301033130/MAIN/application/pdf/21fe610d477fbc895144b3947d8b25c7/main.pdfmain.pdfpdftrue215370MAIN51-s2.0-S0014579301033130-main_1.pnghttps://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0014579301033130/PREVIEW/image/png/9d0ac1d4d57195a75575a688de6c0889/main_1.pnghttps://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0014579301033130/PREVIEW/image/png/9d0ac1d4d57195a75575a688de6c0889/main_1.pngmain_1.pngpng85047849656IMAGE-WEB-PDF11-s2.0-S0014579301033130-si3.gifhttps://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0014579301033130/STRIPIN/image/gif/1e0c59be5e1364ff8f786c3192fb1734/si3.gifhttps://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0014579301033130/STRIPIN/image/gif/1e0c59be5e1364ff8f786c3192fb1734/si3.gifsi3si3.gifgif83937168ALTIMG1-s2.0-S0014579301033130-si2.gifhttps://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0014579301033130/STRIPIN/image/gif/837117c7ed6321f00a17879db7acf802/si2.gifhttps://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0014579301033130/STRIPIN/image/gif/837117c7ed6321f00a17879db7acf802/si2.gifsi2si2.gifgif6273993ALTIMG1-s2.0-S0014579301033130-si1.gifhttps://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0014579301033130/STRIPIN/image/gif/9c3735b70359a74c115267e4166dd97d/si1.gifhttps://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0014579301033130/STRIPIN/image/gif/9c3735b70359a74c115267e4166dd97d/si1.gifsi1si1.gifgif167448258ALTIMG1-s2.0-S0014579301033130-gr1.smlhttps://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0014579301033130/gr1/THUMBNAIL/image/gif/083daed6a8fc77405e50ccb175dbeb73/gr1.smlhttps://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0014579301033130/gr1/THUMBNAIL/image/gif/083daed6a8fc77405e50ccb175dbeb73/gr1.smlgr1gr1.smlsml18879352IMAGE-THUMBNAIL1-s2.0-S0014579301033130-gr1.gifhttps://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0014579301033130/gr1/DOWNSAMPLED/image/gif/d81a8dcdb9d2c2a39ef8823d6a57dff8/gr1.gifhttps://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0014579301033130/gr1/DOWNSAMPLED/image/gif/d81a8dcdb9d2c2a39ef8823d6a57dff8/gr1.gifgr1gr1.gifgif8196314175IMAGE-DOWNSAMPLED1-s2.0-S0014579301033130-gr2.smlhttps://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0014579301033130/gr2/THUMBNAIL/image/gif/72d2632962d1f5d8a38f9046024230fe/gr2.smlhttps://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0014579301033130/gr2/THUMBNAIL/image/gif/72d2632962d1f5d8a38f9046024230fe/gr2.smlgr2gr2.smlsml19419250IMAGE-THUMBNAIL1-s2.0-S0014579301033130-gr2.gifhttps://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0014579301033130/gr2/DOWNSAMPLED/image/gif/92a5025f93dd2a5a528432d2aa3f63c5/gr2.gifhttps://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0014579301033130/gr2/DOWNSAMPLED/image/gif/92a5025f93dd2a5a528432d2aa3f63c5/gr2.gifgr2gr2.gifgif8076313170IMAGE-DOWNSAMPLED1-s2.0-S0014579301033130-gr3.smlhttps://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0014579301033130/gr3/THUMBNAIL/image/gif/6397afbcdc6f26f9c78c89c593f343f2/gr3.smlhttps://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0014579301033130/gr3/THUMBNAIL/image/gif/6397afbcdc6f26f9c78c89c593f343f2/gr3.smlgr3gr3.smlsml167263125IMAGE-THUMBNAIL1-s2.0-S0014579301033130-gr3.jpghttps://s3.amazonaws.com/prod-ucs-content-store-us-east/content/pii:S0014579301033130/gr3/DOWNSAMPLED/image/jpeg/6a44b00b7fb520116e19132970bc19a0/gr3.jpghttps://s3-eu-west-1.amazonaws.com/prod-ucs-content-store-eu-west/content/pii:S0014579301033130/gr3/DOWNSAMPLED/image/jpeg/6a44b00b7fb520116e19132970bc19a0/gr3.jpggr3gr3.jpgjpg18060164324IMAGE-DOWNSAMPLEDFEBS25693S0014-5793(01)03313-010.1016/S0014-5793(01)03313-0Federation of European Microbiological SocietiesFig. 1Infrared spectra corresponding to amides I, II and A when maculatin 1.1 was added to DMPG vesicles. Top panel: Amide I and II after removing bulk water. Middle panel: Amide I and II after hydration with D2O. Bottom panel: Amide A after hydration with D2O. The polarisation of light is indicated as symbols: ∥ (parallel); ⊥ (perpendicular).Fig. 2The same as in Fig. 1, but for the analogue P15A.Fig. 3Energy-minimised NMR structures illustrating the C-terminal axial views of maculatin 1.1 (left) and P15A maculatin 1.1 analogue (right) in trifluoroethanol/water (1:1 vol). Note the lower amphipathicity for the analogue (right). Cationic groups are marked with an arrow.Table 1Results obtained after mixing maculatin 1.1 or the biologically inactive analogue P15A with preformed DMPG liposomesBulk water removedHydrated membraneAI (H2O)β (°)AI (D2O)β (°)AA (D2O)β (°)Maculatin 1.13±0.192.8±0.1272.95±0.135P15A2.5±0.01362.1±0.05502.25±0.0446AI (H2O) is the dichroic ratio obtained from the amide I after removing bulk water, whereas AI (D2O) and AA (D2O) are the dichroic ratios for the amide I and the amide A bands after hydrating with D2O. The angle β to the right of each dichroic ratio is the helix tilt relative to the membrane normal. The data is the average of three samples.Table 2Primary sequence of maculatin 1.1 and melittinPeptideStructureResiduesReferenceMaculatin 1.1GLFGVLAKVAAHVVPAIAEHF-NH221[15]MelittinGIGAVLKVLTTGLPALISWIKRKRQQ26[14]The orientation of the antibiotic peptide maculatin 1.1 in DMPG and DMPC lipid bilayers. Support for a pore-forming mechanismEdited by Maurice MontalC.S.BChiaa11These two authors have contributed equally to this work.JTorresb1*jtorresntu.edu.sgM.ACooperaI.TArkinb22Present address: The Alexander Silberman Institute of Life Sciences, Department of Biological Chemistry, The Hebrew University, Givat Ram, Jerusalem 91904, Israel.J.HBowiecaDepartment of Chemistry, University of Cambridge, Lensfield Road, Cambridge CB2 1EW, UKbDepartment of Biochemistry, University of Cambridge, 80 Tennis Court Road, Cambridge CB2 1GA, UKcDepartment of Chemistry, The University of Adelaide, North Terrace, Adelaide, SA 5005, Australia*Corresponding author. Present address: School of Biological Sciences, Nanyang Technological University, 1 Nanyang Walk, Block 5 Level 3, 637616 Singapore. Fax: (65)-8968032AbstractMaculatin 1.1 is an antimicrobial peptide isolated from the Australian tree frog Litoria genimaculata that adopts an amphipathic, α-helical structure in solution. Its orientation and conformation when incorporated to pre-formed DMPG (1,2-dimyristoyl-sn-glycero-3-phosphoglycerol) and DMPC (1,2-dimyristoyl-sn-glycero-3-phosphocholine) vesicles was determined using polarised Fourier transform infrared–attenuated total reflection infrared and deuterium exchange experiments. For DMPG membranes, our results show insertion of ∼70% of the maculatin 1.1 molecules, with an angle of insertion of approximately 35° to the membrane normal and with a predominant α-helical structure. These results suggest that maculatin 1.1 acts through a pore-forming mechanism to lyse bacterial membranes. A similar degree of insertion in DMPG (65%) and α-helical structure was observed for a biologically inactive, less amphipathic maculatin 1.1 analogue, P15A, although the helix tilt was found to be greater (46°) than for maculatin 1.1. Similar experiments performed using DMPC liposomes showed poor insertion, less than 5%, for both maculatin 1.1 and its analogue. In addition, the shape of the amide I band in these samples is consistent with α-helix, β-structure and disordered structures being present in similar proportion. These results clearly show that maculatin 1.1 inserts preferentially in negatively charged membranes (DMPG) which mimic the negatively charged membrane of Gram-positive bacteria. We attribute the high percentage of insertion of the biologically inactive analogue in DMPG to the fact that its concentration on the membrane surface in our experiments is likely to be much higher than that found in physiological conditions.KeywordsPeptide antibioticAttenuated total reflectionFourier transform infrared1,2-Dimyristoyl-sn-glycero-3-phosphocholine1,2-Dimyristoyl-sn-glycero-3-phosphoglycerolMaculatin 1.1Phospholipid membraneLitoria genimaculataAbbreviationsATR, attenuated total reflection infraredDMPC, 1,2-dimyristoyl-sn-glycero-3-phosphocholineDMPG, 1,2-dimyristoyl-sn-glycero-3-phosphoglycerolFTIR, Fourier transform infraredNMR, nuclear magnetic resonanceFSD, Fourier self-deconvoluted1IntroductionMany organisms employ antibiotic peptides as a defence mechanism to complement their existing immune systems [1]. Amphibian skin is one of the sources of these peptides [2]. One well-studied example is the magainin family of peptides isolated from the south African clawed frog Xenopus laevis [3]. The members of this family of peptides are typically 21–26 residues long and possess antibiotic, anti-fungal and tumouricidal activity [4]. Two-dimensional solution nuclear magnetic resonance (2D-NMR) spectroscopy has been used to show that these peptides adopt an α-helical conformation in membrane-mimicking solvents and in phospholipid micelles [5,6], whilst physico-chemical studies have shown that they interact with, and disrupt the integrity of, bacterial membranes [7,8]. Evidence supporting that they act by interacting directly with the membranes via a general morphological conformation [9] and not by binding to a specific cell receptor comes from the finding that synthetic all-D-amino acid magainin has the same biological activity as natural all-L-amino acid magainin [9].Two mechanisms of bactericidal action have been proposed: the ‘channel’ mechanism and the ‘carpet’ mechanism (see [10] for a review). According to the ‘channel’ mechanism, peptide monomers insert perpendicularly to the bilayer, rearranging and then forming a transmembrane pore. This interferes with the mechanism of osmo-regulation in the cell, causing an uncontrolled flux of ions and solutes into and out of the cytoplasm, killing the bacteria [11]. In the alternative ‘carpet’ mechanism, a peptide aggregate binds parallel to the bilayer surface via electrostatic interactions. This causes membrane thinning, eventually leading to membrane disruption and cell death [10]. For example, solid-state NMR and attenuated total reflection infrared–Fourier transform infrared (ATR–FTIR) studies on the magainin peptides have shown that they orient parallel to phospholipid bilayers [12,13], a conformation that is consistent with the ‘carpet’ mechanism. Melittin, in contrast, a 26-residue pore-forming peptide isolated from bee venom, was found to adopt a transmembrane orientation [14], i.e. perpendicular to the membrane plane, in phospholipid bilayers.We have attempted herein to assign either of these mechanisms to maculatin 1.1, an antimicrobial peptide (GLFGV LAKVA AHVVP AIAEH F-NH2) isolated from the skin glands of the Australian tree frog Litoria genimaculata [15]. Previous circular dichroism and NMR studies revealed that it adopts an amphipathic α-helical conformation, both in the membrane-mimetic solvent 2,2,2-trifluoroethanol and in phospholipid micelles [16]. When in a helical conformation, the length of maculatin 1.1, obtained from solution NMR studies, is approximately 30 Å [16], which is also the average thickness of a bacterial membrane [17]. The length of maculatin 1.1 is therefore consistent with a ‘channel’ mechanism of membrane interaction and lysis. Further, we have shown previously that maculatin 1.1 is not active against Gram-negative bacteria [16]. As peptides which form oligomers upon membrane binding (a prerequisite condition for channel formation) do not readily cross the outer membrane of Gram-negative bacteria [10], this also would seem to suggest that the mechanism of action is via formation of a channel. If maculatin were acting via the ‘carpet’ mechanism, one would expect the peptide to possess activity against both Gram-positive and Gram-negative bacteria [30].We have tested the hypothesis that maculatin 1.1 forms a channel using polarised ATR–FTIR to determine the orientation of the peptide when incorporated into DMPG (1,2-dimyristoyl-sn-glycero-3-phosphoglycerol) and DMPC (1,2-dimyristoyl-sn-glycero-3-phosphocholine) phospholipid vesicles. ATR–FTIR allows the helix tilt to be obtained from the dichroic ratios of the bands that originate from certain peptidic amide vibrations, amide I (CO stretching) or amide A (N–H stretching). In addition, ATR–FTIR allows the percentage of insertion in the membrane to be calculated, by measuring the amide I/amide II ratio before and after exposure to D2O. Clear support for either mechanism of action, ‘channel’ or ‘carpet’, can thus be derived simply measuring the orientation of the peptides relative to the membrane normal.DMPG, an anionic phospholipid, was chosen as a model system for the membranes of typical Gram-positive bacteria because their outer membrane leaflets are composed largely of anionic phospholipids such as phosphatidylglycerol, diphosphatidylglycerol and acidic polysaccharides (lipo-teichoic acids) [17,18]. DMPC, a zwitterionic phospholipid was used as a model for mammalian cell membranes. The behaviour of a maculatin 1.1 analogue, P15A, that possesses no antibiotic activity [16] was also tested in the presence of either type of lipidic membrane.2Materials and methods2.1MaterialsMaculatin 1.1 and the analogue P15A were purchased (&gt;95% purity) from Chiron Mimotopes (Vic., Australia) and were used without further purification. DMPG and DMPC were purchased from Aldrich (UK).2.2Sample preparationDMPG or DMPC small unilamellar vesicles (100 μl, 18.64 mg/ml) were prepared by extrusion [19] through a polycarbonate filter (50 nm pore diameter). The peptide (100 μl, 1 mg/ml) was then added to the solution, resulting in a peptide:lipid ratio of ∼1:60 (mol/mol). The resultant mixture was swirled gently and applied onto a trapezoidal germanium internal reflection element (50 mm × 2 mm × 20 mm). Bulk water was removed using a dry nitrogen stream. For hydration under D2O and H/D exchange experiments, spectra were collected after flushing the interior of the sample cell with D2O-saturated nitrogen, obtained by bubbling dry nitrogen through two compartments containing D2O for 4 h.2.3Polarised ATR–FTIR measurementsATR–FTIR spectra were obtained from a Nicolet Magna 560 spectrometer (Madison, WI, USA) purged with N2 and equipped with a MCT detector cooled with liquid nitrogen. Infrared spectra were measured with a 25-reflections ATR accessory from Graseby Specac (Kent, UK) and a wire grid polariser (0.25 μm, Graseby Specac). A total of 1000 interferograms were collected using either parallel or perpendicular polarised light at a resolution of 4 cm−1. The spectra were averaged and processed with one-point zero-filling and Happ–Genzel apodisation.2.4Analysis of ATR–FTIR dataSpectra were collected either after bulk water removal or after hydration with D2O. In the first case, the dichroic ratios, RATR, of the amide I band (due to CO stretching) and that corresponding to the band at 2850 cm−1, due to the symmetric methylene stretching of the lipid, were recorded. In the second case, after hydration with D2O, the dichroic ratio of the amide A band (due to N–H stretching) was also recorded. Dichroic ratios were calculated as the ratio between the integrated absorptions collected with parallel and perpendicular polarised light.To measure the amide I dichroic ratio, the amide I band was Fourier self-deconvoluted (FSD) with a full-width at a half-height of 15 cm−1 and an enhancement factor k of 2.0, always below the logarithm of the signal-to-noise ratio [20]. Peak integration was performed on these FSD spectra from 1670 to 1645 cm−1. For the amide A band and the band at 2850 cm−1, integration was performed without FSD from 3400 to 3200 cm−1 and from 2890 to 2800 cm−1, respectively.The order parameters were calculated as previously [21]. First, the order parameters for the helix Shelix and the lipid Slipid were calculated according to the formula:S=ϵx2−RATRϵy2+ϵz2ϵx2−RATRϵy2−ϵz2÷3cos2 α−12where RATR is the dichroic ratio of amide I or amide A for Shelix and the dichroic ratio of the 2850 cm−1 band for Slipid. The angle α is the angle between the transition dipole moment of the vibrational transition and the z-axis. The angle α is 90° for the lipid symmetric CH2 stretching (2850 cm−1 band), 39° for the peptidic CO bond and 29° for the N–H bond [23,24]. The parameters ϵx, ϵy and ϵz are the electric field components. Because the thickness of the film was estimated as being more than 20 μm, whereas the amplitude of the evanescent wave decays (at 1/ϵ of its initial value) after 1 μm in a germanium plate, the values for these components are those given by [22] according to a thick-film approximation. The contribution of Slipid to Shelix was taken into account and the helix tilt β was calculated from Shelix′Shelix′=ShelixSlipidaccording toShelix′=3(cos2 β)−12We note that when the dichroic ratio of the helix is obtained from the amide A dichroism and not the amide I dichroism, the precision in the determination of the helix tilt is increased, as the angle α for N–H is smaller than for the CO bond (see above), and consequently the possible range of dichroic ratios is wider. Also, the amide A band in these conditions, i.e. when the sample is exposed to D2O, originates only from the transmembrane α-helix that has not exchanged, therefore it only takes into account the contribution of peptides that have inserted properly in the membrane.Isotopic (H/D) exchange was calculated from the ratio amide II/amide I before and after H/D exchange using non-polarised spectra. These were obtained from the parallel (∥) and perpendicularly (⊥) ATR polarised spectra, according to 1 (∥)+1.44 (⊥), as described previously [25].3Results3.1DMPG membranesFig. 1 (top panel) shows the amide I region for maculatin 1.1 after mixing the peptide with preformed DMPG liposomes. The amide I band is centred at 1657 cm−1, indicating that the peptide adopts a predominantly α-helical structure [26]. Both the original and the deconvoluted spectra (not shown) showed a small shoulder around 1640–1630 cm−1, indicating the presence of ∼20% of β-structure. After D2O exposure (middle panel), an additional shoulder at 1675 cm−1 was observed in the amide I band, probably originating from β-turns [26]. These non-helical structures could be due to extramembraneous parts of the peptide or from a fraction of molecules not fully inserted into the phospholipid membrane. The amide II is still present, although smaller, after 4 h exchange in D2O, indicating that part of the sample is protected from exchange and embedded in the membrane. The bottom panel in Fig. 1 shows that the amide A band, originating from amide N–H stretching vibration, is also present. The results for the analogue P15A in DMPG membranes were similar (see Fig. 2).Examination of the ratio between non-polarised amide II and amide I before and after D2O exchange (not shown) revealed that approximately 70% of the maculatin 1.1 molecules were inserted in the membrane (the exchange was less than 30% of the amide NH protons). For the analogue, the percentage of non-exchanged amide groups was 65%, therefore, this peptide also inserts into the membranes of preformed DMPG liposomes under our experimental conditions.Table 1 shows the dichroic ratios obtained under these different conditions and the helix tilts obtained as described in Section 2. For maculatin 1.1, when bulk water was removed (Fig. 1, top) the amide I band dichroism (3.0±0.1) indicates that the peptide is oriented 9° from the membrane normal. Interestingly, after hydration in D2O, the dichroism of the amide I was lower (2.8±0.1, see Table 1), giving a helix tilt of 27°. The helix tilt in this case, however, was calculated with the more reliable amide A dichroism (2.95±0.1) which gives a helix tilt of 35°. The dichroic ratio of the band at 2850 cm−1, that originates from the methylene CH2 stretching from the lipid, was typically 1.2 in DMPG.For the analogue, the dichroic ratio of the amide I band was found to be lower than for maculatin 1.1, both before and after D2O hydration (see Table 1, second row). The amide A dichroism when the sample was hydrated in D2O was also lower (2.25±0.04) than for maculatin 1.1. The helix tilt of the analogue therefore was greater than that for maculatin 1.1 (46° under D2O hydration).Note, however, that these values for the helix tilt could be even lower, i.e. closer to the membrane normal, as this calculations do not take into account randomly oriented peptide [27].3.2DMPC membranesIn similar experiments using zwitterionic DMPC membranes, it was observed that both maculatin 1.1 and the analogue P15A showed little or no α-helical structure. The sample contained significant amounts of β-structure and -turns (&gt;30% each), and the width of the amide I was larger than that observed for the samples in DMPG (data not shown). In addition, the amide I dichroic ratio corresponding to the region between 1670 and 1645 cm−1, both in the hydrated sample and the one before hydration of approximately 2, is consistent with this. After D2O exposure, only ∼5% of maculatin 1.1 was protected from exchange, indicating that 95% of the sample was not inserted in the membrane, although for the 5% of the sample that did not exchange in D2O, the helix tilt was estimated to be less than 17° to the membrane normal, with an amide A dichroic ratio of 5 (not shown). The P15A analogue showed a similar low degree of protection against exchange (&lt;5%), but the small fraction that did not exchange, yielded results, RAI(β)=1.55 (82°) and RAA(β)=1.75 (65°), which suggest that the non-exchanged part of the sample was not inserted in, but instead lying parallel to, the membrane surface.4DiscussionWe have not reconstituted peptide and bilayer simultaneously, but added peptide to preformed liposomes, in an attempt to mimic the processes which occur when peptide binds to an intact bacterial membrane.The main conclusion derived from this work is that the helix tilt of maculatin 1.1, particularly in DMPG membranes, supports a mechanism of action in which the peptide disrupts the membranes by forming a pore. The helix tilt varied with hydration, being more tilted when the sample was fully hydrated with D2O. We assume that the value obtained using a hydrated sample should be closer to the conditions encountered by the peptide in biological conditions. Therefore, the helix tilt obtained here is 35°, incompatible with the ‘carpet’ mechanism of action, in which the peptides would orient parallel to the membrane surface, i.e. with a tilt of 90° to the bilayer normal.We note that a comparison between maculatin 1.1 and the peptide melittin, a channel forming peptide [14], reveals a remarkably similar sequence homology (see Table 2). Both peptides are rich in hydrophobic residues at their N-termini and both have a central proline residue which is seven residues apart from the lysine. It is possible that the proline-induced kink in the peptide causes partial penetration of the peptide into the phospholipid bilayer upon binding to the bacterial membrane surface, which facilitates complete insertion of the entire peptide into the bilayer.NMR studies have shown that both maculatin 1.1 and its P15A analogue are α-helical, but the natural peptide has a central proline kink, resulting in the formation of an amphipathic helix in the presence of phospholipid micelles (Fig. 3, left) [16]. The P15A analogue, however, forms a less-amphipathic α-helix (Fig. 3, right). Binding studies using a surface plasmon resonance biosensor, together with a vesicle-capture sensor chip, revealed that maculatin 1.1 bound strongly to the anionic DMPG vesicles but not to the zwitterionic DMPC vesicles, while the P15A analogue did not significantly bind to either DMPG or DMPC vesicles (Chia et al., unpublished results). Somewhat unexpectedly, we found that the maculatin 1.1 analogue, which lacks antibiotic activity [16], also inserted perpendicularly into preformed DMPG vesicles, although its helix tilt was higher than that of maculatin 1.1. However, we stress that in biological conditions, the lipid:peptide ratio on the membrane surface is likely to be much lower than in our study. This may induce the P15A analogue to insert into DMPG membranes under our experimental conditions. Also, it is possible that substitution of the proline residue promotes peptide aggregation in solution and hence interferes with its membrane binding capability [29].The fact that the P15A analogue has a higher tilt than maculatin in DMPG suggests that, although insertion is observed in our special experimental conditions, a different inter-helical interaction is likely to occur when the analogue inserts. This is expected, as the mutation P15A changes the side chain distribution around the helix axis (Fig. 3). Consistent with this, it has been shown by conductance experiments involving melittin and its P14A analogue that the latter suffered a diminished capability to form transmembrane channels [28].Using DMPC vesicles, only a very small fraction of maculatin 1.1 was found to insert almost perpendicularly into DMPC membranes. We have shown therefore that DMPG is a much more suitable lipid for peptide insertion, as compared to DMPC. First, we have found that anionic membranes (DMPG) induce a more α-helical structure in maculatin and its analogue, which then precipitate membrane insertion. In contrast, zwitterionic membranes (DMPC) induce a less α-helical structure, with substantial contributions of β-turns, β-structure and disordered structure. Second, the percentage of sample protected against exchange in DMPC (&lt;5%) is very small compared with the DMPG membranes (&gt;60%).Overall, the experimental results suggest that maculatin 1.1 exerts its membrane lytic action via the ‘channel’ mechanism. The lack of insertion of maculatin 1.1 in DMPC is probably sufficient to explain why this peptide shows a lack of activity against Gram-negative bacteria, although other factors such as the presence of the outer layer can also contribute. Whether channel formation is triggered by self-assembly of peptide monomers on the membrane or if the peptide reaches the membrane already assembled is beyond the scope of this study. We therefore propose further studies in this area to give us a greater insight into its mechanism of action.AcknowledgementsC.S.B.C. and J.H.B. would like to thank the BBSRC and ARC for financial support respectively.References[1]R.MEpandH.JVogelBiochim. Biophys. Acta142219991128[2]L.HLazarusMAtillaProg. Neurobiol.411993473507[3]M.GGiovanniniLPoulterB.WGibsonD.HWilliamsBiochem. J.2431987113119[4]R.ACrucianiJ.LBakerMZasloffH.CChenO.R.AColamoniciProc. Natl. Acad. Sci. USA88199137923796[5]DMarionMZasloffABaxFEBS Lett.22719882126[6]JGesellMZasloffS.JOpellaJ. Biomol. NMR91997127135[7]HDuclohierGMolleGSpachBiophys. J.56198910171021[8]H.VWesterhoffDJureticR.WHendlerM.H.VZasloffProc. Natl. Acad. Sci. USA86198965976601[9]DWadeABomanBWahlinC.MDrainDAndreuH.GBomanR.B.DMerrifieldProc. Natl. Acad. Sci. USA87199047614765[10]YShaiBiochim. Biophys. Acta146219995570[11]YPounyDRapaportAMorPNicolasYShaiBiochemistry3119921241612423[12]BBechingerMZasloffS.JOpellaBiophys. J.6219921214[13]BBechingerMZasloffS.JOpellaProtein Sci.2199320772084[14]SFreyL.KTammBiophys. J.601991922930[15]TRozekR.JWaughS.TSteinbornerJ.HBowieM.JTylerJ.JWallacePept. Sci.41998111115[16]B.C.SChiaJ.ACarverT.DMulhernJ.HBowieEur. J. Biochem.267200018941908[17]Brock, T.D. (1984) Biology of Microorganisms, 4th edn., Prentice-Hall, Englewood Cliffs, N.J.[18]Lechevalier, H. and Lechevalier M.P. (1988) in: Microbiol. Lipids Vol. 1 (Ratledge, C. and Wilkinson, S.G., Eds), pp. 869–902, Academic Press, London.[19]R.CMacDonaldR.IMacDonaldB.MMencoKTakeshitaN.KSubbaraoLHuBiochim. Biophys. Acta10611991297303[20]J.KKauppinenD.JMoffatH.MMantschD.GCameronAppl. Spectrosc.351981271276[21]I.TArkinW.PRussMLebendikerSSchuldinerBiochemistry35199672337238[22]Harrick, N. (1967) Internal Reflection Spectroscopy, Interscience Publishers, New York.[23]DMarshMMullerF.JSchmittBiophys. J.78200024992510[24]MTsuboiJ. Polym. Sci.591962139153[25]DMarshBiophys. J.77199926302637[26]D.MBylerHSusiBiopolymers251986469487[27]I.TArkinK.RMacKenzieA.TBrungerJ. Am. Chem. Soc.119199789738980[28]C.EDempseyRBazzoT.SHarveyISyperekGBoheimI.DCampbellFEBS Lett.2811991240244[29]C.EDempseyBSternbergBiochim. Biophys. Acta10611991175184[30]SFernandez-LopezH.SKimE.CChoiMDelgadoJ.RGranjaAKhasanovKKraehenbuehlGLongD.AWeinbergerK.MWilcoxenM.RGhadiriNature4122001452455"
+  }
+}

@@ -1,0 +1,21 @@
+{
+   "path": "/0000-0001-8419-8779/address",
+   "last-modified-date": "2016-06-06T15:29:36.952Z",
+   "address": {
+      "put-code": "371802",
+      "visibility": "public",
+      "path": "/0000-0001-8419-8779/address/371802",
+      "display-index": "0",
+      "created-date": "2016-01-24T18:35:54.726Z",
+      "last-modified-date": "2016-06-06T15:29:36.952Z",
+      "source": {
+         "source-orcid": {
+            "uri": "http://orcid.org/0000-0001-8419-8779",
+            "path": "0000-0001-8419-8779",
+            "host": "orcid.org"
+         },
+         "source-name": "Marc L. Greenberg"
+      },
+      "country": "US"
+   }
+}

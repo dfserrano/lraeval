@@ -1,0 +1,115 @@
+{
+  "status": "success",
+  "message": {
+    "numFound": "999",
+    "recordData": [
+      {
+        "key": "http://purl.org/au-research/grants/nhmrc/1028374",
+        "slug": "identification-novel-genes-exome-sequencing",
+        "title": "Identification of novel genes predisposing to familial colorectal cancer by full exome sequencing",
+        "description": "A third of people who develop bowel cancer have a family history of the condition. Currently, we only understand the genes involved in a small number of these families. This proposal will use new genetic techniques to look for gene faults in the remaining families by sequencing all an individual’s genes simultaneously. By identifying new genes, we can accurately assess family members’ bowel cancer risk, effectively target surveillance and help reduce their risk of developing bowel cancer.",
+        "identifiers": [
+          "http://purl.org/au-research/grants/nhmrc/1028374",
+          "1028374"
+        ],
+        "identifier_type": {
+          "purl": "http://purl.org/au-research/grants/nhmrc/1028374",
+          "nhmrc": "1028374"
+        },
+        "relations": {
+          "isFundedBy": "National Health and Medical Research Council",
+          "isManagedBy": "University of Melbourne",
+          "isParticipantIn": [
+            "A/Pr Lara Lipton",
+            "A/Pr Paul James",
+            "Dr Maria Doyle",
+            "A/Pr Alison Trainer"
+          ],
+          "isPrincipalInvestigator": "Prof Ian Campbell"
+        }
+      },
+      {
+        "key": "http://purl.org/au-research/grants/nhmrc/1028552",
+        "slug": "an-integrated-systems-grade-glioma",
+        "title": "An integrated systems biology approach for the development of new therapeutic strategies for the treatment of high grade glioma",
+        "description": "Glioma, the most common adult brain cancer, is incurable. Recent advances now allow us to grow glioma cells directly from patients in the laboratory in a way that preserves the features of the original tumor. In this proposal we will systematically analyze such cells using state-of-the-art technologies to identify new processes important to glioma, which in turn should facilitate the identification of innovative therapeutic approaches.",
+        "identifiers": [
+          "http://purl.org/au-research/grants/nhmrc/1028552",
+          "1028552"
+        ],
+        "identifier_type": {
+          "purl": "http://purl.org/au-research/grants/nhmrc/1028552",
+          "nhmrc": "1028552"
+        },
+        "relations": {
+          "isManagedBy": "Monash University",
+          "isFundedBy": "National Health and Medical Research Council",
+          "isParticipantIn": [
+            "Prof Andrew Boyd",
+            "A/Pr Kerrie Mcdonald"
+          ],
+          "isPrincipalInvestigator": "Prof Terrance Johns"
+        }
+      },
+      {
+        "key": "http://purl.org/au-research/grants/nhmrc/1028742",
+        "slug": "systems-biology-approach-breast-cancer",
+        "title": "A systems biology approach to defining therapeutic targets in breast cancer",
+        "description": "Breast cancer is a very complex disease affecting large numbers of women. Current treatment strategies are effective at controlling the disease for patients, however many continue to be burdened by their disease as their tumour either does not respond or develops resistance to the treatment. We will use mathematical approaches to analyse large and complex data sets generated from breast cancers to identify new therapeutic targets and improve patient outcomes.",
+        "identifiers": [
+          "http://purl.org/au-research/grants/nhmrc/1028742",
+          "1028742"
+        ],
+        "identifier_type": {
+          "purl": "http://purl.org/au-research/grants/nhmrc/1028742",
+          "nhmrc": "1028742"
+        },
+        "relations": {
+          "isManagedBy": "University of Queensland",
+          "isFundedBy": "National Health and Medical Research Council",
+          "isParticipantIn": "Prof Mark Ragan",
+          "isPrincipalInvestigator": "Dr Peter Simpson"
+        }
+      },
+      {
+        "key": "http://purl.org/au-research/grants/nhmrc/1029260",
+        "slug": "synthetic-lethality-screen-checkpoint-melanoma",
+        "title": "Synthetic lethality screen targeting a defective checkpoint in melanoma",
+        "description": "All cancers have defects in the mechanisms that regulate normal cell growth and division. These defects provide a growth advantage for the cancer, but can also be an Achilles Heel. In this project we will investigate targeting a defective control mechanism we found in a high proportion of melanomas. We will identify genes that when inhibited combine with the defective control to specifically kill tumour cells with this defect. Normal tissue is protected by its intact regulatory mechanism.",
+        "identifiers": [
+          "http://purl.org/au-research/grants/nhmrc/1029260",
+          "1029260"
+        ],
+        "identifier_type": {
+          "purl": "http://purl.org/au-research/grants/nhmrc/1029260",
+          "nhmrc": "1029260"
+        },
+        "relations": {
+          "isManagedBy": "University of Queensland",
+          "isFundedBy": "National Health and Medical Research Council",
+          "isPrincipalInvestigator": "Prof Brian Gabrielli"
+        }
+      },
+      {
+        "key": "http://purl.org/au-research/grants/nhmrc/1029584",
+        "slug": "role-epigenetic-modifyers-demethylation-cancer",
+        "title": "Role of epigenetic modifyers MBD2 and TET proteins in DNA methylation and demethylation in cancer",
+        "description": "Cancer is a disease of both genetics and epigenetics, the cell machinery that controls how the DNA code is read. DNA methylation is one part of epigenetics but few studies have investigated how the loss of methylation contributes to cancer formation. We have exciting new data that implicates specific proteins in this process and, with this funding we will determine how these proteins affect gene regulation in cancer, potentially leading to novel cancer diagnosis and treatment strategies.",
+        "identifiers": [
+          "http://purl.org/au-research/grants/nhmrc/1029584",
+          "1029584"
+        ],
+        "identifier_type": {
+          "purl": "http://purl.org/au-research/grants/nhmrc/1029584",
+          "nhmrc": "1029584"
+        },
+        "relations": {
+          "isManagedBy": "Garvan Institute of Medical Research",
+          "isFundedBy": "National Health and Medical Research Council",
+          "isPrincipalInvestigator": "Prof Susan Clark",
+          "isParticipantIn": "Dr Clare Stirzaker"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "DocSum": [
+    {
+      "Id": "20113659",
+      "PubDate": "2009 Nov",
+      "Source": "Zhongguo Dang Dai Er Ke Za Zhi",
+      "AuthorList": [
+        "He MJ",
+        "Chen Q",
+        "Liu JM"
+      ],
+      "Title": "[Urinary leukotrience E(4) level in children with asthma].",
+      "Volume": "11",
+      "Issue": "11",
+      "Pages": "909-12",
+      "LangList": [
+        "Chinese"
+      ],
+      "NlmUniqueID": "100909956",
+      "ISSN": "1008-8830",
+      "PubType": "Journal Article",
+      "RecordStatus": "PubMed - indexed for MEDLINE",
+      "PubStatus": "ppublish",
+      "ArticleIds": {
+        "pubmed": "20113659",
+        "pii": "1008-8830(2009)11-0909-04",
+        "rid": "20113659",
+        "eid": "20113659"
+      },
+      "History": {
+        "entrez": "2010/02/02 06:00",
+        "pubmed": "2010/02/02 06:00",
+        "medline": "2010/03/03 06:00"
+      },
+      "HasAbstract": "1",
+      "PmcRefCount": "1",
+      "FullJournalName": "Zhongguo dang dai er ke za zhi = Chinese journal of contemporary pediatrics",
+      "SO": "2009 Nov;11(11):909-12"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: Australian National Data Service (ANDS)
+  description: "The Research Grants API provides access to data relating to Australian Research Grants and Researchers.
+    This service allows users to discover published research grants based on their title, or relationship to specific individuals or institutions.
+    Example use cases for the service include:
+
+      - Populating a lookup form input to search for grant numbers.
+
+      - Enabling richer RIF-CS relationship mappings.
+
+      - Determining grants that have been allocated to a particular researcher.
+
+
+    The service currently provides a searchable index for all grants deposited into the ANDS Registry."
+
+host: localhost
+basePath: /lraeval/api/ands
+schemes:
+  - http
+produces:
+  - application/json
+externalDocs:
+  description: Documentation of the original data source
+  url: https://developers.ands.org.au/services/getgrants/
+
+paths:
+  /getGrants.json:
+    get:
+      summary: Research Grants API
+      description: This service allows users to discover published research grants based on their title, or relationship to specific individuals or institutions.
+      tags:
+        - Search
+      parameters:
+        # Id
+        - name: id
+          in: query
+          description: The id of the grant (or part thereof)
+          required: false
+          type: string
+          default: 1031221
+
+        # Title
+        - name: title
+          in: query
+          description: The title of the grant (or part thereof)
+          required: false
+          type: string
+          default: cancer
+
+        # Institution
+        - name: institution
+          in: query
+          description: Filter results to those grants which are managed by this institution
+          required: false
+          type: string
+          default: University of Sydney
+
+        # PI
+        - name: principalInvestigator
+          in: query
+          description: Filter results to those grants which have this principal/lead investigator
+          required: false
+          type: string
+          default: Jacob George
+
+        # Person
+        - name: person
+          in: query
+          description: Filter results to those grants which have this person listed as a lead OR co-investigator
+          required: false
+          type: string
+          default: Jacob George
+
+      responses:
+        200:
+          description: "
+            Results are wrapped inside a messages object, which is returned when the status is success.
+
+
+            If no grants matched your result, the messages object will be an empty array"
+
+          schema:
+            $ref: '#/definitions/Response'
+
+
+definitions:
+  Response:
+    properties:
+      status:
+        type: string
+      message:
+        type: object
+        properties:
+          numFound:
+            type: integer
+          recordData:
+            type: array
+            items:
+              type: object
+              properties:
+                key:
+                  type: string
+                slug:
+                  type: string
+                title:
+                  type: string
+                description:
+                  type: string
+                identifiers:
+                  type: array
+                  items:
+                    type: string
+                identifier_type:
+                  type: object
+                  properties:
+                    purl:
+                      type: string
+                    nhmrc:
+                      type: string
+                relations:
+                  type: object
+                  properties:
+                    isFundedBy:
+                      type: string
+                    isManagedBy:
+                      type: string
+                    isParticipantIn:
+                      type: array
+                      items:
+                        type: string
+                    isPrincipalInvestigator:
+                      type: string

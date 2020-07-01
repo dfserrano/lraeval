@@ -1,0 +1,446 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: Nature
+
+host: localhost
+basePath: /lraeval/api/nature
+schemes:
+  - http
+produces:
+  - application/json
+
+x-prefixes:
+  - prefix: rdf
+    url: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  - prefix: dc
+    url: http://purl.org/dc/terms/
+  - prefix: nature
+    url: http://www.nature.com/terms/
+  - prefix: pubmed
+    url: http://eutils.ncbi.nlm.nih.gov/entrez/terms/
+  - prefix: vivo
+    url: http://vivoweb.org/ontology/core#
+  - prefix: bibo
+    url: http://purl.org/ontology/bibo/
+  - prefix: foaf
+    url: http://xmlns.com/foaf/0.1/
+
+paths:
+  /blogs/{id}.json:
+    get:
+      summary: Retrieve blog
+      description: Retrieves the blog with ID.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?blog a vivo:Blog ;
+          nature:id ?blogId ;
+          dc:title ?blogTitle ;
+          bibo:uri ?blogUrl ;
+          dc:description ?blogDescription ;
+          dc:created ?blogDate .
+
+      tags:
+        - Blogs
+
+      parameters:
+        - name: id
+          in: path
+          description: The ID of the requested blog
+          required: true
+          type: string
+          x-graphVar: ?blogId
+
+      x-responseMap:
+        - var: ?blogId
+          path: blog/id
+        - var: ?blogTitle
+          path: blog/title
+        - var: ?blogUrl
+          path: blog/url
+        - var: ?blogDescription
+          path: blog/description
+        - var: ?blogDate
+          path: blog/created_at
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/SingleBlogResponse'
+
+  /blogs/blogs.json:
+    get:
+      summary: Retrieve blogs
+      description: Retrieves all blogs with the parameter strings in their descriptions.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?blog a vivo:Blog ;
+          nature:id ?blogId ;
+          dc:title ?blogTitle ;
+          bibo:uri ?blogUrl ;
+          dc:description ?blogDescription ;
+          dc:created ?blogDate .
+
+      tags:
+        - Blogs
+
+      parameters:
+        - name: q
+          in: query
+          description: Terms in the blog title
+          required: false
+          type: string
+          x-graphVar: ?blogTitle
+
+        - name: tags
+          in: query
+          description: Tags in the blog
+          required: false
+          type: string
+
+      x-responseMap:
+        - var: ?blogId
+          path: /blog/id
+        - var: ?blogTitle
+          path: /blog/title
+        - var: ?blogUrl
+          path: /blog/url
+        - var: ?blogDescription
+          path: /blog/description
+        - var: ?blogDate
+          path: /blog/created_at
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/MultipleBlogResponse'
+
+  /blogs/posts.json:
+    get:
+      summary: Retrieve blog posts
+      description: Search for posts from blogs with the specific tag.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?blog a vivo:Blog ;
+          nature:id ?blogId ;
+          dc:title ?blogTitle ;
+          bibo:uri ?blogUrl ;
+          dc:description ?blogDescription ;
+          dc:created ?blogDate .
+        ?post a bibo:Webpage ;
+          dc:title ?postTitle ;
+          dc:date ?postDate ;
+          nature:id ?postId ;
+          rdf:value ?text ;
+          bibo:cites ?paper ;
+          vivo:hasPublicationVenue ?blog .
+        ?paper a bibo:AcademicArticle ;
+          pubmed:id ?pmid .
+
+      tags:
+        - Blogs
+      parameters:
+        - name: blog_tag
+          in: query
+          description: Use blog_tag to search for posts based on tags of the containing blog; use tag to search for posts based on tags of the actual post
+          required: false
+          type: string
+
+        - name: pmid
+          in: query
+          description: Use pmid to request all posts that reference the paper that matches the given PMID
+          required: false
+          type: string
+          x-graphVar: ?pmid
+
+        - name: added_after
+          in: query
+          description: The added_after parameter expects a date in a standard date format, for example YYYY-MM-DD and matches published_at dates
+          required: false
+          type: string
+
+        - name: blog
+          in: query
+          description: Use blog to specify a blog by numerical id, not the blog name e.g. “blog=1237” for “Bio Job Blog”
+          required: false
+          type: string
+          x-graphVar: ?blogId
+
+        - name: term
+          in: query
+          description: Use term to search against key words automatically parsed from blog posts as word bursts, performing a simple matching search
+          required: false
+          type: string
+          x-graphVar: ?postTitle
+
+      x-responseMap:
+        - var: ?blogId
+          path: /post/blog/id
+        - var: ?blogTitle
+          path: /post/blog/title
+        - var: ?blogUrl
+          path: /post/blog/url
+        - var: ?blogDescription
+          path: /post/blog/description
+        - var: ?blogDate
+          path: /post/blog/created_at
+        - var: ?postTitle
+          path: /post/title
+        - var: ?postDate
+          path: /post/created_at
+        - var: ?postId
+          path: /post/id
+        - var: ?text
+          path: /post/body
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/MultiplePostResponse'
+
+  /blogs/papers.json:
+    get:
+      summary: Retrieve papers
+      description: Search for papers with the specific tag.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          pubmed:id ?pmid ;
+          dc:date ?paperDate ;
+          dc:title ?title ;
+          bibo:uri ?paperUrl ;
+          nature:id ?paperId ;
+          bibo:doi ?doi .
+
+      tags:
+        - Blogs
+
+      parameters:
+        - name: added_after
+          in: query
+          description: The added_after parameter expects a date in a standard date format, for example YYYY-MM-DD and matches published_at dates
+          required: false
+          type: string
+
+        - name: added_before
+          in: query
+          description: The added_before parameter expects a date in a standard date format, for example YYYY-MM-DD and matches published_at dates
+          required: false
+          type: string
+
+        - name: doi
+          in: query
+          description: a DOI in the expected format
+          required: false
+          type: string
+          x-graphVar: ?doi
+
+        - name: pmid
+          in: query
+          description: Use pmid to request all papers matching the given PMID
+          required: false
+          type: string
+          x-graphVar: ?pmid
+
+        - name: paper
+          in: query
+          description: the ID of a paper
+          required: false
+          type: string
+          x-graphVar: ?paperId
+
+        - name: tag
+          in: query
+          description: Use blog_tag to search for posts based on tags of the containing blog; use tag to search for posts based on tags of the actual post
+          required: false
+          type: string
+
+      x-responseMap:
+        - var: ?pmid
+          path: /paper/pmid
+        - var: ?paperDate
+          path: /paper/created_at
+        - var: ?title
+          path: /paper/title
+        - var: ?paperUrl
+          path: /paper/url
+        - var: ?paperId
+          path: /paper/id
+        - var: ?doi
+          path: /paper/doi
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/MultiplePaperResponse'
+
+
+definitions:
+  SingleBlogResponse:
+    properties:
+      blog:
+        $ref: '#/definitions/Blog'
+
+  MultipleBlogResponse:
+    type: array
+    items:
+      properties:
+        blog:
+          $ref: '#/definitions/Blog'
+
+  MultiplePostResponse:
+    type: array
+    items:
+      properties:
+        post:
+          $ref: '#/definitions/Post'
+
+  MultiplePaperResponse:
+    type: array
+    items:
+      properties:
+        paper:
+          $ref: '#/definitions/Paper'
+
+  Paper:
+    properties:
+      popularity:
+        type: integer
+      created_at:
+        type: string
+        format: date-time
+      title:
+        type: string
+      updated_at:
+        type: string
+        format: date-time
+      journal:
+        type: string
+      url:
+        type: string
+      pmid:
+        type: string
+      id:
+        type: integer
+      hashed_id:
+        type: string
+      doi:
+        type: string
+      authors:
+        type: string
+
+  Post:
+    properties:
+      blog:
+        $ref: '#/definitions/Blog'
+      links_to_doi:
+        type: array
+        items:
+          type: string
+      percent_complex_words:
+        type: number
+        format: float
+      popularity:
+        type: integer
+      created_at:
+        type: string
+        format: date-time
+      title:
+        type: string
+      body:
+        type: string
+      updated_at:
+        type: string
+        format: date-time
+      flesch:
+        type: number
+        format: float
+      url:
+        type: string
+      blog_id:
+        type: integer
+      id:
+        type: integer
+      hashed_id:
+        type: string
+      num_words:
+        type: integer
+      published_at:
+        type: string
+        format: date-time
+      fog:
+        type: number
+        format: float
+
+  Blog:
+    properties:
+      percent_complex_words:
+        type: number
+        format: float
+      popularity:
+        type: integer
+        format: int32
+      created_at:
+        type: string
+        format: date-time
+      title:
+        type: string
+      niche_tag:
+        type: string
+      updated_at:
+        type: string
+        format: date-time
+      flesch:
+        type: number
+        format: float
+      feed_url:
+        type: string
+      url:
+        type: string
+      decided_on:
+        type: string
+        format: date-time
+      rank:
+        type: integer
+      num_posts_per_week:
+        type: number
+        format: float
+      id:
+        type: integer
+      tags:
+        type: array
+        items:
+          properties:
+            name:
+              type: string
+            id:
+              type: integer
+      outgoing_bloglove:
+        type: integer
+      num_words:
+        type: number
+        format: float
+      ip:
+        type: string
+      niche_rank:
+        type: integer
+      header_title:
+        type: string
+      fog:
+        type: number
+        format: float
+      description:
+        type: string
+      user_thumb:
+        type: string
+      status:
+        type: string

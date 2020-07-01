@@ -1,0 +1,112 @@
+{
+  "title": "Bicycle weight and commuting time: randomised trial",
+  "doi": "10.1136/bmj.c6801",
+  "pmid": "21148220",
+  "pmc": "PMC2999990",
+  "tq": [
+    "Waarom een dure lichtgewicht race fiets kopen als je ook zelf kunt afvallen....Toine Mudde #VK #TDF2015",
+    "Cyclists read this! Wonderful. Bicycle weight and commuting time: randomised trial BMJ",
+    "Interesting study: 'A lighter bicycle did not lead to a detectable difference in commuting time.' #weightweenies",
+    "A must read for cyclists! Bicycle weight and commuting time: randomised trial #science #fun #cycling",
+    "Para los bicianoréxicos: Estudio demuestra que una bici liviana no hace diferencia en tiempo de traslado urbano"
+  ],
+  "altmetric_jid": "4f6fa4e93cf058f61000245c",
+  "issns": [
+    "1468-5833",
+    "1756-1833"
+  ],
+  "journal": "British Medical Journal",
+  "cohorts": {
+    "doc": 10,
+    "pub": 130,
+    "com": 6,
+    "sci": 5
+  },
+  "abstract": "To determine whether the author's 20.9 lb (9.5 kg) carbon frame bicycle reduced commuting time compared with his 29.75 lb (13.5 kg) steel frame bicycle.",
+  "abstract_source": "pubmed",
+  "context": {
+    "all": {
+      "count": 7269337,
+      "mean": 6.3663973870484,
+      "rank": 27748,
+      "pct": 99,
+      "higher_than": 7241773
+    },
+    "journal": {
+      "count": 31034,
+      "mean": 21.853521541585,
+      "rank": 564,
+      "pct": 98,
+      "higher_than": 30473
+    },
+    "similar_age_3m": {
+      "count": 72834,
+      "mean": 5.6307681957354,
+      "rank": 178,
+      "pct": 99,
+      "higher_than": 72656
+    },
+    "similar_age_journal_3m": {
+      "count": 633,
+      "mean": 10.023231012658,
+      "rank": 5,
+      "pct": 99,
+      "higher_than": 628
+    }
+  },
+  "type": "article",
+  "altmetric_id": 242668,
+  "schema": "1.5.4",
+  "is_oa": false,
+  "publisher_subjects": [
+    {
+      "name": "Public Health And Health Services",
+      "scheme": "era"
+    }
+  ],
+  "cited_by_fbwalls_count": 5,
+  "cited_by_feeds_count": 6,
+  "cited_by_gplus_count": 3,
+  "cited_by_posts_count": 181,
+  "cited_by_qna_count": 2,
+  "cited_by_tweeters_count": 153,
+  "cited_by_accounts_count": 169,
+  "last_updated": 1487379452,
+  "score": 189.612,
+  "history": {
+    "1y": 7.5,
+    "6m": 3,
+    "3m": 3,
+    "1m": 1,
+    "1w": 1,
+    "6d": 0,
+    "5d": 0,
+    "4d": 0,
+    "3d": 0,
+    "2d": 0,
+    "1d": 0,
+    "at": 189.612
+  },
+  "url": "http://dx.doi.org/10.1136/bmj.c6801",
+  "added_on": 1314027346,
+  "published_on": 1314043800,
+  "subjects": [
+    "medicine"
+  ],
+  "scopus_subjects": [
+    "Medicine",
+    "Health Sciences"
+  ],
+  "readers": {
+    "citeulike": 0,
+    "mendeley": 40,
+    "connotea": 0
+  },
+  "readers_count": 40,
+  "images": {
+    "small": "https://altmetric-badges.a.ssl.fastly.net/?size=64&score=190&types=qbttttfg",
+    "medium": "https://altmetric-badges.a.ssl.fastly.net/?size=100&score=190&types=qbttttfg",
+    "large": "https://altmetric-badges.a.ssl.fastly.net/?size=180&score=190&types=qbttttfg"
+  },
+  "details_url": "http://www.altmetric.com/details.php?citation_id=242668"
+}

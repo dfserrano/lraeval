@@ -1,0 +1,302 @@
+swagger: '2.0'
+
+info:
+  version: 1.0.0
+  title: Mendeley
+  description: Mendeley is a platform that allows scholars from all over the world to collaborate, and opens up science for everyone. Join our API community to build tools to make researchers' lives easier.
+
+host: localhost
+basePath: /lraeval/api/mendeley
+schemes:
+  - http
+produces:
+  - application/json
+externalDocs:
+  description: Documentation of the original data source
+  url: http://dev.mendeley.com/methods/
+
+paths:
+  /search/catalog.json:
+    get:
+      summary: Search articles
+      description: Retrieve documents which match the supplied values in specific fields.
+      tags:
+        - Search
+      parameters:
+        # Title
+        - name: title
+          in: query
+          description: Matches terms in the title of the document.
+          required: false
+          type: string
+
+        # Author
+        - name: author
+          in: query
+          description: Matches the names of one or more authors.
+          required: false
+          type: string
+
+        # Source
+        - name: source
+          in: query
+          description: Matches the publication name.
+          required: false
+          type: string
+
+        # Abstract
+        - name: abstract
+          in: query
+          description: Matches terms in the abstract.
+          required: false
+          type: string
+
+        # Min Year
+        - name: min_year
+          in: query
+          description: The earliest publication year to return results for.
+          required: false
+          type: integer
+
+        # Max year
+        - name: max_year
+          in: query
+          description: The latest publication year to return results for.
+          required: false
+          type: integer
+
+        # Keyword
+        - name: query
+          in: query
+          description: Query terms (keyword), which match any field in the document, e.g. title, author etc (required).
+          required: false
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Response'
+
+  /documents.json:
+    get:
+      summary: Retrieve document
+      description: Retrieves a document by ID.
+      tags:
+        - Retrieval
+      parameters:
+        # Id
+        - name: id
+          in: query
+          description: Identifier (UUID) of the document. This identifier is set by the server on create and it cannot be modified.
+          required: true
+          type: string
+          default: cb58a7d9-8463-34e2-b1b8-457a3872ecdc
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Document'
+
+  /metadata.json:
+    get:
+      summary: Metadata lookup
+      description: Finds the catalog_id with the best metadata for the provided data.
+      tags:
+        - Retrieval
+      parameters:
+        # Arxiv Id
+        - name: arxiv
+          in: query
+          description: arXiv identifier.
+          required: false
+          type: string
+          default: "1108.2455"
+
+        # DOI
+        - name: doi
+          in: query
+          description: Digital Object Identifier
+          required: false
+          type: string
+          default: 10.1017/S0030605303250663
+
+        # PubMed Id
+        - name: pmid
+          in: query
+          description: PubMed identifier.
+          required: false
+          type: string
+          default: "20535730"
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Metadata'
+
+  /institutions.json:
+    get:
+      summary: Retrieving institutions
+      description: This search matches the parameters provided against the institutions.
+      tags:
+        - Retrieval
+      parameters:
+        # Name
+        - name: name
+          in: query
+          description: Full institution name.
+          required: false
+          type: string
+          default: City University
+
+        # Email
+        - name: email
+          in: query
+          description: Email address
+          required: false
+          type: string
+          default: cityuniversity.edu.bd
+
+        # City
+        - name: city
+          in: query
+          description: City of institution
+          required: false
+          type: string
+          default: Dhaka
+
+        # State
+        - name: state
+          in: query
+          description: State of institution
+          required: false
+          type: string
+          default: Dhaka District
+
+        # Country
+        - name: country
+          in: query
+          description: Country of institution
+          required: false
+          type: string
+          default: BD
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Institutions'
+
+
+definitions:
+  Response:
+    type: array
+    items:
+      $ref: '#/definitions/Document'
+
+  Institutions:
+    type: array
+    items:
+      properties:
+        id:
+          description:   Identifier (UUID) of the institution
+          type: string
+        name:
+          description: English name of the institution
+          type: string
+        city:
+          description: City
+          type: string
+        state:
+          description: State
+          type: string
+        country:
+          description: Country
+          type: string
+        urls:
+          description: URLs associated with the institution
+          type: array
+          items:
+            type: string
+        alt_names:
+          description: List of alternative names for the institution
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+
+
+  Metadata:
+    type: array
+    items:
+      properties:
+        catalog_id:
+          type: string
+        score:
+          description: The score is a confidence indicator of the match with 100 being very confident
+          type: integer
+
+  Document:
+    properties:
+      id:
+        description: Identifier (UUID) of the document. This identifier is set by the server on create and it cannot be modified
+        type: string
+      title:
+        description: Title of the document
+        type: string
+      type:
+        description: The type of the document. Supported types are journal, book, generic, book_section, conference_proceedings, working_paper, report, web_page, thesis, magazine_article, statute, patent, newspaper_article, computer_program, hearing, television_broadcast, encyclopedia_article, case, film, bill
+        type: string
+      authors:
+        description: List of authors of the document, as person objects
+        type: array
+        items:
+          $ref: '#/definitions/Author'
+      year:
+        description: Year in which the document was issued/published
+        type: integer
+      source:
+        description: Publication outlet, i.e. where the document was published
+        type: string
+      identifiers:
+        description: List of identifiers available for the document. The supported identifiers are arxiv, doi, isbn, issn, pmid (PubMed), scopus and ssrn
+        type: object
+        properties:
+          arxiv:
+            type: string
+          scopus:
+            type: string
+          ssrn:
+            type: string
+          issn:
+            type: string
+          pmid:
+            type: string
+          doi:
+            type: string
+          isbn:
+            type: string
+      created:
+        type: string
+        format: date-time
+      profile_id:
+        type: string
+      last_modified:
+        type: string
+        format: date-time
+      abstract:
+        description: Brief summary of the document
+        type: string
+
+  Author:
+    properties:
+      first_name:
+        description: First name of the person.
+        type: string
+      last_name:
+        description: Last name of the person.
+        type: string

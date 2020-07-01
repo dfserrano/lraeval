@@ -1,0 +1,898 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: CrossRef
+
+host: localhost
+basePath: /lraeval/api/crossref
+schemes:
+  - http
+produces:
+  - application/json
+
+x-prefixes:
+  - prefix: rdf
+    url: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  - prefix: dc
+    url: http://purl.org/dc/terms/
+  - prefix: c4o
+    url: http://purl.org/spar/c4o/
+  - prefix: vivo
+    url: http://vivoweb.org/ontology/core#
+  - prefix: bibo
+    url: http://purl.org/ontology/bibo/
+  - prefix: foaf
+    url: http://xmlns.com/foaf/0.1/
+
+paths:
+  /works.json:
+    get:
+      summary: Retrieve works
+      description: Returns a list of all works (journal articles, conference proceedings, books, components, etc)
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          vivo:hasPublicationVenue ?venue ;
+          dc:date ?paperDate ;
+          bibo:doi ?doi ;
+          bibo:uri ?paperUri ;
+          dc:creator ?author ;
+          dc:creator ?author2 ;
+          c4o:hasGlobalCitationFrequency ?citationCount .
+        ?venue a bibo:Collection ;
+          dc:title ?venueTitle ;
+          vivo:publisher ?publisher .
+        ?publisher a foaf:Organization ;
+          foaf:name ?publisherName .
+        ?author a foaf:Person ;
+          vivo:orcidId ?orcid ;
+          foaf:givenName ?authorFirstName ;
+          foaf:familyName ?authorLastName ;
+          foaf:name ?authorName .
+        ?author2 a foaf:Person ;
+          vivo:orcidId ?orcid2 ;
+          foaf:givenName ?author2FirstName ;
+          foaf:familyName ?author2LastName ;
+          foaf:name ?author2Name .
+        ?position a vivo:Position ;
+          vivo:relates ?author ;
+          vivo:relates ?organization .
+        ?organization a foaf:Organization ;
+          foaf:name ?organizationName .
+        ?grant a vivo:Grant ;
+          vivo:localAwardId ?grantId ;
+          vivo:grantAwardedBy ?agency ;
+          vivo:fundingVehicleFor ?paper .
+        ?agency a foaf:Organization ;
+          dc:identifier ?agencyId ;
+          foaf:name ?agencyName .
+        ?citationCount a c4o:GlobalCitationCount ;
+          c4o:hasGlobalCountValue ?count .
+
+      tags:
+        - Works
+
+      parameters:
+        # Title
+        - name: query.title
+          in: query
+          description: Query title and subtitle
+          required: false
+          type: string
+          x-graphVar: ?paperTitle
+
+        # Publication Title
+        - name: query.container-title
+          in: query
+          description: Query container-title aka. publication name
+          required: false
+          type: string
+          x-graphVar: ?venueTitle
+
+        # Author name
+        - name: query.author
+          in: query
+          description: Query author first and given names
+          required: false
+          type: string
+          x-graphVar: ?authorName
+
+        # Editor name
+        - name: query.editor
+          in: query
+          description: Query editor first and given names
+          required: false
+          type: string
+
+        # Funder id
+        - name: funder
+          in: query
+          description: Metadata which include the {funder_id} in FundRef data
+          required: false
+          type: string
+          x-graphVar: ?agencyId
+
+        # Orcid id
+        - name: orcid
+          in: query
+          description: Metadata where <orcid> element's value = {orcid}
+          required: false
+          type: string
+
+      x-responseMap:
+        - var: ?paperTitle
+          path: message/items/title
+        - var: ?paperDate
+          path: message/items/indexed/date-time
+        - var: ?doi
+          path: message/items/DOI
+        - var: ?paperUri
+          path: message/items/URL
+        - var: ?venueTitle
+          path: message/items/container-title
+        - var: ?publisherName
+          path: message/items/publisher
+        - var: ?authorFirstName
+          path: message/items/author/given
+        - var: ?authorLastName
+          path: message/items/author/family
+        - var: ?authorName
+          path: CONCAT(message/items/author/given, ' ', message/items/author/family)
+        - var: ?orcid
+          path: message/items/author/ORCID
+        - var: ?author2FirstName
+          path: message/items/author/given*
+        - var: ?author2LastName
+          path: message/items/author/family*
+        - var: ?author2Name
+          path: CONCAT(message/items/author/given*, ' ', message/items/author/family*)
+        - var: ?orcid2
+          path: message/items/author/ORCID*
+        - var: ?organizationName
+          path: message/items/author/affiliation
+        - var: ?grantId
+          path: message/items/funder/award
+        - var: ?agencyId
+          path: message/items/funder/DOI
+        - var: ?agencyName
+          path: message/items/funder/name
+        - var: ?count
+          path: message/items/cited-count
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/WorksResponse'
+
+  /works/work.json:
+    get:
+      summary: Retrieve work
+      description: Returns metadata for the specified CrossRef DOI.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          vivo:hasPublicationVenue ?venue ;
+          dc:date ?paperDate ;
+          bibo:doi ?doi ;
+          bibo:uri ?paperUri ;
+          dc:creator ?author ;
+          c4o:hasGlobalCitationFrequency ?citationCount .
+        ?venue a bibo:Collection ;
+          dc:title ?venueTitle ;
+          vivo:publisher ?publisher .
+        ?publisher a foaf:Organization ;
+          foaf:name ?publisherName .
+        ?author a foaf:Person ;
+          vivo:orcidId ?orcid ;
+          foaf:givenName ?authorFirstName ;
+          foaf:familyName ?authorLastName ;
+          foaf:name ?authorName .
+        ?position a vivo:Position ;
+          vivo:relates ?author ;
+          vivo:relates ?organization .
+        ?organization a foaf:Organization ;
+          foaf:name ?organizationName .
+        ?grant a vivo:Grant ;
+          vivo:localAwardId ?grantId ;
+          vivo:grantAwardedBy ?agency ;
+          vivo:fundingVehicleFor ?paper .
+        ?agency a foaf:Organization ;
+          dc:identifier ?agencyId ;
+          foaf:name ?agencyName .
+        ?citationCount a c4o:GlobalCitationCount ;
+          c4o:hasGlobalCountValue ?count .
+
+      tags:
+        - Works
+
+      parameters:
+        # DOI
+        - name: doi
+          in: query
+          description: DOI identifier
+          required: true
+          type: string
+          x-graphVar: ?doi
+
+      x-responseMap:
+        - var: ?paperTitle
+          path: message/title
+        - var: ?paperDate
+          path: message/indexed/date-time
+        - var: ?doi
+          path: message/DOI
+        - var: ?paperUri
+          path: message/URL
+        - var: ?venueTitle
+          path: message/container-title
+        - var: ?publisherName
+          path: message/publisher
+        - var: ?authorFirstName
+          path: message/author/given
+        - var: ?authorLastName
+          path: message/author/family
+        - var: ?authorName
+          path: CONCAT(message/author/given, ' ', message/author/family)
+        - var: ?orcid
+          path: message/author/ORCID
+        - var: ?organizationName
+          path: message/author/affiliation
+        - var: ?grantId
+          path: message/funder/award
+        - var: ?agencyId
+          path: message/funder/DOI
+        - var: ?agencyName
+          path: message/funder/name
+        - var: ?count
+          path: message/cited-count
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/WorkResponse'
+
+  /funders/funders.json:
+    get:
+      summary: Retrieve funder
+      description: Returns metadata for specified funder and its suborganizations.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?agency a foaf:Organization ;
+          dc:identifier ?agencyId ;
+          vivo:abbreviation ?agencyAbbrev ;
+          foaf:name ?agencyName .
+
+      tags:
+        - Funders
+      parameters:
+        # Funder id
+        - name: id
+          in: query
+          description: Funder identifier
+          required: true
+          type: string
+          default: 10.13039/100000001
+          x-graphVar: ?agencyId
+
+      x-responseMap:
+        - var: ?agencyName
+          path: message/name
+        - var: ?agencyAbbrev
+          path: message/alt-names
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/FundersResponse'
+
+  /funders/works.json:
+    get:
+      summary: Retrieve works of funder
+      description: Returns list of works associated with the specified funder_id.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          vivo:hasPublicationVenue ?venue ;
+          dc:date ?paperDate ;
+          bibo:doi ?doi ;
+          bibo:uri ?paperUri ;
+          dc:creator ?author ;
+          dc:creator ?author2 ;
+          c4o:hasGlobalCitationFrequency ?citationCount .
+        ?venue a bibo:Collection ;
+          dc:title ?venueTitle ;
+          vivo:publisher ?publisher .
+        ?publisher a foaf:Organization ;
+          foaf:name ?publisherName .
+        ?author a foaf:Person ;
+          vivo:orcidId ?orcid ;
+          foaf:givenName ?authorFirstName ;
+          foaf:familyName ?authorLastName ;
+          foaf:name ?authorName .
+        ?author2 a foaf:Person ;
+          vivo:orcidId ?orcid2 ;
+          foaf:givenName ?author2FirstName ;
+          foaf:familyName ?author2LastName ;
+          foaf:name ?author2Name .
+        ?position a vivo:Position ;
+          vivo:relates ?author ;
+          vivo:relates ?organization .
+        ?organization a foaf:Organization ;
+          foaf:name ?organizationName .
+        ?grant a vivo:Grant ;
+          vivo:localAwardId ?grantId ;
+          vivo:grantAwardedBy ?agency ;
+          vivo:fundingVehicleFor ?paper .
+        ?agency a foaf:Organization ;
+          dc:identifier ?agencyId ;
+          foaf:name ?agencyName .
+        ?citationCount a c4o:GlobalCitationCount ;
+          c4o:hasGlobalCountValue ?count .
+
+      tags:
+        - Funders
+
+      parameters:
+        # Funder id
+        - name: id
+          in: query
+          description: Funder identifier
+          required: true
+          type: string
+          default: 10.13039/100000001
+          x-graphVar: ?agencyId
+
+        # Title
+        - name: query.title
+          in: query
+          description: Query title and subtitle
+          required: false
+          type: string
+          x-graphVar: ?paperTitle
+
+        # Publication Title
+        - name: query.container-title
+          in: query
+          description: Query container-title aka. publication name
+          required: false
+          type: string
+          x-graphVar: ?venueTitle
+
+        # Author name
+        - name: query.author
+          in: query
+          description: Query author first and given names
+          required: false
+          type: string
+          x-graphVar: ?authorName
+
+        # Editor name
+        - name: query.editor
+          in: query
+          description: Query editor first and given names
+          required: false
+          type: string
+
+        # Orcid id
+        - name: orcid
+          in: query
+          description: Metadata where <orcid> element's value = {orcid}
+          required: false
+          type: string
+          x-graphVar: ?orcid
+
+      x-responseMap:
+        - var: ?paperTitle
+          path: message/items/title
+        - var: ?paperDate
+          path: message/items/indexed/date-time
+        - var: ?doi
+          path: message/items/DOI
+        - var: ?paperUri
+          path: message/items/URL
+        - var: ?venueTitle
+          path: message/items/container-title
+        - var: ?publisherName
+          path: message/items/publisher
+        - var: ?authorFirstName
+          path: message/items/author/given
+        - var: ?authorLastName
+          path: message/items/author/family
+        - var: ?authorName
+          path: CONCAT(message/items/author/given, ' ', message/items/author/family)
+        - var: ?orcid
+          path: message/items/author/ORCID
+        - var: ?author2FirstName
+          path: message/items/author/given*
+        - var: ?author2LastName
+          path: message/items/author/family*
+        - var: ?author2Name
+          path: CONCAT(message/items/author/given*, ' ', message/items/author/family*)
+        - var: ?orcid2
+          path: message/items/author/ORCID*
+        - var: ?organizationName
+          path: message/items/author/affiliation
+        - var: ?grantId
+          path: message/items/funder/award
+        - var: ?agencyId
+          path: message/items/funder/DOI
+        - var: ?agencyName
+          path: message/items/funder/name
+        - var: ?count
+          path: message/items/cited-count
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/WorksResponse'
+
+  /journals/{issn}:
+    get:
+      summary: Retrieve journal
+      description: Returns information about a journal with the given ISSN.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?journal a bibo:Journal ;
+          dc:title ?journalTitle ;
+          bibo:issn ?issn ;
+          vivo:publisher ?publisher .
+        ?publisher a foaf:Organization ;
+          foaf:name ?publisherName .
+
+      tags:
+        - Journals
+      parameters:
+        # ISSN
+        - name: issn
+          in: path
+          description: ISSN
+          required: true
+          type: string
+          default: 2090-80911
+          x-graphVar: ?issn
+
+      x-responseMap:
+        - var: ?journalTitle
+          path: message/title
+        - var: ?issn
+          path: message/ISSN
+        - var: ?publisherName
+          path: message/publisher
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/JournalResponse'
+
+  /journals/{issn}/works.json:
+    get:
+      summary: Retrieve works of a journal
+      description: Returns a list of works in the given journal
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          vivo:hasPublicationVenue ?venue ;
+          dc:date ?paperDate ;
+          bibo:doi ?doi ;
+          bibo:uri ?paperUri ;
+          dc:creator ?author ;
+          c4o:hasGlobalCitationFrequency ?citationCount .
+        ?venue a bibo:Collection ;
+          dc:title ?venueTitle ;
+          bibo:issn ?issn ;
+          vivo:publisher ?publisher .
+        ?publisher a foaf:Organization ;
+          foaf:name ?publisherName .
+        ?author a foaf:Person ;
+          vivo:orcidId ?orcid ;
+          foaf:givenName ?authorFirstName ;
+          foaf:familyName ?authorLastName ;
+          foaf:name ?authorName .
+        ?position a vivo:Position ;
+          vivo:relates ?author ;
+          vivo:relates ?organization .
+        ?organization a foaf:Organization ;
+          foaf:name ?organizationName .
+        ?grant a vivo:Grant ;
+          vivo:localAwardId ?grantId ;
+          vivo:grantAwardedBy ?agency ;
+          vivo:fundingVehicleFor ?paper .
+        ?agency a foaf:Organization ;
+          dc:identifier ?agencyId ;
+          foaf:name ?agencyName .
+        ?citationCount a c4o:GlobalCitationCount ;
+          c4o:hasGlobalCountValue ?count .
+
+      tags:
+        - Journals
+      parameters:
+        # ISSN
+        - name: issn
+          in: path
+          description: ISSN
+          required: true
+          type: string
+          default: 2090-8091
+          x-graphVar: ?issn
+
+        # Title
+        - name: query.title
+          in: query
+          description: Query title and subtitle
+          required: false
+          type: string
+          x-graphVar: ?paperTitle
+
+        # Publication Title
+        - name: query.container-title
+          in: query
+          description: Query container-title aka. publication name
+          required: false
+          type: string
+          x-graphVar: ?venueTitle
+
+        # Author name
+        - name: query.author
+          in: query
+          description: Query author first and given names
+          required: false
+          type: string
+          x-graphVar: ?authorName
+
+        # Editor name
+        - name: query.editor
+          in: query
+          description: Query editor first and given names
+          required: false
+          type: string
+
+        # Funder id
+        - name: funder
+          in: query
+          description: Metadata which include the {funder_id} in FundRef data
+          required: false
+          type: string
+          x-graphVar: ?agencyId
+
+        # Orcid id
+        - name: orcid
+          in: query
+          description: Metadata where <orcid> element's value = {orcid}
+          required: false
+          type: string
+          x-graphVar: ?orcid
+
+      x-responseMap:
+        - var: ?paperTitle
+          path: message/items/title
+        - var: ?paperDate
+          path: message/items/indexed/date-time
+        - var: ?doi
+          path: message/items/DOI
+        - var: ?paperUri
+          path: message/items/URL
+        - var: ?issn
+          path: message/items/ISSN
+        - var: ?venueTitle
+          path: message/items/container-title
+        - var: ?publisherName
+          path: message/items/publisher
+        - var: ?authorFirstName
+          path: message/items/author/given
+        - var: ?authorLastName
+          path: message/items/author/family
+        - var: ?authorName
+          path: CONCAT(message/items/author/given, ' ', message/items/author/family)
+        - var: ?orcid
+          path: message/items/author/ORCID
+        - var: ?organizationName
+          path: message/items/author/affiliation
+        - var: ?grantId
+          path: message/items/funder/award
+        - var: ?agencyId
+          path: message/items/funder/DOI
+        - var: ?agencyName
+          path: message/items/funder/name
+        - var: ?count
+          path: message/items/cited-count
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/WorksResponse'
+
+definitions:
+  JournalResponse:
+    properties:
+      status:
+        type: string
+      message-type:
+        type: string
+      message-version:
+        type: string
+      message:
+        type: object
+        properties:
+          title:
+            type: string
+          publisher:
+            type: string
+          ISSN:
+            type: array
+            items:
+              type: string
+          flags:
+            type: string
+          coverage:
+            type: string
+          breakdowns:
+            type: string
+          counts:
+            type: string
+          last-status-check-time:
+            type: string
+
+  FundersResponse:
+    properties:
+      status:
+        type: string
+      message-type:
+        type: string
+      message-version:
+        type: string
+      message:
+        type: object
+        properties:
+          hierarchy-names:
+            type: object
+            properties:
+              more:
+                type: string
+              id:
+                type: string
+          replaced-by:
+            type: array
+            items:
+              type: string
+          work-count:
+            type: integer
+          name:
+            type: string
+          descendants:
+            type: array
+            items:
+              type: string
+          descendant-work-count:
+            type: integer
+          id:
+            type: string
+          tokens:
+            type: array
+            items:
+              type: string
+          replaces:
+            type: array
+            items:
+              type: string
+          uri:
+            type: string
+          hierarchy:
+            type: object
+            properties:
+              id:
+                type: object
+                properties:
+                  id:
+                    type: object
+                    properties:
+                      more:
+                        type: boolean
+          alt-names:
+            type: array
+            items:
+              type: string
+          location:
+            type: string
+
+  WorkResponse:
+    properties:
+      status:
+        type: string
+      message-type:
+        type: string
+      message-version:
+        type: string
+      message:
+        $ref: '#/definitions/Article'
+
+  WorksResponse:
+    properties:
+      status:
+        type: string
+      message-type:
+        type: string
+      message-version:
+        type: string
+      message:
+        type: object
+        properties:
+          facets:
+            type: object
+          items-per-page:
+            type: integer
+          query:
+            type: object
+            properties:
+              start-index:
+                type: integer
+              search-terms:
+                type: string
+          total-results:
+            type: integer
+          items:
+            type: array
+            items:
+              $ref: '#/definitions/Article'
+
+  Article:
+    properties:
+      indexed:
+        $ref: '#/definitions/Date'
+      reference-count:
+        type: integer
+      publisher:
+        type: string
+      funder:
+        type: array
+        items:
+          $ref: '#/definitions/Funder'
+      content-domain:
+        type: object
+        properties:
+          domain:
+            type: array
+            items:
+              type: string
+          crossmark-restriction:
+            type: boolean
+      short-container-title:
+        type: array
+        items:
+          type: string
+      cited-count:
+        type: integer
+      DOI:
+        type: string
+      type:
+        type: string
+      created:
+        $ref: '#/definitions/Date'
+      update-policy:
+        type: string
+      source:
+        type: string
+      title:
+        type: array
+        items:
+          type: string
+      prefix:
+        type: string
+      volume:
+        type: string
+      author:
+        type: array
+        items:
+          type: object
+          properties:
+            given:
+              type: string
+            family:
+              type: string
+            affiliation:
+              type: array
+              items:
+                type: string
+      member:
+        type: string
+      published-online:
+        $ref: '#/definitions/Date'
+      container-title:
+        type: array
+        items:
+          type: string
+      original-title:
+        type: array
+        items:
+          type: string
+      deposited:
+        $ref: '#/definitions/Date'
+      score:
+        type: integer
+      subtitle:
+        type: array
+        items:
+          type: string
+      short-title:
+        type: array
+        items:
+          type: string
+      issued:
+        $ref: '#/definitions/Date'
+      URL:
+        type: string
+      ISSN:
+        type: array
+        items:
+          type: string
+      citing-count:
+        type: integer
+
+
+  Funder:
+    properties:
+      DOI:
+        type: string
+      name:
+        type: string
+      doi-asserted-by:
+        type: string
+      award:
+        type: array
+        items:
+          type: string
+
+  indexed:
+    type: object
+    properties:
+      date-parts:
+        $ref: '#/definitions/Date'
+      date-time:
+        type: string
+        format:
+          date-time
+      timestamp:
+        type: integer
+        format: int64
+
+  Date:
+    properties:
+      date-parts:
+        type: array
+        items:
+          type: integer
+      date-time:
+        type: string
+        format:
+          date-time
+      timestamp:
+        type: integer
+        format: int64

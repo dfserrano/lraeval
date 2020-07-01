@@ -1,0 +1,868 @@
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Swagger UI</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./swagger-ui.css">
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+  <style>
+    html {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin: 0;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
+    <defs>
+      <symbol viewBox="0 0 20 20" id="unlocked">
+        <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z"></path>
+      </symbol>
+
+      <symbol viewBox="0 0 20 20" id="locked">
+        <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z"
+        />
+      </symbol>
+
+      <symbol viewBox="0 0 20 20" id="close">
+        <path d="M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z"
+        />
+      </symbol>
+
+      <symbol viewBox="0 0 20 20" id="large-arrow">
+        <path d="M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z"
+        />
+      </symbol>
+
+      <symbol viewBox="0 0 20 20" id="large-arrow-down">
+        <path d="M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z"
+        />
+      </symbol>
+
+
+      <symbol viewBox="0 0 24 24" id="jump-to">
+        <path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z" />
+      </symbol>
+
+      <symbol viewBox="0 0 24 24" id="expand">
+        <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z" />
+      </symbol>
+
+    </defs>
+  </svg>
+
+  <div id="swagger-ui"></div>
+
+  <script src="./swagger-ui-bundle.js"> </script>
+  <script src="./swagger-ui-standalone-preset.js"> </script>
+
+
+  <div id="swagger-ui2">
+    <div data-reactroot="" class="swagger-ui">
+      <div>
+        <div class="information-container wrapper">
+          <section class="block col-12">
+            <div class="info">
+              <hgroup class="main">
+                <h2 class="title">
+                  LRAEval
+                  <small>
+                    <pre class="version">1.0.0</pre>
+                  </small>
+                </h2>
+              </hgroup>
+              <div class="description">
+                <div class="markdown">
+                  <p>The service-operation collection was extracted from real service offerings, in order to represent the variety in terms of design patterns and resources found in real environments. We selected the domain of scholarly APIs, and assisted by a domain expert, we used a subset of the list of APIs published by the University of Alberta Libraries. The APIs were organized using Swagger UI, containing the following service providers: arXiv, Australian National Data Service (ANDS), AltMetric, Connecting Repositories System (CORE), Crossref, Elsevier, IEEEXplore, Mendeley, Nature Blogs, National Science Foundation (NSF), ORCID, PatentsView, and PubMed E-Utilities. The test collection of services is described by the natural language documentation, in addition to their formal semantic descriptions, in order to allow the reuse in other approaches, and avoid any bias that may be introduced by the abstraction process of creating the formal descriptions.</p>
+		  <p>Note: The responses returned by the API console are illustrative. They don't correspond to an actual request to the specified endpoint.</p>
+		  <p>Note: For better visualization of the SVG images in the results section, use Chrome as the browser.</p>
+                </div>
+              </div>
+              <div>
+                <a href="mailto:serranos@ualberta.ca">Contact authors</a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="wrapper">
+          <section class="block col-12 block-desktop col-12-desktop">
+            <section class="models is-open">
+              <h4>
+                <span><a href="master.html?source=altmetric" target="_blank">AltMetric</a></span>
+              </h4>
+              <div class="model-container" style="background-color: transparent">
+                <p>Tracks mentions of scholarly works on social media sites, scholarly bookmarking services and in science news
+                  outlets.
+                </p>
+
+                <table style="border-collapse:collapse; width:100%">
+                  <tbody>
+                    <tr style="background-color:#E8E8E8">
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Operation name</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Input</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">Output</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">search/doi</td>
+                      <td style="border:1px solid lightgray; width:30%">DOI</td>
+                      <td style="border:1px solid lightgray; width:30%">Publication info, mentions, views</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">search/pmid</td>
+                      <td style="border:1px solid lightgray; width:30%">PubMed ID</td>
+                      <td style="border:1px solid lightgray; width:30%">Publication info, mentions, views</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">search/arxiv</td>
+                      <td style="border:1px solid lightgray; width:30%">arXiv ID</td>
+                      <td style="border:1px solid lightgray; width:30%">Publication info, mentions, views</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">search/isbn</td>
+                      <td style="border:1px solid lightgray; width:30%">ISBN</td>
+                      <td style="border:1px solid lightgray; width:30%">Publication info, mentions, views</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </section>
+
+          <section class="block col-12 block-desktop col-12-desktop">
+            <section class="models is-open">
+              <h4>
+                <span><a href="master.html?source=ands" target="_blank">Australian National Data Service (ANDS)</a></span>
+              </h4>
+              <div class="model-container" style="background-color: transparent">
+                <p>The Research Grants API provides access to data relating to Australian Research Grants and Researchers.
+                </p>
+
+                <table style="border-collapse:collapse; width:100%">
+                  <tbody>
+                    <tr style="background-color:#E8E8E8">
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Operation name</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Input</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">Output</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">Search/getGrants</td>
+                      <td style="border:1px solid lightgray; width:30%">ANDS Grant ID, title, institution name, principal investigator, person name</td>
+                      <td style="border:1px solid lightgray; width:30%">Grant information with funding agency, institution, and participants</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </section>
+
+          <section class="block col-12 block-desktop col-12-desktop">
+            <section class="models is-open">
+              <h4>
+                <span><a href="master.html?source=arxiv" target="_blank">arXiv</a></span>
+              </h4>
+              <div class="model-container" style="background-color: transparent">
+                <p>Through Cornell University Library provides access to the arXiv e-print content and metadata.
+                </p>
+
+                <table style="border-collapse:collapse; width:100%">
+                  <tbody>
+                    <tr style="background-color:#E8E8E8">
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Operation name</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Input</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">Output</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">Search/query</td>
+                      <td style="border:1px solid lightgray; width:30%">Query string (title, author name, keywords, journal, category), or list of arXiv IDs</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with authors and journal</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </section>
+
+          <section class="block col-12 block-desktop col-12-desktop">
+            <section class="models is-open">
+              <h4>
+                <span><a href="master.html?source=core" target="_blank">CORE</a></span>
+              </h4>
+              <div class="model-container" style="background-color: transparent">
+                <p>CORE harvests, maintains, enriches and makes available metadata and full-text content (typically a PDF) from
+                  many Open Access journals and repositories.
+                </p>
+
+                <table style="border-collapse:collapse; width:100%">
+                  <tbody>
+                    <tr style="background-color:#E8E8E8">
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Operation name</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Input</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">Output</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">articles/get</td>
+                      <td style="border:1px solid lightgray; width:30%">CORE ID</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with authors and references</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">articles/search</td>
+                      <td style="border:1px solid lightgray; width:30%">Query string (title, author name, DOI)</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with authors and references</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">journals/get</td>
+                      <td style="border:1px solid lightgray; width:30%">ISSN</td>
+                      <td style="border:1px solid lightgray; width:30%">Journal information</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">journals/search</td>
+                      <td style="border:1px solid lightgray; width:30%">Query string (journal title, publisher name)</td>
+                      <td style="border:1px solid lightgray; width:30%">Journal information</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </section>
+
+          <section class="block col-12 block-desktop col-12-desktop">
+            <section class="models is-open">
+              <h4>
+                <span><a href="master.html?source=crossref" target="_blank">CrossRef</a></span>
+              </h4>
+              <div class="model-container" style="background-color: transparent">
+                <p>Allows access to metadata records for over 75 million scholarly works that have CrossRef DOIs, covering around
+                  5000 publishers.
+                </p>
+
+                <table style="border-collapse:collapse; width:100%">
+                  <tbody>
+                    <tr style="background-color:#E8E8E8">
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Operation name</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Input</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">Output</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">works</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper title, author names, editor names, funder ID, ORCID, and journal title</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with authors, journal, funders and citation count</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">works/work</td>
+                      <td style="border:1px solid lightgray; width:30%">DOI</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with authors, journal, funders and citation count</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">funders/funders</td>
+                      <td style="border:1px solid lightgray; width:30%">Funder's DOI</td>
+                      <td style="border:1px solid lightgray; width:30%">Funder information</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">funders/works</td>
+                      <td style="border:1px solid lightgray; width:30%">Funder's DOI, (Filters: Jornal title, ORCID)</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with authors, journal, funders and citation count</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">journals</td>
+                      <td style="border:1px solid lightgray; width:30%">ISSN</td>
+                      <td style="border:1px solid lightgray; width:30%">Journal information</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">journals</td>
+                      <td style="border:1px solid lightgray; width:30%">ISSN, (Filters: Jornal title, ORCID)</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with authors, journal, funders and citation count</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </section>
+
+          <section class="block col-12 block-desktop col-12-desktop">
+            <section class="models is-open">
+              <h4>
+                <span><a href="master.html?source=elsevier" target="_blank">Elsevier</a></span>
+              </h4>
+              <div class="model-container" style="background-color: transparent">
+                <p>Retrieves bibliographic and text results from ScienceDirect and Scopus database.
+                </p>
+
+                <table style="border-collapse:collapse; width:100%">
+                  <tbody>
+                    <tr style="background-color:#E8E8E8">
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Operation name</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Input</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">Output</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">search/affiliation</td>
+                      <td style="border:1px solid lightgray; width:30%">Affiliation name</td>
+                      <td style="border:1px solid lightgray; width:30%">Organization information</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">search/author</td>
+                      <td style="border:1px solid lightgray; width:30%">Author names, or affiliation name</td>
+                      <td style="border:1px solid lightgray; width:30%">Author information with affiliation</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">search/scidir</td>
+                      <td style="border:1px solid lightgray; width:30%">Title, author names</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with authors and journal</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">search/scopus</td>
+                      <td style="border:1px solid lightgray; width:30%">Title, ISSN</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with creator and journal</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">search/author</td>
+                      <td style="border:1px solid lightgray; width:30%">Title, ISSN</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with authors and journal</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">abstract/doi</td>
+                      <td style="border:1px solid lightgray; width:30%">DOI</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with journal</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">abstract/eid</td>
+                      <td style="border:1px solid lightgray; width:30%">Elsevier ID</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with journal</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">abstract/pii</td>
+                      <td style="border:1px solid lightgray; width:30%">PII (Publication Item Identifier)</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with journal</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">abstract/pubmed_id</td>
+                      <td style="border:1px solid lightgray; width:30%">PubMed ID</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with journal</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">abstract/scopus_id</td>
+                      <td style="border:1px solid lightgray; width:30%">Scopus ID</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with journal</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">abstract/pii</td>
+                      <td style="border:1px solid lightgray; width:30%">DOI, PII (Publication Item Identifier), Scopus ID, PubMed ID</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with author and citation count</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">article/doi</td>
+                      <td style="border:1px solid lightgray; width:30%">DOI</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with journal and full text</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">article/eid</td>
+                      <td style="border:1px solid lightgray; width:30%">Elsevier ID</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with journal and full text</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">article/pii</td>
+                      <td style="border:1px solid lightgray; width:30%">PII (Publication Item Identifier)</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with journal and full text</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">article/pubmed_id</td>
+                      <td style="border:1px solid lightgray; width:30%">PubMed ID</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with journal and full text</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </section>
+
+          <section class="block col-12 block-desktop col-12-desktop">
+            <section class="models is-open">
+              <h4>
+                <span><a href="master.html?source=ieee" target="_blank">IEEE Xplore</a></span>
+              </h4>
+              <div class="model-container" style="background-color: transparent">
+                <p>Freely available to customers and other 3rd parties to programmatically query and extract IEEE Xplore metadata.
+                </p>
+
+                <table style="border-collapse:collapse; width:100%">
+                  <tbody>
+                    <tr style="background-color:#E8E8E8">
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Operation name</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Input</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">Output</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">ipsSearch</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper title, abstract, DOI, jornal title, ISBN, author names, affiliation name, publication year</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with authors and journal</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </section>
+
+          <section class="block col-12 block-desktop col-12-desktop">
+            <section class="models is-open">
+              <h4>
+                <span><a href="master.html?source=mendeley" target="_blank">Mendeley</a></span>
+              </h4>
+              <div class="model-container" style="background-color: transparent">
+                <p>Mendeley is a platform that allows to query Mendeley metada.
+                </p>
+
+                <table style="border-collapse:collapse; width:100%">
+                  <tbody>
+                    <tr style="background-color:#E8E8E8">
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Operation name</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Input</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">Output</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">search/catalog</td>
+                      <td style="border:1px solid lightgray; width:30%">Title of publication, date, abstract, journal title, author names</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with authors and journal</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">documents</td>
+                      <td style="border:1px solid lightgray; width:30%">UUID of the document</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with authors and journal</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">metadata</td>
+                      <td style="border:1px solid lightgray; width:30%">arXiv ID, PubMed ID, DOI</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper identifiers</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">institutions</td>
+                      <td style="border:1px solid lightgray; width:30%">Name, URL, city, state, country</td>
+                      <td style="border:1px solid lightgray; width:30%">Organization information</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </section>
+
+          <section class="block col-12 block-desktop col-12-desktop">
+            <section class="models is-open">
+              <h4>
+                <span><a href="master.html?source=nature" target="_blank">Nature</a></span>
+              </h4>
+              <div class="model-container" style="background-color: transparent">
+                <p>Retrieves bibliographic data for Nature.com content, and tarcks blogs for independent and third party science
+                  blogs.
+                </p>
+
+                <table style="border-collapse:collapse; width:100%">
+                  <tbody>
+                    <tr style="background-color:#E8E8E8">
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Operation name</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Input</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">Output</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">blogs</td>
+                      <td style="border:1px solid lightgray; width:30%">Blog ID</td>
+                      <td style="border:1px solid lightgray; width:30%">Blog information</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">blogs/blogs</td>
+                      <td style="border:1px solid lightgray; width:30%">Blog title</td>
+                      <td style="border:1px solid lightgray; width:30%">Blog information</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">blogs/posts</td>
+                      <td style="border:1px solid lightgray; width:30%">Blog ID, date, post title, PubMed ID</td>
+                      <td style="border:1px solid lightgray; width:30%">Blog post information</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">blogs/papers</td>
+                      <td style="border:1px solid lightgray; width:30%">DOI, PubMed ID, paper ID, date</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </section>
+
+          <section class="block col-12 block-desktop col-12-desktop">
+            <section class="models is-open">
+              <h4>
+                <span><a href="master.html?source=nsf" target="_blank">National Science Foundation (NSF)</a></span>
+              </h4>
+              <div class="model-container" style="background-color: transparent">
+                <p>The NSF Awards API allows users to build a query based on any of the parameters provided.
+                </p>
+
+                <table style="border-collapse:collapse; width:100%">
+                  <tbody>
+                    <tr style="background-color:#E8E8E8">
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Operation name</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Input</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">Output</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">awards</td>
+                      <td style="border:1px solid lightgray; width:30%">Title of grant, institution name, person names, date, amount</td>
+                      <td style="border:1px solid lightgray; width:30%">Grant information with persons and organizations</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </section>
+
+          <section class="block col-12 block-desktop col-12-desktop">
+            <section class="models is-open">
+              <h4>
+                <span><a href="master.html?source=orcid" target="_blank">ORCID</a></span>
+              </h4>
+              <div class="model-container" style="background-color: transparent">
+                <p>Public and members API which query ORCID researcher profile data.
+                </p>
+
+                <table style="border-collapse:collapse; width:100%">
+                  <tbody>
+                    <tr style="background-color:#E8E8E8">
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Operation name</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Input</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">Output</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">search</td>
+                      <td style="border:1px solid lightgray; width:30%">Person name, title of paper, DOI, PubMed ID</td>
+                      <td style="border:1px solid lightgray; width:30%">ORCID</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">{orcid}/record</td>
+                      <td style="border:1px solid lightgray; width:30%">ORCID</td>
+                      <td style="border:1px solid lightgray; width:30%">Person information, with papers, education and funding</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">{orcid}/person</td>
+                      <td style="border:1px solid lightgray; width:30%">ORCID</td>
+                      <td style="border:1px solid lightgray; width:30%">Person information</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">{orcid}/address</td>
+                      <td style="border:1px solid lightgray; width:30%">ORCID</td>
+                      <td style="border:1px solid lightgray; width:30%">Person address</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">{orcid}/email</td>
+                      <td style="border:1px solid lightgray; width:30%">ORCID</td>
+                      <td style="border:1px solid lightgray; width:30%">Person email</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">{orcid}/personal-details</td>
+                      <td style="border:1px solid lightgray; width:30%">ORCID</td>
+                      <td style="border:1px solid lightgray; width:30%">Personal information</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">{orcid}/researcher-urls</td>
+                      <td style="border:1px solid lightgray; width:30%">ORCID</td>
+                      <td style="border:1px solid lightgray; width:30%">Person URLs</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">{orcid}/activities</td>
+                      <td style="border:1px solid lightgray; width:30%">ORCID</td>
+                      <td style="border:1px solid lightgray; width:30%">Person education, employment, papers and funding</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">{orcid}/educations</td>
+                      <td style="border:1px solid lightgray; width:30%">ORCID</td>
+                      <td style="border:1px solid lightgray; width:30%">Person education</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">{orcid}/employments</td>
+                      <td style="border:1px solid lightgray; width:30%">ORCID</td>
+                      <td style="border:1px solid lightgray; width:30%">Person employment</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">{orcid}/fundings</td>
+                      <td style="border:1px solid lightgray; width:30%">ORCID</td>
+                      <td style="border:1px solid lightgray; width:30%">Person fundings</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">{orcid}/works</td>
+                      <td style="border:1px solid lightgray; width:30%">ORCID</td>
+                      <td style="border:1px solid lightgray; width:30%">Person papers</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </section>
+
+          <section class="block col-12 block-desktop col-12-desktop">
+            <section class="models is-open">
+              <h4>
+                <span><a href="master.html?source=patents" target="_blank">Patents</a></span>
+              </h4>
+              <div class="model-container" style="background-color: transparent">
+                <p>The PatentsView API is intended to inspire the exploration and enhanced understanding of US intellectual
+                  property (IP) and innovation systems.
+                </p>
+
+                <table style="border-collapse:collapse; width:100%">
+                  <tbody>
+                    <tr style="background-color:#E8E8E8">
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Operation name</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Input</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">Output</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">query</td>
+                      <td style="border:1px solid lightgray; width:30%">ID of grant, title, date, assignee names, organization name</td>
+                      <td style="border:1px solid lightgray; width:30%">Patent information with people involved</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </section>
+
+          <section class="block col-12 block-desktop col-12-desktop">
+            <section class="models is-open">
+              <h4>
+                <span><a href="master.html?source=pubmed" target="_blank">PubMed</a></span>
+              </h4>
+              <div class="model-container" style="background-color: transparent">
+                <p>The E-Utilities are the global API for NCBI websites. Set of server-side programs for searching NCBI databases
+                  of biomedical literature and data.
+                </p>
+
+                <table style="border-collapse:collapse; width:100%">
+                  <tbody>
+                    <tr style="background-color:#E8E8E8">
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Operation name</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">
+                        <i>Input</i>
+                      </td>
+                      <td style="font-style:italic; border:1px solid lightgray">Output</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">esearch</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper title, journal name, author names</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with journal and authors</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">esummary</td>
+                      <td style="border:1px solid lightgray; width:30%">PubMed ID</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with journal and authors</td>
+                    </tr>
+                    <tr>
+                      <td style="border:1px solid lightgray; width:30%">efetch</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper ID</td>
+                      <td style="border:1px solid lightgray; width:30%">Paper information with journal and authors and affiliation</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </section>
+        </div>
+
+        <div class="scheme-container">
+          <section class="schemes wrapper block col-12">
+            <div class="info">
+              <hgroup class="main">
+                <h3 class="title">
+                  Questions
+                </h3>
+              </hgroup>
+              <div class="description">
+                <div class="markdown">
+                  <strong>1. Which patents have been assigned to a person?</strong>
+                  <br/> &emsp;In: Person name.
+                  <br/> &emsp;Out: Country, date, number, type, assignee's name, title.
+                  <br/>
+                  <br/>
+
+                  <strong>2. Which awards have been allocated to an institution?</strong>
+                  <br/> &emsp;In: Institution name.
+                  <br/> &emsp;Out: Award title, amount*, date*, person name, and agency name.
+                  <br/>
+                  <br/>
+
+                  <strong>3. Which awards have been allocated to a person?</strong>
+                  <br/> &emsp;In: Person name, ORCID id*.
+                  <br/> &emsp;Out: Award title, amount*, date*, and agency name.
+                  <br/>
+                  <br/>
+
+                  <strong>4. Which are the publications of an person?</strong>
+                  <br/> &emsp;In: Person name, ORCID id*, year range*.
+                  <br/> &emsp;Out: Publication title, date, DOI*, abstract*, link*, collection name (journal).
+                  <br/>
+                  <br/>
+
+                  <strong>5. Which articles have been published in a specific venue?</strong>
+                  <br/> &emsp;In: Venue name, date range*.
+                  <br/> &emsp;Out: Same as 4.
+                  <br/>
+                  <br/>
+
+                  <strong>6a/b. Which/How many publications have cited a publication?</strong>
+                  <br/> &emsp;In: Publication title.
+                  <br/> &emsp;Out: Citing publication title, date, authors, and venue name / Citation count.
+                  <br/>
+                  <br/>
+
+                  <strong>7a/b. Which/How many publications have cited the publications of an author?</strong>
+                  <br/> &emsp;In: Author name, citing publication date*.
+                  <br/> &emsp;Out: Same as 6a/b.
+                  <br/>
+                  <br/>
+
+                  <strong>8. Which are the coauthors of a person?</strong>
+                  <br/> &emsp;In: Person name.
+                  <br/> &emsp;Out: Coauthor name, affiliation*, and publication title.
+                  <br/>
+                  <br/> * Optional attributes.
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="scheme-container">
+          <section class="schemes wrapper block col-12">
+            <div class="info">
+              <hgroup class="main">
+                <h3 class="title">
+                  LRA Descriptions
+                </h3>
+              </hgroup>
+              <div class="description">
+                <div class="markdown">
+                  The LRA descriptions are provided in a ZIP file that contains a set of YAML files, which are formatted as Swagger 2.0 descriptions, enhanced with semantics using their provided vendor extensions.<br/>
+                  <a href="img/lraeval.zip">lraeval.zip</a>	
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="information-container wrapper">
+            <section class="block col-12">
+              <div class="info">
+                <hgroup class="main">
+                  <h3 class="title">
+                    Results
+                  </h3>
+                </hgroup>
+                <div class="description">
+                  <img src="img/chain-convention.png" />
+
+                  <h4>Query 1</h4>
+                  <img src="img/chain1.png" width="961" />
+
+                  <h4>Query 2</h4>
+                  <img src="img/chain2.png" width="961" />
+
+                  <h4>Query 3</h4>
+                  <img src="img/chain3.png" width="961" />
+
+                  <h4>Query 4</h4>
+                  <img src="img/chain4.png" width="961" />
+
+                  <h4>Query 5</h4>
+                  <img src="img/chain5.png" width="961" />
+
+                  <h4>Query 6b</h4>
+                  <img src="img/chain6.png" width="961" />
+
+                  <h4>Query 7b</h4>
+                  <img src="img/chain7.png" width="961" />
+
+                  <h4>Query 8</h4>
+                  <img src="img/chain8.png" width="961" />
+
+
+                </div>
+              </div>
+            </section>
+          </div>
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>

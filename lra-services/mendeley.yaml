@@ -1,0 +1,438 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: Mendeley
+
+host: localhost
+basePath: /lraeval/api/mendeley
+schemes:
+  - http
+produces:
+  - application/json
+
+x-prefixes:
+  - prefix: rdf
+    url: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  - prefix: dc
+    url: http://purl.org/dc/terms/
+  - prefix: mendeley
+    url: http://www.mendeley.com/terms/
+  - prefix: pubmed
+    url: http://eutils.ncbi.nlm.nih.gov/entrez/terms/
+  - prefix: arxiv
+    url: https://arxiv.org/terms/
+  - prefix: vivo
+    url: http://vivoweb.org/ontology/core#
+  - prefix: bibo
+    url: http://purl.org/ontology/bibo/
+  - prefix: foaf
+    url: http://xmlns.com/foaf/0.1/
+  - prefix: geo
+    url: http://aims.fao.org/aos/geopolitical.owl#
+
+paths:
+  /search/catalog.json:
+    get:
+      summary: Search articles
+      description: Retrieve documents which match general query terms.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          bibo:abstract ?paperAbstract ;
+          mendeley:id ?paperId ;
+          bibo:doi ?doi ;
+          vivo:hasPublicationVenue ?venue ;
+          dc:date ?paperDate ;
+          dc:creator ?author ;
+          dc:creator ?author2 .
+        ?venue a bibo:Collection ;
+          dc:title ?venueTitle ;
+          bibo:issn ?issn .
+        ?author a foaf:Person ;
+          foaf:givenName ?authorFirstName ;
+          foaf:familyName ?authorLastName ;
+          foaf:name ?authorName .
+        ?author2 a foaf:Person ;
+          foaf:givenName ?author2FirstName ;
+          foaf:familyName ?author2LastName ;
+          foaf:name ?author2Name .
+
+      tags:
+        - Search
+      parameters:
+        # Title
+        - name: title
+          in: query
+          description: Matches terms in the title of the document.
+          required: false
+          type: string
+          x-graphVar: ?paperTitle
+
+        # Author
+        - name: author
+          in: query
+          description: Matches the names of one or more authors.
+          required: false
+          type: string
+          x-graphVar: ?authorName
+
+        # Source
+        - name: source
+          in: query
+          description: Matches the publication name.
+          required: false
+          type: string
+          x-graphVar: ?venueTitle
+
+        # Abstract
+        - name: abstract
+          in: query
+          description: Matches terms in the abstract.
+          required: false
+          type: string
+          x-graphVar: ?paperAbstract
+
+        # Min Year
+        - name: min_year
+          in: query
+          description: The earliest publication year to return results for.
+          required: false
+          type: integer
+
+        # Max year
+        - name: max_year
+          in: query
+          description: The latest publication year to return results for.
+          required: false
+          type: integer
+
+        # Keyword
+        - name: query
+          in: query
+          description: Query terms (keyword), which match any field in the document, e.g. title, author etc (required).
+          required: false
+          type: string
+
+      x-responseMap:
+        - var: ?paperTitle
+          path: /title
+        - var: ?paperAbstract
+          path: /abstract
+        - var: ?paperId
+          path: /id
+        - var: ?doi
+          path: /identifiers/doi
+        - var: ?paperDate
+          path: /year
+        - var: ?venueTitle
+          path: /source
+        - var: ?issn
+          path: /identifiers/issn
+        - var: ?authorFirstName
+          path: /authors/first_name
+        - var: ?authorLastName
+          path: /authors/last_name
+        - var: ?authorName
+          path: CONCAT(/authors/first_name, ' ', /authors/last_name)
+        - var: ?author2FirstName
+          path: /authors/first_name*
+        - var: ?author2LastName
+          path: /authors/last_name*
+        - var: ?author2Name
+          path: CONCAT(/authors/first_name*, ' ', /authors/last_name*)
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Response'
+
+  /documents.json:
+    get:
+      summary: Retrieve document
+      description: Retrieves a document by ID.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          bibo:abstract ?paperAbstract ;
+          mendeley:id ?paperId ;
+          bibo:doi ?doi ;
+          vivo:hasPublicationVenue ?venue ;
+          dc:date ?paperDate ;
+          dc:creator ?author .
+        ?venue a bibo:Collection ;
+          dc:title ?venueTitle ;
+          bibo:issn ?issn .
+        ?author a foaf:Person ;
+          foaf:givenName ?authorFirstName ;
+          foaf:familyName ?authorLastName ;
+          foaf:name ?authorName .
+
+      tags:
+        - Retrieval
+      parameters:
+        # Id
+        - name: id
+          in: query
+          description: Identifier (UUID) of the document. This identifier is set by the server on create and it cannot be modified.
+          required: true
+          type: string
+          default: cb58a7d9-8463-34e2-b1b8-457a3872ecdc
+          x-graphVar: ?paperId
+
+      x-responseMap:
+        - var: ?paperTitle
+          path: title
+        - var: ?paperAbstract
+          path: abstract
+        - var: ?paperId
+          path: id
+        - var: ?doi
+          path: identifiers/doi
+        - var: ?paperDate
+          path: year
+        - var: ?venueTitle
+          path: source
+        - var: ?issn
+          path: identifiers/issn
+        - var: ?authorFirstName
+          path: authors/first_name
+        - var: ?authorLastName
+          path: authors/last_name
+        - var: ?authorName
+          path: CONCAT(authors/first_name, ' ', authors/last_name)
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Document'
+
+  /metadata.json:
+    get:
+      summary: Metadata lookup
+      description: Finds the catalog_id with the best metadata for the provided data.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          mendeley:id ?paperId ;
+          bibo:doi ?doi ;
+          pubmed:id ?pmid ;
+          arxiv:id ?arxivId .
+
+      tags:
+        - Retrieval
+      parameters:
+        # Arxiv Id
+        - name: arxiv
+          in: query
+          description: arXiv identifier.
+          required: false
+          type: string
+          default: "1108.2455"
+          x-graphVar: ?arxivId
+
+        # DOI
+        - name: doi
+          in: query
+          description: Digital Object Identifier
+          required: false
+          type: string
+          default: 10.1017/S0030605303250663
+          x-graphVar: ?doi
+
+        # PubMed Id
+        - name: pmid
+          in: query
+          description: PubMed identifier.
+          required: false
+          type: string
+          default: "20535730"
+          x-graphVar: ?pmid
+
+      x-responseMap:
+        - var: ?paperId
+          path: /catalog_id
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Metadata'
+
+  /institutions.json:
+    get:
+      summary: Retrieving institutions
+      description: This search matches the parameters provided against the institutions.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?organization a foaf:Organization ;
+          foaf:name ?organizationName ;
+          foaf:homepage ?organizationUrl ;
+          mendeley:id ?organizationId ;
+          vivo:hasGeographicLocation ?location .
+        ?location a geo:self_governing ;
+          geo:codeISO2 ?countryCode .
+
+      tags:
+        - Retrieval
+      parameters:
+        # Name
+        - name: name
+          in: query
+          description: Full institution name.
+          required: false
+          type: string
+          default: City University
+          x-graphVar: ?organizationName
+
+        # Email
+        - name: email
+          in: query
+          description: Email address
+          required: false
+          type: string
+          default: cityuniversity.edu.bd
+          x-graphVar: ?organizationUrl
+
+        # City
+        - name: city
+          in: query
+          description: City of institution
+          required: false
+          type: string
+          default: Dhaka
+
+        # State
+        - name: state
+          in: query
+          description: State of institution
+          required: false
+          type: string
+          default: Dhaka District
+
+        # Country
+        - name: country
+          in: query
+          description: Country of institution
+          required: false
+          type: string
+          default: BD
+          x-graphVar: ?countryCode
+
+      x-responseMap:
+        - var: ?organizationName
+          path: /name
+        - var: ?organizationUrl
+          path: /urls
+        - var: ?organizationId
+          path: /id
+        - var: ?countryCode
+          path: /country
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Institutions'
+
+
+definitions:
+  Response:
+    type: array
+    items:
+      $ref: '#/definitions/Document'
+
+  Institutions:
+    type: array
+    items:
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        city:
+          type: string
+        state:
+          type: string
+        country:
+          type: string
+        urls:
+          type: array
+          items:
+            type: string
+        alt_names:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+
+
+  Metadata:
+    type: array
+    items:
+      properties:
+        catalog_id:
+          type: string
+        score:
+          type: integer
+
+  Document:
+    properties:
+      id:
+        type: string
+      title:
+        type: string
+      type:
+        type: string
+      authors:
+        type: array
+        items:
+          $ref: '#/definitions/Author'
+      year:
+        type: integer
+      source:
+        type: string
+      identifiers:
+        type: object
+        properties:
+          arxiv:
+            type: string
+          scopus:
+            type: string
+          ssrn:
+            type: string
+          issn:
+            type: string
+          pmid:
+            type: string
+          doi:
+            type: string
+          isbn:
+            type: string
+      created:
+        type: string
+        format: date-time
+      profile_id:
+        type: string
+      last_modified:
+        type: string
+        format: date-time
+      abstract:
+        type: string
+
+  Author:
+    properties:
+      first_name:
+        type: string
+      last_name:
+        type: string

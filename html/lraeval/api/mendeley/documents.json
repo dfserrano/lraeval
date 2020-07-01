@@ -1,0 +1,29 @@
+{
+  "id": "cb58a7d9-8463-34e2-b1b8-457a3872ecdc",
+  "title": "Linked Data - The Story So Far",
+  "type": "journal",
+  "authors": [
+    {
+      "first_name": "Christian",
+      "last_name": "Bizer"
+    },
+    {
+      "first_name": "Tom",
+      "last_name": "Heath"
+    },
+    {
+      "first_name": "Tim",
+      "last_name": "Berners-Lee"
+    }
+  ],
+  "year": 2009,
+  "source": "International Journal on Semantic Web and Information Systems",
+  "identifiers": {
+    "doi": "10.4018/jswis.2009081901",
+    "issn": "15526283"
+  },
+  "created": "2014-04-09T09:36:44.000Z",
+  "profile_id": "4afc0c0f-88ab-3aed-a20a-f50934fc83b1",
+  "last_modified": "2014-04-09T09:36:44.000Z",
+  "abstract": "The term Linked Data refers to a set of best practices for publishing and connecting structured data on the Web......."
+}

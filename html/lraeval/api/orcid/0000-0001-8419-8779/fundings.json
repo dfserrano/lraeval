@@ -1,0 +1,81 @@
+{
+   "path": "/0000-0001-8419-8779/fundings",
+   "last-modified-date": "2014-09-15T12:41:34.584Z",
+   "group": [
+      {
+         "last-modified-date": "2014-09-15T12:37:55.416Z",
+         "funding-summary": {
+            "put-code": "31367",
+            "path": "/0000-0001-8419-8779/funding/31367",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2014-09-15T12:37:55.416Z",
+            "last-modified-date": "2014-09-15T12:37:55.416Z",
+            "source": {
+               "source-orcid": {
+                  "uri": "http://orcid.org/0000-0001-8419-8779",
+                  "path": "0000-0001-8419-8779",
+                  "host": "orcid.org"
+               },
+               "source-name": "Marc L. Greenberg"
+            },
+            "title": {
+               "title": "A Historical Phonology of the Slovene Language"
+            },
+            "type": "award",
+            "end-date": {
+               "year": "1994"
+            },
+            "organization": {
+               "name": "National Endowment for the Humanities",
+               "address": {
+                  "city": "DC",
+                  "region": "DC",
+                  "country": "US"
+               },
+               "disambiguated-organization": {
+                  "disambiguated-organization-identifier": "http://dx.doi.org/10.13039/100000103",
+                  "disambiguation-source": "FUNDREF"
+               }
+            }
+         }
+      },
+      {
+         "last-modified-date": "2014-09-15T12:41:34.584Z",
+         "funding-summary": {
+            "put-code": "31368",
+            "path": "/0000-0001-8419-8779/funding/31368",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2014-09-15T12:41:34.584Z",
+            "last-modified-date": "2014-09-15T12:41:34.584Z",
+            "source": {
+               "source-orcid": {
+                  "uri": "http://orcid.org/0000-0001-8419-8779",
+                  "path": "0000-0001-8419-8779",
+                  "host": "orcid.org"
+               },
+               "source-name": "Marc L. Greenberg"
+            },
+            "title": {
+               "title": "The Phonology of the Prekmurje Dialect of Slovene"
+            },
+            "type": "award",
+            "end-date": {
+               "year": "1988"
+            },
+            "organization": {
+               "name": "Fulbright Commission",
+               "address": {
+                  "city": "Washington, DC",
+                  "country": "US"
+               },
+               "disambiguated-organization": {
+                  "disambiguated-organization-identifier": "http://dx.doi.org/10.13039/501100000592",
+                  "disambiguation-source": "FUNDREF"
+               }
+            }
+         }
+      }
+   ]
+}

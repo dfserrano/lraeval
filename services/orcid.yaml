@@ -1,0 +1,824 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: ORCID
+  description: ORCID offers an API (Application Programming Interface) that allows your systems and applications to connect to the ORCID registry, including reading from and writing to ORCID records. Some API functions are freely available to anyone; others are provided as a thank you  to organizations that financially support ORCID with an annual membership subscription.
+
+host: localhost
+basePath: /lraeval/api/orcid
+schemes:
+  - http
+produces:
+  - application/json
+externalDocs:
+  description: Documentation of the original data source
+  url: https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0/README.md
+
+paths:
+  /search.json:
+    get:
+      summary: Search records
+      description: Search a subset of ORCID metadata using the popular Solr query syntax.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?person a foaf:Person ;
+          foaf:name ?personName ;
+          vivo:orcidId ?orcid ;
+          foaf:homepage ?url .
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          bibo:doi ?doi ;
+          pubmed:id ?pmid ;
+          dc:creator ?author .
+
+      tags:
+        - Search
+
+      parameters:
+        # Query
+        - name: q
+          in: query
+          required: true
+          description: "The search query.  When more specific results are required, fielded search should be used. The following fields are recognized, corresponding to elements in the profile record structure: credit-name (Person name), work-titles (Paper title), doi-self (DOI), and pmid-self (PubMed ID)"
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/SearchRecords'
+
+  /{orcid}/record.json:
+    get:
+      summary: Summary view
+      description: Summary view of the full ORCID record.
+      tags:
+        - Read
+      parameters:
+        # Id
+        - name: orcid
+          in: path
+          required: true
+          description: The Orcid id of the researcher
+          default: 0000-0001-8419-8779
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/Record'
+
+  /{orcid}/person.json:
+    get:
+      summary: Biography
+      description: Biographical section of the ORCID record, including through /researcher-urls below.
+      tags:
+        - Read
+      parameters:
+        # Id
+        - name: orcid
+          in: path
+          required: true
+          description: The Orcid id of the researcher
+          default: 0000-0001-8419-8779
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/Person'
+
+  /{orcid}/address.json:
+    get:
+      summary: Countries and regions
+      description: The researcher’s countries or regions.
+      tags:
+        - Read
+      parameters:
+        # Id
+        - name: orcid
+          in: path
+          required: true
+          description: The Orcid id of the researcher
+          default: 0000-0001-8419-8779
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/Address'
+
+  /{orcid}/email.json:
+    get:
+      summary: Email address(es)
+      description: The email address(es) associated with the record.
+      tags:
+        - Read
+      parameters:
+        # Id
+        - name: orcid
+          in: path
+          required: true
+          description: The Orcid id of the researcher
+          default: 0000-0001-8419-8779
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/Email'
+
+  /{orcid}/personal-details.json:
+    get:
+      summary: Personal details
+      description: Personal details- the researcher's name, credit (published) name, and biography.
+      tags:
+        - Read
+      parameters:
+        # Id
+        - name: orcid
+          in: path
+          required: true
+          description: The Orcid id of the researcher
+          default: 0000-0001-8419-8779
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/Personal'
+
+  /{orcid}/researcher-urls.json:
+    get:
+      summary: Researcher URLs
+      description: Links to the researcher’s personal or profile pages.
+      tags:
+        - Read
+      parameters:
+        # Id
+        - name: orcid
+          in: path
+          required: true
+          description: The Orcid id of the researcher
+          default: 0000-0001-8419-8779
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/Url'
+
+  /{orcid}/activities.json:
+    get:
+      summary: Summary of activities
+      description: Summary of the activities section of the ORCID record, including through /works below.
+      tags:
+        - Read
+      parameters:
+        # Id
+        - name: orcid
+          in: path
+          required: true
+          description: The Orcid id of the researcher
+          default: 0000-0001-8419-8779
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/Activities'
+
+  /{orcid}/educations.json:
+    get:
+      summary: Education affiliations
+      description: Education affiliations.
+      tags:
+        - Read
+      parameters:
+        # Id
+        - name: orcid
+          in: path
+          required: true
+          description: The Orcid id of the researcher
+          default: 0000-0001-8419-8779
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/Education'
+
+  /{orcid}/employments.json:
+    get:
+      summary: Employment affiliations
+      description: Employment affiliations.
+      tags:
+        - Read
+      parameters:
+        # Id
+        - name: orcid
+          in: path
+          required: true
+          description: The Orcid id of the researcher
+          default: 0000-0001-8419-8779
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/Employment'
+
+  /{orcid}/fundings.json:
+    get:
+      summary: Funding
+      description: Summary of funding activities.
+      tags:
+        - Read
+      parameters:
+        # Id
+        - name: orcid
+          in: path
+          required: true
+          description: The Orcid id of the researcher
+          default: 0000-0001-8419-8779
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/Funding'
+
+  /{orcid}/works.json:
+    get:
+      summary: Research works
+      description: Summary of research works.
+      tags:
+        - Read
+      parameters:
+        # Id
+        - name: orcid
+          in: path
+          required: true
+          description: The Orcid id of the researcher
+          default: 0000-0001-8419-8779
+          type: string
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/Work'
+
+definitions:
+  OrcidIdentifier:
+    properties:
+      uri:
+        type: string
+      path:
+        type: string
+      host:
+        type: string
+
+  SearchRecords:
+    properties:
+      search:
+        type: object
+        properties:
+          num-found:
+            type: integer
+          result:
+            type: array
+            items:
+              properties:
+                orcid-identifier:
+                  $ref: '#/definitions/OrcidIdentifier'
+
+  Address:
+    properties:
+      path:
+        type: string
+      last-modified-date:
+        type: string
+        format: date-time
+      address:
+        type: object
+        properties:
+          put-code:
+            type: string
+          visibility:
+            type: string
+          path:
+            type: string
+          display-index:
+            type: string
+          created-date:
+            type: string
+            format: date-time
+          last-modified-date:
+            type: string
+            format: date-time
+          source:
+            $ref: '#/definitions/Source'
+          country:
+            type: string
+
+  Email:
+    properties:
+      path:
+        type: string
+      last-modified-date:
+        type: string
+        format: date-time
+      email:
+        type: object
+        properties:
+          visibility:
+            type: string
+          verified:
+            type: string
+          primary:
+            type: string
+          created-date:
+            type: string
+            format: date-time
+          last-modified-date:
+            type: string
+            format: date-time
+          source:
+            $ref: '#/definitions/Source'
+          email:
+            type: string
+            format: email
+
+  Employment:
+    properties:
+      path:
+        type: string
+      last-modified-date:
+        type: string
+        format: date-time
+      employment-summary:
+        type: array
+        items:
+          $ref: '#/definitions/EmploymentEducation'
+
+  Education:
+    properties:
+      path:
+        type: string
+      last-modified-date:
+        type: string
+        format: date-time
+      education-summary:
+        type: array
+        items:
+          $ref: '#/definitions/EmploymentEducation'
+
+  EmploymentEducation:
+    type: object
+    properties:
+      put-code:
+        type: string
+      path:
+        type: string
+      visibility:
+        type: string
+      created-date:
+        type: string
+        format: date-time
+      last-modified-date:
+        type: string
+        format: date-time
+      source:
+        $ref: '#/definitions/Source'
+      department-name:
+        type: string
+      role-title:
+        type: string
+      start-date:
+        type: object
+        properties:
+          year:
+            type: integer
+          month:
+            type: integer
+          day:
+            type: integer
+      end-date:
+        type: object
+        properties:
+          year:
+            type: integer
+          month:
+            type: integer
+          day:
+            type: integer
+      organization:
+        type: object
+        properties:
+          name:
+            type: string
+          address:
+            type: object
+            properties:
+              city:
+                type: string
+              region:
+                type: string
+              country:
+                type: string
+          disambiguated-organization:
+            type: object
+            properties:
+              disambiguated-organization-identifier:
+                type: string
+              disambiguation-source:
+                type: string
+
+  Funding:
+    properties:
+      path:
+        type: string
+      last-modified-date:
+        type: string
+        format: date-time
+      group:
+        type: array
+        items:
+          properties:
+            last-modified-date:
+              type: string
+              format: date-time
+            funding-summary:
+              type: object
+              properties:
+                put-code:
+                  type: string
+                path:
+                  type: string
+                visibility:
+                  type: string
+                display-index:
+                  type: string
+                created-date:
+                  type: string
+                  format: date-time
+                last-modified-date:
+                  type: string
+                  format: date-time
+                source:
+                  $ref: '#/definitions/Source'
+                title:
+                  type: object
+                  properties:
+                    title:
+                      type: string
+                type:
+                  type: string
+                end-date:
+                  type: object
+                  properties:
+                    year:
+                      type: integer
+                    month:
+                      type: integer
+                    day:
+                      type: integer
+                organization:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    address:
+                      type: object
+                      properties:
+                        city:
+                          type: string
+                        region:
+                          type: string
+                        country:
+                          type: string
+                    disambiguated-organization:
+                      type: object
+                      properties:
+                        disambiguated-organization-identifier:
+                          type: string
+                        disambiguation-source:
+                          type: string
+
+  Personal:
+    properties:
+      path:
+        type: string
+      last-modified-date:
+        type: string
+        format: date-time
+      name:
+        $ref: '#/definitions/Source'
+      other-names:
+        $ref: '#/definitions/OtherNames'
+      biography:
+        $ref: '#/definitions/Biography'
+
+  Record:
+    properties:
+      path:
+        type: string
+      orcid-identifier:
+        type: object
+        properties:
+          uri:
+            type: string
+          path:
+            type: string
+          host:
+            type: string
+      preferences:
+        type: object
+        properties:
+          locale:
+            type: string
+      history:
+        type: object
+        properties:
+          creation-method:
+            type: string
+            format: date-time
+          completion-date:
+            type: string
+            format: date-time
+          submission-date:
+            type: string
+            format: date-time
+          last-modified-date:
+            type: string
+            format: date-time
+          claimed:
+            type: string
+          verified-email:
+            type: string
+          verified-primary-email:
+            type: string
+      person:
+        $ref: '#/definitions/Person'
+      activities-summary:
+        $ref: '#/definitions/Activities'
+
+
+  Person:
+    properties:
+      path:
+        type: string
+      last-modified-date:
+        type: string
+        format: date-time
+      name:
+        $ref: '#/definitions/Source'
+      other-names:
+        $ref: '#/definitions/OtherNames'
+      biography:
+        $ref: '#/definitions/Biography'
+      researcher-urls:
+        $ref: '#/definitions/Url'
+      emails:
+        $ref: '#/definitions/Email'
+      addresses:
+        $ref: '#/definitions/Address'
+
+  Activities:
+    properties:
+      path:
+        type: string
+      last-modified-date:
+        type: string
+        format: date-time
+      educations:
+        $ref: '#/definitions/Education'
+      employments:
+        $ref: '#/definitions/Employment'
+      fundings:
+        $ref: '#/definitions/Funding'
+      works:
+        $ref: '#/definitions/Work'
+
+  Name:
+    type: object
+    properties:
+      visibility:
+        type: string
+      path:
+        type: string
+      created-date:
+        type: string
+        format: date-time
+      last-modified-date:
+        type: string
+        format: date-time
+      given-names:
+        type: string
+      family-name:
+        type: string
+      credit-name:
+        type: string
+
+  OtherNames:
+    type: object
+    properties:
+      path:
+        type: string
+      last-modified-date:
+        type: string
+        format: date-time
+      other-name:
+        type: array
+        items:
+          type: object
+          properties:
+            put-code:
+              type: string
+            visibility:
+              type: string
+            path:
+              type: string
+            display-index:
+              type: string
+            created-date:
+              type: string
+              format: date-time
+            last-modified-date:
+              type: string
+              format: date-time
+            source:
+              $ref: '#/definitions/Source'
+            content:
+              type: string
+
+  Biography:
+    type: object
+    properties:
+      visibility:
+        type: string
+      path:
+        type: string
+      display-index:
+        type: string
+      created-date:
+        type: string
+        format: date-time
+      last-modified-date:
+        type: string
+        format: date-time
+      source:
+        $ref: '#/definitions/Source'
+      content:
+        type: string
+
+  Url:
+    type: object
+    properties:
+      researcher-url:
+        type: array
+        items:
+          type: object
+          properties:
+            put-code:
+              type: string
+            visibility:
+              type: string
+            path:
+              type: string
+            display-index:
+              type: string
+            created-date:
+              type: string
+              format: date-time
+            last-modified-date:
+              type: string
+              format: date-time
+            source:
+              $ref: '#/definitions/Source'
+            url-name:
+              type: string
+            url:
+              type: string
+
+  Work:
+    properties:
+      path:
+        type: string
+      last-modified-date:
+        type: string
+        format: date-time
+      groupd:
+        type: array
+        items:
+          type: object
+          properties:
+            last-modified-date:
+              type: string
+              format: date-time
+            external-ids:
+              type: object
+              properties:
+                external-id-type:
+                  type: string
+                external-id-value:
+                  type: string
+                external-id-url:
+                  type: string
+                external-id-relationship:
+                  type: string
+            work-summary:
+              type: object
+              properties:
+                put-code:
+                  type: string
+                path:
+                  type: string
+                visibility:
+                  type: string
+                display-index:
+                  type: string
+                created-date:
+                  type: string
+                  format: date-time
+                last-modified-date:
+                  type: string
+                  format: date-time
+                source:
+                  $ref: '#/definitions/Source'
+                title:
+                  type: object
+                  properties:
+                    title:
+                      type: string
+                external-ids:
+                  type: object
+                  properties:
+                    external-id-type:
+                      type: string
+                    external-id-value:
+                      type: string
+                    external-id-url:
+                      type: string
+                    external-id-relationship:
+                      type: string
+                type:
+                  type: string
+                publication-date:
+                  type: object
+                  properties:
+                    year:
+                      type: string
+                    month:
+                      type: string
+                    day:
+                      type: string
+
+  Source:
+    properties:
+      source-orcid:
+        type: object
+        properties:
+          uri:
+            type: string
+          path:
+            type: string
+          host:
+            type: string
+      source-name:
+        type: string

@@ -1,0 +1,1641 @@
+{
+  "search-results": {
+    "totalResults": "247204",
+    "startIndex": "0",
+    "itemsPerPage": "25",
+    "Query": {
+      "role": "request",
+      "searchTerms": "cloud",
+      "startPage": "0"
+    },
+    "link": [
+      {
+        "_fa": "true",
+        "href": "https://api.elsevier.com/content/search/scidir?start=0&count=25&query=cloud&apiKey=b3a71de2bde04544495881ed9d2f9c5b",
+        "ref": "self",
+        "type": "application/json"
+      },
+      {
+        "_fa": "true",
+        "href": "https://api.elsevier.com/content/search/scidir?start=0&count=25&query=cloud&apiKey=b3a71de2bde04544495881ed9d2f9c5b",
+        "ref": "first",
+        "type": "application/json"
+      },
+      {
+        "_fa": "true",
+        "href": "https://api.elsevier.com/content/search/scidir?start=25&count=25&query=cloud&apiKey=b3a71de2bde04544495881ed9d2f9c5b",
+        "ref": "next",
+        "type": "application/json"
+      },
+      {
+        "_fa": "true",
+        "href": "https://api.elsevier.com/content/search/scidir?start=5975&count=25&query=cloud&apiKey=b3a71de2bde04544495881ed9d2f9c5b",
+        "ref": "last",
+        "type": "application/json"
+      }
+    ],
+    "entry": [
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0736584516300084",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0736584516300084",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.rcim.2015.12.010",
+        "eid": "1-s2.0-S0736584516300084",
+        "url": "https://api.elsevier.com/content/article/pii/S0736584516300084",
+        "title": "Development of a cloud-based factory simulation system for enabling ubiquitous factory simulation",
+        "creator": "Toly, Chen",
+        "publicationName": "Robotics and Computer-Integrated Manufacturing",
+        "issueName": "Special Issue on Ubiquitous Manufacturing (UbiM)",
+        "issn": "07365845",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-06-01"
+          }
+        ],
+        "coverDisplayDate": "June 2017",
+        "startingPage": "133",
+        "endingPage": "143",
+        "doi": "10.1016/j.rcim.2015.12.010",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pubType": "Full length Article",
+        "pii": "S0736-5845(16)30008-4",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Toly",
+              "surname": "Chen"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Min-Chi",
+              "surname": "Chiu"
+            }
+          ]
+        },
+        "teaser": "This study investigated several problems related to the implementation of cloud-based factory simulation. First, the differences between cloud-based factory simulation and parallel and distributed factory..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S003442571730038X",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S003442571730038X",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.rse.2017.01.026",
+        "eid": "1-s2.0-S003442571730038X",
+        "url": "https://api.elsevier.com/content/article/pii/S003442571730038X",
+        "title": "Multi-feature combined cloud and cloud shadow detection in GaoFen-1 wide field of view imagery",
+        "creator": "Zhiwei, Li",
+        "publicationName": "Remote Sensing of Environment",
+        "issn": "00344257",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-03-15"
+          }
+        ],
+        "coverDisplayDate": "15 March 2017",
+        "startingPage": "342",
+        "endingPage": "358",
+        "doi": "10.1016/j.rse.2017.01.026",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S0034-4257(17)30038-X",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Zhiwei",
+              "surname": "Li"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Huanfeng",
+              "surname": "Shen"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Huifang",
+              "surname": "Li"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Guisong",
+              "surname": "Xia"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Paolo",
+              "surname": "Gamba"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Liangpei",
+              "surname": "Zhang"
+            }
+          ]
+        },
+        "teaser": "The wide field of view (WFV) imaging system onboard the Chinese GaoFen-1 (GF-1) optical satellite has a 16-m resolution and four-day revisit cycle for large-scale Earth observation. The advantages of..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S016980951630521X",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S016980951630521X",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.atmosres.2016.10.021",
+        "eid": "1-s2.0-S016980951630521X",
+        "url": "https://api.elsevier.com/content/article/pii/S016980951630521X",
+        "title": "Aerosol impacts on radiative and microphysical properties of clouds and precipitation formation",
+        "creator": "O., Alizadeh-Choobari",
+        "publicationName": "Atmospheric Research",
+        "issn": "01698095",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-03-01"
+          }
+        ],
+        "coverDisplayDate": "1 March 2017",
+        "startingPage": "53",
+        "endingPage": "64",
+        "doi": "10.1016/j.atmosres.2016.10.021",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S0169-8095(16)30521-X",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "O.",
+              "surname": "Alizadeh-Choobari"
+            },
+            {
+              "_fa": "true",
+              "given-name": "M.",
+              "surname": "Gharaylou"
+            }
+          ]
+        },
+        "teaser": "Through modifying the number concentration and size of cloud droplets, aerosols have intricate impacts on radiative and microphysical properties of clouds, which together influence precipitation processes...."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S1350417716303583",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S1350417716303583",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.ultsonch.2016.10.019",
+        "eid": "1-s2.0-S1350417716303583",
+        "url": "https://api.elsevier.com/content/article/pii/S1350417716303583",
+        "title": "Surface tension and quasi-emulsion of cavitation bubble cloud",
+        "creator": "Lixin, Bai",
+        "publicationName": "Ultrasonics Sonochemistry",
+        "issn": "13504177",
+        "volume": "35",
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-03-01"
+          }
+        ],
+        "coverDisplayDate": "March 2017",
+        "startingPage": "405",
+        "endingPage": "414",
+        "doi": "10.1016/j.ultsonch.2016.10.019",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S1350-4177(16)30358-3",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Lixin",
+              "surname": "Bai"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Xiaoguang",
+              "surname": "Chen"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Gang",
+              "surname": "Zhu"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Weilin",
+              "surname": "Xu"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Weijun",
+              "surname": "Lin"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Pengfei",
+              "surname": "Wu"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Chao",
+              "surname": "Li"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Delong",
+              "surname": "Xu"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Jiuchun",
+              "surname": "Yan"
+            }
+          ]
+        },
+        "teaser": "A quasi-emulsion phenomenon of cavitation structure in a thin liquid layer (the thin liquid layer is trapped between a radiating surface and a hard reflector) is investigated experimentally with high-speed..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0164121217300018",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0164121217300018",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.jss.2017.01.001",
+        "eid": "1-s2.0-S0164121217300018",
+        "url": "https://api.elsevier.com/content/article/pii/S0164121217300018",
+        "title": "Understanding cloud-native applications after 10 years of cloud computing - A systematic mapping study",
+        "creator": "Nane, Kratzke",
+        "publicationName": "Journal of Systems and Software",
+        "issn": "01641212",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-04-01"
+          }
+        ],
+        "coverDisplayDate": "April 2017",
+        "startingPage": "1",
+        "endingPage": "16",
+        "doi": "10.1016/j.jss.2017.01.001",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S0164-1212(17)30001-8",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Nane",
+              "surname": "Kratzke"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Peter-Christian",
+              "surname": "Quint"
+            }
+          ]
+        },
+        "teaser": "It is common sense that cloud-native applications (CNA) are intentionally designed for the cloud. Although this understanding can be broadly used it does not guide and explain what a cloud-native application..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0164121216302540",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0164121216302540",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.jss.2016.12.009",
+        "eid": "1-s2.0-S0164121216302540",
+        "url": "https://api.elsevier.com/content/article/pii/S0164121216302540",
+        "title": "A systematic study of double auction mechanisms in cloud computing",
+        "creator": "Dinesh, Kumar",
+        "publicationName": "Journal of Systems and Software",
+        "issn": "01641212",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-03-01"
+          }
+        ],
+        "coverDisplayDate": "March 2017",
+        "startingPage": "234",
+        "endingPage": "255",
+        "doi": "10.1016/j.jss.2016.12.009",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pubType": "New trends and ideas",
+        "pii": "S0164-1212(16)30254-0",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Dinesh",
+              "surname": "Kumar"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Gaurav",
+              "surname": "Baranwal"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Zahid",
+              "surname": "Raza"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Deo Prakash",
+              "surname": "Vidyarthi"
+            }
+          ]
+        },
+        "teaser": "The cloud system is designed, implemented and conceptualized as a marketplace where resources are traded. This demands efficient allocation of resources to benefit both the cloud users and the cloud..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0169809516306366",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0169809516306366",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.atmosres.2016.11.014",
+        "eid": "1-s2.0-S0169809516306366",
+        "url": "https://api.elsevier.com/content/article/pii/S0169809516306366",
+        "title": "Effects of cloud condensate vertical alignment on radiative transfer calculations in deep convective regions",
+        "creator": "Xiaocong, Wang",
+        "publicationName": "Atmospheric Research",
+        "issn": "01698095",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-04-01"
+          }
+        ],
+        "coverDisplayDate": "1 April 2017",
+        "startingPage": "107",
+        "endingPage": "115",
+        "doi": "10.1016/j.atmosres.2016.11.014",
+        "openaccess": "1",
+        "openaccessArticle": true,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "pii": "S0169-8095(16)30636-6",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Xiaocong",
+              "surname": "Wang"
+            }
+          ]
+        },
+        "teaser": "Effects of cloud condensate vertical alignment on radiative transfer process were investigated using cloud resolving model explicit simulations, which provide a surrogate for subgrid cloud geometry...."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0301932216305146",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0301932216305146",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.ijmultiphaseflow.2017.01.005",
+        "eid": "1-s2.0-S0301932216305146",
+        "url": "https://api.elsevier.com/content/article/pii/S0301932216305146",
+        "title": "Experimental study of oblique particle clouds in water",
+        "creator": "Mohamad, Moghadaripour",
+        "publicationName": "International Journal of Multiphase Flow",
+        "issn": "03019322",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-05-01"
+          }
+        ],
+        "coverDisplayDate": "May 2017",
+        "startingPage": "101",
+        "endingPage": "119",
+        "doi": "10.1016/j.ijmultiphaseflow.2017.01.005",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S0301-9322(16)30514-6",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Mohamad",
+              "surname": "Moghadaripour"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Amir Hossein",
+              "surname": "Azimi"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Siamak",
+              "surname": "Elyasi"
+            }
+          ]
+        },
+        "teaser": "Laboratory experiments were conducted to investigate the dynamics of oblique particle cloud in stagnant water. Previous laboratory studies on vertically downward particle clouds indicated the importance..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S108480451730005X",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S108480451730005X",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.jnca.2017.01.005",
+        "eid": "1-s2.0-S108480451730005X",
+        "url": "https://api.elsevier.com/content/article/pii/S108480451730005X",
+        "title": "Comprehensive and systematic review of the service composition mechanisms in the cloud environments",
+        "creator": "Asrin, Vakili",
+        "publicationName": "Journal of Network and Computer Applications",
+        "issn": "10848045",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-03-01"
+          }
+        ],
+        "coverDisplayDate": "1 March 2017",
+        "startingPage": "24",
+        "endingPage": "36",
+        "doi": "10.1016/j.jnca.2017.01.005",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pubType": "Review",
+        "pii": "S1084-8045(17)30005-X",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Asrin",
+              "surname": "Vakili"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Nima Jafari",
+              "surname": "Navimipour"
+            }
+          ]
+        },
+        "teaser": "Typically, cloud computing includes the provisioning of dynamically scalable and virtualized resources as services over the Internet. In the cloud environment, based on the user's needs, various types..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0169809517301096",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0169809517301096",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.atmosres.2017.01.019",
+        "eid": "1-s2.0-S0169809517301096",
+        "url": "https://api.elsevier.com/content/article/pii/S0169809517301096",
+        "title": "Cloud statistics over the Indonesian Maritime Continent during the first and second CPEA campaigns",
+        "creator": ", Marzuki",
+        "publicationName": "Atmospheric Research",
+        "issn": "01698095",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-06-01"
+          }
+        ],
+        "coverDisplayDate": "1 June 2017",
+        "startingPage": "99",
+        "endingPage": "110",
+        "doi": "10.1016/j.atmosres.2017.01.019",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S0169-8095(17)30109-6",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "surname": "Marzuki"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Mutya",
+              "surname": "Vonnisa"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Aulya",
+              "surname": "Rahayu"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Hiroyuki",
+              "surname": "Hashiguchi"
+            }
+          ]
+        },
+        "teaser": "Improvement of precipitation prediction requires an understanding of the organization mechanism, such as the initiation and evolution of organized convective systems. This paper is a follow-up of a..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0736584516300345",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0736584516300345",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.rcim.2016.01.007",
+        "eid": "1-s2.0-S0736584516300345",
+        "url": "https://api.elsevier.com/content/article/pii/S0736584516300345",
+        "title": "Ubiquitous manufacturing system based on Cloud: A robotics application",
+        "creator": "Xi Vincent, Wang",
+        "publicationName": "Robotics and Computer-Integrated Manufacturing",
+        "issueName": "Special Issue on Ubiquitous Manufacturing (UbiM)",
+        "issn": "07365845",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-06-01"
+          }
+        ],
+        "coverDisplayDate": "June 2017",
+        "startingPage": "116",
+        "endingPage": "125",
+        "doi": "10.1016/j.rcim.2016.01.007",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S0736-5845(16)30034-5",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Xi Vincent",
+              "surname": "Wang"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Lihui",
+              "surname": "Wang"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Abdullah",
+              "surname": "Mohammed"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Mohammad",
+              "surname": "Givehchi"
+            }
+          ]
+        },
+        "teaser": "Modern manufacturing industry calls for a new generation of production system with better interoperability and new business models. As a novel information technology, Cloud provides new service models..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0168169916305099",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0168169916305099",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.compag.2017.01.026",
+        "eid": "1-s2.0-S0168169916305099",
+        "url": "https://api.elsevier.com/content/article/pii/S0168169916305099",
+        "title": "Sensing-cloud: Leveraging the benefits for agricultural applications",
+        "creator": "Tamoghna, Ojha",
+        "publicationName": "Computers and Electronics in Agriculture",
+        "issn": "01681699",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-04-01"
+          }
+        ],
+        "coverDisplayDate": "1 April 2017",
+        "startingPage": "96",
+        "endingPage": "107",
+        "doi": "10.1016/j.compag.2017.01.026",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pubType": "Original papers",
+        "pii": "S0168-1699(16)30509-9",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Tamoghna",
+              "surname": "Ojha"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Sudip",
+              "surname": "Misra"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Narendra Singh",
+              "surname": "Raghuwanshi"
+            }
+          ]
+        },
+        "teaser": "The advent of the sensor-cloud framework empowers the traditional wireless sensor networks (WSNs) in terms of dynamic operation, management, storage, and security. In recent times, the sensor-cloud..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0167739X16302151",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0167739X16302151",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.future.2016.06.030",
+        "eid": "1-s2.0-S0167739X16302151",
+        "url": "https://api.elsevier.com/content/article/pii/S0167739X16302151",
+        "title": "Acceptance Test for Fault Detection in Component-based Cloud Computing and Systems",
+        "creator": "Mounya, Smara",
+        "publicationName": "Future Generation Computer Systems",
+        "issn": "0167739X",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-05-01"
+          }
+        ],
+        "coverDisplayDate": "May 2017",
+        "startingPage": "74",
+        "endingPage": "93",
+        "doi": "10.1016/j.future.2016.06.030",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S0167-739X(16)30215-1",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Mounya",
+              "surname": "Smara"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Makhlouf",
+              "surname": "Aliouat"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Al-Sakib Khan",
+              "surname": "Pathan"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Zibouda",
+              "surname": "Aliouat"
+            }
+          ]
+        },
+        "teaser": "Fault Detection is considered as one of the main challenges in large-scale dynamic environments and thus, for maintaining the reliability requirements of Cloud and Mobile Cloud systems. Most of the..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0167739X17301735",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0167739X17301735",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.future.2017.01.036",
+        "eid": "1-s2.0-S0167739X17301735",
+        "url": "https://api.elsevier.com/content/article/pii/S0167739X17301735",
+        "title": "Cost minimization for deadline-constrained bag-of-tasks applications in federated hybrid clouds",
+        "creator": "Somayeh, Abdi",
+        "publicationName": "Future Generation Computer Systems",
+        "issn": "0167739X",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-06-01"
+          }
+        ],
+        "coverDisplayDate": "June 2017",
+        "startingPage": "113",
+        "endingPage": "128",
+        "doi": "10.1016/j.future.2017.01.036",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S0167-739X(17)30173-5",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Somayeh",
+              "surname": "Abdi"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Latif",
+              "surname": "PourKarimi"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Mahmood",
+              "surname": "Ahmadi"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Farzad",
+              "surname": "Zargari"
+            }
+          ]
+        },
+        "teaser": "A mathematical programming model is proposed for a resource allocation problem in federated clouds, where bag-of-tasks (BoT) applications are assigned to instance types with different costs and performance..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0020025516307319",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0020025516307319",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.ins.2016.09.005",
+        "eid": "1-s2.0-S0020025516307319",
+        "url": "https://api.elsevier.com/content/article/pii/S0020025516307319",
+        "title": "Intelligent cryptography approach for secure distributed big data storage in cloud computing",
+        "creator": "Yibin, Li",
+        "publicationName": "Information Sciences",
+        "issn": "00200255",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-05-01"
+          }
+        ],
+        "coverDisplayDate": "May 2017",
+        "startingPage": "103",
+        "endingPage": "115",
+        "doi": "10.1016/j.ins.2016.09.005",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S0020-0255(16)30731-9",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Yibin",
+              "surname": "Li"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Keke",
+              "surname": "Gai"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Longfei",
+              "surname": "Qiu"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Meikang",
+              "surname": "Qiu"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Hui",
+              "surname": "Zhao"
+            }
+          ]
+        },
+        "teaser": "Implementing cloud computing empowers numerous paths for Web-based service offerings to meet diverse needs. However, the data security and privacy has become a critical issue that restricts many cloud..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0167404816301377",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0167404816301377",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.cose.2016.10.006",
+        "eid": "1-s2.0-S0167404816301377",
+        "url": "https://api.elsevier.com/content/article/pii/S0167404816301377",
+        "title": "A survey of cloud computing data integrity schemes: Design challenges, taxonomy and future trends",
+        "creator": "Faheem, Zafar",
+        "publicationName": "Computers & Security",
+        "issn": "01674048",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-03-01"
+          }
+        ],
+        "coverDisplayDate": "March 2017",
+        "startingPage": "29",
+        "endingPage": "49",
+        "doi": "10.1016/j.cose.2016.10.006",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S0167-4048(16)30137-7",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Faheem",
+              "surname": "Zafar"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Abid",
+              "surname": "Khan"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Saif Ur Rehman",
+              "surname": "Malik"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Mansoor",
+              "surname": "Ahmed"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Adeel",
+              "surname": "Anjum"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Majid Iqbal",
+              "surname": "Khan"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Nadeem",
+              "surname": "Javed"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Masoom",
+              "surname": "Alam"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Fuzel",
+              "surname": "Jamil"
+            }
+          ]
+        },
+        "teaser": "Cloud computing has gained tremendous popularity in recent years. By outsourcing computation and storage requirements to public providers and paying for the services used, customers can relish upon..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0167732216332998",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0167732216332998",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.molliq.2017.02.024",
+        "eid": "1-s2.0-S0167732216332998",
+        "url": "https://api.elsevier.com/content/article/pii/S0167732216332998",
+        "title": "Thermodynamic parameters of clouding phenomenon in nonionic surfactants: The effect of the electrolytes",
+        "creator": "Çiğdem, Batıgöç",
+        "publicationName": "Journal of Molecular Liquids",
+        "issn": "01677322",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-04-01"
+          }
+        ],
+        "coverDisplayDate": "April 2017",
+        "startingPage": "509",
+        "endingPage": "513",
+        "doi": "10.1016/j.molliq.2017.02.024",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S0167-7322(16)33299-8",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Çiğdem",
+              "surname": "Batıgöç"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Halide",
+              "surname": "Akbaş"
+            }
+          ]
+        },
+        "teaser": "In this study, the thermodynamics of the cloud point (CP) of the two non-ionic surfactants, polyoxyethylene (40) iso octylphenyl ether, (TX-405) and polyoxyethylene (23) lauryl ether, Brij-35 were investigated..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S1084804517300218",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S1084804517300218",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.jnca.2017.01.015",
+        "eid": "1-s2.0-S1084804517300218",
+        "url": "https://api.elsevier.com/content/article/pii/S1084804517300218",
+        "title": "Light-weight and privacy-preserving secure cloud auditing scheme for group users via the third party medium",
+        "creator": "Wenting, Shen",
+        "publicationName": "Journal of Network and Computer Applications",
+        "issn": "10848045",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-03-15"
+          }
+        ],
+        "coverDisplayDate": "15 March 2017",
+        "startingPage": "56",
+        "endingPage": "64",
+        "doi": "10.1016/j.jnca.2017.01.015",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S1084-8045(17)30021-8",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Wenting",
+              "surname": "Shen"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Jia",
+              "surname": "Yu"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Hui",
+              "surname": "Xia"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Hanlin",
+              "surname": "Zhang"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Xiuqing",
+              "surname": "Lu"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Rong",
+              "surname": "Hao"
+            }
+          ]
+        },
+        "teaser": "To verify the integrity of cloud data, many cloud storage auditing schemes have been proposed. However, most of them incur a lot of computation overhead for users when data authenticators are generated..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0167739X16303041",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0167739X16303041",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.future.2016.08.025",
+        "eid": "1-s2.0-S0167739X16303041",
+        "url": "https://api.elsevier.com/content/article/pii/S0167739X16303041",
+        "title": "A performance comparison of container-based technologies for the Cloud",
+        "creator": "Zhanibek, Kozhirbayev",
+        "publicationName": "Future Generation Computer Systems",
+        "issn": "0167739X",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-03-01"
+          }
+        ],
+        "coverDisplayDate": "March 2017",
+        "startingPage": "175",
+        "endingPage": "182",
+        "doi": "10.1016/j.future.2016.08.025",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S0167-739X(16)30304-1",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Zhanibek",
+              "surname": "Kozhirbayev"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Richard O.",
+              "surname": "Sinnott"
+            }
+          ]
+        },
+        "teaser": "Cloud computing allows to utilize servers in efficient and scalable ways through exploitation of virtualization technology. In the Infrastructure-as-a-Server (IaaS) Cloud model, many virtualized servers..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S1524070317300036",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S1524070317300036",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.gmod.2017.02.001",
+        "eid": "1-s2.0-S1524070317300036",
+        "url": "https://api.elsevier.com/content/article/pii/S1524070317300036",
+        "title": "Registration of multiview point clouds for application to ship fabrication",
+        "creator": "Dong Ho, Yun",
+        "publicationName": "Graphical Models",
+        "issn": "15240703",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-03-01"
+          }
+        ],
+        "coverDisplayDate": "March 2017",
+        "startingPage": "1",
+        "endingPage": "12",
+        "doi": "10.1016/j.gmod.2017.02.001",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S1524-0703(17)30003-6",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Dong Ho",
+              "surname": "Yun"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Sung In",
+              "surname": "Choi"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Sung Han",
+              "surname": "Kim"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Kwang Hee",
+              "surname": "Ko"
+            }
+          ]
+        },
+        "teaser": "Ship size is increasing and demand for high precision of the final product is growing, making accurate production of parts and precise assembly increasingly important. Three dimensional scanners can..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0167739X16303971",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0167739X16303971",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.future.2016.10.012",
+        "eid": "1-s2.0-S0167739X16303971",
+        "url": "https://api.elsevier.com/content/article/pii/S0167739X16303971",
+        "title": "Multi-valued collaborative QoS prediction for cloud service via time series analysis",
+        "creator": "Hua, Ma",
+        "publicationName": "Future Generation Computer Systems",
+        "issn": "0167739X",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-03-01"
+          }
+        ],
+        "coverDisplayDate": "March 2017",
+        "startingPage": "275",
+        "endingPage": "288",
+        "doi": "10.1016/j.future.2016.10.012",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S0167-739X(16)30397-1",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Hua",
+              "surname": "Ma"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Haibin",
+              "surname": "Zhu"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Zhigang",
+              "surname": "Hu"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Wensheng",
+              "surname": "Tang"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Pingping",
+              "surname": "Dong"
+            }
+          ]
+        },
+        "teaser": "Aiming at the diversity of user features, the uncertainty and the variation characteristics of quality of service (QoS), by exploiting the continuous monitoring data of cloud services, this paper proposes..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0167739X16303776",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0167739X16303776",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.future.2016.10.004",
+        "eid": "1-s2.0-S0167739X16303776",
+        "url": "https://api.elsevier.com/content/article/pii/S0167739X16303776",
+        "title": "Design of a provably secure biometrics-based multi-cloud-server authentication scheme",
+        "creator": "Saru, Kumari",
+        "publicationName": "Future Generation Computer Systems",
+        "issn": "0167739X",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-03-01"
+          }
+        ],
+        "coverDisplayDate": "March 2017",
+        "startingPage": "320",
+        "endingPage": "330",
+        "doi": "10.1016/j.future.2016.10.004",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S0167-739X(16)30377-6",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Saru",
+              "surname": "Kumari"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Xiong",
+              "surname": "Li"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Fan",
+              "surname": "Wu"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Ashok Kumar",
+              "surname": "Das"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Kim-Kwang Raymond",
+              "surname": "Choo"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Jian",
+              "surname": "Shen"
+            }
+          ]
+        },
+        "teaser": "Big Data and Cloud of Things (CoT) are two inter-related research trends in our data-driven society, and one research challenge is to design efficient security solution that enables access to resources,..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0736584516303210",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0736584516303210",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.rcim.2016.09.008",
+        "eid": "1-s2.0-S0736584516303210",
+        "url": "https://api.elsevier.com/content/article/pii/S0736584516303210",
+        "title": "Workload-based multi-task scheduling in cloud manufacturing",
+        "creator": "Yongkui, Liu",
+        "publicationName": "Robotics and Computer-Integrated Manufacturing",
+        "issueName": "Special Issue on Ubiquitous Manufacturing (UbiM)",
+        "issn": "07365845",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-06-01"
+          }
+        ],
+        "coverDisplayDate": "June 2017",
+        "startingPage": "3",
+        "endingPage": "20",
+        "doi": "10.1016/j.rcim.2016.09.008",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S0736-5845(16)30321-0",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Yongkui",
+              "surname": "Liu"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Xun",
+              "surname": "Xu"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Lin",
+              "surname": "Zhang"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Long",
+              "surname": "Wang"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Ray Y.",
+              "surname": "Zhong"
+            }
+          ]
+        },
+        "teaser": "Cloud manufacturing is an emerging service-oriented business model that integrates distributed manufacturing resources, transforms them into manufacturing services, and manages the services centrally...."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S016980951730100X",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S016980951730100X",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.atmosres.2017.01.014",
+        "eid": "1-s2.0-S016980951730100X",
+        "url": "https://api.elsevier.com/content/article/pii/S016980951730100X",
+        "title": "The behavior of the radar parameters of cumulonimbus clouds during cloud seeding with AgI",
+        "creator": "D., Vujović",
+        "publicationName": "Atmospheric Research",
+        "issn": "01698095",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-06-01"
+          }
+        ],
+        "coverDisplayDate": "1 June 2017",
+        "startingPage": "33",
+        "endingPage": "46",
+        "doi": "10.1016/j.atmosres.2017.01.014",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S0169-8095(17)30100-X",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "D.",
+              "surname": "Vujović"
+            },
+            {
+              "_fa": "true",
+              "given-name": "M.",
+              "surname": "Protić"
+            }
+          ]
+        },
+        "teaser": "Deep convection yielding severe weather phenomena (hail, flash floods, thunder) is frequent in Serbia during the warmer part of the year, i.e. April to September. As an effort to mitigate any potential..."
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/article/pii/S0167739X16306586",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "http://www.sciencedirect.com/science/article/pii/S0167739X16306586",
+            "ref": "scidir"
+          }
+        ],
+        "identifier": "DOI:10.1016/j.future.2016.10.034",
+        "eid": "1-s2.0-S0167739X16306586",
+        "url": "https://api.elsevier.com/content/article/pii/S0167739X16306586",
+        "title": "A three-dimensional virtual resource scheduling method for energy saving in cloud computing",
+        "creator": "Wei, Zhu",
+        "publicationName": "Future Generation Computer Systems",
+        "issn": "0167739X",
+        "volume": null,
+        "issueIdentifier": null,
+        "coverDate": [
+          {
+            "_fa": "true",
+            "$": "2017-04-01"
+          }
+        ],
+        "coverDisplayDate": "April 2017",
+        "startingPage": "66",
+        "endingPage": "74",
+        "doi": "10.1016/j.future.2016.10.034",
+        "openaccess": "0",
+        "openaccessArticle": false,
+        "openArchiveArticle": false,
+        "openaccessUserLicense": null,
+        "pii": "S0167-739X(16)30658-6",
+        "authors": {
+          "author": [
+            {
+              "_fa": "true",
+              "given-name": "Wei",
+              "surname": "Zhu"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Yi",
+              "surname": "Zhuang"
+            },
+            {
+              "_fa": "true",
+              "given-name": "Long",
+              "surname": "Zhang"
+            }
+          ]
+        },
+        "teaser": "Cloud computing is growing in popularity among computing paradigms, but in practice the energy consumption of the cloud data centers is very high. In this paper, we build the resource model of the cloud..."
+      }
+    ]
+  }
+}

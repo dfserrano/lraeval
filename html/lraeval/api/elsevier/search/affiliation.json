@@ -1,0 +1,877 @@
+{
+  "search-results": {
+    "totalResults": "3685",
+    "startIndex": "0",
+    "itemsPerPage": "25",
+    "Query": {
+      "role": "request",
+      "searchTerms": "",
+      "startPage": "0"
+    },
+    "link": [
+      {
+        "_fa": "true",
+        "href": "https://api.elsevier.com/content/search/affiliation?start=0&count=25&query=affil%28University+of+Alberta%29&apiKey=b3a71de2bde04544495881ed9d2f9c5b",
+        "ref": "self",
+        "type": "application/json"
+      },
+      {
+        "_fa": "true",
+        "href": "https://api.elsevier.com/content/search/affiliation?start=0&count=25&query=affil%28University+of+Alberta%29&apiKey=b3a71de2bde04544495881ed9d2f9c5b",
+        "ref": "first",
+        "type": "application/json"
+      },
+      {
+        "_fa": "true",
+        "href": "https://api.elsevier.com/content/search/affiliation?start=25&count=25&query=affil%28University+of+Alberta%29&apiKey=b3a71de2bde04544495881ed9d2f9c5b",
+        "ref": "next",
+        "type": "application/json"
+      },
+      {
+        "_fa": "true",
+        "href": "https://api.elsevier.com/content/search/affiliation?start=3660&count=25&query=affil%28University+of+Alberta%29&apiKey=b3a71de2bde04544495881ed9d2f9c5b",
+        "ref": "last",
+        "type": "application/json"
+      }
+    ],
+    "entry": [
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/60030835",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%2860030835%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=60030835&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/60030835",
+        "identifier": "AFFILIATION_ID:60030835",
+        "eid": "10-s2.0-60030835",
+        "affiliation-name": "University of Alberta",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "University of Alberta"
+          }
+        ],
+        "document-count": "128310",
+        "city": "Edmonton",
+        "country": "Canada",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/60071023",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%2860071023%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=60071023&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/60071023",
+        "identifier": "AFFILIATION_ID:60071023",
+        "eid": "10-s2.0-60071023",
+        "affiliation-name": "University of Alberta Hospital",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "University of Alberta Hospital"
+          }
+        ],
+        "document-count": "2111",
+        "city": "Edmonton",
+        "country": "Canada",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/60004510",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%2860004510%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=60004510&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/60004510",
+        "identifier": "AFFILIATION_ID:60004510",
+        "eid": "10-s2.0-60004510",
+        "affiliation-name": "Concordia University College of Alberta",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "Concordia Univ. College of Alberta"
+          }
+        ],
+        "document-count": "107",
+        "city": "Edmonton",
+        "country": "Canada",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/60055422",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%2860055422%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=60055422&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/60055422",
+        "identifier": "AFFILIATION_ID:60055422",
+        "eid": "10-s2.0-60055422",
+        "affiliation-name": "University of Alberta Augustana Campus",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "Augustana University College"
+          }
+        ],
+        "document-count": "44",
+        "city": "Camrose",
+        "country": "Canada",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/60078870",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%2860078870%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=60078870&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/60078870",
+        "identifier": "AFFILIATION_ID:60078870",
+        "eid": "10-s2.0-60078870",
+        "affiliation-name": "Continuous Professional Learning",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "University of Alberta"
+          }
+        ],
+        "document-count": "7",
+        "city": "Edmonton",
+        "country": "Canada",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/112207876",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28112207876%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=112207876&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/112207876",
+        "identifier": "AFFILIATION_ID:112207876",
+        "eid": "10-s2.0-112207876",
+        "affiliation-name": "University of Albertas",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "University Hospital of Alberta"
+          }
+        ],
+        "document-count": "6",
+        "city": "Edmonton",
+        "country": "Canada",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/101073460",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28101073460%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=101073460&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/101073460",
+        "identifier": "AFFILIATION_ID:101073460",
+        "eid": "10-s2.0-101073460",
+        "affiliation-name": "Uni-versity of Alberta",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "University of Alb Erta"
+          }
+        ],
+        "document-count": "6",
+        "city": "Edmonton",
+        "country": "Canada",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/109943080",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28109943080%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=109943080&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/109943080",
+        "identifier": "AFFILIATION_ID:109943080",
+        "eid": "10-s2.0-109943080",
+        "affiliation-name": "University of Alberta Women's Hockey Team",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "University of Alberta Women's Hockey Team"
+          }
+        ],
+        "document-count": "4",
+        "country": "United States",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/108258807",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28108258807%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=108258807&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/108258807",
+        "identifier": "AFFILIATION_ID:108258807",
+        "eid": "10-s2.0-108258807",
+        "affiliation-name": "Universit de IAlberta",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "University of of Alberta"
+          }
+        ],
+        "document-count": "3",
+        "city": "Edmonton",
+        "country": "Canada",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/116655140",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28116655140%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=116655140&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/116655140",
+        "identifier": "AFFILIATION_ID:116655140",
+        "eid": "10-s2.0-116655140",
+        "affiliation-name": "University of Alberta Edmonton Alberta Canada",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "University of Alberta Edmonton Alberta Canada"
+          }
+        ],
+        "document-count": "2",
+        "country": "United States",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/116641066",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28116641066%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=116641066&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/116641066",
+        "identifier": "AFFILIATION_ID:116641066",
+        "eid": "10-s2.0-116641066",
+        "affiliation-name": "University of Alberta Cancer Research Unit (McEachern Laboratory)",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "University of Alberta Cancer Research Unit (McEachern Laboratory)"
+          }
+        ],
+        "document-count": "2",
+        "country": "United States",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/106131239",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28106131239%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=106131239&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/106131239",
+        "identifier": "AFFILIATION_ID:106131239",
+        "eid": "10-s2.0-106131239",
+        "affiliation-name": "Physics Department University of Alberta Edmonton",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "Physics Department University of Alberta Edmonton"
+          }
+        ],
+        "document-count": "1",
+        "country": "United States",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/113951119",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28113951119%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=113951119&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/113951119",
+        "identifier": "AFFILIATION_ID:113951119",
+        "eid": "10-s2.0-113951119",
+        "affiliation-name": "University of Alberta School",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "University of Alberta School"
+          }
+        ],
+        "document-count": "1",
+        "country": "Italy",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/105844302",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28105844302%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=105844302&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/105844302",
+        "identifier": "AFFILIATION_ID:105844302",
+        "eid": "10-s2.0-105844302",
+        "affiliation-name": "University of Alberta Nuclear Research Center",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "University of Alberta Nuclear Research Center"
+          }
+        ],
+        "document-count": "1",
+        "city": "Newport News",
+        "country": "United States",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/115713238",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28115713238%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=115713238&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/115713238",
+        "identifier": "AFFILIATION_ID:115713238",
+        "eid": "10-s2.0-115713238",
+        "affiliation-name": "University of Alberta Libraries",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "University of Alberta Libraries"
+          }
+        ],
+        "document-count": "1",
+        "country": "United States",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/115907869",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28115907869%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=115907869&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/115907869",
+        "identifier": "AFFILIATION_ID:115907869",
+        "eid": "10-s2.0-115907869",
+        "affiliation-name": "University of sity of Alberta",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "University of sity of Alberta"
+          }
+        ],
+        "document-count": "1",
+        "city": "Calgary",
+        "country": "United States",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/116009420",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28116009420%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=116009420&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/116009420",
+        "identifier": "AFFILIATION_ID:116009420",
+        "eid": "10-s2.0-116009420",
+        "affiliation-name": "University of Alberta Medical School",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "University of Alberta Medical School"
+          }
+        ],
+        "document-count": "1",
+        "country": "United States",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/113513147",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28113513147%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=113513147&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/113513147",
+        "identifier": "AFFILIATION_ID:113513147",
+        "eid": "10-s2.0-113513147",
+        "affiliation-name": "Advanced Materials and Processing Laboratory at the University of Alberta",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "Advanced Materials and Processing Laboratory at the University of Alberta"
+          }
+        ],
+        "document-count": "1",
+        "country": "United States",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/116443662",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28116443662%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=116443662&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/116443662",
+        "identifier": "AFFILIATION_ID:116443662",
+        "eid": "10-s2.0-116443662",
+        "affiliation-name": "Geography at the University of Alberta",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "Geography at the University of Alberta"
+          }
+        ],
+        "document-count": "1",
+        "country": "United States",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/113342434",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28113342434%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=113342434&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/113342434",
+        "identifier": "AFFILIATION_ID:113342434",
+        "eid": "10-s2.0-113342434",
+        "affiliation-name": "Faculty of Nursing from the University of Alberta",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "Faculty of Nursing from the University of Alberta"
+          }
+        ],
+        "document-count": "1",
+        "country": "United States",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/105794937",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28105794937%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=105794937&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/105794937",
+        "identifier": "AFFILIATION_ID:105794937",
+        "eid": "10-s2.0-105794937",
+        "affiliation-name": "Cross Cancer Institute and University of Alberta",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "Cross Cancer Institute and University of Alberta"
+          }
+        ],
+        "document-count": "1",
+        "country": "United States",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/116164072",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28116164072%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=116164072&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/116164072",
+        "identifier": "AFFILIATION_ID:116164072",
+        "eid": "10-s2.0-116164072",
+        "affiliation-name": "Centre for Experimental Sociology University of Alberta",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "Centre for Experimental Sociology University of Alberta"
+          }
+        ],
+        "document-count": "1",
+        "country": "United States",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/116634828",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28116634828%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=116634828&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/116634828",
+        "identifier": "AFFILIATION_ID:116634828",
+        "eid": "10-s2.0-116634828",
+        "affiliation-name": "Faculty of Nursing University of Alberta",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "Faculty of Nursing University of Alberta"
+          }
+        ],
+        "document-count": "1",
+        "country": "United States",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/115699317",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28115699317%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=115699317&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/115699317",
+        "identifier": "AFFILIATION_ID:115699317",
+        "eid": "10-s2.0-115699317",
+        "affiliation-name": "University of Alberta Eye Research Fellow",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "University of Alberta Eye Research Fellow"
+          }
+        ],
+        "document-count": "1",
+        "city": "Boston",
+        "country": "United States",
+        "parent-affiliation-id": "0"
+      },
+      {
+        "_fa": "true",
+        "link": [
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/affiliation/affiliation_id/109713737",
+            "ref": "self"
+          },
+          {
+            "_fa": "true",
+            "href": "https://api.elsevier.com/content/search/scopus?query=af-id%28109713737%29",
+            "ref": "search"
+          },
+          {
+            "_fa": "true",
+            "href": "https://www.scopus.com/affil/profile.uri?afid=109713737&partnerID=HzOxMe3b&origin=inward",
+            "ref": "scopus-affiliation"
+          }
+        ],
+        "url": "https://api.elsevier.com/content/affiliation/affiliation_id/109713737",
+        "identifier": "AFFILIATION_ID:109713737",
+        "eid": "10-s2.0-109713737",
+        "affiliation-name": "University of Alberta Hospitals",
+        "name-variant": [
+          {
+            "_fa": "true",
+            "$": "University of Alberta Hospitals"
+          }
+        ],
+        "document-count": "1",
+        "city": "Riyadh",
+        "country": "Saudi Arabia",
+        "parent-affiliation-id": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,237 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: arXiv
+
+host: localhost
+basePath: /lraeval/api/arxiv
+schemes:
+  - http
+produces:
+  - application/json
+
+x-prefixes:
+  - prefix: rdf
+    url: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  - prefix: dc
+    url: http://purl.org/dc/terms/
+  - prefix: arxiv
+    url: https://arxiv.org/terms/
+  - prefix: vivo
+    url: http://vivoweb.org/ontology/core#
+  - prefix: bibo
+    url: http://purl.org/ontology/bibo/
+  - prefix: foaf
+    url: http://xmlns.com/foaf/0.1/
+
+paths:
+  /query.json:
+    get:
+      summary: Search articles
+      description: Return results for each article that matches the search query.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?paper a bibo:AcademicArticle ;
+          dc:title ?paperTitle ;
+          bibo:abstract ?paperAbstract ;
+          arxiv:id ?paperId ;
+          vivo:hasPublicationVenue ?venue ;
+          dc:date ?paperDate ;
+          bibo:doi ?doi ;
+          dc:creator ?author ;
+          dc:creator ?author2 .
+        ?venue a bibo:Collection ;
+          dc:title ?venueTitle .
+        ?author a foaf:Person ;
+          foaf:name ?authorName .
+        ?author2 a foaf:Person ;
+          foaf:name ?author2Name .
+
+      tags:
+        - Search
+      parameters:
+        # Search Query
+        - name: search_query
+          in: query
+          description: |-
+            The search_query takes a string that represents a search query used to find articles.
+            The following table lists the field prefixes for all the fields that can be searched
+              <table>
+                <tr>
+                  <td><strong>Prefix</strong></td>
+                  <td><strong>Field</strong></td>
+                </tr>
+                <tr>
+                  <td>ti</td>
+                  <td>Title</td>
+                </tr>
+                <tr>
+                  <td>au</td>
+                  <td>Author</td>
+                </tr>
+                <tr>
+                  <td>abs</td>
+                  <td>Abstract</td>
+                </tr>
+                <tr>
+                  <td>co</td>
+                  <td>Comment</td>
+                </tr>
+                <tr>
+                  <td>jr</td>
+                  <td>Journal Reference</td>
+                </tr>
+                <tr>
+                  <td>cat</td>
+                  <td>Subject Category</td>
+                </tr>
+                <tr>
+                  <td>rn</td>
+                  <td>Report Number</td>
+                </tr>
+                <tr>
+                  <td>all</td>
+                  <td>All of the above</td>
+                </tr>
+              </table>
+
+              Example: query?search_query=au:del_maestro+AND+ti:checkerboard
+
+          x-graphVar:
+            - ?paperTitle
+            - ?authorName
+          x-urlPattern: "[ti:{?paperTitle} AND ][au:{?authorName}]"
+
+          required: true
+          type: string
+
+        # Article id
+        - name: id_list
+          in: query
+          description: Article identifiers (comma-delimited string)
+          required: false
+          type: string
+          x-graphVar: ?paperId
+
+      x-responseMap:
+        - var: ?paperTitle
+          path: entry/title
+        - var: ?paperAbstract
+          path: entry/summary
+        - var: ?paperId
+          path: entry/id
+        - var: ?paperDate
+          path: entry/published
+        - var: ?doi
+          path: entry/doi
+        - var: ?venueTitle
+          path: entry/journal_ref
+        - var: ?authorName
+          path: entry/author/name
+        - var: ?author2Name
+          path: entry/author/name*
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Response'
+
+
+definitions:
+  Response:
+    properties:
+      link:
+        type: object
+        properties:
+          href:
+            type: string
+          rel:
+            type: string
+      title:
+        type: string
+      id:
+        type: string
+      update:
+        type: string
+        format: date-time
+      totalResults:
+        type: integer
+        format: int64
+      startIndex:
+        type: integer
+        format: int64
+      itemsPerPage:
+        type: integer
+        format: int64
+      entry:
+        type: array
+        items:
+          $ref: '#/definitions/Article'
+
+  Article:
+    properties:
+      id:
+        type: string
+      updated:
+        type: string
+        format: date-time
+      published:
+        type: string
+        format: date-time
+      title:
+        type: string
+      summary:
+        type: string
+      author:
+        type: array
+        items:
+          $ref: '#/definitions/Author'
+      doi:
+        type: string
+      link:
+        type: array
+        items:
+          $ref: '#/definitions/Link'
+      comment:
+        type: string
+      primary_category:
+        $ref: '#/definitions/Category'
+      category:
+        type: array
+        items:
+          $ref: '#/definitions/Category'
+
+  Author:
+    properties:
+      name:
+        type: string
+
+  Link:
+    properties:
+      title:
+        type: string
+      href:
+        type: string
+      rel:
+        type: string
+
+  Category:
+    properties:
+      term:
+        type: string
+      scheme:
+        type: string
+
+  Error:
+    required:
+      - code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string

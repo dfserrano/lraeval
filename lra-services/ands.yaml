@@ -1,0 +1,169 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: ANDS
+
+host: localhost
+basePath: /lraeval/api/ands
+schemes:
+  - http
+produces:
+  - application/json
+
+x-prefixes:
+  - prefix: rdf
+    url: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  - prefix: dc
+    url: http://purl.org/dc/terms/
+  - prefix: ands
+    url: http://www.ands.org.au/terms/
+  - prefix: vivo
+    url: http://vivoweb.org/ontology/core#
+  - prefix: bibo
+    url: http://purl.org/ontology/bibo/
+  - prefix: foaf
+    url: http://xmlns.com/foaf/0.1/
+
+paths:
+  /getGrants.json:
+    get:
+      summary: Research Grants API
+      description: The Research Grants API provides access to data relating to Australian Research Grants and Researchers.
+
+      x-type: ReadAction
+      x-graphPattern: >
+        ?grant a vivo:Grant ;
+          dc:title ?grantTitle ;
+          dc:description ?grantDescription ;
+          vivo:grantAwardedBy ?agency ;
+          bibo:uri ?grantUri ;
+          vivo:relates ?institution ;
+          vivo:relates ?pi ;
+          vivo:relates ?participant .
+        ?pi a foaf:Person ;
+          foaf:name ?piName .
+        ?participant a foaf:Person ;
+          foaf:name ?participantName .
+        ?institution a foaf:Organization ;
+          foaf:name ?institutionName .
+        ?agency a foaf:Organization ;
+          foaf:name ?agencyName .
+
+      tags:
+        - Search
+
+      parameters:
+        # Id
+        - name: id
+          in: query
+          description: The id of the grant (or part thereof)
+          required: false
+          type: string
+
+        # Title
+        - name: title
+          in: query
+          description: The title of the grant (or part thereof)
+          required: false
+          type: string
+          x-graphVar: ?grantTitle
+
+        # Institution
+        - name: institution
+          in: query
+          description: Filter results to those grants which are managed by this institution
+          required: false
+          type: string
+          x-graphVar: ?institutionName
+
+        # PI
+        - name: principalInvestigator
+          in: query
+          description: Filter results to those grants which have this principal/lead investigator
+          required: false
+          type: string
+          x-graphVar: ?piName
+
+        # Person
+        - name: person
+          in: query
+          description: Filter results to those grants which have this person listed as a lead OR co-investigator
+          required: false
+          type: string
+          x-graphVar: ?participantName
+
+      x-responseMap:
+        - var: ?grantTitle
+          path: message/recordData/title
+        - var: ?grantDescription
+          path: message/recordData/description
+        - var: ?grantUri
+          path: message/recordData/key
+        - var: ?grantDescription
+          path: message/recordData/description
+        - var: ?piName
+          path: message/recordData/relations/isPrincipalInvestigator
+        - var: ?participantName
+          path: message/recordData/relations/isParticipantIn
+        - var: ?institutionName
+          path: message/recordData/relations/isManagedBy
+        - var: ?agencyName
+          path: message/recordData/relations/isFundedBy
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/Response'
+
+
+definitions:
+  Response:
+    properties:
+      status:
+        type: string
+      message:
+        type: object
+        properties:
+          numFound:
+            type: integer
+          recordData:
+            type: array
+            items:
+              type: object
+              properties:
+                key:
+                  type: string
+                slug:
+                  type: string
+                title:
+                  type: string
+                description:
+                  type: string
+                identifiers:
+                  type: array
+                  items:
+                    type: string
+                identifier_type:
+                  type: object
+                  properties:
+                    purl:
+                      type: string
+                    nhmrc:
+                      type: string
+                relations:
+                  type: object
+                  properties:
+                    isFundedBy:
+                      type: string
+                    isManagedBy:
+                      type: string
+                    isParticipantIn:
+                      type: array
+                      items:
+                        type: string
+                    isPrincipalInvestigator:
+                      type: string

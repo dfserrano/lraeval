@@ -1,0 +1,1180 @@
+{
+   "path": "/0000-0001-8419-8779/works",
+   "last-modified-date": "2016-02-13T14:20:42.498Z",
+   "group": [
+      {
+         "last-modified-date": "2015-07-21T15:04:26.285Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "doi",
+               "external-id-value": "http://dx.doi.org/10.7710/2162-3309.1126",
+               "external-id-url": null,
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "12234124",
+            "path": "/0000-0001-8419-8779/work/12234124",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2014-04-01T02:08:23.755Z",
+            "last-modified-date": "2015-07-21T15:04:26.285Z",
+            "source": {
+               "source-orcid": {
+                  "uri": "http://orcid.org/0000-0001-8419-8779",
+                  "path": "0000-0001-8419-8779",
+                  "host": "orcid.org"
+               },
+               "source-name": "Marc L. Greenberg"
+            },
+            "title": {
+               "title": "Bottlenecks in the Open-Access System: Voices from Around the Globe"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "doi",
+                  "external-id-value": "http://dx.doi.org/10.7710/2162-3309.1126",
+                  "external-id-url": null,
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "2014",
+               "month": "03",
+               "day": "31"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:19:03.732Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "0EB70B9D04232DF785257E5C005B66F9",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302602",
+            "path": "/0000-0001-8419-8779/work/22302602",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:15:17.213Z",
+            "last-modified-date": "2016-02-13T14:19:03.732Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "A Circum-Pannonian Word-Prosodic Parallel: Paroxytonic Accent in the South-West Bohemian Dialect"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "0EB70B9D04232DF785257E5C005B66F9",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "2013"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2015-07-17T21:00:31.185Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "doi",
+               "external-id-value": "10.7710/2162-3309.1064",
+               "external-id-url": null,
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "9316850",
+            "path": "/0000-0001-8419-8779/work/9316850",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2013-07-03T15:56:39.202Z",
+            "last-modified-date": "2015-07-17T21:00:31.185Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/0000-0002-3054-1567",
+                  "path": "0000-0002-3054-1567",
+                  "host": "orcid.org"
+               },
+               "source-name": "CrossRef Metadata Search"
+            },
+            "title": {
+               "title": "Open Access and the Author-Pays Problem: Assuring Access for Readers and Authors in a Global Community of Scholars"
+            },
+            "external-ids": {
+               "external-id": [
+                  {
+                     "external-id-type": "doi",
+                     "external-id-value": "10.7710/2162-3309.1064",
+                     "external-id-url": null,
+                     "external-id-relationship": "self"
+                  },
+                  {
+                     "external-id-type": "issn",
+                     "external-id-value": "2162-3309",
+                     "external-id-url": null,
+                     "external-id-relationship": "self"
+                  }
+               ]
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "2013"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2015-07-09T05:51:01.672Z",
+         "work-summary": {
+            "put-code": "4812310",
+            "path": "/0000-0001-8419-8779/work/4812310",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2013-03-04T03:05:33.217Z",
+            "last-modified-date": "2015-07-09T05:51:01.672Z",
+            "source": {
+               "source-orcid": {
+                  "uri": "http://orcid.org/0000-0001-8419-8779",
+                  "path": "0000-0001-8419-8779",
+                  "host": "orcid.org"
+               },
+               "source-name": "Marc L. Greenberg"
+            },
+            "title": {
+               "title": "O jeziku slovanskih prebivalcev med Donavo in Jadranom v srednjem veku (pogled jezikoslovcev)"
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "2012"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:19:10.457Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "C1262DB8327676598525777A0058BE77",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302603",
+            "path": "/0000-0001-8419-8779/work/22302603",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:15:22.943Z",
+            "last-modified-date": "2016-02-13T14:19:10.457Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "PIE Inheritance and Word-Formational Innovation in Slavic Motion Verbs in -i-"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "C1262DB8327676598525777A0058BE77",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "2010"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:19:13.014Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "F8833473DB0182098525768C005B57BE",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302604",
+            "path": "/0000-0001-8419-8779/work/22302604",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:15:27.897Z",
+            "last-modified-date": "2016-02-13T14:19:13.014Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "Prekmurje Grammar as a Source of Slavic Comparative Material"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "F8833473DB0182098525768C005B57BE",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "2009"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2015-07-17T22:32:43.793Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "isbn",
+               "external-id-value": "9783895869655",
+               "external-id-url": null,
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "9565751",
+            "path": "/0000-0001-8419-8779/work/9565751",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2013-08-06T13:17:27.400Z",
+            "last-modified-date": "2015-07-17T22:32:43.793Z",
+            "source": {
+               "source-orcid": {
+                  "uri": "http://orcid.org/0000-0001-8419-8779",
+                  "path": "0000-0001-8419-8779",
+                  "host": "orcid.org"
+               },
+               "source-name": "Marc L. Greenberg"
+            },
+            "title": {
+               "title": "A short Reference Grammar of Slovene"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "isbn",
+                  "external-id-value": "9783895869655",
+                  "external-id-url": null,
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "book",
+            "publication-date": {
+               "year": "2008"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2015-07-17T21:00:30.382Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "doi",
+               "external-id-value": "10.7152/ssj.v29i1.14036",
+               "external-id-url": null,
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "9316834",
+            "path": "/0000-0001-8419-8779/work/9316834",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2013-07-03T15:55:56.983Z",
+            "last-modified-date": "2015-07-17T21:00:30.382Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/0000-0002-3054-1567",
+                  "path": "0000-0002-3054-1567",
+                  "host": "orcid.org"
+               },
+               "source-name": "CrossRef Metadata Search"
+            },
+            "title": {
+               "title": "Francek Mukič. Porabsko knjižnoslovensko-madžarski slovar. Szombathely: Zveza Slovencev na Madžarskem, 2005."
+            },
+            "external-ids": {
+               "external-id": [
+                  {
+                     "external-id-type": "issn",
+                     "external-id-value": "0193-1075",
+                     "external-id-url": null,
+                     "external-id-relationship": "self"
+                  },
+                  {
+                     "external-id-type": "doi",
+                     "external-id-value": "10.7152/ssj.v29i1.14036",
+                     "external-id-url": null,
+                     "external-id-relationship": "self"
+                  }
+               ]
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "2007"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:19:20.793Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "D5B60C0217CD1045852573CB00667400",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302608",
+            "path": "/0000-0001-8419-8779/work/22302608",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:15:40.218Z",
+            "last-modified-date": "2016-02-13T14:19:20.793Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "The Prehistory and Areal Distribution of Slavic *g''lčěti 'Speak'"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "D5B60C0217CD1045852573CB00667400",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "2007"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:19:24.342Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "862E685D770F253D852575D50014072B",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302609",
+            "path": "/0000-0001-8419-8779/work/22302609",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:15:49.855Z",
+            "last-modified-date": "2016-02-13T14:19:24.342Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "Glasovna podoba slovenskega jezika skozi čas/The Slovene Sound System through Time"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "862E685D770F253D852575D50014072B",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "2006"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:19:27.841Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "224BB48CF4497AD68525728900770595",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302610",
+            "path": "/0000-0001-8419-8779/work/22302610",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:15:54.961Z",
+            "last-modified-date": "2016-02-13T14:19:27.841Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "Common Slavic: Progress or Crisis in Its Reconstruction? Recent Archaeological Challenges to Historical Linguistics"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "224BB48CF4497AD68525728900770595",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "2002"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:19:31.356Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "ADC386B8FEAB88B785256D0A0000FC92",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302612",
+            "path": "/0000-0001-8419-8779/work/22302612",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:16:20.476Z",
+            "last-modified-date": "2016-02-13T14:19:31.356Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "Zgodovinsko glasoslovje slovenskega jezika"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "ADC386B8FEAB88B785256D0A0000FC92",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "book",
+            "publication-date": {
+               "year": "2002"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2015-07-24T23:28:40.491Z",
+         "work-summary": {
+            "put-code": "10016517",
+            "path": "/0000-0001-8419-8779/work/10016517",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2013-09-20T23:28:40.475Z",
+            "last-modified-date": "2015-07-24T23:28:40.491Z",
+            "source": {
+               "source-orcid": {
+                  "uri": "http://orcid.org/0000-0001-8419-8779",
+                  "path": "0000-0001-8419-8779",
+                  "host": "orcid.org"
+               },
+               "source-name": "Marc L. Greenberg"
+            },
+            "title": {
+               "title": "’Расцвет и падение’ лениции взрывных в словенском языке",
+               "translated-title": {
+                  "language-code": "ru",
+                  "#text": "Rascvet i padenie lenicii vzryvnyx v slovenskom jazyke"
+               }
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "issn",
+                  "external-id-value": "0373-658X",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "2001"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2015-07-16T21:14:09.364Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "doi",
+               "external-id-value": "10.2307/417166",
+               "external-id-url": null,
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "4812309",
+            "path": "/0000-0001-8419-8779/work/4812309",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2013-03-04T03:05:33.210Z",
+            "last-modified-date": "2015-07-16T21:14:09.364Z",
+            "source": {
+               "source-orcid": {
+                  "uri": "http://orcid.org/0000-0001-8419-8779",
+                  "path": "0000-0001-8419-8779",
+                  "host": "orcid.org"
+               },
+               "source-name": "Marc L. Greenberg"
+            },
+            "title": {
+               "title": "Language and Power in the Creation of the USSR, 1917-1953"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "doi",
+                  "external-id-value": "10.2307/417166",
+                  "external-id-url": null,
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "2000",
+               "month": "09"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:19:42.736Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "6D1F1CB76FAD841885256A560079D1E5",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302611",
+            "path": "/0000-0001-8419-8779/work/22302611",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:16:13.895Z",
+            "last-modified-date": "2016-02-13T14:19:42.736Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "A Historical Phonology of the Slovene Language"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "6D1F1CB76FAD841885256A560079D1E5",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "book",
+            "publication-date": {
+               "year": "2000"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:19:49.506Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "919731B21DA27687852571EF00536E08",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302613",
+            "path": "/0000-0001-8419-8779/work/22302613",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:16:26.807Z",
+            "last-modified-date": "2016-02-13T14:19:49.506Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "Knjiga Južnoslovenskog filologa, posvećena uspomeni na akademika Pavla Ivića"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "919731B21DA27687852571EF00536E08",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "2000"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:19:58.853Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "2516DB37170C20F1852568A3004D1ED8",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302614",
+            "path": "/0000-0001-8419-8779/work/22302614",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:16:35.328Z",
+            "last-modified-date": "2016-02-13T14:19:58.853Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "Različni vzroki za širitev in povratni razvoj glasoslovne spremembe: Rotacizem v južnoslovanskih jezikih"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "2516DB37170C20F1852568A3004D1ED8",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "book",
+            "publication-date": {
+               "year": "1999"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:20:02.191Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "C65B60E68E67E43785256755005673FB",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302620",
+            "path": "/0000-0001-8419-8779/work/22302620",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:16:56.714Z",
+            "last-modified-date": "2016-02-13T14:20:02.191Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "Vatroslav Oblak and Early Innovations in the South Slavic Vocalic Systems"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "C65B60E68E67E43785256755005673FB",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "book",
+            "publication-date": {
+               "year": "1998"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2015-07-07T16:55:45.688Z",
+         "work-summary": {
+            "put-code": "4812307",
+            "path": "/0000-0001-8419-8779/work/4812307",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2013-03-04T03:05:33.195Z",
+            "last-modified-date": "2015-07-07T16:55:45.688Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/0000-0002-5982-8983",
+                  "path": "0000-0002-5982-8983",
+                  "host": "orcid.org"
+               },
+               "source-name": "Scopus to ORCID"
+            },
+            "title": {
+               "title": "Introduction"
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "1997"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:20:12.151Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "DB8D7272A679B82585256AD9004FA8DE",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302619",
+            "path": "/0000-0001-8419-8779/work/22302619",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:16:50.267Z",
+            "last-modified-date": "2016-02-13T14:20:12.151Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "The Vowel System of the Središče Dialect in Prlekija, Slovenia, Based on the Descriptions of Károl Ozvald"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "DB8D7272A679B82585256AD9004FA8DE",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "1996"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2015-07-16T21:14:09.383Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "doi",
+               "external-id-value": "10.2307/416783",
+               "external-id-url": null,
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "4812311",
+            "path": "/0000-0001-8419-8779/work/4812311",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2013-03-04T03:05:33.225Z",
+            "last-modified-date": "2015-07-16T21:14:09.383Z",
+            "source": {
+               "source-orcid": {
+                  "uri": "http://orcid.org/0000-0001-8419-8779",
+                  "path": "0000-0001-8419-8779",
+                  "host": "orcid.org"
+               },
+               "source-name": "Marc L. Greenberg"
+            },
+            "title": {
+               "title": "The Slovene Dialect of Resia: San Giorgio"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "doi",
+                  "external-id-value": "10.2307/416783",
+                  "external-id-url": null,
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "1994",
+               "month": "03"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2015-07-16T21:14:09.347Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "doi",
+               "external-id-value": "10.2307/308482",
+               "external-id-url": null,
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "4812308",
+            "path": "/0000-0001-8419-8779/work/4812308",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2013-03-04T03:05:33.201Z",
+            "last-modified-date": "2015-07-16T21:14:09.347Z",
+            "source": {
+               "source-orcid": {
+                  "uri": "http://orcid.org/0000-0001-8419-8779",
+                  "path": "0000-0001-8419-8779",
+                  "host": "orcid.org"
+               },
+               "source-name": "Marc L. Greenberg"
+            },
+            "title": {
+               "title": "Language Planning in Yugoslavia"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "doi",
+                  "external-id-value": "10.2307/308482",
+                  "external-id-url": null,
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "1993",
+               "month": "12"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2015-07-17T21:00:30.434Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "doi",
+               "external-id-value": "10.7152/ssj.v13i2.3953",
+               "external-id-url": null,
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "9316835",
+            "path": "/0000-0001-8419-8779/work/9316835",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2013-07-03T15:56:05.769Z",
+            "last-modified-date": "2015-07-17T21:00:30.434Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/0000-0002-3054-1567",
+                  "path": "0000-0002-3054-1567",
+                  "host": "orcid.org"
+               },
+               "source-name": "CrossRef Metadata Search"
+            },
+            "title": {
+               "title": "Terence R. Carlton. Introduction to the Phonological History of the Slavic Languages. Columbus: Slavica, 1991."
+            },
+            "external-ids": {
+               "external-id": [
+                  {
+                     "external-id-type": "issn",
+                     "external-id-value": "0193-1075",
+                     "external-id-url": null,
+                     "external-id-relationship": "self"
+                  },
+                  {
+                     "external-id-type": "doi",
+                     "external-id-value": "10.7152/ssj.v13i2.3953",
+                     "external-id-url": null,
+                     "external-id-relationship": "self"
+                  }
+               ]
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "1993"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:20:27.590Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "B77EB1BBCA21986C85256AF70053E24D",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302621",
+            "path": "/0000-0001-8419-8779/work/22302621",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:17:08.387Z",
+            "last-modified-date": "2016-02-13T14:20:27.590Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "Circumflex Advancement in Prekmurje and Beyond"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "B77EB1BBCA21986C85256AF70053E24D",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "1992"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:20:29.466Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "4786F878AAA1176785256B05006E77F1",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302625",
+            "path": "/0000-0001-8419-8779/work/22302625",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:17:44.362Z",
+            "last-modified-date": "2016-02-13T14:20:29.466Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "A Historical Analysis of the Phonology and Accentuation of the Prekmurje Dialect of Slovene"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "4786F878AAA1176785256B05006E77F1",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "1991"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:20:32.157Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "48857A3955E066A985256B09005A6F44",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302623",
+            "path": "/0000-0001-8419-8779/work/22302623",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:17:30.479Z",
+            "last-modified-date": "2016-02-13T14:20:32.157Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "Jer Vocalization in Slovene, Serbo-Croatian and Slovak"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "48857A3955E066A985256B09005A6F44",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "book",
+            "publication-date": {
+               "year": "1989"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:20:34.844Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "EE63ED968CAE8E5A85256B09005A6F27",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302622",
+            "path": "/0000-0001-8419-8779/work/22302622",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:17:21.171Z",
+            "last-modified-date": "2016-02-13T14:20:34.844Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "Ágost Pável's Prekmurje Slovene Grammar"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "EE63ED968CAE8E5A85256B09005A6F27",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "1989"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:20:36.540Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "160D8313B35D76C985256B0A00506341",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302618",
+            "path": "/0000-0001-8419-8779/work/22302618",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:16:45.134Z",
+            "last-modified-date": "2016-02-13T14:20:36.540Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "On the Vocalization of Jers in Slovak"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "160D8313B35D76C985256B0A00506341",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "1988"
+            }
+         }
+      },
+      {
+         "last-modified-date": "2016-02-13T14:20:42.498Z",
+         "external-ids": {
+            "external-id": {
+               "external-id-type": "other-id",
+               "external-id-value": "A185A49BC15ACFC185256B0B00523A03",
+               "external-id-relationship": "self"
+            }
+         },
+         "work-summary": {
+            "put-code": "22302617",
+            "path": "/0000-0001-8419-8779/work/22302617",
+            "visibility": "public",
+            "display-index": "0",
+            "created-date": "2016-02-13T14:16:41.495Z",
+            "last-modified-date": "2016-02-13T14:20:42.498Z",
+            "source": {
+               "source-client-id": {
+                  "uri": "http://orcid.org/client/APP-C2RLHVNFEFIHAT4Q",
+                  "path": "APP-C2RLHVNFEFIHAT4Q",
+                  "host": "orcid.org"
+               },
+               "source-name": "MLA International Bibliography"
+            },
+            "title": {
+               "title": "Prozodične možnosti v slovenskem knjižnem jeziku in slovenskih narečjih"
+            },
+            "external-ids": {
+               "external-id": {
+                  "external-id-type": "other-id",
+                  "external-id-value": "A185A49BC15ACFC185256B0B00523A03",
+                  "external-id-relationship": "self"
+               }
+            },
+            "type": "journal-article",
+            "publication-date": {
+               "year": "1987"
+            }
+         }
+      }
+   ]
+}

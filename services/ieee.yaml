@@ -1,0 +1,178 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: IEEEXplore
+  description: "
+    The Xplore Metadata API provides access to metadata for millions of documents available in the IEEE Xplore Digital Library including IEEE journals, conferences, books / ebooks, courses and standards.
+
+
+    **The API that was used as the base of this description was recently changed.**"
+
+host: localhost
+basePath: /lraeval/api/ieee
+schemes:
+  - http
+produces:
+  - application/json
+externalDocs:
+  description: Documentation of the original data source
+  url: https://developer.ieee.org/io-docs
+
+paths:
+  /ipsSearch.json:
+    get:
+      summary: Search articles
+      description: Gets articles matching the fields and terms.
+        At least **one** parameter must be specified
+      tags:
+        - Search
+      parameters:
+        # Author
+        - name: au
+          in: query
+          description: Terms to search for in Author
+          required: false
+          type: string
+
+        # Title
+        - name: ti
+          in: query
+          description: Terms to search for in Document Title
+          required: false
+          type: string
+
+        # Abstract
+        - name: ab
+          in: query
+          description: Terms to search for in Abstract
+          required: false
+          type: string
+
+        # DOI
+        - name: doi
+          in: query
+          description: Terms to search for in DOI
+          required: false
+          type: string
+
+        # Affiliations
+        - name: cs
+          in: query
+          description: Terms to search for in Affiliations
+          required: false
+          type: string
+
+        # Publication title
+        - name: jn
+          in: query
+          description: Terms to search for in Publication Title
+          required: false
+          type: string
+
+        # ISBN
+        - name: isbn
+          in: query
+          description: Terms to search for in isbn
+          required: false
+          type: string
+
+        # ISSN
+        - name: issn
+          in: query
+          description: Terms to search for in issn
+          required: false
+          type: string
+
+        # Publication year
+        - name: yr
+          in: query
+          description: Terms to search for in Publication Year
+          required: false
+          type: string
+
+
+      responses:
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/Response'
+
+
+definitions:
+  Response:
+    properties:
+      totalfound:
+        type: integer
+        format: int64
+      totalsearched:
+        type: integer
+        format: int64
+      document:
+        type: array
+        items:
+          $ref: '#/definitions/Article'
+  Article:
+    properties:
+      rank:
+        type: string
+      title:
+        type: string
+      authors:
+        type: string
+      affiliations:
+        type: string
+      controlledterms:
+        type: array
+        items:
+          type: string
+      thesaurusterms:
+        type: array
+        items:
+          type: string
+      pubtitle:
+        type: string
+      punumber:
+        type: string
+      pubtype:
+        type: string
+      publisher:
+        type: string
+      py:
+        type: string
+      spage:
+        type: string
+      epage:
+        type: string
+      abstract:
+        type: string
+      issn:
+        type: string
+      isbn:
+        type: string
+      htmlFlag:
+        type: string
+      arnumber:
+        type: string
+      doi:
+        type: string
+      publicationId:
+        type: string
+      partnum:
+        type: string
+      mdurl:
+        type: string
+      pdf:
+        type: string
+  Error:
+    required:
+      - code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string

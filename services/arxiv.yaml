@@ -1,0 +1,160 @@
+swagger: '2.0'
+
+info:
+  version: "1.0.0"
+  title: arXiv
+  description: "
+    The goal of the API is to allow application developers access to all of the arXiv data, search and linking facilities with an easy-to-use programmatic interface.
+
+
+    The primary interface to the arXiv has been human-oriented html web pages. The purpose of the arXiv API is to allow programmatic access to the arXiv's e-print content and metadata. The goal of the interface is to facilitate new and creative use of the the vast body of material on the arXiv by providing a low barrier to entry for application developers."
+
+host: localhost
+basePath: /lraeval/api/arxiv
+schemes:
+  - http
+produces:
+  - application/json
+externalDocs:
+  description: Documentation of the original data source
+  url: https://arxiv.org/help/api/user-manual
+
+paths:
+  /query.json:
+    get:
+      summary: Search articles
+      description: Return results for each article that matches the search query.
+      tags:
+        - Search
+      parameters:
+        # Search Query
+        - name: search_query
+          in: query
+          description: "
+            The search_query takes a string that represents a search query used to find articles.
+            To search one of these fields, we simply prepend the field prefix followed by a colon to our search term.
+            The following list the field prefixes for all the fields that can be searched: ti (Title), au (Author), abs (Abstract), co (Comment), jr (Journal reference), cat (Subject category, rn (Report number), all (All of the above)
+
+
+            Example: query?search_query=au:del_maestro+AND+ti:checkerboard
+            "
+          required: false
+          type: string
+
+        # Article id
+        - name: id_list
+          in: query
+          description: Comma-delimited list of arXiv id's
+          required: false
+          type: string
+
+
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/Response'
+
+
+definitions:
+  Response:
+    properties:
+      link:
+        description: A url that will retrieve this feed via a GET request
+        type: object
+        properties:
+          href:
+            type: string
+          rel:
+            type: string
+      title:
+        description: The title of the feed containing a canonicalized query string
+        type: string
+      id:
+        description: A unique id assigned to this query
+        type: string
+      update:
+        description: The last time search results for this query were updated. Set to midnight of the current day
+        type: string
+        format: date-time
+      totalResults:
+        description: The total number of search results for this query
+        type: integer
+        format: int64
+      startIndex:
+        description: The 0-based index of the first returned result in the total results list
+        type: integer
+        format: int64
+      itemsPerPage:
+        description: The number of results returned
+        type: integer
+        format: int64
+      entry:
+        type: array
+        items:
+          $ref: '#/definitions/Article'
+
+  Article:
+    properties:
+      id:
+        description: A url that resolves to the abstract page for that article
+        type: string
+      updated:
+        description: The date that the retrieved version of the article was submitted. Same as published if the retrieved version is version 1
+        type: string
+        format: date-time
+      published:
+        description: The date that version 1 of the article was submitted
+        type: string
+        format: date-time
+      title:
+        description: The title of the article
+        type: string
+      summary:
+        description: The article abstract
+        type: string
+      author:
+        description: One for each author. Has child element name containing the author name
+        type: array
+        items:
+          $ref: '#/definitions/Author'
+      doi:
+        description: A url for the resolved DOI to an external resource if present
+        type: string
+      link:
+        description: Can be up to 3 given url's associated with this article
+        type: array
+        items:
+          $ref: '#/definitions/Link'
+      comment:
+        description: The authors comment if present
+        type: string
+      primary_category:
+        $ref: '#/definitions/Category'
+      category:
+        description: The arXiv or ACM or MSC category for an article if present
+        type: array
+        items:
+          $ref: '#/definitions/Category'
+
+  Author:
+    properties:
+      name:
+        description: Each <author> element has a <name> sub-element which contains the name of the author
+        type: string
+
+  Link:
+    properties:
+      title:
+        type: string
+      href:
+        type: string
+      rel:
+        type: string
+
+  Category:
+    properties:
+      term:
+        type: string
+      scheme:
+        type: string

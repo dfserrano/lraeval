@@ -1,0 +1,42 @@
+{
+   "path": "/0000-0001-6386-4533/researcher-urls",
+   "last-modified-date": "2017-02-23T20:38:27.594Z",
+   "researcher-url": [
+      {
+         "put-code": "1062868",
+         "visibility": "public",
+         "path": "/0000-0001-6386-4533/researcher-urls/1062868",
+         "display-index": "2",
+         "created-date": "2017-02-23T20:38:27.586Z",
+         "last-modified-date": "2017-02-23T20:38:27.586Z",
+         "source": {
+            "source-orcid": {
+               "uri": "http://orcid.org/0000-0001-6386-4533",
+               "path": "0000-0001-6386-4533",
+               "host": "orcid.org"
+            },
+            "source-name": "Diego Serrano"
+         },
+         "url-name": "Blog",
+         "url": "http://dfserrano.wordpress.com"
+      },
+      {
+         "put-code": "1062869",
+         "visibility": "public",
+         "path": "/0000-0001-6386-4533/researcher-urls/1062869",
+         "display-index": "1",
+         "created-date": "2017-02-23T20:38:27.594Z",
+         "last-modified-date": "2017-02-23T20:38:27.594Z",
+         "source": {
+            "source-orcid": {
+               "uri": "http://orcid.org/0000-0001-6386-4533",
+               "path": "0000-0001-6386-4533",
+               "host": "orcid.org"
+            },
+            "source-name": "Diego Serrano"
+         },
+         "url-name": "GitHub",
+         "url": "http://github.com/dfserrano"
+      }
+   ]
+}

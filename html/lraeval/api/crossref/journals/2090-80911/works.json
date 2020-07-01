@@ -1,0 +1,3180 @@
+{
+  "status": "ok",
+  "message-type": "work-list",
+  "message-version": "1.0.0",
+  "message": {
+    "facets": {},
+    "total-results": 91,
+    "items": [
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              2
+            ]
+          ],
+          "date-time": "2016-11-02T18:51:01Z",
+          "timestamp": 1478112661103
+        },
+        "reference-count": 63,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/3.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2013,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2013-01-01T00:00:00Z",
+              "timestamp": 1356998400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "abstract": "<jats:p>Despite advances in understanding cancer at the molecular level, timely and effective translation to clinical application of novel therapeutics in human cancer patients is lacking. Cancer drug failure is often a result of toxicity or inefficacy not predicted by preclinical models, emphasizing the need for alternative animal tumor models with improved biologic relevancy. Companion animals (dogs and cats) provide an opportunity to capitalize on an underutilized and biologically relevant translational research model which allows spontaneous disease modeling of human cancer. Head and neck squamous cell carcinoma (HNSCC) is a common cancer with a poor prognosis and limited clinical advancements in recent years. One potential novel spontaneous animal tumor model is feline oral squamous cell carcinoma (FOSCC). FOSCC and HNSCC share similar etiopathogenesis (tobacco and papillomavirus exposure) and molecular markers (EGFR, VEGF, and p53). Both human and feline SCCs share similar tumor biology, clinical outcome, treatment, and prognosis. Future clinical trials utilizing FOSCC as a tumor model may facilitate translation of preclinical cancer research for human cancer patients.</jats:p>",
+        "DOI": "10.1155/2013/502197",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2013,
+              7,
+              16
+            ]
+          ],
+          "date-time": "2013-07-16T21:03:31Z",
+          "timestamp": 1374008611000
+        },
+        "page": "1-7",
+        "source": "CrossRef",
+        "title": [
+          "A Naturally Occurring Feline Model of Head and Neck Squamous Cell Carcinoma"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2013",
+        "author": [
+          {
+            "ORCID": "http://orcid.org/0000-0003-2847-6572",
+            "given": "Jackie M.",
+            "family": "Wypij",
+            "affiliation": [
+              {
+                "name": "Department of Veterinary Clinical Medicine, University of Illinois at Urbana-Champaign, Hazelwood Drive, Urbana, IL 61802, USA"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/502197.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/502197.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              30
+            ]
+          ],
+          "date-time": "2016-07-30T14:34:42Z",
+          "timestamp": 1469889282000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "alternative-id": [
+          "502197",
+          "502197"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2013/502197",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 63
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              2
+            ]
+          ],
+          "date-time": "2016-11-02T18:51:51Z",
+          "timestamp": 1478112711994
+        },
+        "reference-count": 22,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/3.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2013,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2013-01-01T00:00:00Z",
+              "timestamp": 1356998400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "funder": [
+          {
+            "name": "Vice-Chancellery of International Branch of Shiraz University of Medical Sciences",
+            "award": [
+              "8591019"
+            ]
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "abstract": "<jats:p> Neoangiogenesis is essential for tumor development, invasion, and dissemination. The most potent of the cytokines associated with angiogenesis is vascular endothelial growth factor (VEGF). The aim of the present study was to determine VEGF serum level in patients with salivary gland tumor. Using an ELISA kit, the circulating levels of VEGF in sera from 58 patients with salivary gland tumor and 30 healthy controls were assessed. Mean VEGF levels in sera of patients with salivary gland tumors (574.9 ± 414.3) were significantly higher than those in controls (263.9 ± 310.0) ( <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M1\"> <mml:mi>P</mml:mi> <mml:mo>=</mml:mo> <mml:mn>0.009</mml:mn> </mml:math> ). Within the salivary gland tumor group, mean serum VEGF concentration in malignant tumors ( <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M2\"> <mml:mi>n</mml:mi> <mml:mo>=</mml:mo> <mml:mn>27</mml:mn> </mml:math> ) was 727.3 ± 441.8 pg/mL, and that in benign tumors ( <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M3\"> <mml:mi>n</mml:mi> <mml:mo>=</mml:mo> <mml:mn>31</mml:mn> </mml:math> ) was 442.2 ± 343.3 pg/mL. Mean serum VEGF concentration was significantly higher in malignant tumors than in benign tumors ( <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M4\"> <mml:mi>P</mml:mi> <mml:mo>=</mml:mo> <mml:mn>0.008</mml:mn> </mml:math> ) and was higher in benign tumors than in controls ( <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M5\"> <mml:mi>P</mml:mi> <mml:mo>=</mml:mo> <mml:mn>0.03</mml:mn> </mml:math> ). The data in the present study clearly show that VEGF level was consistently upregulated in benign and malignant tumors in comparison to healthy controls. However, the role of VEGF as a prognostic factor in salivary gland tumor and its application in antiangiogenic therapy require further clinical research. </jats:p>",
+        "DOI": "10.1155/2013/740582",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2013,
+              7,
+              24
+            ]
+          ],
+          "date-time": "2013-07-24T23:33:58Z",
+          "timestamp": 1374708838000
+        },
+        "page": "1-4",
+        "source": "CrossRef",
+        "title": [
+          "Upregulation of Serum Vascular Endothelial Growth Factor in Patients with Salivary Gland Tumor"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2013",
+        "author": [
+          {
+            "given": "Azadeh",
+            "family": "Andisheh Tadbir",
+            "affiliation": [
+              {
+                "name": "Department of Oral and Maxillofacial Pathology, School of Dentistry, Shiraz University of Medical Sciences, Ghom Abad, Ghasrodasht Avenue, Shiraz 71956-15878, Iran"
+              }
+            ]
+          },
+          {
+            "ORCID": "http://orcid.org/0000-0002-8303-6126",
+            "given": "Bijan",
+            "family": "Khademi",
+            "affiliation": [
+              {
+                "name": "Department of Otolaryngology, Khalili Hospital, Shiraz Institute for Cancer Research, Shiraz University of Medical Sciences, Shiraz 71348-45794, Iran"
+              }
+            ]
+          },
+          {
+            "ORCID": "http://orcid.org/0000-0003-1581-0471",
+            "given": "Mahyar",
+            "family": "Malekzadeh",
+            "affiliation": [
+              {
+                "name": "Shiraz Institute for Cancer Research, Shiraz University of Medical Sciences, Shiraz 71348-45794, Iran"
+              }
+            ]
+          },
+          {
+            "given": "Maryam",
+            "family": "Mardani",
+            "affiliation": [
+              {
+                "name": "Department of Oral Medicine, School of Dentistry, Shiraz University of Medical Sciences, Ghom Abad, Ghasrodasht Avenue, Shiraz 71956-15878, Iran"
+              }
+            ]
+          },
+          {
+            "ORCID": "http://orcid.org/0000-0003-2837-2327",
+            "given": "Bahar",
+            "family": "Khademi",
+            "affiliation": [
+              {
+                "name": "School of Dentistry, Shiraz University of Medical Sciences (International Branch), Azadi Square, Jahad Sazandegi Street, Shiraz 71447-16699, Iran"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/740582.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/740582.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              30
+            ]
+          ],
+          "date-time": "2016-07-30T17:18:19Z",
+          "timestamp": 1469899099000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "alternative-id": [
+          "740582",
+          "740582"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2013/740582",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 22
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              2
+            ]
+          ],
+          "date-time": "2016-11-02T18:59:51Z",
+          "timestamp": 1478113191871
+        },
+        "reference-count": 13,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/3.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2013,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2013-01-01T00:00:00Z",
+              "timestamp": 1356998400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "abstract": "<jats:p> <jats:italic>Background</jats:italic> . Diverticular disease of the appendix (DDA) is a rare disease and it has been shown to be associated with locoregional neoplasms. This study was conducted to characterize clinicopathological features and to investigate its association with appendiceal neoplasms. <jats:italic>Methods</jats:italic> . We searched the records of the Department of Pathology at Farwaniya Hospital for cases of diverticular disease of the appendix between 2003 and 2011. Histological slides and patient charts were reviewed for relevant information. Consecutive cases of acute appendicitis were selected as a control group. <jats:italic>Results</jats:italic> . We identified 25 cases of DDA, 24 of which occurred in men. Mean age of DDA patients was 35 ± 10.1 years and was significantly greater than that of appendicitis patients ( <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M1\"> <mml:mrow> <mml:mi>P</mml:mi> <mml:mo>=</mml:mo> <mml:mn>0.027</mml:mn> </mml:mrow> </mml:math> ). The mean temperature of cases (37.9°) was significantly higher ( <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M2\"> <mml:mrow> <mml:mi>P</mml:mi> <mml:mo>=</mml:mo> <mml:mn>0.012</mml:mn> </mml:mrow> </mml:math> ) than that of the controls (37.3°). The cases had lower white blood cell (WBC) counts compared to controls (13.6 versus 16.7, <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M3\"> <mml:mrow> <mml:mi>P</mml:mi> <mml:mo>=</mml:mo> <mml:mn>0.04</mml:mn> </mml:mrow> </mml:math> ). Pathological diagnosis identified 4 cases of diverticulosis, 5 cases of diverticulitis, 6 cases of diverticulosis with acute appendicitis, and 10 cases of diverticulitis and appendicitis. None of the cases was associated with any type of neoplasm. <jats:italic>Conclusions</jats:italic> . DDA is a rare disease, and clinicians and radiologists should be aware of it. Male sex and adult age seem to be risk factors associated with DDA. The disease may not have any direct association with any neoplasm. </jats:p>",
+        "DOI": "10.1155/2013/404308",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2013,
+              10,
+              2
+            ]
+          ],
+          "date-time": "2013-10-02T21:07:20Z",
+          "timestamp": 1380748040000
+        },
+        "page": "1-5",
+        "source": "CrossRef",
+        "title": [
+          "Clinicopathological Study of 25 Cases of Diverticular Disease of the Appendix: Experience from Farwaniya Hospital"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2013",
+        "author": [
+          {
+            "ORCID": "http://orcid.org/0000-0001-8371-812X",
+            "given": "Nabeel",
+            "family": "Al-Brahim",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, Farwaniya Hospital, P.O. Box 3313, 22034 Salmiya, Kuwait"
+              }
+            ]
+          },
+          {
+            "given": "Ibrahim",
+            "family": "Al-Kandari",
+            "affiliation": [
+              {
+                "name": "Department of Surgery, Farwaniya Hospital, 81004 Sabah Al-Naser, Kuwait"
+              }
+            ]
+          },
+          {
+            "given": "Musaad",
+            "family": "Munahai",
+            "affiliation": [
+              {
+                "name": "Department of Surgery, Farwaniya Hospital, 81004 Sabah Al-Naser, Kuwait"
+              }
+            ]
+          },
+          {
+            "given": "Prem",
+            "family": "Sharma",
+            "affiliation": [
+              {
+                "name": "Faculty of Medicine, Kuwait University, P.O. Box 24923, 13110 Safat, Kuwait"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/404308.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/404308.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              30
+            ]
+          ],
+          "date-time": "2016-07-30T13:50:45Z",
+          "timestamp": 1469886645000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "alternative-id": [
+          "404308",
+          "404308"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2013/404308",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 13
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              2
+            ]
+          ],
+          "date-time": "2016-11-02T18:58:48Z",
+          "timestamp": 1478113128237
+        },
+        "reference-count": 18,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/3.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2013,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2013-01-01T00:00:00Z",
+              "timestamp": 1356998400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "abstract": "<jats:p> <jats:italic>Objective</jats:italic> . To study the correlation of cytomorphological Robinson’s grading for breast cancers with a modified Bloom-Richardson histopathological grading. <jats:italic>Materials and Methods</jats:italic> . One hundred sixteen cytologically malignant breast tumour cases were included in this study and correlated with paraffin embedded sections. Breast lumps were varied from less than 1 cm to 11 cm in greatest dimension. FNA was performed from different sites of the breast lump, and smears were stained with Giemsa and H&amp;E stain and evaluated for cytological grading according to Robinson’s grading system. Paraffin embedded tissue sections were stained with hematoxylin and eosin stain and graded according to modified Bloom-Richardson grading system. Comparison between these two grading systems was done. <jats:italic>Results</jats:italic> . Cytologically grade I, grade II, and grade III cases were 13.8%, 64.65%, and 21.55%, respectively. Histologically 25%, 54.31%, and 20.69% cases were grade I, grade II, and grade III, respectively. Concordance rate between cytology and histology of grade I, grade II, and grade III tumors was 75%, 70.67%, and 60% respectively. The absolute concordance rate was 68.97%. <jats:italic>Conclusion</jats:italic> . In the era of multiple treatment modalities and neoadjuvant therapy, cytological grading can be used as a prognostic factor for better management of patients. </jats:p>",
+        "DOI": "10.1155/2013/146542",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2013,
+              9,
+              25
+            ]
+          ],
+          "date-time": "2013-09-25T22:34:11Z",
+          "timestamp": 1380148451000
+        },
+        "page": "1-5",
+        "source": "CrossRef",
+        "title": [
+          "Comparative Study of Cytomorphological Robinson’s Grading for Breast Carcinoma with Modified Bloom-Richardson Histopathological Grading"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2013",
+        "author": [
+          {
+            "given": "Neelam",
+            "family": "Sood",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, D.D.U. Hospital, Harinagar, New Delhi 110066, India"
+              }
+            ]
+          },
+          {
+            "given": "Jitendra Singh",
+            "family": "Nigam",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, D.D.U. Hospital, Harinagar, New Delhi 110066, India"
+              }
+            ]
+          },
+          {
+            "given": "Poonam",
+            "family": "Yadav",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, D.D.U. Hospital, Harinagar, New Delhi 110066, India"
+              }
+            ]
+          },
+          {
+            "given": "Shivani",
+            "family": "Rewri",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, D.D.U. Hospital, Harinagar, New Delhi 110066, India"
+              }
+            ]
+          },
+          {
+            "given": "Ankit",
+            "family": "Sharma",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, D.D.U. Hospital, Harinagar, New Delhi 110066, India"
+              }
+            ]
+          },
+          {
+            "given": "Anita",
+            "family": "Omhare",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, D.D.U. Hospital, Harinagar, New Delhi 110066, India"
+              }
+            ]
+          },
+          {
+            "given": "Jaya",
+            "family": "Malhotra",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, D.D.U. Hospital, Harinagar, New Delhi 110066, India"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/146542.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/146542.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              30
+            ]
+          ],
+          "date-time": "2016-07-30T10:21:37Z",
+          "timestamp": 1469874097000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "alternative-id": [
+          "146542",
+          "146542"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2013/146542",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 18
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              2
+            ]
+          ],
+          "date-time": "2016-11-02T19:04:53Z",
+          "timestamp": 1478113493371
+        },
+        "reference-count": 144,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/3.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2013,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2013-01-01T00:00:00Z",
+              "timestamp": 1356998400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "abstract": "<jats:p>It is well known that glomerular podocyte injury and loss are present in numerous nephropathies and that the pathophysiologic consecution of disease hinges upon the fate of the podocyte. While multiple factors play a hand in glomerulopathy progression, basic logic lends that if one monitors the podocyte’s status, that may reflect the status of disease. Recent investigations have focused on what one can elucidate from the noninvasive collection of urine, and have proven that certain, specific biomarkers of podocytes can be readily identified via varying techniques. This paper has brought together all described urinary biomarkers of podocyte injury and is made to provide a concise summary of their utility and testing in laboratory and clinical theatres. While promising in the potential that they hold as tools for clinicians and investigators, the described biomarkers require further comprehensive vetting in the form of larger clinical trials and studies that would give their value true weight. These urinary biomarkers are put forth as novel indicators of glomerular disease presence, disease progression, and therapeutic efficacy that in some cases may be more advantageous than the established parameters/measures currently used in practice.</jats:p>",
+        "DOI": "10.1155/2013/782395",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2013,
+              11,
+              13
+            ]
+          ],
+          "date-time": "2013-11-13T21:22:18Z",
+          "timestamp": 1384377738000
+        },
+        "page": "1-18",
+        "source": "CrossRef",
+        "title": [
+          "A Compendium of Urinary Biomarkers Indicative of Glomerular Podocytopathy"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2013",
+        "author": [
+          {
+            "ORCID": "http://orcid.org/0000-0002-7938-1816",
+            "given": "Miroslav",
+            "family": "Sekulic",
+            "affiliation": [
+              {
+                "name": "Department of Laboratory Medicine and Pathology, University of Minnesota, 420 Delaware Street SE, MMC 609 Mayo D185, Minneapolis, MN 55455, USA"
+              },
+              {
+                "name": "Division of Nephrology, Department of Medicine, Harvard Medical School, Massachusetts General Hospital, 149 13th Street, Boston, MA 02129, USA"
+              }
+            ]
+          },
+          {
+            "ORCID": "http://orcid.org/0000-0001-5971-7645",
+            "given": "Simona",
+            "family": "Pichler Sekulic",
+            "affiliation": [
+              {
+                "name": "University of Belgrade School of Medicine, Dr. Subotica 8, 11000 Belgrade, Serbia"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/782395.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/782395.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              30
+            ]
+          ],
+          "date-time": "2016-07-30T18:00:54Z",
+          "timestamp": 1469901654000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "alternative-id": [
+          "782395",
+          "782395"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2013/782395",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 144
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              2
+            ]
+          ],
+          "date-time": "2016-11-02T19:12:32Z",
+          "timestamp": 1478113952469
+        },
+        "reference-count": 22,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/3.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2013,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2013-01-01T00:00:00Z",
+              "timestamp": 1356998400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "abstract": "<jats:p> <jats:italic>Objectives</jats:italic> . The utility of examining specimens from colorectal biopsies of polyps for nonneoplastic diseases is currently unknown. Our objectives were to characterize such additional diagnoses that could be rendered. <jats:italic>Methods</jats:italic> . We retrospectively and prospectively reviewed specimens from endoscopic biopsies of colorectal polyps obtained during routine screening or surveillance. <jats:italic>Results</jats:italic> . 17 of 168 specimens (10.1%) contained additional diagnoses, including schistosomiasis, eosinophilic colitis, intestinal spirochetosis, melanosis coli, and other entities. These findings were easily overlooked because they often affected mucosa that was spared by the polyps or were often evident only at high magnification. Schistosomiasis, eosinophilic colitis, and intestinal spirochetosis were clinically occult. <jats:italic>Conclusions</jats:italic> . Specimens from biopsies of colorectal polyps often harbor other diagnoses, in addition to polyps, and can be simultaneously screened for polyps and examined for nonneoplastic diseases. Detection of other diagnoses in addition to polyps requires awareness, examination at high magnification, and examination of areas spared by the polyps. </jats:p>",
+        "DOI": "10.1155/2013/570526",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2013,
+              12,
+              24
+            ]
+          ],
+          "date-time": "2013-12-24T21:01:07Z",
+          "timestamp": 1387918867000
+        },
+        "page": "1-6",
+        "source": "CrossRef",
+        "title": [
+          "Specimens from Biopsies of Colorectal Polyps Often Harbor Additional Diagnoses"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2013",
+        "author": [
+          {
+            "ORCID": "http://orcid.org/0000-0003-3611-626X",
+            "given": "Shefali",
+            "family": "Chopra",
+            "affiliation": [
+              {
+                "name": "Department of Pathology and Laboratory Medicine, University of California Irvine School of Medicine, Irvine, CA 92868, USA"
+              }
+            ]
+          },
+          {
+            "ORCID": "http://orcid.org/0000-0002-0565-4076",
+            "given": "Mark Li-cheng",
+            "family": "Wu",
+            "affiliation": [
+              {
+                "name": "Department of Pathology and Laboratory Medicine, University of California Irvine School of Medicine, Irvine, CA 92868, USA"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/570526.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/570526.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              30
+            ]
+          ],
+          "date-time": "2016-07-30T17:56:30Z",
+          "timestamp": 1469901390000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "alternative-id": [
+          "570526",
+          "570526"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2013/570526",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 22
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              2
+            ]
+          ],
+          "date-time": "2016-11-02T19:13:11Z",
+          "timestamp": 1478113991243
+        },
+        "reference-count": 15,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/3.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2013,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2013-01-01T00:00:00Z",
+              "timestamp": 1356998400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "abstract": "<jats:p> <jats:italic>Objective</jats:italic> . To assess the level of haemoglobin A <jats:sub>2</jats:sub> in HIV patients on antiretroviral therapy (ART) including zidovudine with untreated HIV patients. <jats:italic>Material and Methods</jats:italic> . The study was a case control study. A total of 185 patients were included in the study; the case group included 125 HIV patients who were on antiretroviral therapy (ART) including zidovudine and 60 were in the control group who were not receiving ART. The high-performance liquid chromatography (HPLC) was done and hemoglobin A <jats:sub>2</jats:sub> level was observed; value more than 3.5% was considered significant. The Hb A <jats:sub>2</jats:sub> percentages of HIV patients were compared with those of control using an unpaired <jats:italic>t</jats:italic> -test. Results. The mean of Hb A <jats:sub>2</jats:sub> in case group was 3.462% (SD 0.675) and in control group it was 2.815% (SD0.246). The higher Hb A <jats:sub>2</jats:sub> value was seen in significant number of treated patients than control group ( <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M2\"> <mml:mi>P</mml:mi> <mml:mo>&lt;</mml:mo> <mml:mn>0.0001</mml:mn> </mml:math> ). Conclusion. The clinicians, pathologists, haematologists, and genetic counsellors should be aware of effects of nutritional anaemia and ART on Hb A <jats:sub>2</jats:sub> to reduce the chances of misdiagnosis of <jats:italic>β</jats:italic> -thalassaemia especially in developing countries and for centres for antenatal screening. </jats:p>",
+        "DOI": "10.1155/2013/828214",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2013,
+              12,
+              26
+            ]
+          ],
+          "date-time": "2013-12-26T21:01:25Z",
+          "timestamp": 1388091685000
+        },
+        "page": "1-3",
+        "source": "CrossRef",
+        "title": [
+          " A Comparison of Hemoglobin     A   2     Levels in Untreated and Treated Groups of HIV Patients on ART Including Zidovudine "
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2013",
+        "author": [
+          {
+            "given": "Jitendra Singh",
+            "family": "Nigam",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, D.D.U. Hospital, Hari Nagar, New Delhi 110066, India"
+              }
+            ]
+          },
+          {
+            "given": "Jyotsna Naresh",
+            "family": "Bharti",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, Maulana Azad Medical College, New Delhi 110002, India"
+              }
+            ]
+          },
+          {
+            "given": "Dinker",
+            "family": "Kumar",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, D.D.U. Hospital, Hari Nagar, New Delhi 110066, India"
+              }
+            ]
+          },
+          {
+            "given": "Ankit",
+            "family": "Sharma",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, D.D.U. Hospital, Hari Nagar, New Delhi 110066, India"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/828214.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/828214.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              30
+            ]
+          ],
+          "date-time": "2016-07-30T17:08:55Z",
+          "timestamp": 1469898535000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "alternative-id": [
+          "828214",
+          "828214"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2013/828214",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 15
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              2
+            ]
+          ],
+          "date-time": "2016-11-02T19:08:52Z",
+          "timestamp": 1478113732065
+        },
+        "reference-count": 97,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/3.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2013,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2013-01-01T00:00:00Z",
+              "timestamp": 1356998400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "abstract": "<jats:p> Two recent epidemiological investigations in children exposed to valproic acid (VPA) treatment <jats:italic>in utero</jats:italic> have reported a significant risk associated with neurodevelopmental disorders and autism spectrum disorder (ASD) in particular. Parallel to this work, there is a growing body of animal research literature using VPA as an animal model of ASD. In this focused review we first summarize the epidemiological evidence linking VPA to ASD and then comment on two important neurobiological findings linking VPA to ASD clinicopathology, namely, accelerated or early brain overgrowth and hyperexcitable networks. Improving our understanding of how the drug VPA can alter early development of neurological systems will ultimately improve our understanding of ASD. </jats:p>",
+        "DOI": "10.1155/2013/712758",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2013,
+              12,
+              8
+            ]
+          ],
+          "date-time": "2013-12-08T21:01:47Z",
+          "timestamp": 1386536507000
+        },
+        "page": "1-8",
+        "source": "CrossRef",
+        "title": [
+          "What We Have Learned about Autism Spectrum Disorder from Valproic Acid"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2013",
+        "author": [
+          {
+            "ORCID": "http://orcid.org/0000-0001-6118-813X",
+            "given": "Taylor",
+            "family": "Chomiak",
+            "affiliation": [
+              {
+                "name": "Department of Clinical Neurosciences, Hotchkiss Brain Institute, Faculty of Medicine, University of Calgary, 3280 Hospital Drive NW, Calgary, AB, Canada T2N 4N1"
+              }
+            ]
+          },
+          {
+            "ORCID": "http://orcid.org/0000-0001-8009-215X",
+            "given": "Nathanael",
+            "family": "Turner",
+            "affiliation": [
+              {
+                "name": "Department of Clinical Neurosciences, Hotchkiss Brain Institute, Faculty of Medicine, University of Calgary, 3280 Hospital Drive NW, Calgary, AB, Canada T2N 4N1"
+              }
+            ]
+          },
+          {
+            "given": "Bin",
+            "family": "Hu",
+            "affiliation": [
+              {
+                "name": "Department of Clinical Neurosciences, Hotchkiss Brain Institute, Faculty of Medicine, University of Calgary, 3280 Hospital Drive NW, Calgary, AB, Canada T2N 4N1"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/712758.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/712758.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              30
+            ]
+          ],
+          "date-time": "2016-07-30T16:03:34Z",
+          "timestamp": 1469894614000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "alternative-id": [
+          "712758",
+          "712758"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2013/712758",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 97
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              2
+            ]
+          ],
+          "date-time": "2016-11-02T19:10:52Z",
+          "timestamp": 1478113852058
+        },
+        "reference-count": 17,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/3.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2013,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2013-01-01T00:00:00Z",
+              "timestamp": 1356998400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "abstract": "<jats:p> <jats:italic>Background</jats:italic> . Breast lumps have varied pathology, and there are different techniques to prove the diagnosis. The aim of the present study is to analyze the role of fine needle aspiration cytology (FNAC) of the breast lesions at our center. <jats:italic>Methods</jats:italic> . We had retrospectively analysed 854 patients who underwent FNAC for primary breast lumps and 190 patients who underwent FNAC for an axillary lymph node in the year 2010. <jats:italic>Results</jats:italic> . Of 854 patients, histological correlation was available in 723 patients. The analysis was done for 812 patients as medical records were not available for 42 patients. FNAC was false negative in seven cases; 2 cases of phyllodes were reported as fibroadenoma, and 5 cases of carcinoma were diagnosed as atypical hyperplasia. The sensitivity, specificity, and false negative value of FNAC in diagnosing breast lumps were 99% (715/723), 100%, and 1%, respectively. Of 190 patients for whom FNAC was performed for axilla, 170 had proven to have axillary lymph node metastases, and the rest had reactive hyperplasia or inflammatory cells. <jats:italic>Conclusions</jats:italic> . FNAC is rapid, accurate, outpatient based, and less complicated procedure and helps in diagnosis of breast cancer, benign diseases, and axillary involvement in experienced hands with less chance of false results. </jats:p>",
+        "DOI": "10.1155/2013/695024",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2013,
+              12,
+              17
+            ]
+          ],
+          "date-time": "2013-12-17T21:04:06Z",
+          "timestamp": 1387314246000
+        },
+        "page": "1-6",
+        "source": "CrossRef",
+        "title": [
+          "Cytological and Pathological Correlation of FNAC in Assessing Breast Lumps and Axillary Lymph Node Swellings in a Public Sector Hospital in India"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2013",
+        "author": [
+          {
+            "given": "Vasu Reddy",
+            "family": "Challa",
+            "affiliation": [
+              {
+                "name": "Department of Surgical Oncology, Kidwai Memorial Institute of Oncology, Bangalore, Karnataka 560029, India"
+              }
+            ]
+          },
+          {
+            "given": "Basavanna Goud",
+            "family": "Yale Guru",
+            "affiliation": [
+              {
+                "name": "Department of Surgical Oncology, Kidwai Memorial Institute of Oncology, Bangalore, Karnataka 560029, India"
+              }
+            ]
+          },
+          {
+            "given": "Poornima",
+            "family": "Rangappa",
+            "affiliation": [
+              {
+                "name": "Department of Surgical Oncology, Kidwai Memorial Institute of Oncology, Bangalore, Karnataka 560029, India"
+              }
+            ]
+          },
+          {
+            "given": "Vijayalakshmi",
+            "family": "Deshmane",
+            "affiliation": [
+              {
+                "name": "Department of Surgical Oncology, Kidwai Memorial Institute of Oncology, Bangalore, Karnataka 560029, India"
+              }
+            ]
+          },
+          {
+            "given": "devi. M.",
+            "family": "Gayathri",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, Kidwai Memorial Institute of Oncology, Bangalore, Karnataka 560029, India"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/695024.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/695024.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              30
+            ]
+          ],
+          "date-time": "2016-07-30T16:10:50Z",
+          "timestamp": 1469895050000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "alternative-id": [
+          "695024",
+          "695024"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2013/695024",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 17
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              2
+            ]
+          ],
+          "date-time": "2016-11-02T19:11:28Z",
+          "timestamp": 1478113888730
+        },
+        "reference-count": 188,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/3.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2013,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2013-01-01T00:00:00Z",
+              "timestamp": 1356998400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "abstract": "<jats:p>Oral cancer is one of the most common cancers and it constitutes a major health problem particularly in developing countries. Oral squamous cell carcinoma (OSCC) represents the most frequent of all oral neoplasms. Several risk factors have been well characterized to be associated with OSCC with substantial evidences. The etiology of OSCC is complex and involves many factors. The most clearly defined potential factors are smoking and alcohol, which substantially increase the risk of OSCC. However, despite this clear association, a substantial proportion of patients develop OSCC without exposure to them, emphasizing the role of other risk factors such as genetic susceptibility and oncogenic viruses. Some viruses are strongly associated with OSCC while the association of others is less frequent and may depend on cofactors for their carcinogenic effects. Therefore, the exact role of viruses must be evaluated with care in order to improve the diagnosis and treatment of OSCC. Although a viral association within a subset of OSCC has been shown, the molecular and histopathological characteristics of these tumors have yet to be clearly defined.</jats:p>",
+        "DOI": "10.1155/2013/642496",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2013,
+              12,
+              19
+            ]
+          ],
+          "date-time": "2013-12-19T21:03:37Z",
+          "timestamp": 1387487017000
+        },
+        "page": "1-17",
+        "source": "CrossRef",
+        "title": [
+          "Evidences Suggesting Involvement of Viruses in Oral Squamous Cell Carcinoma"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2013",
+        "author": [
+          {
+            "given": "Kanupriya",
+            "family": "Gupta",
+            "affiliation": [
+              {
+                "name": "Department of Oral and Maxillofacial Pathology, Pacific Dental College and Hospital, Udaipur, Rajasthan 313001, India"
+              }
+            ]
+          },
+          {
+            "given": "Rashmi",
+            "family": "Metgud",
+            "affiliation": [
+              {
+                "name": "Department of Oral and Maxillofacial Pathology, Pacific Dental College and Hospital, Udaipur, Rajasthan 313001, India"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/642496.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2013/642496.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              30
+            ]
+          ],
+          "date-time": "2016-07-30T15:25:35Z",
+          "timestamp": 1469892335000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2013
+            ]
+          ]
+        },
+        "alternative-id": [
+          "642496",
+          "642496"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2013/642496",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 188
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              17
+            ]
+          ],
+          "date-time": "2016-11-17T00:16:59Z",
+          "timestamp": 1479341819566
+        },
+        "reference-count": 39,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/3.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2014,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2014-01-01T00:00:00Z",
+              "timestamp": 1388534400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2014
+            ]
+          ]
+        },
+        "abstract": "<jats:p><jats:italic>Background</jats:italic>. This study sought to investigate the antidiabetic and antihypertensive mechanisms of cocoa (<jats:italic>Theobroma cacao</jats:italic>) bean through inhibition of α-amylase, α-glucosidase, angiotensin-1 converting enzyme, and oxidative stress.<jats:italic>Methodology</jats:italic>. The total phenol and flavonoid contents of the water extractable phytochemicals from the powdered cocoa bean were determined and the effects of the extract on α-amylase, α-glucosidase, and angiotensin-1 converting enzyme activities were investigated<jats:italic>in vitro</jats:italic>. Furthermore, the radicals [1,1-diphenyl-2 picrylhydrazyl (DPPH), 2,2..-azino-bis(3-ethylbenzthiazoline-6-sulphonic acid) (ABTS), hydroxyl (OH), and nitric oxide (NO)] scavenging ability and ferric reducing antioxidant property of the extract were assessed.<jats:italic>Results</jats:italic>. The results revealed that the extract inhibited α-amylase (1.81 ± 0.22 mg/mL), α-glucosidase (1.84 ± 0.17 mg/mL), and angiotensin-1 converting enzyme (0.674 ± 0.06 mg/mL [lungs], 1.006 ± 0.08 mg/mL [heart]) activities in a dose-dependent manner and also showed dose-dependent radicals [DPPH (16.94 ± 1.34 mg/mL), NO (6.98 ± 0.886 mg/mL), OH (3.72 ± 0.26 mg/mL), and ABTS (15.7 ± 1.06 mmol/TEAC·g] scavenging ability.<jats:italic>Conclusion</jats:italic>. The inhibition of α-amylase, α-glucosidase, and angiotensin-1 converting enzyme activities by the cocoa bean extract could be part of the possible mechanism by which the extract could manage and/or prevent type-2 diabetes and hypertension.</jats:p>",
+        "DOI": "10.1155/2014/549287",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2014,
+              9,
+              8
+            ]
+          ],
+          "date-time": "2014-09-08T21:02:57Z",
+          "timestamp": 1410210177000
+        },
+        "page": "1-6",
+        "source": "CrossRef",
+        "title": [
+          "In VitroStudies on the Antioxidant Property and Inhibition of α-Amylase, α-Glucosidase, and Angiotensin I-Converting Enzyme by Polyphenol-Rich Extracts from Cocoa(Theobroma cacao)Bean"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2014",
+        "author": [
+          {
+            "ORCID": "http://orcid.org/0000-0001-5167-9779",
+            "given": "Ganiyu",
+            "family": "Oboh",
+            "affiliation": [
+              {
+                "name": "Functional Foods and Nutraceuticals Unit, Biochemistry Department, Federal University of Technology, PMB 704, Akure 340252, Nigeria"
+              }
+            ]
+          },
+          {
+            "given": "Ayokunle O.",
+            "family": "Ademosun",
+            "affiliation": [
+              {
+                "name": "Functional Foods and Nutraceuticals Unit, Biochemistry Department, Federal University of Technology, PMB 704, Akure 340252, Nigeria"
+              }
+            ]
+          },
+          {
+            "given": "Adedayo O.",
+            "family": "Ademiluyi",
+            "affiliation": [
+              {
+                "name": "Functional Foods and Nutraceuticals Unit, Biochemistry Department, Federal University of Technology, PMB 704, Akure 340252, Nigeria"
+              }
+            ]
+          },
+          {
+            "given": "Olasunkanmi S.",
+            "family": "Omojokun",
+            "affiliation": [
+              {
+                "name": "Functional Foods and Nutraceuticals Unit, Biochemistry Department, Federal University of Technology, PMB 704, Akure 340252, Nigeria"
+              }
+            ]
+          },
+          {
+            "given": "Esther E.",
+            "family": "Nwanna",
+            "affiliation": [
+              {
+                "name": "Functional Foods and Nutraceuticals Unit, Biochemistry Department, Federal University of Technology, PMB 704, Akure 340252, Nigeria"
+              }
+            ]
+          },
+          {
+            "given": "Kuburat O.",
+            "family": "Longe",
+            "affiliation": [
+              {
+                "name": "Functional Foods and Nutraceuticals Unit, Biochemistry Department, Federal University of Technology, PMB 704, Akure 340252, Nigeria"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2014/549287.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2014/549287.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              29
+            ]
+          ],
+          "date-time": "2016-07-29T02:06:13Z",
+          "timestamp": 1469757973000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2014
+            ]
+          ]
+        },
+        "alternative-id": [
+          "549287",
+          "549287"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2014/549287",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 39
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              17
+            ]
+          ],
+          "date-time": "2016-11-17T00:18:56Z",
+          "timestamp": 1479341936189
+        },
+        "reference-count": 10,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/3.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2014,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2014-01-01T00:00:00Z",
+              "timestamp": 1388534400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2014
+            ]
+          ]
+        },
+        "abstract": "<jats:p><jats:italic>Background.</jats:italic>Soft tissue tumors are defined as nonepithelial extraskeletal tissue of the body exclusive of the reticuloendothelial system, glia, and supporting tissue of various parenchymal organs. The absence of recognizable tissue architectural patterns in cytological preparation makes diagnosis by FNAC more difficult.<jats:italic>Aims.</jats:italic>To assess the utility of FNAC in diagnosing soft tissue tumors and to determine their patterns compared with with the respective histopathology results.<jats:italic>Materials and Methods.</jats:italic>150 cases of soft tissue tumors were included in this study for cytologic and histologic correlation. FNAC air dried smears were stained with Giemsa stain and 95% ethanol fixed smears were stained with Papanicolaou stain. The smears were studied for cytological diagnosis and were categorized as benign, suspicious of malignancy, and malignant along with specific subtyping of the lesion. All diagnostic FNAC results were compared for diagnostic concordance using histology results as the “gold standard.”<jats:italic>Results.</jats:italic>The sensitivity, specificity, positive predictive value, negative predictive value, and efficiency were 70%, 100%, 97.90%, 100%, and 98%, respectively.<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M1\"><mml:mrow><mml:mi>P</mml:mi></mml:mrow></mml:math>value was <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M2\"><mml:mrow><mml:mo>&lt;</mml:mo></mml:mrow></mml:math>0.0001 which shows statistically extreme significant correlation.<jats:italic>Conclusion.</jats:italic>FNAC is a very important preliminary diagnostic tool in palpable soft tissue lumps with high degree of correlation with the final histopathology report.</jats:p>",
+        "DOI": "10.1155/2014/678628",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2014,
+              4,
+              28
+            ]
+          ],
+          "date-time": "2014-04-28T21:05:09Z",
+          "timestamp": 1398719109000
+        },
+        "page": "1-9",
+        "source": "CrossRef",
+        "title": [
+          "A Prospective Study of Soft Tissue Tumors Histocytopathology Correlation"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2014",
+        "author": [
+          {
+            "given": "Priyanka Bhatia",
+            "family": "Soni",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, Deen Dayal Upadhyay Hospital, Hari Nagar, New Delhi 110066, India"
+              }
+            ]
+          },
+          {
+            "given": "Anand Kumar",
+            "family": "Verma",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, Employees’ State Insurance Scheme of India (ESI) Hospital, Basaidarapur, New Delhi 110015, India"
+              }
+            ]
+          },
+          {
+            "given": "Raj Kumar",
+            "family": "Chandoke",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, Employees’ State Insurance Scheme of India (ESI) Hospital, Basaidarapur, New Delhi 110015, India"
+              }
+            ]
+          },
+          {
+            "given": "Jitendra Singh",
+            "family": "Nigam",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, Saraswathi Institute of Medical Sciences, Hapur, Uttar Pradesh 245304, India"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2014/678628.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2014/678628.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              8,
+              18
+            ]
+          ],
+          "date-time": "2016-08-18T23:44:27Z",
+          "timestamp": 1471563867000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2014
+            ]
+          ]
+        },
+        "alternative-id": [
+          "678628",
+          "678628"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2014/678628",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 10
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              17
+            ]
+          ],
+          "date-time": "2016-11-17T00:33:11Z",
+          "timestamp": 1479342791392
+        },
+        "reference-count": 21,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/3.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2015,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2015-01-01T00:00:00Z",
+              "timestamp": 1420070400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2015
+            ]
+          ]
+        },
+        "abstract": "<jats:p>Immunohistochemistry is important for the accurate diagnosis of basal cells in atypical glandular proliferations of the prostate. p40, an isoform of p63, may be an adjunct to a marker panel in this setting. Biopsies of 68 patients were analyzed by immunohistochemistry using antibodies to 34betaE12 and p40. Basal cell staining was classified as negative, partial (&lt;60%), or diffuse (≥60%); irregular staining was defined as discordant staining patterns. In acinar proliferations (<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M1\"><mml:mi>N</mml:mi><mml:mo>=</mml:mo><mml:mn>41</mml:mn></mml:math>), partial staining for both markers was seen in 42%, and diffuse staining in 46% of reactive cases. An irregular reactivity was noted in one case only (2%). Finally, these lesions were signed out as benign. Acinar proliferations negative for both markers and limited amount of glands (≤4) were termed atypical small acinar proliferations (ASAP). Out of six PIN lesions two cases showed partial, three cases showed diffuse reactivity for both markers, and one case was stained irregular. All cases diagnosed as prostate carcinomas (<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M2\"><mml:mi>N</mml:mi><mml:mo>=</mml:mo><mml:mn>20</mml:mn></mml:math>) had no evidence of basal cell staining for neither of the markers. p40 expression is closely correlated to 34betaE12 with respect to demonstration of basal cells of prostate glands and may provide further information on the dignity of glandular proliferations of the prostate.</jats:p>",
+        "DOI": "10.1155/2015/897927",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2015,
+              3,
+              8
+            ]
+          ],
+          "date-time": "2015-03-08T21:05:37Z",
+          "timestamp": 1425848737000
+        },
+        "page": "1-5",
+        "source": "CrossRef",
+        "title": [
+          "p40 as a Basal Cell Marker in the Diagnosis of Prostate Glandular Proliferations: A Comparative Immunohistochemical Study with 34betaE12"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2015",
+        "author": [
+          {
+            "given": "Hermann",
+            "family": "Brustmann",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, Landesklinikum Baden-Moedling, Wimmergasse 19, 2500 Baden, Austria"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2015/897927.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2015/897927.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              27
+            ]
+          ],
+          "date-time": "2016-07-27T22:58:23Z",
+          "timestamp": 1469660303000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2015
+            ]
+          ]
+        },
+        "alternative-id": [
+          "897927",
+          "897927"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2015/897927",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 21
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              17
+            ]
+          ],
+          "date-time": "2016-11-17T00:34:42Z",
+          "timestamp": 1479342882573
+        },
+        "reference-count": 49,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/4.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2016,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2016-01-01T00:00:00Z",
+              "timestamp": 1451606400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2016
+            ]
+          ]
+        },
+        "abstract": "<jats:p><jats:italic>Background</jats:italic>. Neoadjuvant chemoradiotherapy (nCRT) followed by curative surgery in locally advanced rectal cancer (LARC) improves pelvic disease control. Survival improvement is achieved only if pathological response occurs. Mandard tumor regression grade (TRG) proved to be a valid system to measure nCRT response. Potential predictive factors for Mandard response are analyzed.<jats:italic>Materials and Methods</jats:italic>. 167 patients with LARC were treated with nCRT and curative surgery. Tumor biopsies and surgical specimens were reviewed and analyzed regarding mitotic count, necrosis, desmoplastic reaction, and inflammatory infiltration grade. Surgical specimens were classified according to Mandard TRG. The patients were divided as “good responders” (Mandard TRG1-2) and “bad responders” (Mandard TRG3-5). According to results from our previous data, good responders have better prognosis than bad responders. We examined predictive factors for Mandard response and performed statistical analysis.<jats:italic>Results</jats:italic>. In univariate analysis, distance from anal verge and ten other postoperative variables related with nCRT tumor response had predictive value for Mandard response. In multivariable analysis only mitotic count, necrosis, and differentiation grade in surgical specimen had predictive value.<jats:italic>Conclusions</jats:italic>. There is a lack of clinical and pathological preoperative variables able to predict Mandard response. Only postoperative pathological parameters related with nCRT response have predictive value.</jats:p>",
+        "DOI": "10.1155/2016/2164609",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2016,
+              1,
+              18
+            ]
+          ],
+          "date-time": "2016-01-18T21:02:38Z",
+          "timestamp": 1453150958000
+        },
+        "page": "1-9",
+        "source": "CrossRef",
+        "title": [
+          "Predictive Response Value of Pre- and Postchemoradiotherapy Variables in Rectal Cancer: An Analysis of Histological Data"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2016",
+        "author": [
+          {
+            "given": "Marisa D.",
+            "family": "Santos",
+            "affiliation": [
+              {
+                "name": "Department of Surgery, Digestive Surgery Service, Hospital de Santo António, Centro Hospitalar do Porto, Largo Abel Salazar, 4099-003 Porto, Portugal"
+              }
+            ]
+          },
+          {
+            "given": "Cristina",
+            "family": "Silva",
+            "affiliation": [
+              {
+                "name": "Department of Surgery, Digestive Surgery Service, Hospital de Santo António, Centro Hospitalar do Porto, Largo Abel Salazar, 4099-003 Porto, Portugal"
+              }
+            ]
+          },
+          {
+            "given": "Anabela",
+            "family": "Rocha",
+            "affiliation": [
+              {
+                "name": "Department of Surgery, Digestive Surgery Service, Hospital de Santo António, Centro Hospitalar do Porto, Largo Abel Salazar, 4099-003 Porto, Portugal"
+              }
+            ]
+          },
+          {
+            "given": "Carlos",
+            "family": "Nogueira",
+            "affiliation": [
+              {
+                "name": "Department of Surgery, Digestive Surgery Service, Hospital de Santo António, Centro Hospitalar do Porto, Largo Abel Salazar, 4099-003 Porto, Portugal"
+              }
+            ]
+          },
+          {
+            "given": "Eduarda",
+            "family": "Matos",
+            "affiliation": [
+              {
+                "name": "Department of Community Health, Instituto de Ciências Biomédicas Abel Salazar, Rua Jorge Viterbo Ferreira, No. 228, 4050-313 Porto, Portugal"
+              }
+            ]
+          },
+          {
+            "given": "Carlos",
+            "family": "Lopes",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, Pathological Anatomy Service, Hospital de Santo António, Centro Hospitalar do Porto, Largo Professor Abel Salazar, 4099-003 Porto, Portugal"
+              },
+              {
+                "name": "Department of Pathology and Molecular Immunology, Instituto de Ciências Biomédicas Abel Salazar, Rua Jorge Viterbo Ferreira, No. 228, 4050-313 Porto, Portugal"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2016/2164609.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2016/2164609.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              8,
+              18
+            ]
+          ],
+          "date-time": "2016-08-18T14:56:04Z",
+          "timestamp": 1471532164000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2016
+            ]
+          ]
+        },
+        "alternative-id": [
+          "2164609",
+          "2164609"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2016/2164609",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 49
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              17
+            ]
+          ],
+          "date-time": "2016-11-17T00:35:31Z",
+          "timestamp": 1479342931410
+        },
+        "reference-count": 200,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/4.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2016,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2016-01-01T00:00:00Z",
+              "timestamp": 1451606400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2016
+            ]
+          ]
+        },
+        "abstract": "<jats:p>Total Antioxidant Capacity (TAC) is a biomarker often used in order to investigate oxidative stress in many pathological conditions. Saliva and urine can be collected noninvasively and represent attractive diagnostic fluids for detecting biomarkers of various pathological conditions. The reviewed case-control and intervention studies that measured salivary or urinary TAC revealed that diseases, antioxidant foods, or supplements and age, gender, and lifestyle factors influenced salivary or urinary TAC. Salivary and urinary TAC were particularly affected by oral or renal status, respectively, as well as by infection; therefore these factors must be taken into account in both case-control and intervention studies. Furthermore, some considerations on sample collection and normalization strategies could be made. In particular, unstimulated saliva could be the better approach to measure salivary TAC, whereas 24 h or spontaneous urine collection should be chosen on the basis of the study outcome and of the creatinine clearance. Finally, the uric acid-independent TAC could be the better approach to evaluate red-ox status of body, in particular after nutritional interventions and in diseases associated with hyperuricaemia.</jats:p>",
+        "DOI": "10.1155/2016/5480267",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2016,
+              2,
+              7
+            ]
+          ],
+          "date-time": "2016-02-07T21:00:45Z",
+          "timestamp": 1454878845000
+        },
+        "page": "1-14",
+        "source": "CrossRef",
+        "title": [
+          "Salivary and Urinary Total Antioxidant Capacity as Biomarkers of Oxidative Stress in Humans"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2016",
+        "author": [
+          {
+            "given": "Ilaria",
+            "family": "Peluso",
+            "affiliation": [
+              {
+                "name": "Center of Nutrition, Council for Agricultural Research and Economics (CREA-NUT), Via Ardeatina 546, 00178 Rome, Italy"
+              }
+            ]
+          },
+          {
+            "given": "Anna",
+            "family": "Raguzzini",
+            "affiliation": [
+              {
+                "name": "Center of Nutrition, Council for Agricultural Research and Economics (CREA-NUT), Via Ardeatina 546, 00178 Rome, Italy"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2016/5480267.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2016/5480267.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              26
+            ]
+          ],
+          "date-time": "2016-07-26T16:16:39Z",
+          "timestamp": 1469549799000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2016
+            ]
+          ]
+        },
+        "alternative-id": [
+          "5480267",
+          "5480267"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2016/5480267",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 200
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              17
+            ]
+          ],
+          "date-time": "2016-11-17T00:35:43Z",
+          "timestamp": 1479342943561
+        },
+        "reference-count": 17,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/4.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2016,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2016-01-01T00:00:00Z",
+              "timestamp": 1451606400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2016
+            ]
+          ]
+        },
+        "abstract": "<jats:p><jats:italic>Aim</jats:italic>. Evaluate tumor proliferation marker (Ki67) and p53 tumor suppressor marker in Wilms tumor and correlate with histology, anaplasia, and staging.<jats:italic>Design</jats:italic>. Prospective, hospital based study conducted at a tertiary pediatric referral centre in south India.<jats:italic>Setting</jats:italic>. Wilms tumor is the most common childhood renal malignancy worldwide. Anaplasia on histology is associated with treatment resistance but not with aggressiveness clinical presentation. Chemotherapy for Wilms tumor is based on histology and staging. Most patients respond to current chemotherapy protocol. However, a small fraction relapses or metastasizes. Affordable prognostic markers are needed for histopathological evaluation of this tumor.<jats:italic>Subjects</jats:italic>. Cases of histologically confirmed Wilms tumor over five years. Cases after chemotherapy were excluded as the immunostaining was inconsistent in necrotic areas.<jats:italic>Methods</jats:italic>. The clinical and radiological findings of 31 cases of Wilms tumor were documented at a tertiary pediatric referral hospital over five years. In addition to Hematoxylin and Eosin staining, Ki67 proliferation index and p53 expression were correlated with tumor histology and staging.<jats:italic>Results</jats:italic>. Age incidence was 3–8 years with female preponderance. Significant correlation was noted between Ki67 proliferation index and tumor staging. p53 expression was not useful in stratification of Wilms tumor.<jats:italic>Conclusion</jats:italic>. Ki67 was cost-effective immunohistochemical marker for prognostication of pediatric Wilms tumor.</jats:p>",
+        "DOI": "10.1155/2016/6123951",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2016,
+              1,
+              20
+            ]
+          ],
+          "date-time": "2016-01-20T21:21:55Z",
+          "timestamp": 1453324915000
+        },
+        "page": "1-5",
+        "source": "CrossRef",
+        "title": [
+          "Immunohistochemical Expression of Ki67 and p53 in Wilms Tumor and Its Relationship with Tumor Histology and Stage at Presentation"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2016",
+        "author": [
+          {
+            "given": "O. H. Radhika",
+            "family": "Krishna",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, Niloufer Hospital for Women and Children, Red Hills, Hyderabad, Telangana 500004, India"
+              }
+            ]
+          },
+          {
+            "given": "Geetha",
+            "family": "Kayla",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, Niloufer Hospital for Women and Children, Red Hills, Hyderabad, Telangana 500004, India"
+              }
+            ]
+          },
+          {
+            "given": "Mohammed",
+            "family": "Abdul Aleem",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, Niloufer Hospital for Women and Children, Red Hills, Hyderabad, Telangana 500004, India"
+              }
+            ]
+          },
+          {
+            "given": "Ramani",
+            "family": "Malleboyina",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, Niloufer Hospital for Women and Children, Red Hills, Hyderabad, Telangana 500004, India"
+              }
+            ]
+          },
+          {
+            "given": "Ramesh",
+            "family": "Reddy Kota",
+            "affiliation": [
+              {
+                "name": "Department of Pediatric Surgery, Niloufer Hospital for Women and Children, Red Hills, Hyderabad, Telangana 500004, India"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2016/6123951.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2016/6123951.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              26
+            ]
+          ],
+          "date-time": "2016-07-26T16:54:36Z",
+          "timestamp": 1469552076000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2016
+            ]
+          ]
+        },
+        "alternative-id": [
+          "6123951",
+          "6123951"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2016/6123951",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 17
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              17
+            ]
+          ],
+          "date-time": "2016-11-17T00:15:15Z",
+          "timestamp": 1479341715111
+        },
+        "reference-count": 16,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/3.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2014,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2014-01-01T00:00:00Z",
+              "timestamp": 1388534400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2014
+            ]
+          ]
+        },
+        "abstract": "<jats:p>Hysterectomy, the most common gynecological surgery, provides a definitive cure to various diseases like DUB (dysfunctional uterine bleeding), leiomyoma, adenomyosis, chronic pelvic pain, prolapse, and malignancy. However, with advent of effective medical and conservative treatment modalities for nononcological causes it is now posing question mark on justification of hysterectomy. Therefore, an audit is required to assess the correlation between preoperative diagnosis and histopathological examination of specimen for justification of the procedure. In this study over period of one year (April 2013 to March 2014) 373 hysterectomies specimens were received in the department of pathology for nononcological causes. The age of patients ranged from 22 to 85 years with mean<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"M1\"><mml:mn>45</mml:mn><mml:mo>±</mml:mo><mml:mn>9.2</mml:mn></mml:math>years. All cases were divided into five categories on the basis of age and audit was done. In this study the most common finding was leiomyoma (43.7%) followed by adenomyosis (19.3%). Almost 50% of hysterectomies causes were justified as preoperative diagnosis matched with histopathology. Cohen kappa statistics were used to measure agreement between preoperative and postoperative histopathological diagnosis which was found to be fair with<jats:italic>κ</jats:italic>value being 0.36. This study highlights that regular audit of surgeries can help improve quality of health care services and provide safe conservative option to patients.</jats:p>",
+        "DOI": "10.1155/2014/468715",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2014,
+              9,
+              9
+            ]
+          ],
+          "date-time": "2014-09-09T21:01:18Z",
+          "timestamp": 1410296478000
+        },
+        "page": "1-5",
+        "source": "CrossRef",
+        "title": [
+          "Histopathological Audit of 373 Nononcological Hysterectomies in a Teaching Hospital"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2014",
+        "author": [
+          {
+            "given": "Kanwardeep Kaur",
+            "family": "Tiwana",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, GGS Medical College Faridkot, BFHUS, Punjab 151203, India"
+              }
+            ]
+          },
+          {
+            "given": "Sarita",
+            "family": "Nibhoria",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, GGS Medical College Faridkot, BFHUS, Punjab 151203, India"
+              }
+            ]
+          },
+          {
+            "given": "Tanvi",
+            "family": "Monga",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, GGS Medical College Faridkot, BFHUS, Punjab 151203, India"
+              }
+            ]
+          },
+          {
+            "given": "Richa",
+            "family": "Phutela",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, GGS Medical College Faridkot, BFHUS, Punjab 151203, India"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2014/468715.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2014/468715.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              28
+            ]
+          ],
+          "date-time": "2016-07-28T23:58:10Z",
+          "timestamp": 1469750290000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2014
+            ]
+          ]
+        },
+        "alternative-id": [
+          "468715",
+          "468715"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2014/468715",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 16
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              17
+            ]
+          ],
+          "date-time": "2016-11-17T00:16:13Z",
+          "timestamp": 1479341773334
+        },
+        "reference-count": 31,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/3.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2014,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2014-01-01T00:00:00Z",
+              "timestamp": 1388534400000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2014
+            ]
+          ]
+        },
+        "abstract": "<jats:p>Association of tissue eosinophilia with oral squamous cell carcinoma has shown variable results ranging from favourable to unfavourable or even having no influence on prognosis. Also, very few studies have been done to know the role of eosinophils in premalignancy. So the present study investigated role of eosinophilic infiltration in oral precancer and cancer and its possible use as a prognosticator. 60 histopathologically proven cases (20 cases each of metastatic and nonmetastatic oral squamous cell carcinoma and oral leukoplakia with dysplasia of various grades) were included. Congo red is used as a special stain for eosinophils. Each specimen slide was viewed under high power in 10 consecutive microscopic fields for counting of eosinophils. As a result, a significant increase in eosinophil count was found in oral carcinomas compared to dysplasia. Nonmetastatic cases showed higher counts than metastatic carcinomas. So, it is concluded that eosinophilia is a favourable histopathological prognostic factor in oral cancer. Moreover, higher eosinophil counts in carcinoma group compared to dysplasia group proved that they might have a role in stromal invasion thus suggesting that quantitative assessment of tissue eosinophilia should become a part of the routine histopathological diagnosis for oral precancer and OSCC.</jats:p>",
+        "DOI": "10.1155/2014/507512",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2014,
+              2,
+              19
+            ]
+          ],
+          "date-time": "2014-02-19T22:08:37Z",
+          "timestamp": 1392847717000
+        },
+        "page": "1-6",
+        "source": "CrossRef",
+        "title": [
+          "Assessment of Tissue Eosinophilia as a Prognosticator in Oral Epithelial Dysplasia and Oral Squamous Cell Carcinoma—An Image Analysis Study"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2014",
+        "author": [
+          {
+            "given": "Megha",
+            "family": "Jain",
+            "affiliation": [
+              {
+                "name": "Department of Oral Pathology and Microbiology, Peoples Dental Academy, MIG, Block-C, Flat No. 14, PCMS Campus, Peoples Hospital, Bhopal, Madhya Pradesh 462037, India"
+              }
+            ]
+          },
+          {
+            "given": "Sowmya",
+            "family": "Kasetty",
+            "affiliation": [
+              {
+                "name": "Department of Oral Pathology and Microbiology, Peoples College of Dental Sciences and Research Center, Bhopal, Madhya Pradesh 462037, India"
+              }
+            ]
+          },
+          {
+            "given": "U. S.",
+            "family": "Sudheendra",
+            "affiliation": [
+              {
+                "name": "Department of Oral Pathology and Microbiology, Coorg Institute of Dental Sciences, Virajpet, Karnataka 571218, India"
+              }
+            ]
+          },
+          {
+            "given": "Manisha",
+            "family": "Tijare",
+            "affiliation": [
+              {
+                "name": "Department of Oral Pathology and Microbiology, Peoples College of Dental Sciences and Research Center, Bhopal, Madhya Pradesh 462037, India"
+              }
+            ]
+          },
+          {
+            "given": "Samar",
+            "family": "Khan",
+            "affiliation": [
+              {
+                "name": "Department of Oral Pathology and Microbiology, Rishiraj Dental College, Bhopal, Madhya Pradesh 462036, India"
+              }
+            ]
+          },
+          {
+            "given": "Ami",
+            "family": "Desai",
+            "affiliation": [
+              {
+                "name": "Department of Oral Pathology and Microbiology, Peoples College of Dental Sciences and Research Center, Bhopal, Madhya Pradesh 462037, India"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2014/507512.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2014/507512.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              29
+            ]
+          ],
+          "date-time": "2016-07-29T00:47:55Z",
+          "timestamp": 1469753275000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2014
+            ]
+          ]
+        },
+        "alternative-id": [
+          "507512",
+          "507512"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2014/507512",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 31
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              16
+            ]
+          ],
+          "date-time": "2016-11-16T01:36:37Z",
+          "timestamp": 1479260197360
+        },
+        "reference-count": 18,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/3.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2012,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2012-01-01T00:00:00Z",
+              "timestamp": 1325376000000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "funder": [
+          {
+            "DOI": "10.13039/501100001809",
+            "name": "National Natural Science Foundation of China",
+            "doi-asserted-by": "publisher",
+            "award": [
+              "2005K15-G2",
+              "XJJ 2011024",
+              "30700654"
+            ]
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2012
+            ]
+          ]
+        },
+        "abstract": "<jats:p>The aim of this study was to evaluate CD44v6 protein expression and its prognostic value of CD44v6 in ovarian carcinoma. The expression of CD44v6 was analyzed in 62 patients with ovarian carcinoma by immunohistochemical method. The data obtained were analyzed by univariate and multivariate analyses. The present study clearly demonstrates that tumor tissues from 41 (66.1%) patients showed positive expression with CD44v6. The expression of CD44v6 was significantly correlated with histological type, FIGO stage and histological grade of ovarian carcinomas. Concerning the prognosis, the survival period of patients with CD44v6 positive was shorter than that of patients with CD44v6 negative (36.6% versus 66.7%, 5-year survival,<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mml:mrow><mml:mi>P</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>0.05</mml:mn></mml:mrow></mml:math>). Univariate analysis showed that CD44v6 expression, histological type, FIGO stage and histological grade were associated with 5-year survival, and CD44v6 expression was associated with histological type, FIGO stage and histological grade and 5-year survival. In multivariate analysis, using the COX-regression model, CD44v6 expression was important prognostic factor. In conclusion, these results suggest that CD44v6 may be related to histological type, FIGO stage and histological grade of ovarian carcinomas, and CD44v6 may be an important molecular marker for poor prognosis in ovarian carcinomas.</jats:p>",
+        "DOI": "10.1155/2012/908206",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2012,
+              2,
+              23
+            ]
+          ],
+          "date-time": "2012-02-23T21:01:33Z",
+          "timestamp": 1330030893000
+        },
+        "page": "1-5",
+        "source": "CrossRef",
+        "title": [
+          "Expression of CD44v6 and Its Association with Prognosis in Epithelial Ovarian Carcinomas"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2012",
+        "author": [
+          {
+            "given": "Dang-xia",
+            "family": "Zhou",
+            "affiliation": [
+              {
+                "name": "Pathology Department, Medical School, Xi'an Jiaotong University, Xi'an 710061, China"
+              },
+              {
+                "name": "Key Laboratory of Environment and Genes Related to Diseases, Ministry of Education, Xi'an 710061, China"
+              }
+            ]
+          },
+          {
+            "given": "Yun-xia",
+            "family": "Liu",
+            "affiliation": [
+              {
+                "name": "Department of Obstetrics and Gynecology, Xi'an First Hospital, Xi'an 710002, China"
+              }
+            ]
+          },
+          {
+            "given": "Ya-hong",
+            "family": "Xue",
+            "affiliation": [
+              {
+                "name": "Department of Obstetrics and Gynecology, Xi'an First Hospital, Xi'an 710002, China"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2012/908206.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2012/908206.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              8,
+              2
+            ]
+          ],
+          "date-time": "2016-08-02T23:03:31Z",
+          "timestamp": 1470179011000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2012
+            ]
+          ]
+        },
+        "alternative-id": [
+          "908206",
+          "908206"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2012/908206",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 18
+      },
+      {
+        "indexed": {
+          "date-parts": [
+            [
+              2016,
+              11,
+              16
+            ]
+          ],
+          "date-time": "2016-11-16T23:49:24Z",
+          "timestamp": 1479340164531
+        },
+        "reference-count": 34,
+        "publisher": "Hindawi Publishing Corporation",
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/3.0/",
+            "start": {
+              "date-parts": [
+                [
+                  2012,
+                  1,
+                  1
+                ]
+              ],
+              "date-time": "2012-01-01T00:00:00Z",
+              "timestamp": 1325376000000
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [
+          "Pathology Research International"
+        ],
+        "cited-count": 0,
+        "published-print": {
+          "date-parts": [
+            [
+              2012
+            ]
+          ]
+        },
+        "abstract": "<jats:p>The number of positive axillary lymph nodes (LNs) is the only node-related factor for prognostic evaluation of breast cancer recognized by AJCC (TNM staging). However, N staging may not completely reflect LN tumor involvement due to the erroneous count of LNs in the presence of matted LNs and different tumor volume in LNs. Additionally, the positive/total LN ratio (LNR) has been shown to outperform N staging in survival prediction. In our study, to better quantify the tumor involvement of axillary LNs, we measured the cross-sectional cancer area (CSCA) of the positive LNs in 292 breast cancer patients diagnosed between 1998 and 2000 in our institution and compared its prognostic value to that of number of positive LNs (metLN)/N stage and LNR. Statistical analyses of these three LN-related factors were performed by Kaplan-Meier method and multivariate Cox's regression model. Patients were divided into three groups based on the different LN CSCA (&lt;50, 50–500, and &gt;500 mm<jats:sup>2</jats:sup>), or LNR (&lt;0.1, 0.1–0.65, and &gt;0.65), or N stage (N1–N3). Multivariate analysis demonstrated LNR was the most significant LN-related survival predictor with hazard ratio (HR) 25.0 (), compared to the metLN (HR 0.09, ) and CSCA (HR 2.24, ).</jats:p>",
+        "DOI": "10.1155/2012/161964",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2012,
+              10,
+              4
+            ]
+          ],
+          "date-time": "2012-10-04T21:05:27Z",
+          "timestamp": 1349384727000
+        },
+        "page": "1-8",
+        "source": "CrossRef",
+        "title": [
+          "The Prognostic Value of Lymph Node Cross-Sectional Cancer Area in Node-Positive Breast Cancer: A Comparison with N Stage and Lymph Node Ratio"
+        ],
+        "prefix": "http://id.crossref.org/prefix/10.1155",
+        "volume": "2012",
+        "author": [
+          {
+            "given": "Yanxia",
+            "family": "Li",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, Loyola University Medical Center, 2160 S First Avenue, Maywood, IL 60153, USA"
+              }
+            ]
+          },
+          {
+            "given": "Earle",
+            "family": "Holmes",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, Loyola University Medical Center, 2160 S First Avenue, Maywood, IL 60153, USA"
+              }
+            ]
+          },
+          {
+            "ORCID": "http://orcid.org/0000-0003-1199-0508",
+            "given": "Karan",
+            "family": "Shah",
+            "affiliation": [
+              {
+                "name": "Department of Surgery, Loyola University Medical Center, 2160 S First Avenue, Maywood, IL 60153, USA"
+              }
+            ]
+          },
+          {
+            "given": "Kevin",
+            "family": "Albuquerque",
+            "affiliation": [
+              {
+                "name": "Department of Surgery, Loyola University Medical Center, 2160 S First Avenue, Maywood, IL 60153, USA"
+              }
+            ]
+          },
+          {
+            "given": "Anna",
+            "family": "Szpaderska",
+            "affiliation": [
+              {
+                "name": "Department of Surgery, Loyola University Medical Center, 2160 S First Avenue, Maywood, IL 60153, USA"
+              }
+            ]
+          },
+          {
+            "given": "Çağatay",
+            "family": "Erşahin",
+            "affiliation": [
+              {
+                "name": "Department of Pathology, Loyola University Medical Center, 2160 S First Avenue, Maywood, IL 60153, USA"
+              }
+            ]
+          }
+        ],
+        "member": "http://id.crossref.org/member/98",
+        "container-title": [
+          "Pathology Research International"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2012/161964.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "http://downloads.hindawi.com/journals/pri/2012/161964.xml",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2016,
+              8,
+              18
+            ]
+          ],
+          "date-time": "2016-08-18T13:12:19Z",
+          "timestamp": 1471525939000
+        },
+        "score": 1,
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2012
+            ]
+          ]
+        },
+        "alternative-id": [
+          "161964",
+          "161964"
+        ],
+        "URL": "http://dx.doi.org/10.1155/2012/161964",
+        "ISSN": [
+          "2090-8091",
+          "2042-003X"
+        ],
+        "citing-count": 34
+      }
+    ],
+    "items-per-page": 20,
+    "query": {
+      "start-index": 0,
+      "search-terms": null
+    }
+  }
+}

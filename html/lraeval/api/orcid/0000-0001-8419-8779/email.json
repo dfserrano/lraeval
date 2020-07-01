@@ -1,0 +1,20 @@
+{
+   "path": "/0000-0001-6386-4533/email",
+   "last-modified-date": "2016-07-03T22:11:11.272Z",
+   "email": {
+      "visibility": "public",
+      "verified": "true",
+      "primary": "true",
+      "created-date": "2016-07-03T22:06:24.230Z",
+      "last-modified-date": "2016-07-03T22:11:11.272Z",
+      "source": {
+         "source-orcid": {
+            "uri": "http://orcid.org/0000-0001-6386-4533",
+            "path": "0000-0001-6386-4533",
+            "host": "orcid.org"
+         },
+         "source-name": "Diego Serrano"
+      },
+      "email": "serranos@ualberta.ca"
+   }
+}
